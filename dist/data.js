@@ -1,0 +1,15739 @@
+window.RESEARCH_DB = {
+  "date": "2026-10-01",
+  "groups": [
+    {
+      "id": "circuits",
+      "name": "芯片电子光电"
+    },
+    {
+      "id": "computing",
+      "name": "计算机与智能"
+    },
+    {
+      "id": "machines",
+      "name": "机械电气自动化"
+    },
+    {
+      "id": "materials",
+      "name": "材料与能源"
+    },
+    {
+      "id": "civil",
+      "name": "土建交通规划"
+    },
+    {
+      "id": "environment",
+      "name": "环境化工"
+    },
+    {
+      "id": "agri",
+      "name": "农牧生物食品"
+    },
+    {
+      "id": "medicine",
+      "name": "医药护理"
+    },
+    {
+      "id": "business",
+      "name": "经济管理"
+    },
+    {
+      "id": "human",
+      "name": "人文教育法学"
+    },
+    {
+      "id": "design",
+      "name": "工业与视觉设计"
+    },
+    {
+      "id": "math",
+      "name": "数学与数据"
+    }
+  ],
+  "majors": [
+    {
+      "id": "m01",
+      "name": "机械设计制造及其自动化",
+      "college": "机电工程与自动化学院",
+      "group": "machines",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m02",
+      "name": "机械电子工程",
+      "college": "机电工程与自动化学院",
+      "group": "machines",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m03",
+      "name": "车辆工程",
+      "college": "机电工程与自动化学院",
+      "group": "machines",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m04",
+      "name": "电气工程及其自动化",
+      "college": "机电工程与自动化学院",
+      "group": "machines",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m05",
+      "name": "自动化",
+      "college": "机电工程与自动化学院",
+      "group": "machines",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m06",
+      "name": "土木工程",
+      "college": "土木与交通学院",
+      "group": "civil",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m07",
+      "name": "交通工程",
+      "college": "土木与交通学院",
+      "group": "civil",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m08",
+      "name": "材料科学与工程",
+      "college": "材料与能源学院",
+      "group": "materials",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m09",
+      "name": "材料化学",
+      "college": "材料与能源学院",
+      "group": "materials",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m10",
+      "name": "新能源材料与器件",
+      "college": "材料与能源学院",
+      "group": "materials",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m11",
+      "name": "储能科学与工程",
+      "college": "材料与能源学院",
+      "group": "materials",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m12",
+      "name": "化学工程与工艺",
+      "college": "环境与化工学院",
+      "group": "environment",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m13",
+      "name": "资源循环科学与工程",
+      "college": "环境与化工学院",
+      "group": "environment",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m14",
+      "name": "环境工程",
+      "college": "环境与化工学院",
+      "group": "environment",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m15",
+      "name": "环境科学",
+      "college": "环境与化工学院",
+      "group": "environment",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m16",
+      "name": "计算机科学与技术",
+      "college": "计算机与人工智能学院(粤台人工智能学院)",
+      "group": "computing",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m17",
+      "name": "网络工程",
+      "college": "计算机与人工智能学院(粤台人工智能学院)",
+      "group": "computing",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m18",
+      "name": "物联网工程",
+      "college": "计算机与人工智能学院(粤台人工智能学院)",
+      "group": "computing",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m19",
+      "name": "智能科学与技术",
+      "college": "计算机与人工智能学院(粤台人工智能学院)",
+      "group": "computing",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m20",
+      "name": "电子信息工程",
+      "college": "电子信息工程学院",
+      "group": "circuits",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m21",
+      "name": "集成电路设计与集成系统",
+      "college": "电子信息工程学院",
+      "group": "circuits",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m22",
+      "name": "物理学(师范)",
+      "college": "物理与光电工程学院",
+      "group": "circuits",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m23",
+      "name": "光源与照明",
+      "college": "物理与光电工程学院",
+      "group": "circuits",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m24",
+      "name": "光电信息科学与工程",
+      "college": "物理与光电工程学院",
+      "group": "circuits",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m25",
+      "name": "人文地理与城乡规划",
+      "college": "建筑与规划学院",
+      "group": "civil",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m26",
+      "name": "建筑学",
+      "college": "建筑与规划学院",
+      "group": "civil",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m27",
+      "name": "风景园林",
+      "college": "建筑与规划学院",
+      "group": "civil",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m28",
+      "name": "工业设计",
+      "college": "设计学院",
+      "group": "design",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m29",
+      "name": "数字媒体技术",
+      "college": "设计学院",
+      "group": "computing",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m30",
+      "name": "视觉传达设计",
+      "college": "设计学院",
+      "group": "design",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m31",
+      "name": "产品设计",
+      "college": "设计学院",
+      "group": "design",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m32",
+      "name": "数学与应用数学",
+      "college": "数学学院",
+      "group": "math",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m33",
+      "name": "数据科学与大数据技术",
+      "college": "数学学院",
+      "group": "math",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m34",
+      "name": "教育技术学(师范)",
+      "college": "人文学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m35",
+      "name": "学前教育",
+      "college": "人文学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m36",
+      "name": "汉语言文学(师范)",
+      "college": "人文学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m37",
+      "name": "英语",
+      "college": "人文学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m38",
+      "name": "法学(涉外法治)",
+      "college": "法学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m39",
+      "name": "知识产权",
+      "college": "法学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m40",
+      "name": "思想政治教育",
+      "college": "马克思主义学院",
+      "group": "human",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m41",
+      "name": "金融学",
+      "college": "经济贸易学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m42",
+      "name": "国际经济与贸易",
+      "college": "经济贸易学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m43",
+      "name": "工商管理",
+      "college": "管理学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m44",
+      "name": "市场营销",
+      "college": "管理学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m45",
+      "name": "会计学",
+      "college": "管理学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m46",
+      "name": "人力资源管理",
+      "college": "管理学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m47",
+      "name": "工业工程",
+      "college": "管理学院",
+      "group": "machines",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m48",
+      "name": "旅游管理",
+      "college": "管理学院",
+      "group": "business",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m49",
+      "name": "食品科学与工程",
+      "college": "食品科学与工程学院",
+      "group": "agri",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m50",
+      "name": "食品质量与安全",
+      "college": "食品科学与工程学院",
+      "group": "agri",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m51",
+      "name": "生物工程",
+      "college": "农业与生物工程学院",
+      "group": "agri",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m52",
+      "name": "园艺",
+      "college": "农业与生物工程学院",
+      "group": "agri",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m53",
+      "name": "动物科学",
+      "college": "动物科技学院",
+      "group": "agri",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m54",
+      "name": "动物医学",
+      "college": "动物科技学院",
+      "group": "agri",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m55",
+      "name": "口腔医学",
+      "college": "医学部",
+      "group": "medicine",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m56",
+      "name": "药学",
+      "college": "医学部",
+      "group": "medicine",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m57",
+      "name": "医学检验技术",
+      "college": "医学部",
+      "group": "medicine",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m58",
+      "name": "护理学",
+      "college": "医学部",
+      "group": "medicine",
+      "sourceId": "fosu-catalog"
+    },
+    {
+      "id": "m59",
+      "name": "环境工程(中外合作办学)",
+      "college": "国际交流学院",
+      "group": "environment",
+      "sourceId": "fosu-catalog"
+    }
+  ],
+  "sources": {
+    "fosu-catalog": {
+      "title": "佛山大学院校信息 · 院系与专业栏目",
+      "org": "河南省阳光高考信息平台",
+      "url": "https://11847.gaokao.haedu.cn/",
+      "kind": "教育部门院校信息",
+      "checked": "2026-10-01",
+      "access": "官网首页未能读取；使用教育部门院校栏目核对。专业列表对应年份未明确，不代表 2026 年完整招生计划。",
+      "note": ""
+    },
+    "fosu-charter": {
+      "title": "佛山大学 2026 年夏季高考招生章程",
+      "org": "河南省阳光高考信息平台 / 佛山大学",
+      "url": "https://11847.gaokao.haedu.cn/policy/brochure/2026/0623/154812.html",
+      "kind": "教育部门刊载招生章程",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "ciciec": {
+      "title": "全国大学生集成电路创新创业大赛",
+      "org": "集创赛组委会",
+      "url": "https://univ.ciciec.com/",
+      "kind": "竞赛主办方",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "ciciec-topics": {
+      "title": "第十届集创赛企业命题",
+      "org": "集创赛组委会",
+      "url": "https://univ.ciciec.com/nr.jsp?groupId=46&jpt=4",
+      "kind": "竞赛主办方",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "soc": {
+      "title": "全国大学生嵌入式芯片与系统设计竞赛",
+      "org": "嵌入式竞赛组委会",
+      "url": "https://www.socchina.net/home?trackType=2",
+      "kind": "竞赛主办方",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "nuedc": {
+      "title": "2026 年全国大学生电子设计竞赛相关专题",
+      "org": "电子设计竞赛官方培训网",
+      "url": "https://www.nuedc-training.com.cn/index/publicity/topic2026",
+      "kind": "竞赛主办方",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "jiangnan": {
+      "title": "江南大学集创赛 RISC-V CPU 获奖报道",
+      "org": "江南大学",
+      "url": "https://news.jiangnan.edu.cn/info/1284/103057.htm",
+      "kind": "高校新闻",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "nju": {
+      "title": "南京大学集创赛多精度张量计算等获奖报道",
+      "org": "南京大学电子科学与工程学院",
+      "url": "https://ese.nju.edu.cn/01/c4/c22536a786884/page.htm",
+      "kind": "高校新闻",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "fzu": {
+      "title": "福州大学 2026 年集创赛获奖报道",
+      "org": "福州大学",
+      "url": "https://wx.fzu.edu.cn/info/1086/4927.htm",
+      "kind": "高校新闻",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "szpu": {
+      "title": "2026 嵌入式竞赛校园体能项目获奖报道",
+      "org": "深圳职业技术大学集成电路学院",
+      "url": "https://ic.szpu.edu.cn/info/1024/1266.htm",
+      "kind": "高校新闻",
+      "checked": "2026-09-30",
+      "access": "仅核验官方搜索摘要；原始网页正文未成功读取。",
+      "note": ""
+    },
+    "hust": {
+      "title": "2025 年电赛单目视觉测量项目获奖报道",
+      "org": "华中科技大学",
+      "url": "https://seee.hust.edu.cn/info/1066/3329.htm",
+      "kind": "高校新闻",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "riscv": {
+      "title": "RISC-V 国际官方规范与文档",
+      "org": "RISC-V International",
+      "url": "https://docs.riscv.org/",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "ibex": {
+      "title": "Ibex RISC-V 核心官方文档",
+      "org": "lowRISC / Ibex 项目",
+      "url": "https://ibex-core.readthedocs.io/en/latest/",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "cocotb": {
+      "title": "cocotb 官方验证文档",
+      "org": "cocotb 项目",
+      "url": "https://docs.cocotb.org/en/stable/",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "opentitan": {
+      "title": "OpenTitan 验证方法学",
+      "org": "OpenTitan / lowRISC",
+      "url": "https://opentitan.org/book/doc/contributing/dv/methodology/index.html",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "tiny": {
+      "title": "MLPerf Tiny v1.4 结果与基准介绍",
+      "org": "MLCommons",
+      "url": "https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "har": {
+      "title": "Human Activity Recognition Using Smartphones",
+      "org": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "cwru": {
+      "title": "Bearing Data Center 轴承故障数据",
+      "org": "Case Western Reserve University",
+      "url": "https://engineering.case.edu/bearingdatacenter/welcome",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "cmsis": {
+      "title": "CMSIS-NN v7.0.0 官方文档",
+      "org": "Arm",
+      "url": "https://arm-software.github.io/CMSIS-NN/v7.0.0/index.html",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "hls4ml": {
+      "title": "hls4ml 中间表示与算子属性文档",
+      "org": "fastmachinelearning / hls4ml",
+      "url": "https://fastmachinelearning.org/hls4ml/ir/attributes.html",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "openlane": {
+      "title": "OpenLane 2 新手指南",
+      "org": "OpenLane 项目",
+      "url": "https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html",
+      "kind": "研究机构 / 官方项目",
+      "checked": "2026-09-30",
+      "access": "",
+      "note": ""
+    },
+    "mcm": {
+      "title": "全国大学生数学建模竞赛官网",
+      "org": "全国大学生数学建模竞赛组委会",
+      "url": "https://www.mcm.edu.cn/",
+      "kind": "竞赛主办方",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "mechanical": {
+      "title": "2026 中国大学生机械工程创新创意大赛通知",
+      "org": "中国机械工程学会",
+      "url": "https://www.cmes.org/notice/010c5f85554e440e99d702008b58a26f.html",
+      "kind": "竞赛主办方",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "life": {
+      "title": "第十一届生命科学竞赛科学探究类通知",
+      "org": "生命科学竞赛委员会 / 中山大学刊载",
+      "url": "https://futurebs.sysu.edu.cn/sites/default/files/2025-10/%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E7%AB%9E%E8%B5%9B%E9%80%9A%E7%9F%A5%EF%BC%88%E7%A7%91%E5%AD%A6%E6%8E%A2%E7%A9%B6%E7%B1%BB%EF%BC%89.pdf",
+      "kind": "组委会文件 / 高校刊载",
+      "checked": "2026-10-01",
+      "access": "通过官方搜索结果核验标题及相关摘要；当前读取范围有限，使用时请打开原始页面或文件复核。",
+      "note": ""
+    },
+    "life-final": {
+      "title": "2026 生命科学竞赛科学探究类全国总决赛报道",
+      "org": "河南师范大学",
+      "url": "https://www.htu.edu.cn/2026/0728/c21187a401504/page.htm",
+      "kind": "高校赛事报道",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "chemical": {
+      "title": "2026 第二十届全国大学生化工设计竞赛通知",
+      "org": "化工设计竞赛组委会 / 浙江大学",
+      "url": "https://iche.zju.edu.cn/index.php/a/sstz/1656.html",
+      "kind": "竞赛主办方",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "chemical-task": {
+      "title": "2026 化工设计竞赛启动与设计题目",
+      "org": "中国化工学会",
+      "url": "https://www.ciesc.cn/site/content/4618.html",
+      "kind": "学会官方通知",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "ad": {
+      "title": "第18届大广赛参赛指南",
+      "org": "全国大学生广告艺术大赛组委会",
+      "url": "https://www.sun-ada.net/home/about_intrs.html",
+      "kind": "竞赛主办方",
+      "checked": "2026-10-01",
+      "access": "通过官方搜索结果核验标题及相关摘要；当前读取范围有限，使用时请打开原始页面或文件复核。",
+      "note": ""
+    },
+    "survey": {
+      "title": "市场调查与分析大赛官方专题入口",
+      "org": "中国商业统计学会",
+      "url": "https://www.china-cssc.org/",
+      "kind": "竞赛主办方",
+      "checked": "2026-10-01",
+      "access": "官方首页已核验；第十七届状态与安排另据北京工业大学正式通知，不将该校报名截止日期当作佛山大学的截止日期。",
+      "note": ""
+    },
+    "survey-new": {
+      "title": "第十七届市调大赛启动、组队与时间安排",
+      "org": "北京工业大学经济与管理学院",
+      "url": "https://jjyglxy.bjut.edu.cn/info/1222/4901.htm",
+      "kind": "高校正式参赛通知",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "english": {
+      "title": "2026 外研社国才杯外语能力大赛赛项通知",
+      "org": "外语教学与研究出版社",
+      "url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+      "kind": "竞赛官方通知",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "innovation": {
+      "title": "中国国际大学生创新大赛（2026）通知",
+      "org": "教育部",
+      "url": "https://hudong.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+      "kind": "教育部门通知",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "structure-case": {
+      "title": "2026 结构设计广东分区赛报道 · 含佛山大学名次",
+      "org": "华南农业大学水利与土木工程学院",
+      "url": "https://wcce.scau.edu.cn/2026/0526/c13339a435452/page.htm",
+      "kind": "高校赛事报道",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "structure": {
+      "title": "2026 结构设计赛题与校内选拔说明",
+      "org": "西安交通大学教务处",
+      "url": "https://due.xjtu.edu.cn/info/1172/9745.htm",
+      "kind": "高校正式参赛通知",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "metallography": {
+      "title": "2026 全国大学生金相技能大赛大事记",
+      "org": "全国大学生金相技能大赛",
+      "url": "https://www.jxds.tech/dashiji",
+      "kind": "竞赛主办方",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "ai-contest": {
+      "title": "2026 广东省元智新潮智能体应用创新大赛通知",
+      "org": "韶关学院创新创业学院",
+      "url": "https://www.sgu.edu.cn/cxcyxy/info/1078/7584.htm",
+      "kind": "高校刊载赛事通知",
+      "checked": "2026-10-01",
+      "access": "通过官方搜索结果核验标题及相关摘要；当前读取范围有限，使用时请打开原始页面或文件复核。",
+      "note": ""
+    },
+    "qgis": {
+      "title": "QGIS 3.44 官方文档",
+      "org": "QGIS 项目",
+      "url": "https://docs.qgis.org/3.44/en/docs/",
+      "kind": "官方软件文档",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "sumo": {
+      "title": "SUMO 交通仿真官方文档",
+      "org": "德国航空航天中心 / Eclipse SUMO",
+      "url": "https://sumo.dlr.de/docs/index.html",
+      "kind": "官方软件文档",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "energy": {
+      "title": "EnergyPlus 官方文档",
+      "org": "EnergyPlus 项目",
+      "url": "https://energyplus.readthedocs.io/en/latest/",
+      "kind": "官方软件文档",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "materials": {
+      "title": "Materials Project 资料与数据说明",
+      "org": "Materials Project / 美国能源部支持项目",
+      "url": "https://docs.materialsproject.org/",
+      "kind": "研究项目文档",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "plant": {
+      "title": "PlantVillage 叶片图像与分组说明",
+      "org": "Mohanty 等 / 数据集作者",
+      "url": "https://github.com/spMohanty/PlantVillage-Dataset",
+      "kind": "数据集作者仓库",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "physionet": {
+      "title": "PhysioNet 生理信号数据库与访问分类",
+      "org": "PhysioNet 研究平台",
+      "url": "https://physionet.org/about/database/",
+      "kind": "研究数据平台",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "wine": {
+      "title": "Wine Quality 理化指标与评分数据",
+      "org": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+      "kind": "高校数据平台",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "stats": {
+      "title": "国家数据 · 统计指标检索",
+      "org": "国家统计局",
+      "url": "https://data.stats.gov.cn/",
+      "kind": "政府数据平台",
+      "checked": "2026-10-01",
+      "access": "官方页面入口已核验；交互检索需在浏览器打开，本次未提取平台全部数据或课程。",
+      "note": ""
+    },
+    "foshan-stat": {
+      "title": "2024 年佛山市国民经济和社会发展统计公报",
+      "org": "佛山市政府网站刊载统计公报",
+      "url": "https://www.foshan.gov.cn/attachment/0/537/537176/6564843.pdf",
+      "kind": "政府统计公报",
+      "checked": "2026-10-01",
+      "access": "通过官方搜索结果核验标题及相关摘要；当前读取范围有限，使用时请打开原始页面或文件复核。",
+      "note": ""
+    },
+    "patents": {
+      "title": "PATENTSCOPE 专利检索平台",
+      "org": "世界知识产权组织 WIPO",
+      "url": "https://www.wipo.int/en/web/patentscope",
+      "kind": "国际组织检索平台",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "law": {
+      "title": "国家法律法规数据库查询",
+      "org": "全国人大",
+      "url": "https://flk.npc.gov.cn/search",
+      "kind": "立法机关资料平台",
+      "checked": "2026-10-01",
+      "access": "通过官方搜索结果核验标题及相关摘要；当前读取范围有限，使用时请打开原始页面或文件复核。",
+      "note": ""
+    },
+    "fao": {
+      "title": "粮农组织统计数据库与数据范围",
+      "org": "联合国粮农组织 FAO",
+      "url": "https://www.fao.org/statistics/en/",
+      "kind": "国际组织统计资料",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "comtrade": {
+      "title": "UN Comtrade 国际贸易数据",
+      "org": "联合国统计司",
+      "url": "https://comtradeplus.un.org/",
+      "kind": "国际组织数据平台",
+      "checked": "2026-10-01",
+      "access": "官方页面入口已核验；交互检索需在浏览器打开，本次未提取平台全部数据或课程。",
+      "note": ""
+    },
+    "oral": {
+      "title": "Oral health 口腔健康背景资料",
+      "org": "世界卫生组织 WHO",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/oral-health",
+      "kind": "国际组织背景资料",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "lab-quality": {
+      "title": "实验室质量管理体系手册",
+      "org": "世界卫生组织 WHO",
+      "url": "https://www.who.int/publications/i/item/9789241548274",
+      "kind": "国际组织技术手册",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "pubchem": {
+      "title": "PubChem 数据库内容与来源说明",
+      "org": "美国国立卫生研究院 NIH / NCBI",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/docs/about",
+      "kind": "研究机构数据库说明",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "ncbi": {
+      "title": "NCBI Datasets 生物数据入口",
+      "org": "NCBI / 美国国立医学图书馆",
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/",
+      "kind": "研究机构数据平台",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "gbif": {
+      "title": "GBIF 生物多样性数据体系说明",
+      "org": "全球生物多样性信息网络 GBIF",
+      "url": "https://www.gbif.org/what-is-gbif",
+      "kind": "国际研究基础设施",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "cattle": {
+      "title": "Precision Beef 牛行为加速度数据",
+      "org": "数据集作者 / Zenodo",
+      "url": "https://zenodo.org/records/4064802",
+      "kind": "作者发布研究数据",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "calf-paper": {
+      "title": "ActBeCalf 犊牛多变量时间序列数据论文",
+      "org": "论文作者 / arXiv",
+      "url": "https://arxiv.org/abs/2409.00053",
+      "kind": "研究论文 / 预印本",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "pymc": {
+      "title": "PyMC 线性回归示例文档",
+      "org": "PyMC 项目",
+      "url": "https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/GLM_linear.html",
+      "kind": "官方软件文档",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "gutenberg": {
+      "title": "Project Gutenberg 电子书与使用说明",
+      "org": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/",
+      "kind": "原始文本资源平台",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "smartedu": {
+      "title": "国家高等教育智慧教育平台",
+      "org": "国家智慧教育公共服务平台",
+      "url": "https://higher.smartedu.cn/",
+      "kind": "官方教育资源入口",
+      "checked": "2026-10-01",
+      "access": "官方页面入口已核验；交互检索需在浏览器打开，本次未提取平台全部数据或课程。",
+      "note": ""
+    },
+    "scipy": {
+      "title": "SciPy 科学计算官方文档",
+      "org": "SciPy 项目",
+      "url": "https://docs.scipy.org/doc/scipy/",
+      "kind": "官方软件文档",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "ros": {
+      "title": "ROS 官方发行版与包索引",
+      "org": "ROS 项目",
+      "url": "https://index.ros.org/",
+      "kind": "官方软件索引",
+      "checked": "2026-10-01",
+      "access": "",
+      "note": ""
+    },
+    "sby": {
+      "title": "SymbiYosys：形式验证与 FIFO 入门",
+      "org": "YosysHQ",
+      "url": "https://yosyshq.readthedocs.io/projects/sby/en/latest/",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取文档总览及形式验证任务说明",
+      "note": "工具支持有界与无界安全性质等流程；证明结论取决于模型、假设、引擎和支持的语法。"
+    },
+    "openroad": {
+      "title": "OpenROAD：开源数字物理实现",
+      "org": "OpenROAD Team",
+      "url": "https://openroad.readthedocs.io/en/latest/",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取项目定位、流程入口及系统支持说明",
+      "note": "用于数字布局布线研究；工艺许可、设计规则与实际制造条件需另行核对。"
+    },
+    "ngspice": {
+      "title": "ngspice：电路仿真与用户手册",
+      "org": "ngspice 项目",
+      "url": "https://ngspice.sourceforge.io/docs.html",
+      "kind": "官方文档入口",
+      "checked": "2026-10-01",
+      "access": "官方搜索结果正文可读；本次直接打开超时，未读取完整手册",
+      "note": "记录官方文档入口；模型兼容、仿真选项与收敛问题需阅读对应版本手册。"
+    },
+    "pybamm": {
+      "title": "PyBaMM：电池物理建模与实验仿真",
+      "org": "PyBaMM Team",
+      "url": "https://github.com/pybamm-team/PyBaMM",
+      "kind": "作者维护的开源项目",
+      "checked": "2026-10-01",
+      "access": "已读取官方仓库 README、模型示例与版本兼容提示",
+      "note": "主分支示例对应开发状态；研究应固定发行版本、参数集和引用。"
+    },
+    "pymoo": {
+      "title": "pymoo：多目标优化与约束处理",
+      "org": "pymoo 开发团队",
+      "url": "https://pymoo.org/",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取算法目录、约束处理和指标入口",
+      "note": "提供 NSGA-II 等方法；算法工具不保证找到真实问题的全局最优。"
+    },
+    "ortools": {
+      "title": "OR-Tools：排程、路径与约束优化",
+      "org": "Google",
+      "url": "https://developers.google.com/optimization",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取官方概览与求解器说明",
+      "note": "最优性需结合求解状态、时间限制、上下界或 gap 判断；不能只比较一张排程图。"
+    },
+    "fenics": {
+      "title": "DOLFINx：有限元与 Poisson 示例",
+      "org": "FEniCS Project",
+      "url": "https://docs.fenicsproject.org/dolfinx/main/python/demos/demo_poisson.html",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取官方 Python 文档及 Poisson 演示页面",
+      "note": "所链接示例为 Poisson 问题；弹性或反问题的方程、边界条件需另外建模验证。"
+    },
+    "cantera": {
+      "title": "Cantera：反应动力学、热力学与输运",
+      "org": "Cantera 开发团队",
+      "url": "https://cantera.org/",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取官方介绍、科学参考与 Python 示例入口",
+      "note": "适用性取决于反应机理、参数、相模型和边界条件。"
+    },
+    "rdkit": {
+      "title": "RDKit：分子描述符与化学信息学",
+      "org": "RDKit 开发团队",
+      "url": "https://www.rdkit.org/docs/GettingStartedInPython.html",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取 Python 入门与描述符计算章节",
+      "note": "描述符或相似度不证明药效、安全性或临床可用性。"
+    },
+    "sklearn-cv": {
+      "title": "scikit-learn：分组与时间交叉验证",
+      "org": "scikit-learn 开发团队",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取 GroupKFold 与 TimeSeriesSplit 等章节",
+      "note": "组划分和时间划分解决不同依赖问题；须按数据产生机制选择。"
+    },
+    "statsmodels": {
+      "title": "statsmodels：统计建模与诊断",
+      "org": "statsmodels 开发团队",
+      "url": "https://www.statsmodels.org/stable/index.html",
+      "kind": "官方技术文档",
+      "checked": "2026-10-01",
+      "access": "已读取官方文档概览与入门入口",
+      "note": "统计显著性不等于因果关系；模型假设、样本结构和缺失机制需解释。"
+    },
+    "wcag": {
+      "title": "WCAG 2.2：无障碍快速参考",
+      "org": "W3C WAI",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "kind": "标准组织技术参考",
+      "checked": "2026-10-01",
+      "access": "已读取快速参考与键盘操作要求",
+      "note": "快速检查清单用于定位问题；少量检查通过不等于完整 WCAG 一致性认证。"
+    },
+    "prereg": {
+      "title": "研究预注册与探索性分析边界",
+      "org": "Center for Open Science",
+      "url": "https://www.cos.io/initiatives/prereg",
+      "kind": "研究机构方法说明",
+      "checked": "2026-10-01",
+      "access": "已读取预注册说明与常见问题",
+      "note": "预注册用于区分计划检验与探索性分析；不替代伦理审查、实验设计或统计功效。"
+    }
+  },
+  "records": [
+    {
+      "id": "major-m01",
+      "title": "机械设计制造及其自动化 · 专业资料入口",
+      "summary": "公开院系栏目归属：机电工程与自动化学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m01"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "机电工程与自动化学院",
+        "机械电气自动化"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m02",
+      "title": "机械电子工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：机电工程与自动化学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m02"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "机电工程与自动化学院",
+        "机械电气自动化"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m03",
+      "title": "车辆工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：机电工程与自动化学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m03"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "机电工程与自动化学院",
+        "机械电气自动化"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m04",
+      "title": "电气工程及其自动化 · 专业资料入口",
+      "summary": "公开院系栏目归属：机电工程与自动化学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m04"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "机电工程与自动化学院",
+        "机械电气自动化"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m05",
+      "title": "自动化 · 专业资料入口",
+      "summary": "公开院系栏目归属：机电工程与自动化学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m05"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "机电工程与自动化学院",
+        "机械电气自动化"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m06",
+      "title": "土木工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：土木与交通学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m06"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "土木与交通学院",
+        "土建交通规划"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m07",
+      "title": "交通工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：土木与交通学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m07"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "土木与交通学院",
+        "土建交通规划"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m08",
+      "title": "材料科学与工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：材料与能源学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m08"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "材料与能源学院",
+        "材料与能源"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m09",
+      "title": "材料化学 · 专业资料入口",
+      "summary": "公开院系栏目归属：材料与能源学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m09"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "材料与能源学院",
+        "材料与能源"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m10",
+      "title": "新能源材料与器件 · 专业资料入口",
+      "summary": "公开院系栏目归属：材料与能源学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m10"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "材料与能源学院",
+        "材料与能源"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m11",
+      "title": "储能科学与工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：材料与能源学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m11"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "材料与能源学院",
+        "材料与能源"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m12",
+      "title": "化学工程与工艺 · 专业资料入口",
+      "summary": "公开院系栏目归属：环境与化工学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m12"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "环境与化工学院",
+        "环境化工"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m13",
+      "title": "资源循环科学与工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：环境与化工学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m13"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "环境与化工学院",
+        "环境化工"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m14",
+      "title": "环境工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：环境与化工学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m14"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "环境与化工学院",
+        "环境化工"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m15",
+      "title": "环境科学 · 专业资料入口",
+      "summary": "公开院系栏目归属：环境与化工学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m15"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "环境与化工学院",
+        "环境化工"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m16",
+      "title": "计算机科学与技术 · 专业资料入口",
+      "summary": "公开院系栏目归属：计算机与人工智能学院(粤台人工智能学院)。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m16"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "计算机与人工智能学院(粤台人工智能学院)",
+        "计算机与智能"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m17",
+      "title": "网络工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：计算机与人工智能学院(粤台人工智能学院)。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m17"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "计算机与人工智能学院(粤台人工智能学院)",
+        "计算机与智能"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m18",
+      "title": "物联网工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：计算机与人工智能学院(粤台人工智能学院)。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m18"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "计算机与人工智能学院(粤台人工智能学院)",
+        "计算机与智能"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m19",
+      "title": "智能科学与技术 · 专业资料入口",
+      "summary": "公开院系栏目归属：计算机与人工智能学院(粤台人工智能学院)。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m19"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "计算机与人工智能学院(粤台人工智能学院)",
+        "计算机与智能"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m20",
+      "title": "电子信息工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：电子信息工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "电子信息工程学院",
+        "芯片电子光电"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m21",
+      "title": "集成电路设计与集成系统 · 专业资料入口",
+      "summary": "公开院系栏目归属：电子信息工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m21"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "电子信息工程学院",
+        "芯片电子光电"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m22",
+      "title": "物理学(师范) · 专业资料入口",
+      "summary": "公开院系栏目归属：物理与光电工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m22"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "物理与光电工程学院",
+        "芯片电子光电"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m23",
+      "title": "光源与照明 · 专业资料入口",
+      "summary": "公开院系栏目归属：物理与光电工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m23"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "物理与光电工程学院",
+        "芯片电子光电"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m24",
+      "title": "光电信息科学与工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：物理与光电工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m24"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "物理与光电工程学院",
+        "芯片电子光电"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m25",
+      "title": "人文地理与城乡规划 · 专业资料入口",
+      "summary": "公开院系栏目归属：建筑与规划学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m25"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "建筑与规划学院",
+        "土建交通规划"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m26",
+      "title": "建筑学 · 专业资料入口",
+      "summary": "公开院系栏目归属：建筑与规划学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m26"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "建筑与规划学院",
+        "土建交通规划"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m27",
+      "title": "风景园林 · 专业资料入口",
+      "summary": "公开院系栏目归属：建筑与规划学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m27"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "建筑与规划学院",
+        "土建交通规划"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m28",
+      "title": "工业设计 · 专业资料入口",
+      "summary": "公开院系栏目归属：设计学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m28"
+      ],
+      "groups": [
+        "design"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "设计学院",
+        "工业与视觉设计"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m29",
+      "title": "数字媒体技术 · 专业资料入口",
+      "summary": "公开院系栏目归属：设计学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m29"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "设计学院",
+        "计算机与智能"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m30",
+      "title": "视觉传达设计 · 专业资料入口",
+      "summary": "公开院系栏目归属：设计学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m30"
+      ],
+      "groups": [
+        "design"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "设计学院",
+        "工业与视觉设计"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m31",
+      "title": "产品设计 · 专业资料入口",
+      "summary": "公开院系栏目归属：设计学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m31"
+      ],
+      "groups": [
+        "design"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "设计学院",
+        "工业与视觉设计"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m32",
+      "title": "数学与应用数学 · 专业资料入口",
+      "summary": "公开院系栏目归属：数学学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m32"
+      ],
+      "groups": [
+        "math"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "数学学院",
+        "数学与数据"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m33",
+      "title": "数据科学与大数据技术 · 专业资料入口",
+      "summary": "公开院系栏目归属：数学学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m33"
+      ],
+      "groups": [
+        "math"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "数学学院",
+        "数学与数据"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m34",
+      "title": "教育技术学(师范) · 专业资料入口",
+      "summary": "公开院系栏目归属：人文学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m34"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "人文学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m35",
+      "title": "学前教育 · 专业资料入口",
+      "summary": "公开院系栏目归属：人文学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m35"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "人文学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m36",
+      "title": "汉语言文学(师范) · 专业资料入口",
+      "summary": "公开院系栏目归属：人文学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m36"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "人文学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m37",
+      "title": "英语 · 专业资料入口",
+      "summary": "公开院系栏目归属：人文学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m37"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "人文学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m38",
+      "title": "法学(涉外法治) · 专业资料入口",
+      "summary": "公开院系栏目归属：法学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m38"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "法学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m39",
+      "title": "知识产权 · 专业资料入口",
+      "summary": "公开院系栏目归属：法学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m39"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "法学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m40",
+      "title": "思想政治教育 · 专业资料入口",
+      "summary": "公开院系栏目归属：马克思主义学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m40"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "马克思主义学院",
+        "人文教育法学"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m41",
+      "title": "金融学 · 专业资料入口",
+      "summary": "公开院系栏目归属：经济贸易学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m41"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "经济贸易学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m42",
+      "title": "国际经济与贸易 · 专业资料入口",
+      "summary": "公开院系栏目归属：经济贸易学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m42"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "经济贸易学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m43",
+      "title": "工商管理 · 专业资料入口",
+      "summary": "公开院系栏目归属：管理学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m43"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "管理学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m44",
+      "title": "市场营销 · 专业资料入口",
+      "summary": "公开院系栏目归属：管理学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m44"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "管理学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m45",
+      "title": "会计学 · 专业资料入口",
+      "summary": "公开院系栏目归属：管理学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m45"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "管理学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m46",
+      "title": "人力资源管理 · 专业资料入口",
+      "summary": "公开院系栏目归属：管理学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m46"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "管理学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m47",
+      "title": "工业工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：管理学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m47"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "管理学院",
+        "机械电气自动化"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m48",
+      "title": "旅游管理 · 专业资料入口",
+      "summary": "公开院系栏目归属：管理学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m48"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "管理学院",
+        "经济管理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m49",
+      "title": "食品科学与工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：食品科学与工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m49"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "食品科学与工程学院",
+        "农牧生物食品"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m50",
+      "title": "食品质量与安全 · 专业资料入口",
+      "summary": "公开院系栏目归属：食品科学与工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m50"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "食品科学与工程学院",
+        "农牧生物食品"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m51",
+      "title": "生物工程 · 专业资料入口",
+      "summary": "公开院系栏目归属：农业与生物工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m51"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "农业与生物工程学院",
+        "农牧生物食品"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m52",
+      "title": "园艺 · 专业资料入口",
+      "summary": "公开院系栏目归属：农业与生物工程学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m52"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "农业与生物工程学院",
+        "农牧生物食品"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m53",
+      "title": "动物科学 · 专业资料入口",
+      "summary": "公开院系栏目归属：动物科技学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m53"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "动物科技学院",
+        "农牧生物食品"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m54",
+      "title": "动物医学 · 专业资料入口",
+      "summary": "公开院系栏目归属：动物科技学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m54"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "动物科技学院",
+        "农牧生物食品"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m55",
+      "title": "口腔医学 · 专业资料入口",
+      "summary": "公开院系栏目归属：医学部。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m55"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "医学部",
+        "医药护理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m56",
+      "title": "药学 · 专业资料入口",
+      "summary": "公开院系栏目归属：医学部。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m56"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "医学部",
+        "医药护理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m57",
+      "title": "医学检验技术 · 专业资料入口",
+      "summary": "公开院系栏目归属：医学部。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m57"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "医学部",
+        "医药护理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m58",
+      "title": "护理学 · 专业资料入口",
+      "summary": "公开院系栏目归属：医学部。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m58"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "医学部",
+        "医药护理"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "major-m59",
+      "title": "环境工程(中外合作办学) · 专业资料入口",
+      "summary": "公开院系栏目归属：国际交流学院。用于按专业查找选题、竞赛和背景资源；具体培养要求向学院确认。",
+      "type": "major",
+      "majors": [
+        "m59"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "fosu-catalog",
+        "fosu-charter"
+      ],
+      "tags": [
+        "国际交流学院",
+        "环境化工"
+      ],
+      "sections": [
+        {
+          "heading": "怎样使用专业索引",
+          "items": [
+            "在专业筛选框选择本专业，可以查看跨专业共享的资源与建议。",
+            "学院栏目来自教育部门公开院校信息，不将通用技术资料当作佛山大学发布的教学文件。",
+            "正式毕设需要核对导师研究方向、可用设备、培养方案与当届学院通知。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": -5,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "ic01",
+      "title": "RISC-V 配套定点点积加速器",
+      "summary": "实现一个可独立验证的 MAC 点积模块，再接入 RISC-V 系统，研究定点精度、访存开销与计算速度的关系。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "riscv",
+        "ibex",
+        "cocotb"
+      ],
+      "tags": [
+        "RISC-V",
+        "FPGA",
+        "MAC",
+        "定点"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "实现一个可独立验证的 MAC 点积模块，再接入 RISC-V 系统，研究定点精度、访存开销与计算速度的关系。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "Python 编写定点黄金模型；定义输入位宽、舍入和饱和规则。",
+            "先写独立 Verilog MAC 模块和边界测试，再增加寄存器接口。",
+            "选择可用开源内核与 FPGA，按许可接入；对比同一任务的纯软件实现。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "逐样本比对定点输出；测量周期、LUT / DSP / BRAM、时钟约束与数据搬运占比。",
+            "加速比必须使用相同输入规模、精度与计时范围；不预先承诺性能。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 16,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "难点在定点误差、处理器接口和加速收益的公平比较。",
+        "prerequisites": [
+          "数字逻辑与 Verilog",
+          "C 与计算机组成",
+          "定点数表示"
+        ],
+        "resources": [
+          "RTL 仿真器与编译工具链",
+          "FPGA 为后续可选条件"
+        ],
+        "minimum": "先独立实现点积核，用 C 参考值核对边界向量。",
+        "stretch": "加入软核接口、搬运时间与资源占用的端到端对照。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic02",
+      "title": "TinyML 活动识别与 INT8 量化",
+      "summary": "从手机传感器活动识别开始，对比浮点与 INT8 模型，再研究端侧推理的内存和延迟开销。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m33"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "math"
+      ],
+      "sourceIds": [
+        "har",
+        "cmsis",
+        "tiny"
+      ],
+      "tags": [
+        "TinyML",
+        "INT8",
+        "传感器",
+        "机器学习"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "从手机传感器活动识别开始，对比浮点与 INT8 模型，再研究端侧推理的内存和延迟开销。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "使用 UCI HAR 官方划分，确认采样、活动标签与受试者范围。",
+            "训练轻量基线，记录预处理、随机种子和量化方法。",
+            "部署到可用 MCU 或先完成主机推理；再分析瓶颈算子。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "准确率、宏平均 F1、混淆矩阵、模型大小、峰值 RAM、推理延迟。",
+            "按受试者划分，避免相邻窗口泄漏；功耗数据需要统一测量条件。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "HAR 是人体腰部手机数据，不能作为腕部穿戴或动物行为的直接证据。平台、许可与数据获取条件先确认。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 15,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "需同时处理对象隔离、量化误差和端侧资源限制。",
+        "prerequisites": [
+          "Python 数据处理",
+          "基础分类与评价",
+          "C 数组与内存"
+        ],
+        "resources": [
+          "公开 HAR 数据",
+          "普通电脑；开发板部署为可选阶段"
+        ],
+        "minimum": "先做按受试者划分的传统分类基线。",
+        "stretch": "比较浮点与 INT8，并测实际内存与推理延迟。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "ic03",
+      "title": "FIFO / UART 的 cocotb 自动化验证",
+      "summary": "选择一个小型数字 IP，建立测试计划、随机激励和自动比对，重点证明边界条件与错误注入能够被发现。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "cocotb",
+        "opentitan"
+      ],
+      "tags": [
+        "验证",
+        "FIFO",
+        "UART",
+        "Python"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "选择一个小型数字 IP，建立测试计划、随机激励和自动比对，重点证明边界条件与错误注入能够被发现。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "从同步 FIFO 开始，明确满空、复位和同时读写的行为。",
+            "建立 Python 参考队列与 cocotb 驱动，运行定向和随机测试。",
+            "注入指针、计数或边界判断错误，保存稳定复现用例。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "功能场景覆盖、错误检测率、随机种子复现、运行时间。",
+            "明确软件功能覆盖与 HDL 代码覆盖的区别；仿真器支持情况实际确认。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 14,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "测试平台与 DUT 时序需一致，重点是发现错误而非堆测试数。",
+        "prerequisites": [
+          "同步时序与 FIFO",
+          "Verilog 仿真",
+          "Python 队列"
+        ],
+        "resources": [
+          "支持 cocotb 的 HDL 仿真器",
+          "普通电脑"
+        ],
+        "minimum": "只验证一个同步 FIFO 的满空、复位与同时读写。",
+        "stretch": "增加 UART、错误注入与功能覆盖。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "ic04",
+      "title": "可配置定点 FIR 滤波器",
+      "summary": "比较不同抽头数、系数位宽与流水结构，完成信号处理模块和软件黄金模型。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "cocotb",
+        "riscv"
+      ],
+      "tags": [
+        "DSP",
+        "FIR",
+        "定点",
+        "FPGA"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "比较不同抽头数、系数位宽与流水结构，完成信号处理模块和软件黄金模型。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "在 Python 中设计滤波器并定点化。",
+            "实现串行或流水 MAC，先用脉冲和正弦输入验证。",
+            "在 FPGA 对比不同配置的延迟与资源，记录量化误差。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "频响误差、输出信噪比、吞吐、延迟、资源与时序。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 11,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "定点位宽、截断和饱和会影响结果，需建立数学参考。",
+        "prerequisites": [
+          "离散卷积基础",
+          "Verilog",
+          "二进制定点数"
+        ],
+        "resources": [
+          "Python 参考模型",
+          "HDL 仿真器"
+        ],
+        "minimum": "固定系数和位宽，实现小阶数 FIR 并逐点对比。",
+        "stretch": "参数化流水线并研究精度与资源权衡。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "ic05",
+      "title": "INT8 矩阵乘法加速器",
+      "summary": "把范围限定为小规模矩阵乘法，研究并行 MAC 与片上缓存对计算利用率的影响。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m16",
+        "m19"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "hls4ml",
+        "cocotb",
+        "nju"
+      ],
+      "tags": [
+        "矩阵乘法",
+        "INT8",
+        "数据复用",
+        "FPGA"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "把范围限定为小规模矩阵乘法，研究并行 MAC 与片上缓存对计算利用率的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "确定矩阵尺寸、数据布局和累加位宽。",
+            "实现一个可验证阵列，再加入分块与数据复用。",
+            "比较相同精度下的软件、串行硬件与并行硬件。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "逐元素误差、吞吐、DSP 利用率、访存占比、BRAM 与功耗测量条件。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "数据布局、累加位宽与存储瓶颈需要共同设计。",
+        "prerequisites": [
+          "矩阵乘法",
+          "RTL 流水线",
+          "片上存储与定点数"
+        ],
+        "resources": [
+          "仿真环境",
+          "FPGA 与综合工具为可选验证资源"
+        ],
+        "minimum": "做小规模固定矩阵并验证溢出和尾块。",
+        "stretch": "研究分块、存储带宽与计算利用率。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic06",
+      "title": "DMA 双缓冲与计算搬运重叠",
+      "summary": "在已有计算模块上改进数据通路，比较阻塞搬运与双缓冲对端到端延迟的影响。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "ibex",
+        "cocotb"
+      ],
+      "tags": [
+        "DMA",
+        "双缓冲",
+        "数据搬运"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "在已有计算模块上改进数据通路，比较阻塞搬运与双缓冲对端到端延迟的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "建立计算和搬运时间模型。",
+            "实现缓冲切换、握手与错误状态；仿真随机背压。",
+            "测量不同数据量与计算强度，绘制瓶颈边界。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "端到端延迟、有效带宽、缓冲区占用、异常恢复与资源增加。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "搬运与计算重叠涉及握手、状态机和边界一致性。",
+        "prerequisites": [
+          "总线与握手协议",
+          "状态机",
+          "性能计数"
+        ],
+        "resources": [
+          "RTL 仿真",
+          "可测总线或 FPGA 环境"
+        ],
+        "minimum": "先用仿真内存验证单缓冲正确性。",
+        "stretch": "对比双缓冲并计入搬运与等待时间。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic07",
+      "title": "异步 FIFO 的 CDC 与边界验证",
+      "summary": "实现跨时钟域 FIFO，围绕 Gray 指针、复位关系与独立时钟压力测试展开。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "cocotb",
+        "opentitan"
+      ],
+      "tags": [
+        "CDC",
+        "异步 FIFO",
+        "Gray码"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "实现跨时钟域 FIFO，围绕 Gray 指针、复位关系与独立时钟压力测试展开。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先掌握同步 FIFO，再构建 Gray 指针与双级同步器。",
+            "设置不同比例、相位和暂停时钟，测试异步复位场景。",
+            "综合后确认 CDC 约束与工具报告，区分数字仿真和亚稳态分析。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "数据次序、满空安全性、丢包重复、复位恢复、CDC 检查项。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "普通 RTL 仿真不能证明亚稳态可靠性；跨时钟约束和 MTBF 分析需工具与导师支持。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "跨时钟域正确性不能由一条波形或同步仿真证明。",
+        "prerequisites": [
+          "Gray 码与同步器",
+          "异步时钟",
+          "验证基础"
+        ],
+        "resources": [
+          "多时钟仿真",
+          "可选形式验证工具"
+        ],
+        "minimum": "先写清复位与满空语义，做不同频率相位测试。",
+        "stretch": "加入性质检查、异常复位与 CDC 分析。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic08",
+      "title": "数字锁相放大器信号提取",
+      "summary": "利用同步解调从含噪输入中提取目标频率分量，比较低通参数与积分时间。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m24"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "cocotb",
+        "hust"
+      ],
+      "tags": [
+        "信号处理",
+        "同步解调",
+        "测量"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "利用同步解调从含噪输入中提取目标频率分量，比较低通参数与积分时间。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "建立含噪正弦信号及参考模型。",
+            "实现参考波形、乘法解调和低通链路。",
+            "用仿真及低压信号发生设备测量频率偏差和噪声影响。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "幅值误差、相位误差、等效噪声与响应时间。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "参考相位、低通响应和定点误差共同影响提取精度。",
+        "prerequisites": [
+          "信号与系统",
+          "数字滤波",
+          "RTL 或嵌入式编程"
+        ],
+        "resources": [
+          "Python 信号模型",
+          "FPGA 或采集设备可选"
+        ],
+        "minimum": "只用合成信号验证一个频点的同步解调。",
+        "stretch": "加入失谐、噪声和实测标定对照。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic09",
+      "title": "低功耗采集与事件唤醒节点",
+      "summary": "设计周期采样与事件唤醒两种策略，研究采样质量、响应时间和能耗的折中；动物方向需另采适用数据。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m18",
+        "m53"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "agri"
+      ],
+      "sourceIds": [
+        "cmsis",
+        "har",
+        "soc"
+      ],
+      "tags": [
+        "低功耗",
+        "传感器",
+        "跨专业",
+        "物联网"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "设计周期采样与事件唤醒两种策略，研究采样质量、响应时间和能耗的折中；动物方向需另采适用数据。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "在模拟信号或已有非动物数据上建立状态机。",
+            "记录睡眠、采样和通信电流曲线及完整测量条件。",
+            "若接入养殖场，先由动科团队定义目标行为和标注规范。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "每事件能量、平均电流、漏报误报、唤醒延迟与掉线恢复。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "人体 HAR 仅用于验证技术链路；动物数据、佩戴方式和现场采集需专业团队与相关管理要求确认。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "需要测量完整唤醒链路和漏检，不能只使用芯片标称功耗。",
+        "prerequisites": [
+          "嵌入式 C",
+          "采样与中断",
+          "基本电路测量"
+        ],
+        "resources": [
+          "开发板与传感器",
+          "测量工具需先确认"
+        ],
+        "minimum": "先在仿真日志中评价事件触发与漏检。",
+        "stretch": "实测睡眠、唤醒与通信能量并计入采样开销。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "ic10",
+      "title": "两级 CMOS 运放设计与工艺角分析",
+      "summary": "在获得授权 PDK 与导师指导后，围绕增益、带宽、稳定性和功耗开展模拟电路设计。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fzu",
+        "ciciec-topics"
+      ],
+      "tags": [
+        "模拟电路",
+        "运放",
+        "PVT",
+        "EDA"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "在获得授权 PDK 与导师指导后，围绕增益、带宽、稳定性和功耗开展模拟电路设计。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "从规格、器件模型和偏置方案出发。",
+            "完成 DC、AC、瞬态与稳定性分析。",
+            "比较补偿参数和 PVT 工艺角；有资源后进行版图及后仿真。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "开环增益、单位增益带宽、相位裕度、压摆率、功耗、输出摆幅。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "PDK、仿真器、版图规则与授权尚未确认；先完成仿真闭环，不把流片作为最低交付。"
+          ]
+        }
+      ],
+      "level": "导师协作",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 3,
+          "validation": 3
+        },
+        "reason": "器件模型、补偿、工艺角和稳定性分析依赖专业条件。",
+        "prerequisites": [
+          "模拟电路",
+          "MOS 小信号模型",
+          "反馈与频率响应"
+        ],
+        "resources": [
+          "合法可用的工艺模型",
+          "电路仿真器与导师"
+        ],
+        "minimum": "使用教学模型完成工作点与 AC 分析。",
+        "stretch": "加入 PVT、负载变化与稳定性扫描。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic11",
+      "title": "SAR ADC 行为建模与控制逻辑",
+      "summary": "先用行为模型研究逐次逼近过程，再实现控制状态机，分析噪声、失配与时序影响。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "ciciec-topics",
+        "cocotb"
+      ],
+      "tags": [
+        "SAR ADC",
+        "行为模型",
+        "控制逻辑"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "先用行为模型研究逐次逼近过程，再实现控制状态机，分析噪声、失配与时序影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "搭建理想 ADC 与逐次逼近参考模型。",
+            "加入比较器偏置、电容失配和采样噪声的可控假设。",
+            "实现数字控制并与行为模型联调；模拟晶体管设计作为扩展。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "量化误差、DNL / INL、控制周期、不同输入条件下的动态指标。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "先确认工具、数据与导师支持；保存可复现脚本和失败记录，不以演示效果代替实验结果。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "比较器偏置、建立时间和控制时序需要明确建模假设。",
+        "prerequisites": [
+          "ADC 基础",
+          "状态机",
+          "概率与定点数"
+        ],
+        "resources": [
+          "Python 行为模型",
+          "HDL 仿真器"
+        ],
+        "minimum": "只建理想 SAR 转换和控制序列。",
+        "stretch": "逐项注入非理想并研究码型与误差变化。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "ic12",
+      "title": "数字 IP 物理实现约束研究",
+      "summary": "对一个小型 RTL IP 执行可复现综合和布局布线，研究时钟约束对面积、时序与拥塞的影响。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "openlane",
+        "cocotb"
+      ],
+      "tags": [
+        "物理设计",
+        "PPA",
+        "OpenLane",
+        "RTL"
+      ],
+      "sections": [
+        {
+          "heading": "要解决的问题与边界",
+          "items": [
+            "对一个小型 RTL IP 执行可复现综合和布局布线，研究时钟约束对面积、时序与拥塞的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "选择小型 FIFO 或 FIR，先保证功能正确。",
+            "按照 OpenLane 2 文档选择支持的开源 PDK 和流程。",
+            "扫多个时钟约束，保存配置、日志和结果差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价指标",
+          "items": [
+            "面积、违例、关键路径、拥塞、DRC 报告与运行成本。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先按课程或导师要求完成原型，再与当届官方赛题逐项对照；题目方向相近不等于满足参赛要求。"
+          ]
+        },
+        {
+          "heading": "准备阶段与交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "阶段交付：问题定义、已有工作对照、最小原型、实验记录、复现说明和项目演示。"
+          ]
+        },
+        {
+          "heading": "资源与难点",
+          "items": [
+            "流程结果取决于 PDK 和工具版本，不能直接代表商用工艺或最终流片性能。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 2,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 3,
+          "validation": 3
+        },
+        "reason": "从约束到布线后结果的可重复比较涉及工艺和工具流程。",
+        "prerequisites": [
+          "逻辑综合",
+          "时序分析与 SDC",
+          "Linux 基础"
+        ],
+        "resources": [
+          "OpenLane 或 OpenROAD 环境",
+          "可用 PDK 与运行资源"
+        ],
+        "minimum": "固定一个小 IP 和工具版本，跑通基线。",
+        "stretch": "扫频率与布局参数，检查时序、拥塞和规则违例。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "contest-ic",
+      "title": "全国大学生集成电路创新创业大赛",
+      "summary": "芯片设计、应用与企业命题的专业竞赛入口。适合把 RTL、验证、模拟设计或系统原型积累为参赛能力。",
+      "type": "contest",
+      "majors": [
+        "m21",
+        "m20",
+        "m16",
+        "m19"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "ciciec",
+        "ciciec-topics"
+      ],
+      "tags": [
+        "竞赛",
+        "官方入口",
+        "往届备赛"
+      ],
+      "sections": [
+        {
+          "heading": "赛季状态与准备建议",
+          "items": [
+            "第十届 2026 年总决赛获奖公示已发布；当前以往届题目学习与下一届通知为主。",
+            "企业平台、指定工具、独立设计要求和提交物逐项核对，不凭方向匹配认定可参赛。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 5,
+      "status": "2026 赛季已公布结果",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "contest-soc",
+      "title": "全国大学生嵌入式芯片与系统设计竞赛",
+      "summary": "面向嵌入式芯片应用、系统开发与展示，适合端侧识别、采集和控制原型。",
+      "type": "contest",
+      "majors": [
+        "m21",
+        "m20",
+        "m16",
+        "m19",
+        "m18",
+        "m05"
+      ],
+      "groups": [
+        "machines",
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "soc"
+      ],
+      "tags": [
+        "竞赛",
+        "官方入口",
+        "往届备赛"
+      ],
+      "sections": [
+        {
+          "heading": "赛季状态与准备建议",
+          "items": [
+            "2026 年官方安排包含 4 月 20 日报名截止、7 月 9 日作品提交和 8 月决赛；当前不标记为可报名。",
+            "学习官方赛题平台、演示与技术报告要求，后续报名以新通知为准。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 5,
+      "status": "2026 赛季已结束",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "contest-electronic",
+      "title": "电子设计竞赛 · 2026 专题与赛区信息",
+      "summary": "测量、信号处理、控制和电源等方向的赛事资料入口；需要区分不同年份及赛区赛事。",
+      "type": "contest",
+      "majors": [
+        "m21",
+        "m20",
+        "m04",
+        "m05",
+        "m24"
+      ],
+      "groups": [
+        "machines",
+        "circuits"
+      ],
+      "sourceIds": [
+        "nuedc"
+      ],
+      "tags": [
+        "竞赛",
+        "官方入口",
+        "往届备赛"
+      ],
+      "sections": [
+        {
+          "heading": "赛季状态与准备建议",
+          "items": [
+            "2026 专题涉及赛区与专题竞赛；不能直接按 2025 年全国综合电赛规则套用。",
+            "准备基础模拟电路、MCU、测量仪器与快速调试能力；先向本校组织单位确认选拔安排。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 5,
+      "status": "核对具体赛区",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "case-riscv",
+      "title": "江南大学：RISC-V CPU 设计获奖案例",
+      "summary": "2025 年高校官方报道中的本科生 RISC-V CPU 项目获全国一等奖。可参考 CPU 方向的任务规模与技术展示。",
+      "type": "case",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "jiangnan"
+      ],
+      "tags": [
+        "2025",
+        "RISC-V",
+        "全国一等奖"
+      ],
+      "sections": [
+        {
+          "heading": "可以借鉴的工作方式",
+          "items": [
+            "从原始报道确认项目题目、赛季与奖项，再查看公开技术材料。",
+            "拟议的小规模选题与获奖作品难度不同；报道没有证明当前个人方案可以直接复现或获奖。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 3,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "case-tensor",
+      "title": "南京大学：多精度可重构多核张量计算",
+      "summary": "2025 年高校官方报道的相关项目获全国一等奖。可以学习精度、并行结构与数据通路的研究问题。",
+      "type": "case",
+      "majors": [
+        "m21",
+        "m19",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "nju"
+      ],
+      "tags": [
+        "2025",
+        "张量计算",
+        "全国一等奖"
+      ],
+      "sections": [
+        {
+          "heading": "可以借鉴的工作方式",
+          "items": [
+            "从原始报道确认项目题目、赛季与奖项，再查看公开技术材料。",
+            "拟议的小规模选题与获奖作品难度不同；报道没有证明当前个人方案可以直接复现或获奖。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 3,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "case-fzu-digital",
+      "title": "福州大学：RISC-V CPU + FPGA",
+      "summary": "2026 年官方报道中的七星微杯相关项目获全国二等奖。该案例用于理解数字设计、验证与系统演示的结合。",
+      "type": "case",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "fzu"
+      ],
+      "tags": [
+        "2026",
+        "FPGA",
+        "全国二等奖"
+      ],
+      "sections": [
+        {
+          "heading": "可以借鉴的工作方式",
+          "items": [
+            "从原始报道确认项目题目、赛季与奖项，再查看公开技术材料。",
+            "拟议的小规模选题与获奖作品难度不同；报道没有证明当前个人方案可以直接复现或获奖。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 3,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "case-fzu-analog",
+      "title": "福州大学：低噪声高输入阻抗模拟前端",
+      "summary": "2026 年官方报道中的芯海杯相关模拟前端项目获企业专项及全国一等奖。体现明确测量对象与模拟指标的重要性。",
+      "type": "case",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "fzu"
+      ],
+      "tags": [
+        "2026",
+        "模拟前端",
+        "全国一等奖"
+      ],
+      "sections": [
+        {
+          "heading": "可以借鉴的工作方式",
+          "items": [
+            "从原始报道确认项目题目、赛季与奖项，再查看公开技术材料。",
+            "拟议的小规模选题与获奖作品难度不同；报道没有证明当前个人方案可以直接复现或获奖。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 3,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "case-wearable",
+      "title": "深圳职业技术大学：校园体能穿戴项目",
+      "summary": "2026 年学院官方搜索摘要显示相关项目获嵌入式竞赛全国一等奖及软通专项奖。正文尚未读到，细节需打开原文继续核对。",
+      "type": "case",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m58"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "medicine"
+      ],
+      "sourceIds": [
+        "szpu"
+      ],
+      "tags": [
+        "2026",
+        "穿戴",
+        "摘要核验"
+      ],
+      "sections": [
+        {
+          "heading": "可以借鉴的工作方式",
+          "items": [
+            "从原始报道确认项目题目、赛季与奖项，再查看公开技术材料。",
+            "拟议的小规模选题与获奖作品难度不同；报道没有证明当前个人方案可以直接复现或获奖。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 3,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "case-vision",
+      "title": "华中科技大学：单目视觉尺寸测量",
+      "summary": "2025 年 C 题相关官方获奖报道，可参考标定、误差控制与测量实验的项目结构。",
+      "type": "case",
+      "majors": [
+        "m20",
+        "m24",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "hust"
+      ],
+      "tags": [
+        "2025",
+        "视觉测量",
+        "全国一等奖"
+      ],
+      "sections": [
+        {
+          "heading": "可以借鉴的工作方式",
+          "items": [
+            "从原始报道确认项目题目、赛季与奖项，再查看公开技术材料。",
+            "拟议的小规模选题与获奖作品难度不同；报道没有证明当前个人方案可以直接复现或获奖。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 3,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-riscv",
+      "title": "RISC-V 官方指令集规范",
+      "summary": "查看基础指令、扩展与实现约束，作为 CPU 和加速器接口设计的背景依据。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "riscv"
+      ],
+      "tags": [
+        "RISC-V",
+        "ISA",
+        "CPU"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "选定规范版本与扩展；明确自己实现和复用的边界。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-ibex",
+      "title": "Ibex 开源 RISC-V 核心",
+      "summary": "阅读核心结构、集成接口与配置说明，用于系统集成与验证路线研究。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "ibex"
+      ],
+      "tags": [
+        "RISC-V",
+        "SoC",
+        "开源核"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "使用前阅读许可、集成要求与支持工具；参赛是否允许复用由当届规则决定。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-cocotb",
+      "title": "cocotb · Python 数字电路验证",
+      "summary": "官方文档提供驱动、监视和测试机制，支持用 Python 组织 RTL 验证。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "cocotb"
+      ],
+      "tags": [
+        "Python",
+        "RTL",
+        "验证"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "核对仿真器兼容性、随机种子及测试失败复现方式。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-opentitan",
+      "title": "OpenTitan · 验证方法学",
+      "summary": "学习测试计划、环境分层、覆盖与回归组织，可缩小到一个教学 IP 实践。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "opentitan"
+      ],
+      "tags": [
+        "验证",
+        "DV",
+        "测试计划"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "成熟项目规模较大，先借鉴方法；不建议大二直接复刻完整验证平台。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-har",
+      "title": "UCI HAR · 人体活动传感器数据",
+      "summary": "人体腰部手机加速度和陀螺仪活动识别数据，用于端侧算法和定点化实验。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m19",
+        "m16",
+        "m33",
+        "m58"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "math",
+        "medicine"
+      ],
+      "sourceIds": [
+        "har"
+      ],
+      "tags": [
+        "传感器",
+        "活动识别",
+        "公开数据"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "30 名受试者、6 类活动、50 Hz，常用窗口为 128 点；按受试者划分。",
+            "不能把人体数据结论直接推广到动物、腕部设备或临床应用。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-cwru",
+      "title": "CWRU · 轴承故障实验数据",
+      "summary": "高校轴承数据平台，可用于机械振动诊断与特征提取的学习实验。",
+      "type": "resource",
+      "majors": [
+        "m01",
+        "m02",
+        "m05",
+        "m20",
+        "m33"
+      ],
+      "groups": [
+        "machines",
+        "circuits",
+        "math"
+      ],
+      "sourceIds": [
+        "cwru"
+      ],
+      "tags": [
+        "轴承",
+        "振动",
+        "故障诊断"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "按工况或实验批次划分；同一长记录的邻近切片不跨训练测试。",
+            "台架数据与真实工厂差异要单独讨论。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-cmsis",
+      "title": "CMSIS-NN · MCU 神经网络算子",
+      "summary": "Arm 官方量化算子文档，适合研究端侧模型部署的内存与延迟。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m18"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "cmsis"
+      ],
+      "tags": [
+        "TinyML",
+        "MCU",
+        "INT8"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "核对芯片、编译器、算子支持与版本；对照同一平台基线。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-hls4ml",
+      "title": "hls4ml · 模型到 FPGA 实现",
+      "summary": "官方算子属性与硬件转换资料，便于研究精度与并行资源的权衡。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m19",
+        "m20"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "hls4ml"
+      ],
+      "tags": [
+        "FPGA",
+        "量化",
+        "HLS"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "转换成功不代表功能和性能达标；软件与硬件输出、时序分别验证。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-openlane",
+      "title": "OpenLane 2 · 数字物理实现",
+      "summary": "官方新手指南提供流程入口，可研究小型 IP 的面积和时序约束。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "openlane"
+      ],
+      "tags": [
+        "EDA",
+        "物理设计",
+        "PPA"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "确认 PDK、工具版本与许可；过程报告不等于芯片流片验证。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "resource-tiny",
+      "title": "MLPerf Tiny · 端侧基准方法",
+      "summary": "研究机构发布的 Tiny 基准资料，用于了解准确率与性能评价的统一条件。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m19",
+        "m20"
+      ],
+      "groups": [
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "tiny"
+      ],
+      "tags": [
+        "TinyML",
+        "基准",
+        "延迟"
+      ],
+      "sections": [
+        {
+          "heading": "使用提示",
+          "items": [
+            "自主项目结果与官方榜单条件不一致时，不宣称达到榜单名次。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 0,
+      "status": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "guide-ic",
+      "title": "集成电路专业 · 毕设与竞赛完整调研",
+      "summary": "面向大二的完整研究材料：12 个选题、3 个展开方案、获奖案例、阶段计划与来源。可全文阅读或下载 Markdown。",
+      "type": "guide",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "ciciec",
+        "riscv",
+        "cocotb",
+        "har"
+      ],
+      "tags": [
+        "大二",
+        "详细调研",
+        "Markdown 下载"
+      ],
+      "sections": [
+        {
+          "heading": "适用条件",
+          "items": [
+            "已确认专业与年级；编程水平、实验室设备和导师资源未确认。每周投入与预算是计划估计。",
+            "优先把一个范围清楚的小项目做完，再按导师和竞赛要求扩展。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 10,
+      "status": "",
+      "date": "2026-09-30",
+      "report": true
+    },
+    {
+      "id": "topic-01",
+      "title": "轴承振动故障识别与工况泛化",
+      "summary": "研究不同转速负载下诊断效果的变化，避免只在同一实验记录的切片上获得高分。",
+      "type": "topic",
+      "majors": [
+        "m01"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "cwru",
+        "scipy"
+      ],
+      "tags": [
+        "轴承",
+        "振动",
+        "故障诊断"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "研究不同转速负载下诊断效果的变化，避免只在同一实验记录的切片上获得高分。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "整理 CWRU 数据与工况字段；建立时域、频域特征基线。",
+            "按工况或实验批次隔离训练与测试；对比传统分类器。",
+            "加入噪声与不同采样设置，报告模型失败工况。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "宏平均 F1、跨工况误差、特征贡献、推理时间。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "按工况或设备隔离数据，避免相邻窗口泄漏。",
+        "prerequisites": [
+          "信号处理",
+          "Python 与分类评价"
+        ],
+        "resources": [
+          "CWRU 等公开振动数据"
+        ],
+        "minimum": "只做一个工况与清晰分组基线。",
+        "stretch": "加入留出工况和噪声鲁棒性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-02",
+      "title": "面向设备状态监测的边缘采集节点",
+      "summary": "围绕振动采集、数据完整性与断连恢复建立一个可以测量的机电系统原型。",
+      "type": "topic",
+      "majors": [
+        "m02"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "cwru",
+        "cmsis"
+      ],
+      "tags": [
+        "机电",
+        "采集",
+        "嵌入式"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕振动采集、数据完整性与断连恢复建立一个可以测量的机电系统原型。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "先用公开振动数据验证特征提取。",
+            "用可借用传感器与 MCU 实现采样、缓存和上传。",
+            "设置丢包、断电和通信中断实验，检查数据恢复。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "采样偏差、丢包率、缓存上限、故障恢复、能耗。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "采样、时戳、通信与故障恢复需要闭环检查。",
+        "prerequisites": [
+          "嵌入式编程",
+          "传感器接口"
+        ],
+        "resources": [
+          "开发板与传感器；先确认借用条件"
+        ],
+        "minimum": "先用模拟日志检查记录和恢复。",
+        "stretch": "增加实际采样与端侧异常提示。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-03",
+      "title": "校园路段车流与出行效率仿真",
+      "summary": "把一个路口或短路段作为对象，研究需求变化和信号策略对通行的影响。",
+      "type": "topic",
+      "majors": [
+        "m03"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "sumo",
+        "qgis"
+      ],
+      "tags": [
+        "交通",
+        "车辆",
+        "SUMO"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "把一个路口或短路段作为对象，研究需求变化和信号策略对通行的影响。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "获取可使用路网与匿名计数，注明观察时段。",
+            "在 SUMO 构建简单需求和基线信号。",
+            "对比不同流量与方案，做随机重复实验。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "排队长度、平均延迟、吞吐、不同需求下鲁棒性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "交通需求与模型参数会影响结论，需重复仿真。",
+        "prerequisites": [
+          "Python",
+          "交通流基础"
+        ],
+        "resources": [
+          "SUMO 与合成路网"
+        ],
+        "minimum": "只分析一个路口和固定需求。",
+        "stretch": "扩展不同车流与随机种子。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-04",
+      "title": "低压负载用电监测与异常事件检测",
+      "summary": "在授权的低压实验平台研究电流采集与事件识别，把量程和测量误差作为核心问题。",
+      "type": "topic",
+      "majors": [
+        "m04"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "nuedc",
+        "scipy"
+      ],
+      "tags": [
+        "电气",
+        "测量",
+        "异常检测"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在授权的低压实验平台研究电流采集与事件识别，把量程和测量误差作为核心问题。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "使用隔离或低压实验信号建立采集链路。",
+            "记录稳态和启停事件，建立阈值基线。",
+            "对比采样频率、滤波与异常检测策略。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "测量误差、误报漏报、事件响应、记录完整性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "优先低压、隔离实验和借用测量设备；实际强电接线及设备改动由具备资质的实验室人员安排。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "测量链路与异常定义需要校准和对照。",
+        "prerequisites": [
+          "电路基础",
+          "采样与误差"
+        ],
+        "resources": [
+          "低压教学装置与仪表，需教师安排"
+        ],
+        "minimum": "先用公开或合成负载曲线。",
+        "stretch": "开展低压受控测量和误差评估。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-05",
+      "title": "PID 与数据驱动控制的仿真对比",
+      "summary": "选择一个可识别的低阶对象，比较基线 PID 与改进控制在扰动和参数变化下的表现。",
+      "type": "topic",
+      "majors": [
+        "m05"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "scipy",
+        "mechanical"
+      ],
+      "tags": [
+        "控制",
+        "PID",
+        "仿真"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选择一个可识别的低阶对象，比较基线 PID 与改进控制在扰动和参数变化下的表现。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "确定对象模型、约束与离散采样。",
+            "建立 PID 基线，记录整定规则。",
+            "扫参数与扰动，加入饱和和传感噪声。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "超调、调节时间、稳态误差、控制能量。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "需要控制稳定性与公平的参数调优预算。",
+        "prerequisites": [
+          "控制理论基础",
+          "数值仿真"
+        ],
+        "resources": [
+          "SciPy 或现有仿真软件"
+        ],
+        "minimum": "固定简单对象与扰动，比较 PID。",
+        "stretch": "加入参数扰动与鲁棒性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-06",
+      "title": "产线瓶颈与排程优化仿真",
+      "summary": "使用匿名或拟定生产任务，研究规则排程在交期、利用率与等待上的折中。",
+      "type": "topic",
+      "majors": [
+        "m47"
+      ],
+      "groups": [
+        "machines"
+      ],
+      "sourceIds": [
+        "scipy",
+        "mcm"
+      ],
+      "tags": [
+        "排程",
+        "产线",
+        "优化"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "使用匿名或拟定生产任务，研究规则排程在交期、利用率与等待上的折中。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确工序、机器、换型与到达时间约束。",
+            "比较 FIFO、最短加工时间和启发式方法。",
+            "通过需求、故障和工时变化做敏感性分析。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "完工时间、延期率、设备利用率、在制品数量。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "排程约束正确性与瓶颈解释比单次最优值更重要。",
+        "prerequisites": [
+          "运筹学入门",
+          "Python"
+        ],
+        "resources": [
+          "合成产线参数与优化工具"
+        ],
+        "minimum": "小规模实例加人工核对。",
+        "stretch": "扩展多工况和重复求解。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-07",
+      "title": "竹材结构模型受力与加载优化",
+      "summary": "借鉴结构竞赛的研究方法，对小型结构进行计算、制作与加载对照，明确失效位置。",
+      "type": "topic",
+      "majors": [
+        "m06"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "structure",
+        "structure-case"
+      ],
+      "tags": [
+        "结构",
+        "加载",
+        "土木"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "借鉴结构竞赛的研究方法，对小型结构进行计算、制作与加载对照，明确失效位置。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "阅读历届赛题，建立节点、荷载和材料假设。",
+            "计算两到三种结构方案，并控制用材量。",
+            "按导师安排开展模型加载，记录位移和失效。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "结构质量、承载比、位移误差、重复性与失效模式。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 3,
+          "validation": 3
+        },
+        "reason": "材料离散性、节点连接与加载条件需专业实验支撑。",
+        "prerequisites": [
+          "结构力学",
+          "试验记录"
+        ],
+        "resources": [
+          "模型材料与受控加载设备、导师"
+        ],
+        "minimum": "先做受力计算和模型方案比较。",
+        "stretch": "开展可重复加载并解释失效。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "topic-08",
+      "title": "交叉口信号配时与车流鲁棒性",
+      "summary": "比较固定配时与简单自适应策略，关注同一需求和随机种子下的公平实验。",
+      "type": "topic",
+      "majors": [
+        "m07"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "sumo",
+        "qgis"
+      ],
+      "tags": [
+        "信号配时",
+        "交通仿真"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "比较固定配时与简单自适应策略，关注同一需求和随机种子下的公平实验。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立路口、转向比例与需求基线。",
+            "用 SUMO 进行重复仿真并收集指标。",
+            "按高低峰及非均衡车流比较两种策略。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "车辆延迟、排队、停车次数、行人等待和波动。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "交通评价需固定需求、信号规则和重复次数。",
+        "prerequisites": [
+          "交通工程",
+          "基础统计与 Python"
+        ],
+        "resources": [
+          "SUMO 仿真环境"
+        ],
+        "minimum": "固定单路口比较两种配时。",
+        "stretch": "检查拥堵、排队与需求扰动。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-09",
+      "title": "公共服务设施可达性与空间差异",
+      "summary": "以可用开源地理数据研究校园周边公共服务分布，避免把地图可视化作为唯一成果。",
+      "type": "topic",
+      "majors": [
+        "m25"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "qgis",
+        "stats"
+      ],
+      "tags": [
+        "GIS",
+        "空间分析",
+        "公共服务"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以可用开源地理数据研究校园周边公共服务分布，避免把地图可视化作为唯一成果。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义设施类型、服务范围与需求代理指标。",
+            "用 QGIS 清洗位置和路网，核对坐标系。",
+            "比较直线缓冲与路网可达性，讨论数据缺漏。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "覆盖比例、平均距离、区域差异与参数敏感性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "重点是地图数据质量与距离假设的可追溯性。",
+        "prerequisites": [
+          "基本地图操作",
+          "描述统计"
+        ],
+        "resources": [
+          "QGIS 与可用公开地理数据"
+        ],
+        "minimum": "分析一种设施与一种距离指标。",
+        "stretch": "增加路网和空间敏感性分析。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-10",
+      "title": "教学建筑遮阳参数与能耗仿真",
+      "summary": "在一栋简化教学建筑模型上研究遮阳、朝向与采光能耗的折中。",
+      "type": "topic",
+      "majors": [
+        "m26"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "energy",
+        "qgis"
+      ],
+      "tags": [
+        "建筑",
+        "能耗",
+        "遮阳"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在一栋简化教学建筑模型上研究遮阳、朝向与采光能耗的折中。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确几何、气象、围护结构与使用时段。",
+            "建立 EnergyPlus 基线并检查能量平衡。",
+            "改变少量设计参数，报告结果与假设敏感性。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "冷热负荷、年能耗、峰值负荷与舒适性代理指标。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "建筑、气象与运行假设需一致，不能把模拟节能直接当实测。",
+        "prerequisites": [
+          "建筑物理",
+          "参数化分析"
+        ],
+        "resources": [
+          "EnergyPlus 与可用气象文件"
+        ],
+        "minimum": "固定教学建筑简化模型。",
+        "stretch": "增加遮阳参数与舒适指标对照。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-11",
+      "title": "校园绿地分布与步行可达性",
+      "summary": "围绕绿地空间和路径网络做量化评价，形成可检验的设计改进依据。",
+      "type": "topic",
+      "majors": [
+        "m27"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "qgis",
+        "gbif"
+      ],
+      "tags": [
+        "园林",
+        "绿地",
+        "可达性"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕绿地空间和路径网络做量化评价，形成可检验的设计改进依据。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "采集可公开的绿地和步行路径信息。",
+            "在 QGIS 比较不同入口与服务半径。",
+            "提出有限改造方案并用同一指标验证。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "绿地服务覆盖、步行距离、空间公平和现场核对。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "主要在于分类、数据清理和距离口径。",
+        "prerequisites": [
+          "地图编辑",
+          "基本统计"
+        ],
+        "resources": [
+          "QGIS、公开地图或人工核实点位"
+        ],
+        "minimum": "只做校园绿地清单和步行指标。",
+        "stretch": "研究不同路线与设施情景。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-12",
+      "title": "材料性质数据筛选与可解释预测",
+      "summary": "利用公开材料数据建立小规模预测基线，重点处理组成、结构与数据划分的关系。",
+      "type": "topic",
+      "majors": [
+        "m08"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "materials",
+        "scipy"
+      ],
+      "tags": [
+        "材料",
+        "性质预测",
+        "数据"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "利用公开材料数据建立小规模预测基线，重点处理组成、结构与数据划分的关系。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确一种性质与候选材料范围。",
+            "使用 Materials Project 文档获取许可范围内的数据。",
+            "对比简单基线与特征模型，按材料族分组验证。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "MAE、材料族外推误差、缺失率与特征解释。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "性质标签、材料重复项和数据划分需要统一。",
+        "prerequisites": [
+          "材料基础",
+          "Python 与回归"
+        ],
+        "resources": [
+          "Materials Project 可用数据与许可"
+        ],
+        "minimum": "固定一种材料性质做基线。",
+        "stretch": "增加分组留出和特征分析。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-13",
+      "title": "成分与材料性质关系的文献数据研究",
+      "summary": "从一个材料体系的公开数据建立可追溯数据表，比较不同成分与性质关联。",
+      "type": "topic",
+      "majors": [
+        "m09"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "materials",
+        "pubchem",
+        "pymc"
+      ],
+      "tags": [
+        "成分",
+        "材料化学",
+        "回归"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "从一个材料体系的公开数据建立可追溯数据表，比较不同成分与性质关联。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定体系与文献纳入规则。",
+            "记录单位、测试条件和数据来源。",
+            "建立回归基线，讨论批次和方法差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "数据完整性、误差区间、批次效应与稳定性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "文献数据单位、实验条件和缺失机制需要人工核对。",
+        "prerequisites": [
+          "材料化学",
+          "文献检索与统计"
+        ],
+        "resources": [
+          "可获取文献与数据整理工具"
+        ],
+        "minimum": "构建一个清晰的小数据表。",
+        "stretch": "研究条件分层和不确定性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-14",
+      "title": "电极材料候选筛选与多指标比较",
+      "summary": "使用材料公开性质研究筛选规则，区分计算数据、实验性能和器件表现。",
+      "type": "topic",
+      "majors": [
+        "m10"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "materials",
+        "scipy"
+      ],
+      "tags": [
+        "电极",
+        "新能源",
+        "材料筛选"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "使用材料公开性质研究筛选规则，区分计算数据、实验性能和器件表现。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "选择一种电池材料体系与公开性质指标。",
+            "整理结构和组成，保留数据出处及缺项。",
+            "比较单指标与多指标筛选，做阈值敏感性分析。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "候选可解释性、筛选稳定性、缺失数据影响。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "多指标筛选需解释权重与证据质量。",
+        "prerequisites": [
+          "电化学基础",
+          "数据整理"
+        ],
+        "resources": [
+          "公开材料数据与文献"
+        ],
+        "minimum": "限定一种电极体系和筛选规则。",
+        "stretch": "分析权重变化与候选稳定性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-15",
+      "title": "储能充放电策略与容量配置仿真",
+      "summary": "基于可公开或模拟负荷研究容量和运行策略的折中，约束需明确、结果不作为投资结论。",
+      "type": "topic",
+      "majors": [
+        "m11"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "scipy",
+        "energy",
+        "mcm"
+      ],
+      "tags": [
+        "储能",
+        "SOC",
+        "优化"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "基于可公开或模拟负荷研究容量和运行策略的折中，约束需明确、结果不作为投资结论。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义负荷、效率、容量及 SOC 边界。",
+            "建立规则控制基线与优化策略。",
+            "比较负荷变化、价格假设和效率变化。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "峰值削减、未供能量、循环次数、策略敏感性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据修订、时间划分与成本假设必须写清；实验只用于研究方法评价。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "策略收益与寿命代理指标依赖工况和模型假设。",
+        "prerequisites": [
+          "能量守恒",
+          "数值计算"
+        ],
+        "resources": [
+          "公开负载曲线或合成工况"
+        ],
+        "minimum": "固定容量比较两种策略。",
+        "stretch": "扩展温度、负载与参数敏感性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-16",
+      "title": "化工流程物料衡算与能耗优化",
+      "summary": "从一个小型流程出发，完成物料与能量衡算，研究操作参数对能耗和产出的影响。",
+      "type": "topic",
+      "majors": [
+        "m12"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "chemical",
+        "chemical-task",
+        "scipy"
+      ],
+      "tags": [
+        "化工",
+        "流程",
+        "衡算"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "从一个小型流程出发，完成物料与能量衡算，研究操作参数对能耗和产出的影响。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "参考官方化工设计任务书，缩小到单元或子流程。",
+            "建立明确的物性和边界假设，求解衡算。",
+            "比较不同操作条件并做不确定性分析。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "衡算闭合误差、能耗、物料利用率和参数敏感性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "流程边界、组分性质和收敛需要逐项检查。",
+        "prerequisites": [
+          "物料衡算",
+          "热力学基础"
+        ],
+        "resources": [
+          "文献性质、计算表或 Python"
+        ],
+        "minimum": "只做单元级守恒与参数扫描。",
+        "stretch": "扩展流程联动和能耗权衡。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-17",
+      "title": "可回收物分流与循环利用方案评价",
+      "summary": "选择一种校内废物流研究回收率、污染和运输成本，数据范围清楚后再做优化。",
+      "type": "topic",
+      "majors": [
+        "m13"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "stats",
+        "qgis",
+        "mcm"
+      ],
+      "tags": [
+        "循环经济",
+        "回收",
+        "分流"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选择一种校内废物流研究回收率、污染和运输成本，数据范围清楚后再做优化。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义废物流与统计口径，开展小规模匿名计量。",
+            "建立现行回收基线及二到三种分流方案。",
+            "比较不同参与率、误分类率和距离。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "回收比例、污染率、物流工作量、方案敏感性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "分流数据与实际处置约束需现场核实。",
+        "prerequisites": [
+          "物质流分析",
+          "调查统计"
+        ],
+        "resources": [
+          "公开资料；现场调查需授权"
+        ],
+        "minimum": "用文献构建可回收物清单。",
+        "stretch": "加入受控调查和方案敏感性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-18",
+      "title": "水质理化指标异常检测与可解释评价",
+      "summary": "用公开或授权监测数据研究指标质量、异常检测与解释，不把模型分数当作污染源结论。",
+      "type": "topic",
+      "majors": [
+        "m14"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "scipy",
+        "pymc",
+        "stats"
+      ],
+      "tags": [
+        "水质",
+        "环境",
+        "异常检测"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "用公开或授权监测数据研究指标质量、异常检测与解释，不把模型分数当作污染源结论。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "获取带地点、时间和检测方法的数据。",
+            "检查单位、缺测和季节性，建立简单阈值基线。",
+            "按站点和时间划分，比较异常检测方法。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "误报率、漏报率、跨站点性能、缺失鲁棒性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "阈值、缺失与异常标签质量决定评价意义。",
+        "prerequisites": [
+          "环境监测基础",
+          "Python 与统计"
+        ],
+        "resources": [
+          "公开水质数据或合成演示数据"
+        ],
+        "minimum": "先做质量检查和解释性规则。",
+        "stretch": "对比模型并分析时段外表现。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-19",
+      "title": "城市环境与产业指标的时序关联",
+      "summary": "以政府公开统计开展探索性研究，严格区分相关性、口径变化与因果解释。",
+      "type": "topic",
+      "majors": [
+        "m15"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "stats",
+        "foshan-stat",
+        "pymc"
+      ],
+      "tags": [
+        "环境",
+        "城市",
+        "时间序列"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以政府公开统计开展探索性研究，严格区分相关性、口径变化与因果解释。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定城市、年份和少量可比指标。",
+            "保存统计表、单位和口径调整说明。",
+            "比较趋势、滞后和控制变量后的关联。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "缺失率、可比年份、稳健性及置信区间。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "时间对齐、滞后与共同趋势可能制造虚假关联。",
+        "prerequisites": [
+          "时间序列基础",
+          "统计"
+        ],
+        "resources": [
+          "可追溯统计公开数据"
+        ],
+        "minimum": "固定少量指标做描述分析。",
+        "stretch": "增加滞后与敏感性，不作因果断言。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-20",
+      "title": "环境数据中英文标准术语与可复现分析",
+      "summary": "用一组可用环境指标形成双语数据字典与分析报告，重点对齐定义、单位和方法。",
+      "type": "topic",
+      "majors": [
+        "m59"
+      ],
+      "groups": [
+        "environment"
+      ],
+      "sourceIds": [
+        "stats",
+        "scipy",
+        "english"
+      ],
+      "tags": [
+        "环境",
+        "双语",
+        "数据字典"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "用一组可用环境指标形成双语数据字典与分析报告，重点对齐定义、单位和方法。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "选定一个数据来源与有限指标。",
+            "建立中英术语、单位、计算方法和出处表。",
+            "完成可复现分析与双语展示，核对翻译的一致性。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "术语一致率、计算复现、单位错误和来源覆盖。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "关键是术语版本、单位与引用一致。",
+        "prerequisites": [
+          "中英文资料阅读",
+          "表格整理"
+        ],
+        "resources": [
+          "官方术语与公开样例数据"
+        ],
+        "minimum": "建立一个双语术语及单位字典。",
+        "stretch": "增加可复现数据清洗脚本。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-21",
+      "title": "可追溯资料检索系统与搜索评价",
+      "summary": "围绕公开资料建立一个小型检索系统，评价关键词匹配、排序与来源追溯能力。",
+      "type": "topic",
+      "majors": [
+        "m16"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "scipy",
+        "mcm"
+      ],
+      "tags": [
+        "搜索",
+        "信息检索",
+        "软件"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕公开资料建立一个小型检索系统，评价关键词匹配、排序与来源追溯能力。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立结构化记录和来源元数据。",
+            "实现分词、字段权重、筛选与检索界面。",
+            "人工标注小型查询集，对比不同排序方法。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "Precision@k、召回率、查询延迟与来源完整率。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "检索评价需要独立查询集和相关性标注。",
+        "prerequisites": [
+          "前端或 Python",
+          "信息检索基础"
+        ],
+        "resources": [
+          "公开可引用文献与本机环境"
+        ],
+        "minimum": "先做关键词检索与来源展示。",
+        "stretch": "对比排序并分析漏检和误检。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-22",
+      "title": "实验网络流量异常与可解释检测",
+      "summary": "在授权实验网络或公开数据上研究异常检测，避免把对抗性操作作为最低研究条件。",
+      "type": "topic",
+      "majors": [
+        "m17"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "scipy",
+        "pymc"
+      ],
+      "tags": [
+        "网络",
+        "流量",
+        "异常检测"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在授权实验网络或公开数据上研究异常检测，避免把对抗性操作作为最低研究条件。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义正常流量、异常类型和合法数据来源。",
+            "提取流量统计特征，建立规则基线。",
+            "按时间和网络环境划分，分析误报和概念漂移。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "Precision、Recall、误报率、吞吐和可解释性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "流量标签与网络环境变化影响泛化。",
+        "prerequisites": [
+          "计算机网络",
+          "Python"
+        ],
+        "resources": [
+          "授权实验网络或公开流量数据"
+        ],
+        "minimum": "只离线分析公开流量特征。",
+        "stretch": "加入受控测试与可解释异常。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-23",
+      "title": "断网可用的传感器采集与同步系统",
+      "summary": "研究边缘缓存、重传去重与数据时间一致性，优先保证采集链路的可靠性。",
+      "type": "topic",
+      "majors": [
+        "m18"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "cmsis",
+        "soc"
+      ],
+      "tags": [
+        "物联网",
+        "断网恢复",
+        "采集"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "研究边缘缓存、重传去重与数据时间一致性，优先保证采集链路的可靠性。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义采样记录、序号和本地存储格式。",
+            "实现断网缓存与恢复上传，模拟连接失败。",
+            "在不同采样频率和丢包条件下对比策略。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "记录完整率、重复率、时钟偏差、恢复时间与能耗。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "断网、重复上报与时钟不一致需明确策略。",
+        "prerequisites": [
+          "嵌入式与网络基础",
+          "数据库"
+        ],
+        "resources": [
+          "开发板或模拟节点、本机服务"
+        ],
+        "minimum": "用模拟数据测试离线与重连。",
+        "stretch": "联调实物并测试丢包和恢复。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-24",
+      "title": "小样本分类的校准与不确定性评价",
+      "summary": "选择公开传感器或图像数据，研究模型置信度与真实错误之间的关系。",
+      "type": "topic",
+      "majors": [
+        "m19"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "har",
+        "plant",
+        "pymc"
+      ],
+      "tags": [
+        "AI",
+        "置信度",
+        "分类"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选择公开传感器或图像数据，研究模型置信度与真实错误之间的关系。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立简单分类基线，按对象隔离数据。",
+            "比较样本量、噪声与类别不均衡。",
+            "加入校准和拒识阈值，分析可靠性。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "宏平均 F1、校准误差、拒识覆盖与失败类型。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "置信度评价和分类准确率是不同目标。",
+        "prerequisites": [
+          "概率统计",
+          "机器学习评价"
+        ],
+        "resources": [
+          "公开小数据与普通电脑"
+        ],
+        "minimum": "比较未校准基线与一个校准方法。",
+        "stretch": "增加分组测试和分布变化。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-25",
+      "title": "面向专业知识的交互式可视化学习工具",
+      "summary": "将一个专业概念做成可操作界面，用学习任务评价理解和操作效果。",
+      "type": "topic",
+      "majors": [
+        "m29"
+      ],
+      "groups": [
+        "computing"
+      ],
+      "sourceIds": [
+        "smartedu",
+        "scipy"
+      ],
+      "tags": [
+        "交互",
+        "可视化",
+        "学习工具"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "将一个专业概念做成可操作界面，用学习任务评价理解和操作效果。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "选择一个可用真实数据或模型解释的概念。",
+            "制作交互原型与两个不同呈现版本。",
+            "安排小规模自愿测试，记录任务完成和错误。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "任务完成率、用时、理解测验和可用性反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "学习工具需任务设计和用户理解评价。",
+        "prerequisites": [
+          "网页交互",
+          "可视化与教学基础"
+        ],
+        "resources": [
+          "浏览器；小规模试用需同意"
+        ],
+        "minimum": "实现一个知识点的交互原型。",
+        "stretch": "比较任务完成与错误类型。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-26",
+      "title": "低成本视觉尺寸测量与误差分析",
+      "summary": "在可控背景和尺度范围内实现视觉测量，重点研究标定、畸变与光照影响。",
+      "type": "topic",
+      "majors": [
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "hust",
+        "nuedc"
+      ],
+      "tags": [
+        "视觉测量",
+        "标定",
+        "电子"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在可控背景和尺度范围内实现视觉测量，重点研究标定、畸变与光照影响。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立相机标定和已知尺寸参考物。",
+            "完成目标检测与尺度换算，保存原始图像。",
+            "在距离、角度和光照变化下比较误差。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "绝对误差、相对误差、稳定性和运行时间。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "标定、透视与光照误差需要可追溯测量。",
+        "prerequisites": [
+          "几何与图像处理",
+          "误差统计"
+        ],
+        "resources": [
+          "摄像头、标定板与量具"
+        ],
+        "minimum": "固定距离和光照测一种尺寸。",
+        "stretch": "增加视角、光照与重复性实验。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-27",
+      "title": "传感器测量误差的可视化实验教学",
+      "summary": "用低压安全实验演示噪声、采样和误差传播，比较学生对测量概念的理解。",
+      "type": "topic",
+      "majors": [
+        "m22"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "scipy",
+        "smartedu"
+      ],
+      "tags": [
+        "物理",
+        "测量",
+        "教学"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "用低压安全实验演示噪声、采样和误差传播，比较学生对测量概念的理解。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "设计可复现的测量与噪声实验。",
+            "生成曲线和误差可视化教学材料。",
+            "用前后测和具体任务收集自愿匿名反馈。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "误差模型吻合、操作正确率、理解测验变化。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "要区分示例误差和实际测量系统误差。",
+        "prerequisites": [
+          "误差传播",
+          "Python 或教学设计"
+        ],
+        "resources": [
+          "模拟数据；传感器实验需条件"
+        ],
+        "minimum": "用合成误差演示一个概念。",
+        "stretch": "增加重复测量与学习效果评价。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-28",
+      "title": "室内照明布置与光照均匀性测量",
+      "summary": "比较有限几种照明布置与控制策略，量化照度均匀性、功率和测量偏差。",
+      "type": "topic",
+      "majors": [
+        "m23"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "energy",
+        "scipy"
+      ],
+      "tags": [
+        "照明",
+        "光照",
+        "节能"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "比较有限几种照明布置与控制策略，量化照度均匀性、功率和测量偏差。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义房间、测点、灯具和测量时段。",
+            "绘制照度分布，与简单模型比较。",
+            "调整布置或调光，重复测量并报告误差。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "照度分布、均匀性、总功率和重复测量波动。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "照度位置、仪表误差与环境光需控制。",
+        "prerequisites": [
+          "照明基础",
+          "测量记录"
+        ],
+        "resources": [
+          "照度计或受控教学设备"
+        ],
+        "minimum": "固定房间位置比较两种方案。",
+        "stretch": "扩展均匀性与环境条件。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-29",
+      "title": "光学测量信号的同步解调与降噪",
+      "summary": "在仿真或低压光电实验中研究锁相提取，比较积分时间与响应速度。",
+      "type": "topic",
+      "majors": [
+        "m24"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "scipy",
+        "cocotb"
+      ],
+      "tags": [
+        "光电",
+        "同步解调",
+        "噪声"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在仿真或低压光电实验中研究锁相提取，比较积分时间与响应速度。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义光电输入、参考频率与噪声假设。",
+            "建立软件同步解调模型。",
+            "比较滤波和相位偏差，可扩展到数字硬件。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "幅度相位误差、信噪比、响应时间与频率失配。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "同步参考、噪声与校准关系需要分析。",
+        "prerequisites": [
+          "信号处理",
+          "采样与统计"
+        ],
+        "resources": [
+          "合成光学信号；设备为可选"
+        ],
+        "minimum": "先完成纯仿真解调与误差分析。",
+        "stretch": "比较实测数据和扰动条件。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-30",
+      "title": "传感器设备外壳与维护可用性设计",
+      "summary": "围绕安装、拆卸和维护任务做外壳方案迭代，使设计评价对应真实使用场景。",
+      "type": "topic",
+      "majors": [
+        "m28"
+      ],
+      "groups": [
+        "design"
+      ],
+      "sourceIds": [
+        "mechanical",
+        "ad"
+      ],
+      "tags": [
+        "工业设计",
+        "结构原型",
+        "可用性"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕安装、拆卸和维护任务做外壳方案迭代，使设计评价对应真实使用场景。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "选定设备尺寸、使用环境与维护任务。",
+            "制作低成本结构原型，记录材料与装配约束。",
+            "对比两版原型的任务完成与错误。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "装配时间、误操作、握持反馈、结构干涉。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "维护任务与人体操作差异需实际评价。",
+        "prerequisites": [
+          "工业设计",
+          "基础任务分析"
+        ],
+        "resources": [
+          "CAD 或模型材料；试用需同意"
+        ],
+        "minimum": "纸面模型检查一种维护动作。",
+        "stretch": "制作原型并比较操作负担。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-31",
+      "title": "校园公益信息的视觉层级与理解测试",
+      "summary": "针对真实信息设计两到三种版式，通过阅读任务评价层级和辨识效果。",
+      "type": "topic",
+      "majors": [
+        "m30"
+      ],
+      "groups": [
+        "design"
+      ],
+      "sourceIds": [
+        "ad",
+        "smartedu"
+      ],
+      "tags": [
+        "视觉",
+        "公益",
+        "信息设计"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "针对真实信息设计两到三种版式，通过阅读任务评价层级和辨识效果。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "确定信息内容、受众和发布环境。",
+            "制作原创视觉方案，保留字体图像许可。",
+            "使用具体理解问题与阅读计时对照。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "信息识别正确率、阅读用时、可读性与反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "需定义视觉理解问题与一致的检查方法。",
+        "prerequisites": [
+          "视觉层级",
+          "基本编码与统计"
+        ],
+        "resources": [
+          "两套材料与成人自愿反馈"
+        ],
+        "minimum": "完成信息层级对照和可读性检查。",
+        "stretch": "开展有计划的任务理解测试。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-32",
+      "title": "适老日常产品的操作负担评价",
+      "summary": "选择一个日常低风险产品，研究指示、尺寸与操作顺序对任务完成的影响。",
+      "type": "topic",
+      "majors": [
+        "m31"
+      ],
+      "groups": [
+        "design"
+      ],
+      "sourceIds": [
+        "ad",
+        "innovation"
+      ],
+      "tags": [
+        "产品",
+        "适老",
+        "原型"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选择一个日常低风险产品，研究指示、尺寸与操作顺序对任务完成的影响。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定使用任务与目标人群，开展自愿访谈。",
+            "建立可操作原型，控制两版之间的改动。",
+            "记录任务步骤、错误与主观负担。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "任务成功率、操作次数、错误率与反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "操作负担需真实任务和可解释指标。",
+        "prerequisites": [
+          "产品设计",
+          "用户研究基础"
+        ],
+        "resources": [
+          "纸面或实体原型；自愿试用"
+        ],
+        "minimum": "先在成人模拟任务中检查操作。",
+        "stretch": "按导师方案做目标群体评价。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-33",
+      "title": "约束排程问题的启发式与优化对照",
+      "summary": "对一个规模可控的离散优化问题建立模型，比较求解质量与计算成本。",
+      "type": "topic",
+      "majors": [
+        "m32"
+      ],
+      "groups": [
+        "math"
+      ],
+      "sourceIds": [
+        "scipy",
+        "mcm"
+      ],
+      "tags": [
+        "优化",
+        "数学建模",
+        "排程"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "对一个规模可控的离散优化问题建立模型，比较求解质量与计算成本。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确变量、约束与目标函数。",
+            "实现小规模可验证最优基线及启发式。",
+            "生成不同规模和难度实例，报告差距。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "最优性差距、可行率、运行时间和规模趋势。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "约束可行性与搜索预算应独立核对。",
+        "prerequisites": [
+          "离散数学",
+          "Python 与优化基础"
+        ],
+        "resources": [
+          "合成排程数据与求解器"
+        ],
+        "minimum": "用可手算实例对比两种方法。",
+        "stretch": "扩展规模与求解稳定性。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-34",
+      "title": "公开数据预测中的泄漏与泛化研究",
+      "summary": "以时间或主体为单位划分数据，对照随机划分导致的评估偏差。",
+      "type": "topic",
+      "majors": [
+        "m33"
+      ],
+      "groups": [
+        "math"
+      ],
+      "sourceIds": [
+        "har",
+        "cwru",
+        "wine"
+      ],
+      "tags": [
+        "数据泄漏",
+        "泛化",
+        "机器学习"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以时间或主体为单位划分数据，对照随机划分导致的评估偏差。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "选择 HAR、轴承或质量数据并梳理采样结构。",
+            "分别建立随机划分和分组划分基线。",
+            "比较模型与样本量，定位性能差异原因。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "分组外测试误差、随机划分偏差、置信区间。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "清洗、调参和测试隔离必须覆盖全流程。",
+        "prerequisites": [
+          "Python",
+          "统计与分类回归"
+        ],
+        "resources": [
+          "公开表格数据"
+        ],
+        "minimum": "固定一份数据比较随机与分组划分。",
+        "stretch": "加入时间留出和误差分析。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-35",
+      "title": "交互仿真学习的效果与过程评价",
+      "summary": "围绕一个难理解的概念，比较交互仿真和普通图文材料对学习任务的影响。",
+      "type": "topic",
+      "majors": [
+        "m34"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "smartedu",
+        "scipy"
+      ],
+      "tags": [
+        "教育技术",
+        "仿真",
+        "学习评价"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕一个难理解的概念，比较交互仿真和普通图文材料对学习任务的影响。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "制定学习目标和短测验。",
+            "实现一个范围小的仿真原型及对照材料。",
+            "匿名自愿收集前后测与任务过程，讨论样本限制。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "学习增益、任务完成、错误类型与使用反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "学习评价受先验水平和重复测量影响。",
+        "prerequisites": [
+          "教育研究基础",
+          "基础统计"
+        ],
+        "resources": [
+          "交互原型；参与者与伦理条件先确认"
+        ],
+        "minimum": "先做内容与任务设计检查。",
+        "stretch": "开展自愿成人样本前后测试。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-36",
+      "title": "绘本叙事结构与教师阅读活动分析",
+      "summary": "以公开许可绘本或自建材料研究活动设计，先以教师和文本分析完成最小研究。",
+      "type": "topic",
+      "majors": [
+        "m35"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "gutenberg",
+        "smartedu"
+      ],
+      "tags": [
+        "绘本",
+        "教案",
+        "文本分析"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以公开许可绘本或自建材料研究活动设计，先以教师和文本分析完成最小研究。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立文本选择、年龄适配与编码规则。",
+            "由两位编码者标记叙事与互动问题。",
+            "通过教师访谈或教案对照评价活动设计。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "编码一致性、问题类型分布、教师反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "最低方案以文本与教师研究为主；涉及儿童研究时，需要监护人及机构许可，并由教育专业导师设计。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "编码规则、样本范围和解释边界需清晰。",
+        "prerequisites": [
+          "文献阅读",
+          "内容分析"
+        ],
+        "resources": [
+          "可合法使用文本与教师资料"
+        ],
+        "minimum": "只分析一组绘本文本与叙事编码。",
+        "stretch": "扩展教师访谈，按要求取得同意。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-37",
+      "title": "文学文本叙事与关键词语境分析",
+      "summary": "以明确版本的可使用文本建立小型语料，把统计结果和细读结合。",
+      "type": "topic",
+      "majors": [
+        "m36"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "gutenberg",
+        "smartedu"
+      ],
+      "tags": [
+        "文学",
+        "语料",
+        "细读"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以明确版本的可使用文本建立小型语料，把统计结果和细读结合。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定作品、版本与研究问题。",
+            "建立分词和编码规则，手工核查关键语境。",
+            "对比不同作品或章节，保留反例。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "编码一致性、关键词语境、样本代表性与解释边界。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "语料来源与关键词语境需要人工复核。",
+        "prerequisites": [
+          "文学阅读",
+          "基础文本处理"
+        ],
+        "resources": [
+          "合法文本与检索工具"
+        ],
+        "minimum": "分析一个作者或一组短文本。",
+        "stretch": "加入编码一致性与主题比较。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-38",
+      "title": "双语科普文本翻译错误与可读性评价",
+      "summary": "选取一组专业科普材料，比较不同译稿对术语、信息完整性与阅读理解的影响。",
+      "type": "topic",
+      "majors": [
+        "m37"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "english",
+        "smartedu"
+      ],
+      "tags": [
+        "英语",
+        "翻译",
+        "可读性"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选取一组专业科普材料，比较不同译稿对术语、信息完整性与阅读理解的影响。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立术语表与对照原文。",
+            "标注歧义、遗漏和事实表达问题。",
+            "采用读者任务或教师评分比较修改前后版本。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "术语一致性、错误类别、信息理解和阅读反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "错误分类和评分尺度需统一。",
+        "prerequisites": [
+          "英语与翻译基础",
+          "文本编码"
+        ],
+        "resources": [
+          "可引用双语公开科普材料"
+        ],
+        "minimum": "人工比较一组短文本的错误。",
+        "stretch": "增加盲评与评分一致性。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-39",
+      "title": "涉外法规文本的可追溯检索与条款比较",
+      "summary": "选择有限主题的官方法规建立检索与版本对照，重点证明引用与时效信息准确。",
+      "type": "topic",
+      "majors": [
+        "m38"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "law",
+        "patents"
+      ],
+      "tags": [
+        "法学",
+        "法规",
+        "检索"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选择有限主题的官方法规建立检索与版本对照，重点证明引用与时效信息准确。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确主题、法域、时间与纳入规则。",
+            "人工整理条款、有效状态和官方出处。",
+            "建立查询样例及专家抽查，记录遗漏与误匹配。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "检索精确率、出处完整率、版本核对与引用错误。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "法规版本、有效状态与条款解释需要人工专业复核，系统结果不能替代法律意见。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "法域、日期与条款引用需要可追溯。",
+        "prerequisites": [
+          "法律检索基础",
+          "资料归档"
+        ],
+        "resources": [
+          "官方法律数据库"
+        ],
+        "minimum": "限定一个主题，整理条款对照表。",
+        "stretch": "扩展更新跟踪与人工相关性评价。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-40",
+      "title": "技术主题的专利检索与分类评价",
+      "summary": "围绕一个技术领域研究检索式、分类和公开时间变化，不对侵权或专利有效性做自动结论。",
+      "type": "topic",
+      "majors": [
+        "m39"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "patents",
+        "law"
+      ],
+      "tags": [
+        "专利",
+        "知识产权",
+        "信息检索"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕一个技术领域研究检索式、分类和公开时间变化，不对侵权或专利有效性做自动结论。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "建立关键词、分类号和日期筛选规则。",
+            "在 PATENTSCOPE 保存可追溯样本。",
+            "人工标注相关性，对比宽窄检索式。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "检索相关性、重复率、分类一致性和时间覆盖。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "检索式、分类边界与去重需解释。",
+        "prerequisites": [
+          "专利检索基础",
+          "表格与人工编码"
+        ],
+        "resources": [
+          "PATENTSCOPE 等公开入口"
+        ],
+        "minimum": "限定一种技术整理小规模专利样本。",
+        "stretch": "比较检索策略与分类一致性。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-41",
+      "title": "校园社会实践叙事与公共议题表达研究",
+      "summary": "选择明确的校园实践主题，结合公开资料与自愿访谈研究表达方式及受众理解。",
+      "type": "topic",
+      "majors": [
+        "m40"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "smartedu",
+        "foshan-stat"
+      ],
+      "tags": [
+        "社会实践",
+        "文本分析",
+        "教育"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "选择明确的校园实践主题，结合公开资料与自愿访谈研究表达方式及受众理解。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定材料范围、研究问题与匿名规则。",
+            "建立编码框架并进行双人编码。",
+            "比较不同表达文本的理解任务与反馈。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "编码一致性、受众理解、样本偏差和证据链。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "文本编码与立场解释需避免过度推断。",
+        "prerequisites": [
+          "内容分析",
+          "基础社会研究"
+        ],
+        "resources": [
+          "公开社会实践文本"
+        ],
+        "minimum": "定义编码规则并分析少量公开文本。",
+        "stretch": "增加双人编码和分歧解释。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-42",
+      "title": "宏观指标预测的时间划分与稳健性",
+      "summary": "使用官方公开宏观指标比较简单预测基线，研究口径变化与时间验证。",
+      "type": "topic",
+      "majors": [
+        "m41"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "stats",
+        "pymc"
+      ],
+      "tags": [
+        "金融",
+        "宏观",
+        "预测"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "使用官方公开宏观指标比较简单预测基线，研究口径变化与时间验证。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "确定有限指标与预测期，保存数据发布日期。",
+            "建立持平、移动平均等基线。",
+            "滚动验证并报告区间与结构变化。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "时间外 MAE、方向准确率、区间覆盖与数据修订影响。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据修订、时间划分与成本假设必须写清；实验只用于研究方法评价。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "滚动预测、修订数据与趋势会影响结果。",
+        "prerequisites": [
+          "时间序列",
+          "统计与 Python"
+        ],
+        "resources": [
+          "公开宏观数据"
+        ],
+        "minimum": "固定两三个指标与滚动基线。",
+        "stretch": "增加预测区间和结构变化检验。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-43",
+      "title": "商品贸易结构与市场集中度研究",
+      "summary": "利用公开贸易统计研究有限商品类别的结构变化，关注口径和缺失。",
+      "type": "topic",
+      "majors": [
+        "m42"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "comtrade",
+        "stats"
+      ],
+      "tags": [
+        "贸易",
+        "商品编码",
+        "统计"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "利用公开贸易统计研究有限商品类别的结构变化，关注口径和缺失。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "确定国家、商品编码版本和年份范围。",
+            "整理贸易额、单位和伙伴，记录缺失原因。",
+            "计算集中度并做编码、时间和口径敏感性分析。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "市场集中度、结构变化、可比性与数据完整性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "贸易口径、分类与年份需一致。",
+        "prerequisites": [
+          "国际贸易基础",
+          "描述统计"
+        ],
+        "resources": [
+          "Comtrade 或公开统计表"
+        ],
+        "minimum": "限定一个商品与一组市场。",
+        "stretch": "增加分类口径和年份敏感性。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-44",
+      "title": "中小企业数字工具采用意愿调查",
+      "summary": "研究具体工作任务对工具采用的影响，用访谈与问卷形成可检验的管理问题。",
+      "type": "topic",
+      "majors": [
+        "m43"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "survey",
+        "survey-new",
+        "pymc"
+      ],
+      "tags": [
+        "经管",
+        "问卷",
+        "数字化"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "研究具体工作任务对工具采用的影响，用访谈与问卷形成可检验的管理问题。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定行业和对象，进行小规模访谈。",
+            "形成问卷、预测试和抽样说明。",
+            "对比群体并报告非响应、样本与因果限制。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "量表质量、样本结构、效应区间、结果稳健性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "调查偏差、量表与样本招募需提前设计。",
+        "prerequisites": [
+          "调查设计",
+          "基础统计"
+        ],
+        "resources": [
+          "成年受访者；同意与数据保护安排"
+        ],
+        "minimum": "先做问卷预检与小样本描述。",
+        "stretch": "扩大样本并检查模型假设。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-45",
+      "title": "校园产品购买决策的调查与实验",
+      "summary": "针对一种产品或服务研究价格、信息呈现与购买意向的关系。",
+      "type": "topic",
+      "majors": [
+        "m44"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "survey",
+        "survey-new",
+        "ad"
+      ],
+      "tags": [
+        "市场调查",
+        "营销",
+        "问卷"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "针对一种产品或服务研究价格、信息呈现与购买意向的关系。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确受众与具体场景，预测试问卷。",
+            "设计可比较的信息呈现与分组。",
+            "分析意向和实际行为的差别，保留异常样本说明。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "有效样本、差异区间、量表一致性和样本偏差。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "干预、招募与购买意向评价可能受偏差影响。",
+        "prerequisites": [
+          "市场调查",
+          "实验与统计基础"
+        ],
+        "resources": [
+          "自愿成人样本与方案审核"
+        ],
+        "minimum": "先完成材料和问卷的认知预检。",
+        "stretch": "增加随机分配与计划分析。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-46",
+      "title": "企业公开披露文本与指标一致性研究",
+      "summary": "限定一类披露主题建立人工编码表，研究文本特征和可核对指标的关系。",
+      "type": "topic",
+      "majors": [
+        "m45"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "stats",
+        "pymc"
+      ],
+      "tags": [
+        "会计",
+        "披露",
+        "文本分析"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "限定一类披露主题建立人工编码表，研究文本特征和可核对指标的关系。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义公开样本和披露期，保存原始出处。",
+            "制定编码与计算规则，双人抽查。",
+            "比较文本和数值，讨论行业与规模差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "编码一致性、缺项比例、关联稳健性与引用准确率。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "披露口径和人工抽取一致性是重点。",
+        "prerequisites": [
+          "会计基础",
+          "文本与表格整理"
+        ],
+        "resources": [
+          "公开年报与可引用披露材料"
+        ],
+        "minimum": "只核对一个指标及对应文本。",
+        "stretch": "扩大公司样本和双人编码。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-47",
+      "title": "招聘信息技能需求的人工编码与趋势",
+      "summary": "在允许使用的公开招聘信息样本上研究技能分类，强调样本范围和编码可靠性。",
+      "type": "topic",
+      "majors": [
+        "m46"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "survey",
+        "pymc"
+      ],
+      "tags": [
+        "人力资源",
+        "招聘",
+        "技能"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在允许使用的公开招聘信息样本上研究技能分类，强调样本范围和编码可靠性。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确行业、时间与数据使用条件。",
+            "建立岗位技能词典和人工标注样本。",
+            "比较岗位类型与技能组合，报告平台偏差。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "标注一致性、技能覆盖、样本构成与分类误差。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "样本来源、岗位去重和技能编码需一致。",
+        "prerequisites": [
+          "招聘文本分析",
+          "基本统计"
+        ],
+        "resources": [
+          "合法公开招聘信息或人工样本"
+        ],
+        "minimum": "限定一种岗位整理技能词典。",
+        "stretch": "增加时间比较与编码一致性。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-48",
+      "title": "佛山文化旅游服务体验调查",
+      "summary": "以具体景区或路线为对象研究游客体验和信息服务，结合地方统计与现场数据。",
+      "type": "topic",
+      "majors": [
+        "m48"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "foshan-stat",
+        "survey-new",
+        "qgis"
+      ],
+      "tags": [
+        "佛山",
+        "文旅",
+        "服务体验"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以具体景区或路线为对象研究游客体验和信息服务，结合地方统计与现场数据。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "定义路线、受众、时段与问卷。",
+            "结合公开公报作背景，开展匿名自愿调查。",
+            "比较服务环节并提出可衡量的改进。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "样本结构、满意度维度、问题优先级和差异区间。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 2
+        },
+        "reason": "游客样本和服务触点评价依赖现场条件。",
+        "prerequisites": [
+          "旅游管理",
+          "调查设计"
+        ],
+        "resources": [
+          "成年自愿参与者；现场许可先确认"
+        ],
+        "minimum": "公开评论或材料做探索性分析。",
+        "stretch": "开展规范调查和服务方案比较。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-49",
+      "title": "食品理化指标与质量评分模型",
+      "summary": "先用 UCI Wine Quality 完成数据分析链路，再在导师支持下换成目标食品的合法实验数据。",
+      "type": "topic",
+      "majors": [
+        "m49"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "wine",
+        "scipy"
+      ],
+      "tags": [
+        "食品",
+        "理化指标",
+        "质量"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "先用 UCI Wine Quality 完成数据分析链路，再在导师支持下换成目标食品的合法实验数据。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "理解数据标签、量纲与评分生成方式。",
+            "建立简单回归或分类基线，处理不均衡。",
+            "比较特征与模型，讨论跨批次和目标食品差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "MAE、宏平均 F1、分组误差、特征贡献。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "指标量纲、质量标签和批次差异需核对。",
+        "prerequisites": [
+          "食品基础",
+          "统计与 Python"
+        ],
+        "resources": [
+          "UCI Wine Quality 等公开数据"
+        ],
+        "minimum": "限定数据来源并做可解释回归。",
+        "stretch": "按来源或批次检查泛化。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-50",
+      "title": "食品检测实验记录的质量管理原型",
+      "summary": "围绕一类实验记录构建追溯和异常规则，重点检查编号、单位与流程完整性。",
+      "type": "topic",
+      "majors": [
+        "m50"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "lab-quality",
+        "wine"
+      ],
+      "tags": [
+        "食品安全",
+        "追溯",
+        "质量管理"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕一类实验记录构建追溯和异常规则，重点检查编号、单位与流程完整性。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "由导师确定记录字段与管理范围。",
+            "建立样品、批次、检测和校准的关联表。",
+            "用合成或授权记录注入缺项与重复错误。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "追溯完整率、错误发现率、处理时长和误报。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "质控规则、异常和审核轨迹应可解释。",
+        "prerequisites": [
+          "食品质控",
+          "数据表与基础编程"
+        ],
+        "resources": [
+          "合成实验记录与公开方法材料"
+        ],
+        "minimum": "实现单类记录的完整性检查。",
+        "stretch": "加入复核流程与异常情景。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-51",
+      "title": "公开生物序列元数据清洗与可复现分析",
+      "summary": "限定一个生物数据主题，建立规范下载、质控和可追溯分析流程。",
+      "type": "topic",
+      "majors": [
+        "m51"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "ncbi",
+        "life"
+      ],
+      "tags": [
+        "生物",
+        "数据清洗",
+        "复现"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "限定一个生物数据主题，建立规范下载、质控和可追溯分析流程。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "根据 NCBI 文档限定数据类型和物种。",
+            "记录获取日期、版本、许可与质量字段。",
+            "建立基础分析和复现脚本，检查异常与重复。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "质控通过率、重复率、复现一致性和数据覆盖。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "物种、测序和元数据质量影响可重复性。",
+        "prerequisites": [
+          "生物学基础",
+          "Python 与元数据"
+        ],
+        "resources": [
+          "NCBI 公开可用数据"
+        ],
+        "minimum": "先做一个小项目的元数据清洗。",
+        "stretch": "扩展分组分析和版本追踪。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-52",
+      "title": "叶片病害图像分类与场景泛化",
+      "summary": "在 PlantVillage 上建立基础模型，再研究背景、光照和真实场景变化带来的误差。",
+      "type": "topic",
+      "majors": [
+        "m52",
+        "m16",
+        "m19"
+      ],
+      "groups": [
+        "computing",
+        "agri"
+      ],
+      "sourceIds": [
+        "plant",
+        "gbif"
+      ],
+      "tags": [
+        "园艺",
+        "图像",
+        "植物病害"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在 PlantVillage 上建立基础模型，再研究背景、光照和真实场景变化带来的误差。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "按叶片分组规则划分，检查同叶片泄漏。",
+            "建立轻量分类器与增强策略。",
+            "用授权小规模外部样本测试，分析领域差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "宏平均 F1、叶片组外误差、外部场景性能和推理成本。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "实验叶片背景与实际田间图像差异需明确。",
+        "prerequisites": [
+          "Python",
+          "图像分类与评价"
+        ],
+        "resources": [
+          "PlantVillage、普通电脑"
+        ],
+        "minimum": "按叶片或来源分组做基线。",
+        "stretch": "加入外部场景，避免夸大田间能力。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-53",
+      "title": "牛采食与反刍的传感器行为识别",
+      "summary": "利用牛颈圈加速度数据建立活动识别基线，与集成电路团队研究端侧部署。",
+      "type": "topic",
+      "majors": [
+        "m53",
+        "m21",
+        "m18",
+        "m19"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "agri"
+      ],
+      "sourceIds": [
+        "cattle",
+        "calf-paper",
+        "cmsis"
+      ],
+      "tags": [
+        "动物行为",
+        "牛",
+        "传感器",
+        "跨专业"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "利用牛颈圈加速度数据建立活动识别基线，与集成电路团队研究端侧部署。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "核对 Precision Beef 的动物、标签、采样和许可。",
+            "按动物、时段或记录分组划分，建立特征分类基线。",
+            "比较模型与量化开销，后续由动科团队检查行为意义。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "宏平均 F1、跨动物泛化、误报漏报、模型内存与延迟。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据获取、设备、现场对象与导师支持未确认。先缩小问题，确保一个核心结果能够被独立检查。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "动物身份、记录时段和标签一致性决定泛化。",
+        "prerequisites": [
+          "动物行为基础",
+          "时间序列分类"
+        ],
+        "resources": [
+          "公开牛颈圈数据；端侧板为可选"
+        ],
+        "minimum": "完成公开数据的按动物分组基线。",
+        "stretch": "结合动科解释并测端侧资源。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "topic-54",
+      "title": "动物行为变化的辅助监测与文献对照",
+      "summary": "研究公开行为数据与可解释监测规则，只把结果作为研究原型，需专业团队另外验证疾病相关性。",
+      "type": "topic",
+      "majors": [
+        "m54"
+      ],
+      "groups": [
+        "agri"
+      ],
+      "sourceIds": [
+        "cattle",
+        "calf-paper",
+        "life"
+      ],
+      "tags": [
+        "动物医学",
+        "行为监测",
+        "辅助研究"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "研究公开行为数据与可解释监测规则，只把结果作为研究原型，需专业团队另外验证疾病相关性。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "明确行为变化与研究假设，整理相关文献。",
+            "在公开行为数据上建立基线和异常规则。",
+            "由动医导师审查指标意义与验证条件。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "异常规则重复性、误报、可解释性、验证证据范围。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "专业数据与导师支持未确认。涉及患者或动物的研究应由专业团队按机构要求设计；当前方案是教学研究原型，不输出个体诊断或治疗建议。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "行为变化与疾病的关系不能由单一数据集推出。",
+        "prerequisites": [
+          "动物行为与兽医基础",
+          "统计"
+        ],
+        "resources": [
+          "公开行为数据、文献与导师"
+        ],
+        "minimum": "只做非诊断的行为变化分析。",
+        "stretch": "加入领域复核和纵向场景评价。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "topic-55",
+      "title": "口腔健康知识理解与科普材料评价",
+      "summary": "围绕官方口腔健康背景资料，评价科普文本的知识理解与阅读可用性。",
+      "type": "topic",
+      "majors": [
+        "m55"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "oral",
+        "survey-new"
+      ],
+      "tags": [
+        "口腔",
+        "科普",
+        "健康教育"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "围绕官方口腔健康背景资料，评价科普文本的知识理解与阅读可用性。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "由专业导师限定信息与学习目标。",
+            "制作两版科普材料并核对医学表述。",
+            "开展自愿匿名阅读测试，分析理解错误。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "知识题正确率、错误类型、阅读完成和反馈。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "专业数据与导师支持未确认。涉及患者或动物的研究应由专业团队按机构要求设计；当前方案是教学研究原型，不输出个体诊断或治疗建议。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "材料理解评价需要规范题目与解释范围。",
+        "prerequisites": [
+          "健康科普阅读",
+          "基础任务评价"
+        ],
+        "resources": [
+          "WHO 等公开材料；成人反馈自愿"
+        ],
+        "minimum": "只评估公开材料的理解与表达。",
+        "stretch": "做计划明确的成人知识理解测试。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-56",
+      "title": "公开化合物信息的可追溯检索与属性分析",
+      "summary": "以 PubChem 中有限化合物为对象，研究名称、结构与属性信息的清洗和检索一致性。",
+      "type": "topic",
+      "majors": [
+        "m56"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "pubchem",
+        "ncbi",
+        "scipy"
+      ],
+      "tags": [
+        "药学",
+        "化合物",
+        "PubChem"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "以 PubChem 中有限化合物为对象，研究名称、结构与属性信息的清洗和检索一致性。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "限定化合物集合与目标属性，保留 CID 与来源。",
+            "核对同义名、单位和缺失值。",
+            "比较描述符和聚类，讨论数据来源差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "匹配准确率、来源覆盖、缺失率、分析稳定性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "专业数据与导师支持未确认。涉及患者或动物的研究应由专业团队按机构要求设计；当前方案是教学研究原型，不输出个体诊断或治疗建议。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "化合物标识、来源版本与属性单位需一致。",
+        "prerequisites": [
+          "基础化学",
+          "数据库检索"
+        ],
+        "resources": [
+          "PubChem 公开页面"
+        ],
+        "minimum": "整理一种化合物主题的属性表。",
+        "stretch": "加入结构标准化和描述符比较。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "topic-57",
+      "title": "检验记录质控与异常结果规则研究",
+      "summary": "在合成或授权匿名数据上建立质控原型，关注样品、批次、单位与错误追溯。",
+      "type": "topic",
+      "majors": [
+        "m57"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "lab-quality",
+        "physionet"
+      ],
+      "tags": [
+        "检验",
+        "质量控制",
+        "追溯"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "在合成或授权匿名数据上建立质控原型，关注样品、批次、单位与错误追溯。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "依据 WHO 实验室质量手册确定过程要素。",
+            "由检验导师定义字段与错误类型。",
+            "用规则和统计方法识别缺项、重复与异常。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "错误检测率、误报率、批次追溯完整性和可解释性。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "专业数据与导师支持未确认。涉及患者或动物的研究应由专业团队按机构要求设计；当前方案是教学研究原型，不输出个体诊断或治疗建议。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "质控逻辑需检验专业解释，模拟规则不等于诊断。",
+        "prerequisites": [
+          "检验质控与统计",
+          "基础编程"
+        ],
+        "resources": [
+          "合成记录、公开质控材料与导师"
+        ],
+        "minimum": "只研究一种质控记录规则。",
+        "stretch": "比较规则冲突、异常与误报。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "topic-58",
+      "title": "体位与活动识别的护理研究原型",
+      "summary": "使用公开生理或运动数据探索体位活动识别，评价误报和使用负担，临床用途另需验证。",
+      "type": "topic",
+      "majors": [
+        "m58"
+      ],
+      "groups": [
+        "medicine"
+      ],
+      "sourceIds": [
+        "physionet",
+        "har",
+        "oral"
+      ],
+      "tags": [
+        "护理",
+        "体位",
+        "活动监测"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "使用公开生理或运动数据探索体位活动识别，评价误报和使用负担，临床用途另需验证。"
+          ]
+        },
+        {
+          "heading": "最小可行研究路线",
+          "items": [
+            "优先选择 PhysioNet 开放数据并读取具体许可。",
+            "按参与者隔离数据，建立活动或体位基线。",
+            "在导师监督下做界面评价，报告数据与护理场景差异。"
+          ]
+        },
+        {
+          "heading": "验证与评价",
+          "items": [
+            "宏平均 F1、参与者外表现、误报、界面任务完成。"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛衔接",
+          "items": [
+            "以问题定义、对照实验和可复现材料作为毕设基础；参赛需要另外逐条核对当届命题、组队和提交要求。"
+          ]
+        },
+        {
+          "heading": "准备与阶段交付",
+          "items": [
+            "周期与投入见上方难度档案；按最小研究范围估算，先做一次工具和数据可用性预检。",
+            "交付问题清单、数据字典或设计规格、基线结果、改进实验、失败记录及复现说明。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "专业数据与导师支持未确认。涉及患者或动物的研究应由专业团队按机构要求设计；当前方案是教学研究原型，不输出个体诊断或治疗建议。"
+          ]
+        }
+      ],
+      "level": "入门",
+      "priority": 3,
+      "status": "",
+      "date": "2026-10-01",
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "公开运动数据与护理人群差异需清晰限定。",
+        "prerequisites": [
+          "护理基础",
+          "分类评价与任务分析"
+        ],
+        "resources": [
+          "公开开放数据；界面用模拟病例"
+        ],
+        "minimum": "只验证公开数据上的活动分类。",
+        "stretch": "增加界面任务评价，避免临床用途断言。",
+        "effort": "6–10 周，每周 6–10 小时",
+        "team": "1–2 人；按模块分工，定期请导师反馈"
+      }
+    },
+    {
+      "id": "contest-math",
+      "title": "全国大学生数学建模竞赛",
+      "summary": "运用数学模型、计算实验和论文解决实际问题，可为多专业积累研究方法。",
+      "type": "contest",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m16",
+        "m17",
+        "m18",
+        "m19",
+        "m20",
+        "m21",
+        "m22",
+        "m23",
+        "m24",
+        "m25",
+        "m26",
+        "m27",
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m38",
+        "m39",
+        "m40",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m47",
+        "m48",
+        "m49",
+        "m50",
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m55",
+        "m56",
+        "m57",
+        "m58",
+        "m59"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "materials",
+        "environment",
+        "computing",
+        "circuits",
+        "design",
+        "math",
+        "human",
+        "business",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "mcm"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "2026 年竞赛 9 月 10 日开始，当前赛题已公开。以学习历届题目和复现方法为主。",
+            "下一届日期不预填；参赛和 AI 使用按当届规则。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 年赛题已发布",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-mech",
+      "title": "中国大学生机械工程创新创意大赛",
+      "summary": "学会组织的系列竞赛，按具体赛项核对主题、材料和资格。",
+      "type": "contest",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m05",
+        "m47",
+        "m28"
+      ],
+      "groups": [
+        "machines",
+        "design"
+      ],
+      "sourceIds": [
+        "mechanical"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "官方通知面向机械及相关多学科学生；系列赛项的赛程和规则分别查看。",
+            "先完成机构、控制或制造原型及实验报告，再选择对应赛项。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 系列赛项",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-life",
+      "title": "全国大学生生命科学竞赛 · 科学探究类",
+      "summary": "强调研究问题、实验记录、分析与展示，适合生物、食品与农牧团队。",
+      "type": "contest",
+      "majors": [
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m49",
+        "m50",
+        "m56",
+        "m57"
+      ],
+      "groups": [
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "life",
+        "life-final"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "第十一届科学探究类总决赛在 2026 年 7 月举办；不作为仍可报名的入口。",
+            "实际实验需可持续记录和导师资源；下一届安排以新通知为准。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 决赛已举办",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-chem",
+      "title": "全国大学生化工设计竞赛",
+      "summary": "面向完整工程设计的团队竞赛，适合化工流程、绿色生产和能量分析方向。",
+      "type": "contest",
+      "majors": [
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m09"
+      ],
+      "groups": [
+        "materials",
+        "environment"
+      ],
+      "sourceIds": [
+        "chemical",
+        "chemical-task"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "2026 通知的报名期为 3 月 1–31 日。每队同校 5 人，按正式通知核对。",
+            "当届官方题目涉及苯乙烯清洁生产分厂；小型课程项目与完整竞赛交付的范围不同。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 报名与赛程已过",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-ad",
+      "title": "全国大学生广告艺术大赛",
+      "summary": "官方命题涵盖平面、视频、互动、策划、UI 等类别，适合设计、数字媒体、营销与语言表达。",
+      "type": "contest",
+      "majors": [
+        "m30",
+        "m31",
+        "m28",
+        "m29",
+        "m44",
+        "m36",
+        "m37"
+      ],
+      "groups": [
+        "design",
+        "computing",
+        "human",
+        "business"
+      ],
+      "sourceIds": [
+        "ad"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "2026 指南提供作品类别、原创要求和提交规格；赛季时间不能沿用到下一届。",
+            "作品须按统一命题创作，资料站中的自行拟定题目需要另作适配。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "第18届历史资料",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-survey",
+      "title": "正大杯第十七届市场调查与分析大赛",
+      "summary": "近期已启动，可提前了解知识赛、同校组队和实践报告；向本校确认组织安排。",
+      "type": "contest",
+      "majors": [
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m48",
+        "m33",
+        "m32",
+        "m49",
+        "m53"
+      ],
+      "groups": [
+        "math",
+        "business",
+        "agri"
+      ],
+      "sourceIds": [
+        "survey",
+        "survey-new"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "北京工业大学 9 月 30 日正式通知确认第十七届 2026 年 9 月启动；知识赛安排 11 月 1–20 日，实践赛延续至 2027 年。",
+            "同校 3–5 人组队；本科生知识赛合格后进入实践赛。该校报名截止不能当成佛山大学截止。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026.09 启动，需校内确认",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-english",
+      "title": "外研社国才杯 · 理解当代中国外语能力大赛",
+      "summary": "外语能力与专业表达结合的赛事，按语种和具体赛项核对资格和推荐方式。",
+      "type": "contest",
+      "majors": [
+        "m37",
+        "m42",
+        "m36",
+        "m38"
+      ],
+      "groups": [
+        "human",
+        "business"
+      ],
+      "sourceIds": [
+        "english"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "官方通知包含注册、赛项与晋级方式；不同赛项安排分别阅读。",
+            "地方和院校选拔时间不同；查看佛山大学组织安排后再决定参赛。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 赛项通知已发布",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-innovation",
+      "title": "中国国际大学生创新大赛（2026）",
+      "summary": "综合创新平台，可承接有实际问题、验证证据和团队分工的多专业项目。",
+      "type": "contest",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m16",
+        "m17",
+        "m18",
+        "m19",
+        "m20",
+        "m21",
+        "m22",
+        "m23",
+        "m24",
+        "m25",
+        "m26",
+        "m27",
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m38",
+        "m39",
+        "m40",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m47",
+        "m48",
+        "m49",
+        "m50",
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m55",
+        "m56",
+        "m57",
+        "m58",
+        "m59"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "materials",
+        "environment",
+        "computing",
+        "circuits",
+        "design",
+        "math",
+        "human",
+        "business",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "innovation"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "教育部通知确定本届于 2026 年 7–11 月举办；不能据此认定校内初赛仍可报名。",
+            "高教主赛道、产业赛道等要求不同，按附件及校级组织安排逐项核对。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 赛程需校内核对",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-structure",
+      "title": "全国大学生结构设计竞赛",
+      "summary": "结构设计、制作和加载验证结合的专业赛，可参考官方赛题及高校组织材料。",
+      "type": "contest",
+      "majors": [
+        "m06",
+        "m26",
+        "m01"
+      ],
+      "groups": [
+        "machines",
+        "civil"
+      ],
+      "sourceIds": [
+        "structure",
+        "structure-case"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "已见 2026 广东分区赛报道；佛山大学队伍名次由华南农业大学官方报道交叉核验。",
+            "国赛资格、当前赛程和新报名不作推定；向学院竞赛组织者核对。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 分区赛历史资料",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-meta",
+      "title": "全国大学生金相技能大赛",
+      "summary": "以金相试样制备、观察和分析为核心，适合材料类基础技能积累。",
+      "type": "contest",
+      "majors": [
+        "m08",
+        "m09",
+        "m10",
+        "m11"
+      ],
+      "groups": [
+        "materials"
+      ],
+      "sourceIds": [
+        "metallography"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "官方大事记记录 2026 年 7 月决赛。当前以实验训练和下一届通知为主。",
+            "需要实验室设备、指导和操作训练，不能用图像分类代替技能赛交付。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "2026 决赛已举行",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "contest-ai",
+      "title": "广东省元智新潮智能体应用创新大赛",
+      "summary": "2026 通知由高校刊载，涉及专业知识与智能体应用，可作为广东本地赛事线索。",
+      "type": "contest",
+      "majors": [
+        "m16",
+        "m19",
+        "m33",
+        "m34",
+        "m43"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "human",
+        "business"
+      ],
+      "sourceIds": [
+        "ai-contest"
+      ],
+      "tags": [
+        "竞赛",
+        "规则",
+        "专业匹配"
+      ],
+      "sections": [
+        {
+          "heading": "赛季与准备建议",
+          "items": [
+            "刊载通知显示佛山大学为协办单位之一；原通知安排 9 月下旬公示。当前实际公示名单未另核验。",
+            "仅核验到官方摘要；报名与作品要求需原文复核，不能据此认定仍可报名。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 4,
+      "status": "公示状态待原文复核",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "case-fosu-structure",
+      "title": "佛山大学：2026 结构设计广东分区赛第三名",
+      "summary": "华南农业大学官方赛事报道写明佛山大学在 2026 广东分区赛排名第三。该来源是参赛高校的赛事报道，适合了解校内已有竞赛方向。",
+      "type": "case",
+      "majors": [
+        "m06",
+        "m26"
+      ],
+      "groups": [
+        "civil"
+      ],
+      "sourceIds": [
+        "structure-case"
+      ],
+      "tags": [
+        "佛山大学",
+        "结构设计",
+        "2026"
+      ],
+      "sections": [
+        {
+          "heading": "使用边界",
+          "items": [
+            "报道只支持赛事名次及相关赛况，不证明已经获得某个国赛奖项。",
+            "队员技术方案、指导老师和可复用设计需另查公开材料或向学院了解。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 6,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-qgis",
+      "title": "QGIS · 空间数据与可达性分析",
+      "summary": "官方 GIS 文档，用于地理数据处理、坐标和空间分析。",
+      "type": "resource",
+      "majors": [
+        "m25",
+        "m27",
+        "m26",
+        "m14",
+        "m07",
+        "m48"
+      ],
+      "groups": [
+        "civil",
+        "environment",
+        "business"
+      ],
+      "sourceIds": [
+        "qgis"
+      ],
+      "tags": [
+        "GIS",
+        "空间",
+        "地图"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "确认坐标参考系、数据许可、空间精度与缺漏。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-sumo",
+      "title": "SUMO · 路网与交通仿真",
+      "summary": "研究路网、交通需求、配时与统计的官方仿真资料。",
+      "type": "resource",
+      "majors": [
+        "m07",
+        "m03",
+        "m05",
+        "m33"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "math"
+      ],
+      "sourceIds": [
+        "sumo"
+      ],
+      "tags": [
+        "交通",
+        "SUMO",
+        "仿真"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "统一需求与随机种子，报告多次实验波动，模型需与现场条件对照。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-energy",
+      "title": "EnergyPlus · 建筑能耗仿真",
+      "summary": "官方建筑能耗模型资料，可用于参数比较与负荷研究。",
+      "type": "resource",
+      "majors": [
+        "m26",
+        "m23",
+        "m11",
+        "m14"
+      ],
+      "groups": [
+        "materials",
+        "environment",
+        "circuits",
+        "civil"
+      ],
+      "sourceIds": [
+        "energy"
+      ],
+      "tags": [
+        "建筑",
+        "能耗",
+        "仿真"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "记录气象、围护结构、使用时段和版本；仿真值需要模型校核。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-materials",
+      "title": "Materials Project · 计算材料数据",
+      "summary": "公开材料研究项目的文档与数据说明，适合性质筛选及方法研究。",
+      "type": "resource",
+      "majors": [
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m24"
+      ],
+      "groups": [
+        "materials",
+        "circuits"
+      ],
+      "sourceIds": [
+        "materials"
+      ],
+      "tags": [
+        "材料",
+        "计算数据",
+        "性质"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "读取 API、许可和访问要求；计算性质不能直接等同于器件实验性能。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-plant",
+      "title": "PlantVillage · 叶片图像数据",
+      "summary": "作者维护的植物叶片图像及分组信息，适合园艺与视觉算法交叉。",
+      "type": "resource",
+      "majors": [
+        "m52",
+        "m19",
+        "m16",
+        "m33"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "agri"
+      ],
+      "sourceIds": [
+        "plant"
+      ],
+      "tags": [
+        "园艺",
+        "图像",
+        "数据集"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "仓库说明包含叶片分组以减少泄漏；真实田间背景需另做外部验证。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-physionet",
+      "title": "PhysioNet · 生理与活动信号",
+      "summary": "数据平台区分开放、受限和凭证访问，可以优先选择适合教学的开放资源。",
+      "type": "resource",
+      "majors": [
+        "m58",
+        "m57",
+        "m20",
+        "m19",
+        "m33"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "math",
+        "medicine"
+      ],
+      "sourceIds": [
+        "physionet"
+      ],
+      "tags": [
+        "生理",
+        "公开数据",
+        "访问条件"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "逐一读取数据集许可、标注和访问条件；平台中并非所有数据都可直接下载。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-wine",
+      "title": "Wine Quality · 理化指标与质量标签",
+      "summary": "UCI 数据平台提供质量评价学习数据，可用于数据处理与模型验证。",
+      "type": "resource",
+      "majors": [
+        "m49",
+        "m50",
+        "m33",
+        "m09"
+      ],
+      "groups": [
+        "materials",
+        "math",
+        "agri"
+      ],
+      "sourceIds": [
+        "wine"
+      ],
+      "tags": [
+        "质量",
+        "食品",
+        "回归"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "这是葡萄酒数据；更换食品对象需重新采集和验证，标签也不是食品安全结论。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-stats",
+      "title": "国家数据 · 官方统计指标",
+      "summary": "政府统计检索入口，适合经管、环境和社会研究背景分析。",
+      "type": "resource",
+      "majors": [
+        "m41",
+        "m42",
+        "m43",
+        "m45",
+        "m15",
+        "m25"
+      ],
+      "groups": [
+        "environment",
+        "civil",
+        "business"
+      ],
+      "sourceIds": [
+        "stats"
+      ],
+      "tags": [
+        "统计",
+        "宏观",
+        "政府数据"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "记录指标定义、单位、年份、发布日期和修订；不同口径不直接拼接。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-foshan-stat",
+      "title": "佛山地方统计公报 · 2024 年资料",
+      "summary": "2024 年佛山市官方统计公报，用作地方产业、环境与文旅研究背景。",
+      "type": "resource",
+      "majors": [
+        "m48",
+        "m43",
+        "m44",
+        "m15",
+        "m42",
+        "m40"
+      ],
+      "groups": [
+        "environment",
+        "human",
+        "business"
+      ],
+      "sourceIds": [
+        "foshan-stat"
+      ],
+      "tags": [
+        "佛山",
+        "统计公报",
+        "地方研究"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "当前收录的是 2024 年公报，不宣称为最新年度；核对年份与统计口径。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-patents",
+      "title": "PATENTSCOPE · 技术与专利线索",
+      "summary": "WIPO 官方专利信息检索工具，可用于先行技术与技术主题研究。",
+      "type": "resource",
+      "majors": [
+        "m39",
+        "m38",
+        "m21",
+        "m01",
+        "m08"
+      ],
+      "groups": [
+        "machines",
+        "materials",
+        "circuits",
+        "human"
+      ],
+      "sourceIds": [
+        "patents"
+      ],
+      "tags": [
+        "专利",
+        "检索",
+        "先行技术"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "建立检索式与分类规则，法律状态、权利范围和许可由专业人员复核。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-law",
+      "title": "国家法律法规数据库 · 官方条文检索",
+      "summary": "使用官方条文建立版本和出处可追溯的法学资料表。",
+      "type": "resource",
+      "majors": [
+        "m38",
+        "m39",
+        "m40"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "law"
+      ],
+      "tags": [
+        "法律",
+        "条款",
+        "官方来源"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "条文有效状态、修改历史和适用范围需人工核对；不生成个案法律结论。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-fao",
+      "title": "FAO 统计 · 农业食品背景数据",
+      "summary": "粮农组织统计资料说明农业与食品数据范围，可用于背景和趋势研究。",
+      "type": "resource",
+      "majors": [
+        "m53",
+        "m52",
+        "m51",
+        "m49",
+        "m50",
+        "m42"
+      ],
+      "groups": [
+        "business",
+        "agri"
+      ],
+      "sourceIds": [
+        "fao"
+      ],
+      "tags": [
+        "农牧",
+        "食品",
+        "统计"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "宏观农业统计不能替代个体动物实验或实验室样品测量。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-comtrade",
+      "title": "UN Comtrade · 商品贸易数据",
+      "summary": "联合国统计司的贸易数据入口，适合编码、伙伴与年份维度研究。",
+      "type": "resource",
+      "majors": [
+        "m42",
+        "m41",
+        "m43"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "comtrade"
+      ],
+      "tags": [
+        "贸易",
+        "国际",
+        "数据"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "对齐商品编码版本、伙伴口径与计价单位；访问限额和导出要求按平台。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-oral",
+      "title": "WHO · 口腔健康科普背景",
+      "summary": "国际组织公开背景资料，用于专业指导下的健康教育内容研究。",
+      "type": "resource",
+      "majors": [
+        "m55",
+        "m58",
+        "m30"
+      ],
+      "groups": [
+        "design",
+        "medicine"
+      ],
+      "sourceIds": [
+        "oral"
+      ],
+      "tags": [
+        "口腔",
+        "健康教育",
+        "科普"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "本项目只作材料评价，具体临床内容与个体建议由专业团队处理。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-lab-quality",
+      "title": "WHO · 实验室质量管理手册",
+      "summary": "官方质量管理手册，提供记录、过程和质量体系研究背景。",
+      "type": "resource",
+      "majors": [
+        "m57",
+        "m50",
+        "m56",
+        "m51"
+      ],
+      "groups": [
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "lab-quality"
+      ],
+      "tags": [
+        "实验室",
+        "质量体系",
+        "记录"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "核对手册发布年份及机构现行规范，不能直接当作当届课程或最新法规要求。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-pubchem",
+      "title": "PubChem · 化合物与属性来源",
+      "summary": "NIH 数据库说明包含化学结构、标识和属性等数据及来源机制。",
+      "type": "resource",
+      "majors": [
+        "m56",
+        "m09",
+        "m12",
+        "m51"
+      ],
+      "groups": [
+        "materials",
+        "environment",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "pubchem"
+      ],
+      "tags": [
+        "化合物",
+        "PubChem",
+        "属性"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "记录 CID、版本、计算与实验属性的区别；数据库性质不等于临床效果。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-ncbi",
+      "title": "NCBI Datasets · 生物研究数据",
+      "summary": "研究机构生物数据入口，可建立有限主题的数据获取和质控流程。",
+      "type": "resource",
+      "majors": [
+        "m51",
+        "m54",
+        "m56",
+        "m57"
+      ],
+      "groups": [
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "ncbi"
+      ],
+      "tags": [
+        "生物",
+        "序列",
+        "质控"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "先限定具体数据类型、版本、许可与筛选条件，避免无目的下载海量数据。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-gbif",
+      "title": "GBIF · 物种分布记录体系",
+      "summary": "生物多样性研究基础设施说明，可寻找有许可的物种分布记录。",
+      "type": "resource",
+      "majors": [
+        "m52",
+        "m15",
+        "m27",
+        "m51"
+      ],
+      "groups": [
+        "environment",
+        "civil",
+        "agri"
+      ],
+      "sourceIds": [
+        "gbif"
+      ],
+      "tags": [
+        "生物多样性",
+        "物种",
+        "分布"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "逐条核对记录与许可；采样偏差和位置精度需要纳入分析。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-cattle",
+      "title": "Precision Beef · 牛行为加速度数据",
+      "summary": "作者发布的牛行为研究数据包含采食、反刍与其他标签，适合与芯片、AI 团队交叉。",
+      "type": "resource",
+      "majors": [
+        "m53",
+        "m54",
+        "m21",
+        "m18",
+        "m19"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "agri"
+      ],
+      "sourceIds": [
+        "cattle"
+      ],
+      "tags": [
+        "牛",
+        "行为",
+        "加速度"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "官方说明为 10 Hz 三轴颈圈加速度；先读对象、标签、划分与许可，不由行为标签推定疾病。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-calf-paper",
+      "title": "ActBeCalf · 犊牛行为数据论文",
+      "summary": "作者论文描述用于犊牛行为识别的加速度时间序列数据，可学习实验设计与对象划分。",
+      "type": "resource",
+      "majors": [
+        "m53",
+        "m54",
+        "m19"
+      ],
+      "groups": [
+        "computing",
+        "agri"
+      ],
+      "sourceIds": [
+        "calf-paper"
+      ],
+      "tags": [
+        "论文",
+        "犊牛",
+        "时间序列"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "预印本需核对正式发表版本；采样对象与颈圈设置同成人或其他动物不同。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-pymc",
+      "title": "PyMC · 回归与不确定性示例",
+      "summary": "官方概率建模示例，用于理解模型、误差和区间表达。",
+      "type": "resource",
+      "majors": [
+        "m41",
+        "m45",
+        "m44",
+        "m46",
+        "m09",
+        "m33"
+      ],
+      "groups": [
+        "materials",
+        "math",
+        "business"
+      ],
+      "sourceIds": [
+        "pymc"
+      ],
+      "tags": [
+        "回归",
+        "不确定性",
+        "统计"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "先有明确研究问题，再选择模型；检查假设、收敛和结果敏感性。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-gutenberg",
+      "title": "Project Gutenberg · 文本版本与电子书",
+      "summary": "可检索文本资源入口，适合语言与文本研究建立有限语料。",
+      "type": "resource",
+      "majors": [
+        "m37",
+        "m36",
+        "m35"
+      ],
+      "groups": [
+        "human"
+      ],
+      "sourceIds": [
+        "gutenberg"
+      ],
+      "tags": [
+        "文学",
+        "语料",
+        "版本"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "许可和公版状态可能受所在地影响，逐一检查文本版本和使用权；平台并不保证题目所需绘本齐备。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-smartedu",
+      "title": "国家高等教育智慧教育平台 · 学习资源",
+      "summary": "官方教育资源入口，可为专业学习、教材和教学研究寻找线索。",
+      "type": "resource",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m16",
+        "m17",
+        "m18",
+        "m19",
+        "m20",
+        "m21",
+        "m22",
+        "m23",
+        "m24",
+        "m25",
+        "m26",
+        "m27",
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m38",
+        "m39",
+        "m40",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m47",
+        "m48",
+        "m49",
+        "m50",
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m55",
+        "m56",
+        "m57",
+        "m58",
+        "m59"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "materials",
+        "environment",
+        "computing",
+        "circuits",
+        "design",
+        "math",
+        "human",
+        "business",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "smartedu"
+      ],
+      "tags": [
+        "课程",
+        "教育",
+        "学习"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "当前未抽取全部课程；登录、开放与课程使用条件在具体页面确认。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-scipy",
+      "title": "SciPy · 信号、统计与优化",
+      "summary": "官方科学计算文档，支持基线分析、数值计算和可复现教学实验。",
+      "type": "resource",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m16",
+        "m17",
+        "m18",
+        "m19",
+        "m20",
+        "m21",
+        "m22",
+        "m23",
+        "m24",
+        "m25",
+        "m26",
+        "m27",
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m38",
+        "m39",
+        "m40",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m47",
+        "m48",
+        "m49",
+        "m50",
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m55",
+        "m56",
+        "m57",
+        "m58",
+        "m59"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "materials",
+        "environment",
+        "computing",
+        "circuits",
+        "design",
+        "math",
+        "human",
+        "business",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "scipy"
+      ],
+      "tags": [
+        "Python",
+        "科学计算",
+        "基线"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "保存环境版本、随机种子和数据处理规则；软件接口需要按当前版本确认。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-ros",
+      "title": "ROS · 机器人软件官方索引",
+      "summary": "机器人项目的发行版和软件包索引，便于继续查安装与接口资料。",
+      "type": "resource",
+      "majors": [
+        "m02",
+        "m05",
+        "m16",
+        "m19"
+      ],
+      "groups": [
+        "machines",
+        "computing"
+      ],
+      "sourceIds": [
+        "ros"
+      ],
+      "tags": [
+        "机器人",
+        "ROS",
+        "控制"
+      ],
+      "sections": [
+        {
+          "heading": "使用与验证提示",
+          "items": [
+            "选择与操作系统和设备匹配的发行版；只核验入口，不假定学校设备支持。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 1,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "guide-review",
+      "title": "从选题到可复现项目 · 研究检查表",
+      "summary": "先完成可验证的最小研究，再扩展为毕设或参赛作品。提供问题定义、来源核验、实验与写作方法。",
+      "type": "guide",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m16",
+        "m17",
+        "m18",
+        "m19",
+        "m20",
+        "m21",
+        "m22",
+        "m23",
+        "m24",
+        "m25",
+        "m26",
+        "m27",
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m38",
+        "m39",
+        "m40",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m47",
+        "m48",
+        "m49",
+        "m50",
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m55",
+        "m56",
+        "m57",
+        "m58",
+        "m59"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "materials",
+        "environment",
+        "computing",
+        "circuits",
+        "design",
+        "math",
+        "human",
+        "business",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "mcm",
+        "scipy"
+      ],
+      "tags": [
+        "研究方法",
+        "导师沟通",
+        "可复现"
+      ],
+      "sections": [
+        {
+          "heading": "第一周：把题目变成问题",
+          "items": [
+            "明确研究对象、输入输出和一个核心指标。把宽泛主题缩成一个可证伪的问题。",
+            "找 3–5 个相关原始资料，记录作者、日期、方法、数据、限制与网址。",
+            "明确个人新增工作，区分复用与自行完成。"
+          ]
+        },
+        {
+          "heading": "第二周：确认可用条件",
+          "items": [
+            "验证数据与工具能否获得；检查许可、设备和导师资源。",
+            "完成一个基线或最小原型，并保存失败原因。",
+            "确定继续、缩小范围或换题的具体判断条件。"
+          ]
+        },
+        {
+          "heading": "实验与写作",
+          "items": [
+            "至少一个可靠对照；说明划分、样本量、随机种子与测量条件。",
+            "记录不仅是最终结果，还包括假设、参数、异常和失败。",
+            "论文与报告分别说明来源事实、自己的方法、实验结果与未证实推断。"
+          ]
+        },
+        {
+          "heading": "竞赛适配",
+          "items": [
+            "查当届资格、主题、硬件平台、队伍人数、提交物、评审及时间。",
+            "方向相近不等于作品合规；校内选拔与全国时间分别确认。",
+            "演示、技术文档与可复现实验一起准备。"
+          ]
+        }
+      ],
+      "level": "",
+      "priority": 7,
+      "status": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "resource-v2-sby",
+      "title": "SymbiYosys：形式验证与 FIFO 入门",
+      "summary": "先定义性质与环境假设；保存可复现反例，不把有限深度通过写成无条件证明。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "sby"
+      ],
+      "tags": [
+        "断言、反例与验证边界",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "先定义性质与环境假设；保存可复现反例，不把有限深度通过写成无条件证明。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取文档总览及形式验证任务说明",
+            "工具支持有界与无界安全性质等流程；证明结论取决于模型、假设、引擎和支持的语法。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-openroad",
+      "title": "OpenROAD：开源数字物理实现",
+      "summary": "固定设计、工艺、工具版本和运行种子；区分综合估计与布线后指标。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "openroad"
+      ],
+      "tags": [
+        "布局布线与 PPA",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "固定设计、工艺、工具版本和运行种子；区分综合估计与布线后指标。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取项目定位、流程入口及系统支持说明",
+            "用于数字布局布线研究；工艺许可、设计规则与实际制造条件需另行核对。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-ngspice",
+      "title": "ngspice：电路仿真与用户手册",
+      "summary": "从小电路与工作点检查开始，确认模型许可、参数适用范围和收敛，再做扫参。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m22",
+        "m24",
+        "m04"
+      ],
+      "groups": [
+        "circuits",
+        "machines"
+      ],
+      "sourceIds": [
+        "ngspice"
+      ],
+      "tags": [
+        "模拟电路仿真",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "从小电路与工作点检查开始，确认模型许可、参数适用范围和收敛，再做扫参。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "官方搜索结果正文可读；本次直接打开超时，未读取完整手册",
+            "记录官方文档入口；模型兼容、仿真选项与收敛问题需阅读对应版本手册。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-pybamm",
+      "title": "PyBaMM：电池物理建模与实验仿真",
+      "summary": "先复现一个参数集与工况，再评估参数识别和工况外验证；模拟曲线不是实际电芯测量。",
+      "type": "resource",
+      "majors": [
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m04",
+        "m03"
+      ],
+      "groups": [
+        "materials",
+        "machines"
+      ],
+      "sourceIds": [
+        "pybamm"
+      ],
+      "tags": [
+        "电化学模型与参数识别",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "先复现一个参数集与工况，再评估参数识别和工况外验证；模拟曲线不是实际电芯测量。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取官方仓库 README、模型示例与版本兼容提示",
+            "主分支示例对应开发状态；研究应固定发行版本、参数集和引用。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-pymoo",
+      "title": "pymoo：多目标优化与约束处理",
+      "summary": "先写清目标、变量和约束；控制评估预算，保留失败运行，比较可行率与稳定性。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m08",
+        "m10",
+        "m11",
+        "m12",
+        "m26",
+        "m47",
+        "m32",
+        "m33"
+      ],
+      "groups": [
+        "circuits",
+        "materials",
+        "environment",
+        "civil",
+        "machines",
+        "math"
+      ],
+      "sourceIds": [
+        "pymoo"
+      ],
+      "tags": [
+        "Pareto 权衡与搜索预算",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "先写清目标、变量和约束；控制评估预算，保留失败运行，比较可行率与稳定性。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取算法目录、约束处理和指标入口",
+            "提供 NSGA-II 等方法；算法工具不保证找到真实问题的全局最优。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-ortools",
+      "title": "OR-Tools：排程、路径与约束优化",
+      "summary": "从可手算实例验证约束，再扩展规模；同时记录求解状态、时间和结果质量。",
+      "type": "resource",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m05",
+        "m07",
+        "m47",
+        "m32",
+        "m33",
+        "m43"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "math",
+        "business"
+      ],
+      "sourceIds": [
+        "ortools"
+      ],
+      "tags": [
+        "约束建模与可行性",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "从可手算实例验证约束，再扩展规模；同时记录求解状态、时间和结果质量。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取官方概览与求解器说明",
+            "最优性需结合求解状态、时间限制、上下界或 gap 判断；不能只比较一张排程图。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-fenics",
+      "title": "DOLFINx：有限元与 Poisson 示例",
+      "summary": "先用有解析解的小问题检查误差与网格收敛；程序跑通不代表物理模型正确。",
+      "type": "resource",
+      "majors": [
+        "m01",
+        "m06",
+        "m08",
+        "m12",
+        "m14",
+        "m22",
+        "m32"
+      ],
+      "groups": [
+        "machines",
+        "civil",
+        "materials",
+        "environment",
+        "circuits",
+        "math"
+      ],
+      "sourceIds": [
+        "fenics"
+      ],
+      "tags": [
+        "偏微分方程与网格收敛",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "先用有解析解的小问题检查误差与网格收敛；程序跑通不代表物理模型正确。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取官方 Python 文档及 Poisson 演示页面",
+            "所链接示例为 Poisson 问题；弹性或反问题的方程、边界条件需另外建模验证。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-cantera",
+      "title": "Cantera：反应动力学、热力学与输运",
+      "summary": "固定机理来源与版本，先复现示例，再检查守恒、数值误差与参数敏感性。",
+      "type": "resource",
+      "majors": [
+        "m12",
+        "m09",
+        "m10",
+        "m11",
+        "m14",
+        "m03"
+      ],
+      "groups": [
+        "environment",
+        "materials",
+        "machines"
+      ],
+      "sourceIds": [
+        "cantera"
+      ],
+      "tags": [
+        "反应模型与敏感性",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "固定机理来源与版本，先复现示例，再检查守恒、数值误差与参数敏感性。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取官方介绍、科学参考与 Python 示例入口",
+            "适用性取决于反应机理、参数、相模型和边界条件。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-rdkit",
+      "title": "RDKit：分子描述符与化学信息学",
+      "summary": "保存分子标准化规则，检查重复与近邻泄漏，按骨架或来源分组测试。",
+      "type": "resource",
+      "majors": [
+        "m09",
+        "m12",
+        "m51",
+        "m56",
+        "m33"
+      ],
+      "groups": [
+        "materials",
+        "environment",
+        "agri",
+        "medicine",
+        "math"
+      ],
+      "sourceIds": [
+        "rdkit"
+      ],
+      "tags": [
+        "分子表示与描述符",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "保存分子标准化规则，检查重复与近邻泄漏，按骨架或来源分组测试。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取 Python 入门与描述符计算章节",
+            "描述符或相似度不证明药效、安全性或临床可用性。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-sklearn-cv",
+      "title": "scikit-learn：分组与时间交叉验证",
+      "summary": "按对象或时间隔离测试；清洗、标准化、特征选择和调参都只在训练部分拟合。",
+      "type": "resource",
+      "majors": [
+        "m16",
+        "m19",
+        "m33",
+        "m01",
+        "m08",
+        "m11",
+        "m49",
+        "m52",
+        "m53",
+        "m54",
+        "m56",
+        "m58",
+        "m41"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "machines",
+        "materials",
+        "agri",
+        "medicine",
+        "business"
+      ],
+      "sourceIds": [
+        "sklearn-cv"
+      ],
+      "tags": [
+        "防止数据泄漏",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "按对象或时间隔离测试；清洗、标准化、特征选择和调参都只在训练部分拟合。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取 GroupKFold 与 TimeSeriesSplit 等章节",
+            "组划分和时间划分解决不同依赖问题；须按数据产生机制选择。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-statsmodels",
+      "title": "statsmodels：统计建模与诊断",
+      "summary": "明确模型与估计对象，检查残差和依赖结构；报告效应量、区间与敏感性。",
+      "type": "resource",
+      "majors": [
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m37",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m48",
+        "m55",
+        "m58"
+      ],
+      "groups": [
+        "math",
+        "human",
+        "business",
+        "medicine"
+      ],
+      "sourceIds": [
+        "statsmodels"
+      ],
+      "tags": [
+        "统计模型与不确定性",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "明确模型与估计对象，检查残差和依赖结构；报告效应量、区间与敏感性。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取官方文档概览与入门入口",
+            "统计显著性不等于因果关系；模型假设、样本结构和缺失机制需解释。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-wcag",
+      "title": "WCAG 2.2：无障碍快速参考",
+      "summary": "围绕具体任务检查键盘、焦点、文本与错误反馈；结合真实使用任务记录问题。",
+      "type": "resource",
+      "majors": [
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m34",
+        "m16"
+      ],
+      "groups": [
+        "design",
+        "computing",
+        "human"
+      ],
+      "sourceIds": [
+        "wcag"
+      ],
+      "tags": [
+        "键盘、理解与可访问性",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "围绕具体任务检查键盘、焦点、文本与错误反馈；结合真实使用任务记录问题。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取快速参考与键盘操作要求",
+            "快速检查清单用于定位问题；少量检查通过不等于完整 WCAG 一致性认证。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-v2-prereg",
+      "title": "研究预注册与探索性分析边界",
+      "summary": "在收集数据或查看结果前确定主要问题、指标、排除规则与分析；偏离计划时明确记录。",
+      "type": "resource",
+      "majors": [
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m40",
+        "m43",
+        "m44",
+        "m46",
+        "m48",
+        "m28",
+        "m30",
+        "m31",
+        "m53",
+        "m55",
+        "m58"
+      ],
+      "groups": [
+        "human",
+        "business",
+        "design",
+        "agri",
+        "medicine"
+      ],
+      "sourceIds": [
+        "prereg"
+      ],
+      "tags": [
+        "可复现研究计划",
+        "方法资料"
+      ],
+      "level": "",
+      "priority": 2,
+      "status": "工具与方法入口",
+      "date": "2026-10-01",
+      "sections": [
+        {
+          "heading": "可以用来做什么",
+          "items": [
+            "在收集数据或查看结果前确定主要问题、指标、排除规则与分析；偏离计划时明确记录。"
+          ]
+        },
+        {
+          "heading": "读取范围与使用边界",
+          "items": [
+            "已读取预注册说明与常见问题",
+            "预注册用于区分计划检验与探索性分析；不替代伦理审查、实验设计或统计功效。"
+          ]
+        },
+        {
+          "heading": "开题前检查",
+          "items": [
+            "确认具体版本、许可、数据来源和运行条件。先做一个最小复现实验，再扩展题目。",
+            "本页没有自动下载代码、安装工具或确认学校具备相关实验条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-01",
+      "title": "FIFO 性质验证：从随机测试到形式化反例",
+      "summary": "对同步 FIFO 的计数、读写次序和满空约束建立性质，研究随机测试与形式验证各自发现哪些错误。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "sby",
+        "cocotb",
+        "opentitan"
+      ],
+      "tags": [
+        "拓展方向",
+        "FIFO 性质验证",
+        "从随机测试到形式化反例"
+      ],
+      "level": "进阶",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic03"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "对同步 FIFO 的计数、读写次序和满空约束建立性质，研究随机测试与形式验证各自发现哪些错误。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定 FIFO 的读写、复位和溢出语义",
+            "建立参考队列与定向测试，再写断言和环境假设",
+            "注入计数、指针和边界错误，保存反例与复现脚本"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告每个性质的通过、失败或未完成状态及证明边界",
+            "按相同错误集比较发现率和耗时",
+            "交付规格、性质清单、种子与反例，不把有限深度通过当无界证明"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "主要难点是合理限制环境、避免假设屏蔽错误，并解释未完成证明。无需以 FPGA 或流片作为最小交付。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "主要难点是合理限制环境、避免假设屏蔽错误，并解释未完成证明。无需以 FPGA 或流片作为最小交付。",
+        "prerequisites": [
+          "Verilog 与同步时序",
+          "Python 测试平台",
+          "逻辑性质、断言和模型假设"
+        ],
+        "resources": [
+          "普通电脑",
+          "Yosys、SBY 与支持的求解器环境"
+        ],
+        "minimum": "限定 4 深度 FIFO，验证计数范围和禁止空读，先找到一个已知错误。",
+        "stretch": "研究多个深度与读写组合，并比较仿真和形式方法的互补性。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-02",
+      "title": "RISC-V 扩展指令的差分验证与异常语义",
+      "summary": "为一条小规模定点指令建立软件参考与 RTL 对照，研究边界输入、非法编码和异常行为是否一致。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m16",
+        "m20"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "riscv",
+        "ibex",
+        "cocotb"
+      ],
+      "tags": [
+        "拓展方向",
+        "RISC-V 扩展指令",
+        "差分验证"
+      ],
+      "level": "进阶",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic01",
+        "ic03"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "为一条小规模定点指令建立软件参考与 RTL 对照，研究边界输入、非法编码和异常行为是否一致。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定 ISA 版本、指令编码和有符号计算语义",
+            "实现 C 或 Python 参考模型与小型译码数据通路",
+            "先做单元差分，再在受支持的核接口中集成"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "覆盖溢出、极值、非法编码与随机输入",
+            "报告差分失败、异常处理和回归稳定性",
+            "性能比较需固定编译参数并计入数据搬运，不只报核内周期"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "接口改动可能影响流水线和异常；只实现一条指令仍需完整规格，集成前确认核版本和扩展机制。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "接口改动可能影响流水线和异常；只实现一条指令仍需完整规格，集成前确认核版本和扩展机制。",
+        "prerequisites": [
+          "计算机组成与 RISC-V",
+          "Verilog 与译码",
+          "C、异常与定点数"
+        ],
+        "resources": [
+          "ISA 文档与开源核的许可版本",
+          "仿真工具链；FPGA 可选"
+        ],
+        "minimum": "独立验证一个定点指令的数据通路，先不修改完整处理器。",
+        "stretch": "加入核集成、异常路径和端到端基准。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-03",
+      "title": "矩阵加速器存储银行冲突与数据流权衡",
+      "summary": "固定一个小型 INT8 计算阵列，比较不同分块和存储分配对利用率、带宽和资源的影响。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m16",
+        "m19"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "hls4ml",
+        "openroad"
+      ],
+      "tags": [
+        "拓展方向",
+        "矩阵加速器存储银行冲突",
+        "数据流权衡"
+      ],
+      "level": "进阶",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic05",
+        "ic06"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "固定一个小型 INT8 计算阵列，比较不同分块和存储分配对利用率、带宽和资源的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "建立周期与搬运的简化性能模型",
+            "实现两个存储布局或数据流并保持计算精度一致",
+            "用尾块、非对齐和带宽受限输入做回归"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "比较端到端周期、银行冲突和计算空闲占比",
+            "固定时钟、存储容量与输入集合",
+            "交付吞吐—资源图、失败用例及配置文件"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "最主要的瓶颈在存储访问而非乘法器数量；不同方案必须用同一数值精度和资源边界比较。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "最主要的瓶颈在存储访问而非乘法器数量；不同方案必须用同一数值精度和资源边界比较。",
+        "prerequisites": [
+          "数字系统与流水线",
+          "矩阵分块",
+          "片上存储与性能建模"
+        ],
+        "resources": [
+          "RTL 或 HLS 环境",
+          "综合工具；开发板为扩展条件"
+        ],
+        "minimum": "只做固定矩阵、两个银行布局和周期级仿真。",
+        "stretch": "研究不同矩阵形状、搬运策略与布线后的约束。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-04",
+      "title": "小型数字 IP 的约束 PPA 自动搜索与跨设计验证",
+      "summary": "在固定工艺与工具环境下自动探索约束及布局参数，研究搜索是否能稳定改善可行设计的面积与时序权衡。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m33"
+      ],
+      "groups": [
+        "circuits",
+        "math"
+      ],
+      "sourceIds": [
+        "openroad",
+        "pymoo",
+        "openlane"
+      ],
+      "tags": [
+        "研究挑战",
+        "小型数字 IP ",
+        "约束 PPA 自动搜索"
+      ],
+      "level": "导师协作",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic12"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在固定工艺与工具环境下自动探索约束及布局参数，研究搜索是否能稳定改善可行设计的面积与时序权衡。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "选择一个小 IP，固定 PDK、版本、种子与运行预算",
+            "先用网格或随机搜索建立基线，再加入一个多目标策略",
+            "用未参与调参的第二个 IP 或新时序目标做外部检查"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "同时报告可行率、时序裕量、面积与运行开销",
+            "完整保存崩溃、违例和未收敛运行",
+            "相同评估预算、多次运行；没有活动模型时不宣称真实功耗优化"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "耦合复杂且运行成本高。仿真指标不能保证制造签核或硅上性能；新搜索方法的可信性需超出一个设计。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 4,
+          "resources": 3,
+          "validation": 4
+        },
+        "reason": "耦合复杂且运行成本高。仿真指标不能保证制造签核或硅上性能；新搜索方法的可信性需超出一个设计。",
+        "prerequisites": [
+          "综合、SDC 与静态时序",
+          "Linux 与脚本自动化",
+          "多目标优化与统计"
+        ],
+        "resources": [
+          "可使用的 PDK 与 OpenROAD/OpenLane 环境",
+          "较长运行时间与导师"
+        ],
+        "minimum": "固定一个 IP，只做少量参数的网格扫描和可行性检查。",
+        "stretch": "实现预算受限搜索、多个种子和第二个设计验证。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-05",
+      "title": "模拟运放参数优化与不确定性传播",
+      "summary": "在合法可用的教学或工艺模型下，研究两级运放的参数优化如何受模型角、负载与随机参数扰动影响。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m24"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "ngspice",
+        "pymoo",
+        "scipy"
+      ],
+      "tags": [
+        "研究挑战",
+        "模拟运放参数优化",
+        "不确定性传播"
+      ],
+      "level": "导师协作",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic10"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在合法可用的教学或工艺模型下，研究两级运放的参数优化如何受模型角、负载与随机参数扰动影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先完成基线工作点、增益和稳定性检查",
+            "定义可行约束与少量设计变量，比较手工和自动扫参",
+            "检查不同条件的结果，并将随机扰动与工艺统计模型严格区分"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "记录增益、带宽、相位裕量、功耗代理与可行率",
+            "保留失稳和不收敛样本，不删除坏结果",
+            "报告参数来源与敏感性，只有合法统计模型时讨论相应良率估计"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "随机扰动不自动等价于真实工艺分布，缺少统计 PDK 时只能研究假设扰动，不能给出芯片良率结论。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 3,
+          "validation": 4
+        },
+        "reason": "随机扰动不自动等价于真实工艺分布，缺少统计 PDK 时只能研究假设扰动，不能给出芯片良率结论。",
+        "prerequisites": [
+          "模拟集成电路",
+          "反馈与补偿",
+          "电路数值仿真、优化与统计"
+        ],
+        "resources": [
+          "合法模型与电路仿真器",
+          "模拟方向导师、运行环境"
+        ],
+        "minimum": "只做一个教学模型下的确定性扫参与负载稳定性分析。",
+        "stretch": "加入多条件稳健优化和有依据的参数不确定性分析。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-06",
+      "title": "SAR ADC 非理想行为建模与数字校准对照",
+      "summary": "用行为模型隔离电容失配、比较器偏置与建立误差，研究简单数字校准在不同误差来源下的效果。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "scipy",
+        "riscv"
+      ],
+      "tags": [
+        "拓展方向",
+        "SAR ADC 非理想行为建模",
+        "数字校准对照"
+      ],
+      "level": "进阶",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic11"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "用行为模型隔离电容失配、比较器偏置与建立误差，研究简单数字校准在不同误差来源下的效果。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "从理想量化与 SAR 控制建立一致参考",
+            "每次只加入一种非理想，再检查组合效应",
+            "设计一种可解释校准并使用独立输入测试"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "比较静态码型、误差统计和条件适用的动态指标",
+            "区分训练校准信号与测试信号",
+            "记录模型假设、样本量、频率选择和失败情形"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "行为模型指标不代表真实芯片性能。非理想参数与计算指标的假设必须写清楚。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "行为模型指标不代表真实芯片性能。非理想参数与计算指标的假设必须写清楚。",
+        "prerequisites": [
+          "模数转换原理",
+          "统计与采样",
+          "Python 数值计算和状态机"
+        ],
+        "resources": [
+          "普通电脑与行为仿真；电路实现为另一个阶段"
+        ],
+        "minimum": "只比较理想与带偏置行为模型的码型误差。",
+        "stretch": "加入失配、校准与控制 RTL 的一致性验证。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-07",
+      "title": "资料检索的引用准确性与拒答策略评价",
+      "summary": "对一个限定领域的可引用资料库，评价关键词、向量或组合检索的来源正确性，并研究证据不足时的拒答。",
+      "type": "topic",
+      "majors": [
+        "m16",
+        "m19",
+        "m29",
+        "m38"
+      ],
+      "groups": [
+        "computing",
+        "human"
+      ],
+      "sourceIds": [
+        "sklearn-cv",
+        "prereg"
+      ],
+      "tags": [
+        "拓展方向",
+        "资料检索",
+        "引用准确性"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-21",
+        "topic-39"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "对一个限定领域的可引用资料库，评价关键词、向量或组合检索的来源正确性，并研究证据不足时的拒答。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定可合法使用语料与版本，建立查询和相关性标注",
+            "先比较关键词与一个检索基线",
+            "加入来源展示或拒答规则，单独测试时间变化和无答案问题"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告 Recall@k、排名质量与引用对应关系",
+            "将开发问题和测试问题隔离",
+            "如果加入语言模型，单列费用、响应时间和无证据陈述，不能只看回答通顺程度"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "主要难点是评价集与证据对应的可靠性；本题提出研究方案，未将任何生成模型输出认定为事实。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "主要难点是评价集与证据对应的可靠性；本题提出研究方案，未将任何生成模型输出认定为事实。",
+        "prerequisites": [
+          "信息检索与数据库",
+          "Python 或网页开发",
+          "评价集设计"
+        ],
+        "resources": [
+          "公开可引用资料与普通电脑",
+          "模型 API 为可选条件而非必须"
+        ],
+        "minimum": "只实现带出处的关键词检索与人工评价集。",
+        "stretch": "比较不同检索与拒答阈值，并测试来源更新后的错误。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-08",
+      "title": "端侧活动识别的漂移、校准与资源预算",
+      "summary": "在参与者隔离的活动数据上比较模型校准与量化，研究置信度策略能否在资源约束内识别部分分布变化。",
+      "type": "topic",
+      "majors": [
+        "m19",
+        "m18",
+        "m21",
+        "m33"
+      ],
+      "groups": [
+        "computing",
+        "circuits",
+        "math"
+      ],
+      "sourceIds": [
+        "har",
+        "cmsis",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "拓展方向",
+        "端侧活动识别",
+        "漂移、校准"
+      ],
+      "level": "进阶",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic02",
+        "topic-24"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在参与者隔离的活动数据上比较模型校准与量化，研究置信度策略能否在资源约束内识别部分分布变化。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "建立受试者分组的传统分类与小网络基线",
+            "固定量化、输入窗口和端侧内存预算",
+            "模拟传感噪声或使用合法外部数据，对比校准与拒绝策略"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告宏 F1、校准误差和不同拒绝比例下的表现",
+            "比较延迟、模型内存与特征计算开销",
+            "对每个参与者分别报告，避免平均数掩盖失败"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "漂移检出不能保证未知活动都被识别；人腰部手机数据不等于手腕或动物颈圈数据。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "漂移检出不能保证未知活动都被识别；人腰部手机数据不等于手腕或动物颈圈数据。",
+        "prerequisites": [
+          "机器学习与概率",
+          "C 与量化",
+          "分组测试及置信度评价"
+        ],
+        "resources": [
+          "公开 HAR 数据与普通电脑",
+          "端侧板与计时工具"
+        ],
+        "minimum": "只在公开数据上比较按参与者划分的两个模型。",
+        "stretch": "实现端侧测量和漂移下的拒绝策略。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-09",
+      "title": "移动设备路径规划与动态障碍仿真",
+      "summary": "在小型二维仿真中比较静态规划与重规划，研究定位误差和动态障碍对任务成功率与路径代价的影响。",
+      "type": "topic",
+      "majors": [
+        "m02",
+        "m05",
+        "m16"
+      ],
+      "groups": [
+        "machines",
+        "computing"
+      ],
+      "sourceIds": [
+        "ros",
+        "ortools",
+        "scipy"
+      ],
+      "tags": [
+        "拓展方向",
+        "移动设备路径规划",
+        "动态障碍仿真"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-05"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在小型二维仿真中比较静态规划与重规划，研究定位误差和动态障碍对任务成功率与路径代价的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "定义地图、运动约束与碰撞判据，先复现静态基线",
+            "加入动态障碍与定位扰动并固定随机种子",
+            "在仿真闭环中比较重规划频率和代价"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告碰撞、超时、成功率与路径长度",
+            "相同地图和障碍脚本对照",
+            "交付日志与回放，不用几次成功视频代替统计"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "系统联调与测试覆盖决定难度，仿真成功不能直接证明实际移动设备的安全性。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "系统联调与测试覆盖决定难度，仿真成功不能直接证明实际移动设备的安全性。",
+        "prerequisites": [
+          "图搜索与控制基础",
+          "Python 或 C++",
+          "机器人坐标变换"
+        ],
+        "resources": [
+          "二维仿真或 ROS 环境",
+          "实物平台为后续资源"
+        ],
+        "minimum": "只在格点地图比较两个静态规划方法。",
+        "stretch": "加入动态障碍和定位噪声；实物试验需另行设计。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-10",
+      "title": "混合车流协同控制与需求不确定性",
+      "summary": "在受控交通仿真中研究协同策略对混合车流的影响，并检验不同需求、参与比例与模型参数下是否稳定。",
+      "type": "topic",
+      "majors": [
+        "m03",
+        "m07",
+        "m05"
+      ],
+      "groups": [
+        "machines",
+        "civil"
+      ],
+      "sourceIds": [
+        "sumo",
+        "scipy",
+        "pymoo"
+      ],
+      "tags": [
+        "研究挑战",
+        "混合车流协同控制",
+        "需求不确定性"
+      ],
+      "level": "导师协作",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-03",
+        "topic-08"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在受控交通仿真中研究协同策略对混合车流的影响，并检验不同需求、参与比例与模型参数下是否稳定。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定路网、车辆模型和需求生成器，完成传统策略基线",
+            "仅改动一个控制环节，再检查通信和响应假设",
+            "测试未调参的车流、参与比例与随机种子"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "比较旅行时间、排队、冲突代理和策略开销",
+            "按需求与参与比例分层报告",
+            "明确仿真边界与代理指标，不将其写成道路安全证明"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "复杂度来自多车辆交互与场景不确定性；外部场景验证缺失时，结论只适用于所模拟条件。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 4,
+          "resources": 2,
+          "validation": 4
+        },
+        "reason": "复杂度来自多车辆交互与场景不确定性；外部场景验证缺失时，结论只适用于所模拟条件。",
+        "prerequisites": [
+          "交通流与车辆控制",
+          "仿真接口编程",
+          "优化与实验设计"
+        ],
+        "resources": [
+          "SUMO 环境",
+          "交通或控制方向导师、计算预算"
+        ],
+        "minimum": "只研究一个路口或短路段、两种固定策略。",
+        "stretch": "研究协同控制、参数敏感性和新需求场景验证。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-11",
+      "title": "含故障与换型约束的柔性产线排程",
+      "summary": "对有限规模的多设备作业排程，比较考虑换型与故障的滚动策略和静态基线。",
+      "type": "topic",
+      "majors": [
+        "m47",
+        "m01",
+        "m43",
+        "m32"
+      ],
+      "groups": [
+        "machines",
+        "business",
+        "math"
+      ],
+      "sourceIds": [
+        "ortools",
+        "pymoo"
+      ],
+      "tags": [
+        "拓展方向",
+        "含故障",
+        "换型约束"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-06",
+        "topic-33"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "对有限规模的多设备作业排程，比较考虑换型与故障的滚动策略和静态基线。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "从可手算实例定义工序、设备资格、换型与交期",
+            "用约束求解和一个启发式建立基线",
+            "固定故障脚本并测试滚动重排程"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "记录可行率、最大完工时间、延期与换型成本",
+            "报告时间限制、求解状态和可用最优性差距",
+            "在不同规模与故障频率下重复比较"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "真实产线约束可能比合成模型复杂，需领域复核；求解器返回可行解不自动等于最优解。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "真实产线约束可能比合成模型复杂，需领域复核；求解器返回可行解不自动等于最优解。",
+        "prerequisites": [
+          "运筹学与约束建模",
+          "Python",
+          "制造流程知识"
+        ],
+        "resources": [
+          "合成实例与 OR-Tools",
+          "企业真实数据为可选资源"
+        ],
+        "minimum": "只做无故障的小型作业车间，并逐项核对约束。",
+        "stretch": "加入换型、故障与预算限制下的滚动求解。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-12",
+      "title": "电池模型参数识别与可辨识性分析",
+      "summary": "先用已知参数生成电池仿真曲线，再研究不同工况下少量参数能否被稳定恢复。",
+      "type": "topic",
+      "majors": [
+        "m11",
+        "m10",
+        "m03",
+        "m04"
+      ],
+      "groups": [
+        "materials",
+        "machines"
+      ],
+      "sourceIds": [
+        "pybamm",
+        "scipy"
+      ],
+      "tags": [
+        "拓展方向",
+        "电池模型参数识别",
+        "可辨识性分析"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-15"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "先用已知参数生成电池仿真曲线，再研究不同工况下少量参数能否被稳定恢复。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定模型与参数集，生成训练和独立测试工况",
+            "只选择二至三个物理参数并设定合理边界",
+            "比较不同初值、噪声与拟合窗口对参数恢复的影响"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告曲线拟合误差与参数误差，二者分开",
+            "测试工况外预测和多初值稳定性",
+            "保存单位、边界、参数相关性及未收敛运行"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "能拟合曲线不等于正确识别物理参数。合成实验不能证明模型已适用于学校或企业的实际电芯。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "能拟合曲线不等于正确识别物理参数。合成实验不能证明模型已适用于学校或企业的实际电芯。",
+        "prerequisites": [
+          "电化学与微分方程",
+          "非线性优化",
+          "Python 数值计算"
+        ],
+        "resources": [
+          "PyBaMM 与 SciPy",
+          "真实电芯数据与设备不作为已确认条件"
+        ],
+        "minimum": "仅做合成数据的单参数恢复与独立工况测试。",
+        "stretch": "扩展多参数可辨识性，若获得合法实测数据再检查适用性。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-13",
+      "title": "电池充电策略的多目标与模型不确定性",
+      "summary": "在明确模型适用范围内，研究充电时间与温升等模型指标的权衡，并比较参数不确定时的策略稳定性。",
+      "type": "topic",
+      "majors": [
+        "m11",
+        "m10",
+        "m04"
+      ],
+      "groups": [
+        "materials",
+        "machines"
+      ],
+      "sourceIds": [
+        "pybamm",
+        "pymoo"
+      ],
+      "tags": [
+        "研究挑战",
+        "电池充电策略",
+        "多目标"
+      ],
+      "level": "导师协作",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-15",
+        "advanced-12"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在明确模型适用范围内，研究充电时间与温升等模型指标的权衡，并比较参数不确定时的策略稳定性。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定参数集、热边界与终止条件，复现基线",
+            "限制少量策略变量并加入可行约束",
+            "在不同参数或工况上评价候选策略，保留失败结果"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "比较时间、温度与可计算的退化代理，注明单位与模型",
+            "相同搜索预算对比随机和多目标方法",
+            "报告约束违例、工况外表现及敏感性，不输出真实电池操作建议"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "热与退化模型耦合复杂；本题仅做仿真研究，模型优化结果不能直接用于实际电池控制。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 4,
+          "resources": 2,
+          "validation": 4
+        },
+        "reason": "热与退化模型耦合复杂；本题仅做仿真研究，模型优化结果不能直接用于实际电池控制。",
+        "prerequisites": [
+          "电化学与热模型",
+          "约束优化",
+          "模型误差和统计"
+        ],
+        "resources": [
+          "PyBaMM 参数与可用模型",
+          "导师、较长仿真预算"
+        ],
+        "minimum": "只比较固定条件下的两个模拟充电策略。",
+        "stretch": "增加多目标搜索和跨模型或参数条件验证。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-14",
+      "title": "材料候选的主动学习与预算受限筛选",
+      "summary": "使用完整标签的公开材料数据模拟逐次获取标签，比较主动学习是否比随机采样更有效地筛选候选。",
+      "type": "topic",
+      "majors": [
+        "m08",
+        "m09",
+        "m10",
+        "m33"
+      ],
+      "groups": [
+        "materials",
+        "math"
+      ],
+      "sourceIds": [
+        "materials",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "研究挑战",
+        "材料候选",
+        "主动学习"
+      ],
+      "level": "导师协作",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-12",
+        "topic-14"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "使用完整标签的公开材料数据模拟逐次获取标签，比较主动学习是否比随机采样更有效地筛选候选。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定标签池并按材料家族隔离最终测试",
+            "定义采样预算，比较随机、预测排序与一种不确定性策略",
+            "多种初始样本重复运行，记录每轮选择"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告随标签预算变化的误差和候选发现表现",
+            "严格隔离测试标签，不允许采样策略窥视答案",
+            "检查新家族数据，说明离线模拟与真实实验获取差异"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "主要挑战是设计无标签泄漏的序贯评价；公开数据离线模拟不能证明真实实验预算节省。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 4
+        },
+        "reason": "主要挑战是设计无标签泄漏的序贯评价；公开数据离线模拟不能证明真实实验预算节省。",
+        "prerequisites": [
+          "材料性质基础",
+          "机器学习与概率",
+          "序贯实验设计"
+        ],
+        "resources": [
+          "可合法获取的公开材料数据",
+          "普通电脑与材料方向复核"
+        ],
+        "minimum": "比较固定预算下随机采样与一个排序策略。",
+        "stretch": "加入多轮采样、不确定性与新材料家族验证。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-15",
+      "title": "弹性结构有限元建模与网格收敛",
+      "summary": "以有清晰边界的简单构件为对象，研究边界条件和网格对位移、应力与误差估计的影响。",
+      "type": "topic",
+      "majors": [
+        "m06",
+        "m01",
+        "m32"
+      ],
+      "groups": [
+        "civil",
+        "machines",
+        "math"
+      ],
+      "sourceIds": [
+        "fenics",
+        "scipy"
+      ],
+      "tags": [
+        "拓展方向",
+        "弹性结构有限元建模",
+        "网格收敛"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-07"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "以有清晰边界的简单构件为对象，研究边界条件和网格对位移、应力与误差估计的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先复现官方 Poisson 示例理解有限元流程",
+            "另行建立弹性方程、材料参数与边界条件",
+            "从可手算梁或简化结构开始，再比较网格和约束方式"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "检查力学量单位、平衡与网格收敛",
+            "用解析或独立可信解比较位移",
+            "应力奇异点与边界理想化单独讨论，不能只展示云图"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "链接示例本身不是弹性模型。专业方程和约束需独立验证，仿真结果不能替代工程结构设计审查。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "链接示例本身不是弹性模型。专业方程和约束需独立验证，仿真结果不能替代工程结构设计审查。",
+        "prerequisites": [
+          "结构力学",
+          "偏微分方程与有限元",
+          "Python"
+        ],
+        "resources": [
+          "DOLFINx 可用运行环境",
+          "普通电脑；结构教师复核"
+        ],
+        "minimum": "只做可手算小构件的位移收敛对照。",
+        "stretch": "加入不同边界与材料参数的不确定性。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-16",
+      "title": "建筑遮阳、能耗与舒适指标的稳健优化",
+      "summary": "在固定建筑简化模型下，比较遮阳参数对能耗与可计算舒适指标的权衡，并检查气象与使用假设变化。",
+      "type": "topic",
+      "majors": [
+        "m26",
+        "m23",
+        "m11"
+      ],
+      "groups": [
+        "civil",
+        "circuits",
+        "materials"
+      ],
+      "sourceIds": [
+        "energy",
+        "pymoo"
+      ],
+      "tags": [
+        "拓展方向",
+        "建筑遮阳、能耗",
+        "舒适指标"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-10"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在固定建筑简化模型下，比较遮阳参数对能耗与可计算舒适指标的权衡，并检查气象与使用假设变化。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "复现一个可运行基线并核对气象与运行时程",
+            "只改变少量遮阳参数，先做网格搜索",
+            "在另一组天气或使用时程上复查候选"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告能耗、峰值及所选舒适代理的定义",
+            "固定模拟版本、边界与搜索预算",
+            "保存不可行和失败运行，区分模拟与实测"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "资源主要是可验证的模型与运行环境；结论对气象、材料和使用假设敏感，不能直接承诺实测节能率。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "资源主要是可验证的模型与运行环境；结论对气象、材料和使用假设敏感，不能直接承诺实测节能率。",
+        "prerequisites": [
+          "建筑物理",
+          "EnergyPlus 输入与输出",
+          "多目标评价"
+        ],
+        "resources": [
+          "EnergyPlus、合法气象文件",
+          "普通电脑与建筑教师"
+        ],
+        "minimum": "固定天气和时程，比较两种遮阳方案。",
+        "stretch": "做约束搜索和新条件下的权衡稳定性。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-17",
+      "title": "绿地与公共设施可达性的多情景空间评价",
+      "summary": "比较不同出行方式、路网和设施权重下的空间可达性，研究服务差异是否对指标选择稳健。",
+      "type": "topic",
+      "majors": [
+        "m25",
+        "m27",
+        "m48"
+      ],
+      "groups": [
+        "civil",
+        "business"
+      ],
+      "sourceIds": [
+        "qgis",
+        "gbif",
+        "stats"
+      ],
+      "tags": [
+        "拓展方向",
+        "绿地",
+        "公共设施可达性"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-09",
+        "topic-11"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "比较不同出行方式、路网和设施权重下的空间可达性，研究服务差异是否对指标选择稳健。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定边界、点位、路网与时间口径",
+            "先做距离基线，再比较网络距离和少量权重情景",
+            "人工抽查关键点位与路线，解释缺失及空间偏差"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告情景间排序稳定性与敏感区域",
+            "说明空间单元、数据精度和缺失机制",
+            "交付地图、处理脚本与口径说明，不把相关图当政策效果证明"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "专业难点在空间尺度与假设解释；公共数据的不完整可能改变结论，应保留人工核实与误差说明。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "专业难点在空间尺度与假设解释；公共数据的不完整可能改变结论，应保留人工核实与误差说明。",
+        "prerequisites": [
+          "GIS 与空间分析",
+          "描述统计",
+          "指标敏感性"
+        ],
+        "resources": [
+          "QGIS、公开地理与统计数据",
+          "点位抽查条件需确认"
+        ],
+        "minimum": "只比较一个区域、一个设施类别的两种距离口径。",
+        "stretch": "加入路网变化和设施权重的多情景稳健性。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-18",
+      "title": "反应动力学机理差异与参数敏感性",
+      "summary": "在一个限定反应系统中复现动力学模型，研究关键输出对机理选择、初始状态与参数的敏感性。",
+      "type": "topic",
+      "majors": [
+        "m12",
+        "m09",
+        "m14"
+      ],
+      "groups": [
+        "environment",
+        "materials"
+      ],
+      "sourceIds": [
+        "cantera",
+        "scipy"
+      ],
+      "tags": [
+        "拓展方向",
+        "反应动力学机理差异",
+        "参数敏感性"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-16"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在一个限定反应系统中复现动力学模型，研究关键输出对机理选择、初始状态与参数的敏感性。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定可引用机理与适用范围，复现官方示例",
+            "核对质量、元素与能量约束及求解设置",
+            "只改变少量参数或机理选项，做敏感性对照"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "比较目标输出、守恒误差和求解收敛",
+            "区分数值步长误差与机理差异",
+            "报告参数出处、单位和失效条件"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "软件运行不能确认机理适用于所研究介质和条件；必须明确模型范围，不开展未经安排的实体反应实验。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "软件运行不能确认机理适用于所研究介质和条件；必须明确模型范围，不开展未经安排的实体反应实验。",
+        "prerequisites": [
+          "化学动力学与热力学",
+          "微分方程",
+          "Python"
+        ],
+        "resources": [
+          "Cantera 与合法机理文件",
+          "化工导师复核"
+        ],
+        "minimum": "先复现一个小反应器例子，做单参数扫描。",
+        "stretch": "比较机理和多参数敏感性；实测校准需另行安排。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-19",
+      "title": "污染物扩散反问题与观测稀疏性",
+      "summary": "用已知源项生成合成扩散观测，再研究稀疏采样下源位置或强度估计的不确定性。",
+      "type": "topic",
+      "majors": [
+        "m14",
+        "m15",
+        "m59",
+        "m32"
+      ],
+      "groups": [
+        "environment",
+        "math"
+      ],
+      "sourceIds": [
+        "fenics",
+        "scipy"
+      ],
+      "tags": [
+        "研究挑战",
+        "污染物扩散反问题",
+        "观测稀疏性"
+      ],
+      "level": "导师协作",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-18"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "用已知源项生成合成扩散观测，再研究稀疏采样下源位置或强度估计的不确定性。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先验证正问题的方程、边界和网格收敛",
+            "生成独立合成观测，控制噪声与测点数量",
+            "比较正则化和无正则化估计，检查多初值与新配置"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "同时报告参数误差、观测拟合误差和区间覆盖",
+            "用未参与优化的测点验证",
+            "保留不可辨识的情景与失败样例"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "反问题可能多解；模拟成功不证明能定位实际污染源。真实采样、介质与边界条件需另行验证。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 4
+        },
+        "reason": "反问题可能多解；模拟成功不证明能定位实际污染源。真实采样、介质与边界条件需另行验证。",
+        "prerequisites": [
+          "偏微分方程",
+          "逆问题与优化",
+          "环境输运基础"
+        ],
+        "resources": [
+          "DOLFINx 或自建数值模型",
+          "普通电脑与环境导师"
+        ],
+        "minimum": "只在一维、已知源位置条件下恢复一个强度参数。",
+        "stretch": "研究源位置、多参数和稀疏观测的可辨识性。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-20",
+      "title": "牛行为识别的跨个体泛化与不确定性",
+      "summary": "对牛传感行为数据建立严格跨动物测试，研究模型置信度是否能帮助发现误判和需人工复核的片段。",
+      "type": "topic",
+      "majors": [
+        "m53",
+        "m54",
+        "m21",
+        "m19"
+      ],
+      "groups": [
+        "agri",
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "cattle",
+        "calf-paper",
+        "sklearn-cv",
+        "cmsis"
+      ],
+      "tags": [
+        "拓展方向",
+        "牛行为识别",
+        "跨个体泛化"
+      ],
+      "level": "进阶",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-53",
+        "topic-54"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "对牛传感行为数据建立严格跨动物测试，研究模型置信度是否能帮助发现误判和需人工复核的片段。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "核对动物身份、标签与记录；优先按动物及连续记录隔离",
+            "对比特征分类与一个小模型，再做置信度校准",
+            "由动科或兽医成员检查行为解释，端侧部署单列工程指标"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告每个动物的宏 F1、误报漏报与拒绝比例",
+            "按片段和动物分组，避免邻近窗口分散到训练测试",
+            "比较部署资源；两个数据集标签不一致时不得直接合并测试"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "跨成年牛与犊牛的数据定义可能不同。行为异常不能直接推断疾病，不把分类模型作为诊断系统。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "跨成年牛与犊牛的数据定义可能不同。行为异常不能直接推断疾病，不把分类模型作为诊断系统。",
+        "prerequisites": [
+          "动物行为",
+          "时间序列分类与校准",
+          "C 或嵌入式基础"
+        ],
+        "resources": [
+          "公开 Precision Beef 与论文资料",
+          "动科协作；开发板可选"
+        ],
+        "minimum": "只复现一种公开数据上的留动物测试。",
+        "stretch": "加入校准、人工复核片段与端侧量化。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-21",
+      "title": "叶片病害识别的背景捷径与跨场景评价",
+      "summary": "研究模型是否依赖背景、拍摄条件或重复叶片，并比较受控数据与合法外部场景的差异。",
+      "type": "topic",
+      "majors": [
+        "m52",
+        "m19",
+        "m16"
+      ],
+      "groups": [
+        "agri",
+        "computing"
+      ],
+      "sourceIds": [
+        "plant",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "拓展方向",
+        "叶片病害识别",
+        "背景捷径"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-52"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "研究模型是否依赖背景、拍摄条件或重复叶片，并比较受控数据与合法外部场景的差异。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "核对叶片或来源分组、重复图片与许可",
+            "比较原图、背景处理和轻量增强的相同模型",
+            "用未参与调参的新场景单列测试，人工检查失败样本"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告分组内外差异、类别表现和置信度",
+            "避免将同叶不同图片或增强副本分到两侧",
+            "交付错误样本分类与训练设置，不把受控准确率当田间效果"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "难点在可用的独立场景和标签可信度；若缺少外部数据，只能得出受控数据内的结果。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "难点在可用的独立场景和标签可信度；若缺少外部数据，只能得出受控数据内的结果。",
+        "prerequisites": [
+          "植物病理基础",
+          "图像分类",
+          "分组评价与消融"
+        ],
+        "resources": [
+          "PlantVillage 公开数据",
+          "合法新场景图片与园艺成员"
+        ],
+        "minimum": "只检查重复和叶片分组，再复现基线。",
+        "stretch": "增加背景消融与独立场景测试。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-22",
+      "title": "食品质量预测的批次漂移与解释稳定性",
+      "summary": "研究食品理化指标模型在来源或批次变化时的表现，并检查特征解释是否随数据划分改变。",
+      "type": "topic",
+      "majors": [
+        "m49",
+        "m50",
+        "m33"
+      ],
+      "groups": [
+        "agri",
+        "math"
+      ],
+      "sourceIds": [
+        "wine",
+        "sklearn-cv",
+        "statsmodels"
+      ],
+      "tags": [
+        "拓展方向",
+        "食品质量预测",
+        "批次漂移"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-49"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "研究食品理化指标模型在来源或批次变化时的表现，并检查特征解释是否随数据划分改变。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先核对公开数据是否真的提供批次、来源或时间字段",
+            "比较可解释线性基线和一个非线性方法",
+            "有真实组标签时分组留出，无组标签时仅做明确标注的合成漂移分析"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告测试误差、校准与解释变化",
+            "只在训练部分拟合清洗和标准化",
+            "交付元数据字典、划分依据和失败情景"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "不假定 UCI 数据具有真实批次标签；缺少分组信息时不得编造批次或宣称完成批次外验证。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "不假定 UCI 数据具有真实批次标签；缺少分组信息时不得编造批次或宣称完成批次外验证。",
+        "prerequisites": [
+          "食品理化与质量评价",
+          "回归分析",
+          "数据划分与解释"
+        ],
+        "resources": [
+          "公开 Wine Quality 或合法食品数据",
+          "批次元数据需先确认"
+        ],
+        "minimum": "先完成普通独立测试，并审计是否存在真实批次字段。",
+        "stretch": "有合格元数据后再做批次留出与漂移研究。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-23",
+      "title": "分子属性预测的骨架划分与适用域",
+      "summary": "对明确来源的分子属性数据，比较随机与结构分组划分，并研究模型在新结构上的误差。",
+      "type": "topic",
+      "majors": [
+        "m56",
+        "m09",
+        "m33"
+      ],
+      "groups": [
+        "medicine",
+        "materials",
+        "math"
+      ],
+      "sourceIds": [
+        "pubchem",
+        "rdkit",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "拓展方向",
+        "分子属性预测",
+        "骨架划分"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-56"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "对明确来源的分子属性数据，比较随机与结构分组划分，并研究模型在新结构上的误差。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定属性、单位与来源，核对测量数据和计算属性区别",
+            "标准化结构、去重并定义分组规则",
+            "比较描述符基线与另一种表示，检查新结构和适用域"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "分别报告随机与骨架等分组测试误差",
+            "将标准化、特征筛选与调参限制在训练流程",
+            "保留失败分子和结构分布，不解释为药效或安全性"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "数据证据级别和结构泄漏是主要瓶颈。预测一个属性不代表已发现有效或安全药物。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "数据证据级别和结构泄漏是主要瓶颈。预测一个属性不代表已发现有效或安全药物。",
+        "prerequisites": [
+          "药物或材料化学",
+          "SMILES 与分子描述符",
+          "回归与分组评价"
+        ],
+        "resources": [
+          "RDKit 与合法公开分子属性",
+          "普通电脑、药学导师复核"
+        ],
+        "minimum": "只做结构去重、描述符和一个可解释回归。",
+        "stretch": "加入骨架分组、适用域与不确定性评价。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-24",
+      "title": "护理活动提示原型的误报与人群差异",
+      "summary": "仅使用公开开放运动数据与模拟提示界面，研究阈值对漏报、提示负担和不同参与者表现的影响。",
+      "type": "topic",
+      "majors": [
+        "m58",
+        "m57",
+        "m19"
+      ],
+      "groups": [
+        "medicine",
+        "computing"
+      ],
+      "sourceIds": [
+        "har",
+        "physionet",
+        "sklearn-cv",
+        "prereg"
+      ],
+      "tags": [
+        "拓展方向",
+        "护理活动提示原型",
+        "误报"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-58"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "仅使用公开开放运动数据与模拟提示界面，研究阈值对漏报、提示负担和不同参与者表现的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先确定可用数据与研究边界，不接入患者信息",
+            "按参与者划分模型，比较不同阈值和提示策略",
+            "用模拟任务做界面评价，提前规定指标与排除规则"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告参与者分层表现和每单位时间提示量",
+            "区分活动分类与临床事件识别",
+            "交付模拟界面、误报分析和研究计划，不用于真实护理决策"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "主要难点是公共数据与护理场景的差异。没有临床数据与合格验证时，不得宣称病患监测能力。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "主要难点是公共数据与护理场景的差异。没有临床数据与合格验证时，不得宣称病患监测能力。",
+        "prerequisites": [
+          "护理任务分析",
+          "统计与分类评价",
+          "网页原型或交互设计"
+        ],
+        "resources": [
+          "公开开放数据与模拟场景",
+          "护理导师、成人自愿测试条件"
+        ],
+        "minimum": "只做公开数据的参与者外分类和离线阈值分析。",
+        "stretch": "增加模拟提示任务与人群差异分析。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-25",
+      "title": "文旅服务信息呈现的预注册小型实验",
+      "summary": "研究两种文旅信息呈现对理解、记忆或决策任务的影响，提前定义主要指标与分析方法。",
+      "type": "topic",
+      "majors": [
+        "m48",
+        "m44",
+        "m30"
+      ],
+      "groups": [
+        "business",
+        "design"
+      ],
+      "sourceIds": [
+        "prereg",
+        "statsmodels",
+        "ad"
+      ],
+      "tags": [
+        "拓展方向",
+        "文旅服务信息呈现",
+        "预注册小型实验"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-48",
+        "topic-31"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "研究两种文旅信息呈现对理解、记忆或决策任务的影响，提前定义主要指标与分析方法。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "限定一个服务触点，制作内容一致的两种材料",
+            "预先写明分配、样本计划、排除与主要指标",
+            "在合适同意条件下招募成人，比较效果与不确定性"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "同时报告效应量、区间与完成率",
+            "区分预定检验和探索性分析，记录偏离计划",
+            "样本量依据目标精度或功效设定，不能事后只保留显著题目"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "样本招募、统计设计与任务效度决定难度；方便样本的结果不能直接推广到全部游客。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "样本招募、统计设计与任务效度决定难度；方便样本的结果不能直接推广到全部游客。",
+        "prerequisites": [
+          "服务或视觉设计",
+          "实验设计与统计",
+          "问卷认知预检"
+        ],
+        "resources": [
+          "两套材料、成人自愿样本",
+          "本校研究程序需先确认"
+        ],
+        "minimum": "先完成材料评审和小规模认知预检，作为探索性原型。",
+        "stretch": "实施计划明确的随机分配实验并完整报告。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-26",
+      "title": "企业数字工具采用的纵向关联与识别边界",
+      "summary": "在可合法获取的企业纵向数据中，区分采用前后差异、选择偏差与可能的混杂，不把相关性自动解释为因果。",
+      "type": "topic",
+      "majors": [
+        "m43",
+        "m41",
+        "m45",
+        "m46"
+      ],
+      "groups": [
+        "business"
+      ],
+      "sourceIds": [
+        "statsmodels",
+        "prereg",
+        "stats"
+      ],
+      "tags": [
+        "研究挑战",
+        "企业数字工具采用",
+        "纵向关联"
+      ],
+      "level": "导师协作",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-44",
+        "topic-42"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在可合法获取的企业纵向数据中，区分采用前后差异、选择偏差与可能的混杂，不把相关性自动解释为因果。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "先做数据可用性审计，检查企业标识、时间与口径",
+            "明确估计问题和潜在混杂，建立描述性与简单回归基线",
+            "若识别条件能够论证才研究准实验；否则保留为关联分析"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告样本流失、缺失机制与趋势差异",
+            "加入替代口径、时间窗口和敏感性分析",
+            "区分有条件识别与无法识别，允许得出证据不足结论"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "纵向数据、识别假设与外部效度门槛高；预注册或复杂模型都不能自动消除混杂。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 3,
+          "validation": 4
+        },
+        "reason": "纵向数据、识别假设与外部效度门槛高；预注册或复杂模型都不能自动消除混杂。",
+        "prerequisites": [
+          "计量经济学",
+          "纵向数据与统计推断",
+          "研究设计"
+        ],
+        "resources": [
+          "合法纵向数据与管理或计量导师",
+          "真实数据取得未确认"
+        ],
+        "minimum": "只用公开资料做描述性趋势与相关分析。",
+        "stretch": "有可靠数据和识别条件后再考虑准实验设计。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-27",
+      "title": "交互学习工具的随机评价与重复测量",
+      "summary": "在一个明确知识点上比较交互原型与静态材料，研究理解、任务错误与延后记忆，不仅统计使用满意度。",
+      "type": "topic",
+      "majors": [
+        "m34",
+        "m35",
+        "m22",
+        "m29"
+      ],
+      "groups": [
+        "human",
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "prereg",
+        "statsmodels",
+        "smartedu"
+      ],
+      "tags": [
+        "拓展方向",
+        "交互学习工具",
+        "随机评价"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-35",
+        "topic-25"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "在一个明确知识点上比较交互原型与静态材料，研究理解、任务错误与延后记忆，不仅统计使用满意度。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定学习内容与测验，先做专家内容检查",
+            "写明成人样本分配、前测和主要指标",
+            "检查重复测量与样本流失，完整报告计划偏离"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告前后变化、组间效应与区间",
+            "区分学习效果、熟悉测试和自评满意度",
+            "若仅成人便利样本，明确不能推广为幼儿或中小学生教学效果"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "教学研究的瓶颈是测验效度和样本结构，不是网页功能数量；涉及未成年人须另行设计研究条件。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "教学研究的瓶颈是测验效度和样本结构，不是网页功能数量；涉及未成年人须另行设计研究条件。",
+        "prerequisites": [
+          "教育研究与测量",
+          "统计",
+          "交互原型设计"
+        ],
+        "resources": [
+          "学习材料与成人自愿样本",
+          "教育导师及学校程序"
+        ],
+        "minimum": "先做内容正确性和任务可用性的小型探索。",
+        "stretch": "实施计划完整的随机评价与延后测验。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-28",
+      "title": "法规与专利检索的版本冲突和证据评价",
+      "summary": "对一个限定法规或技术主题，评价检索结果的版本、相关性与来源对应，研究旧文本混入时的错误。",
+      "type": "topic",
+      "majors": [
+        "m38",
+        "m39",
+        "m16",
+        "m37"
+      ],
+      "groups": [
+        "human",
+        "computing"
+      ],
+      "sourceIds": [
+        "law",
+        "patents",
+        "prereg"
+      ],
+      "tags": [
+        "拓展方向",
+        "法规",
+        "专利检索"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-39",
+        "topic-40"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "对一个限定法规或技术主题，评价检索结果的版本、相关性与来源对应，研究旧文本混入时的错误。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "固定法域或专利主题与检索日期，保留原始链接",
+            "建立人工核对的版本与相关性样本",
+            "比较关键词和结构化检索，单独设计失效版本或无答案问题"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告相关性、版本错误与来源对应准确率",
+            "保留人工分歧及裁决规则",
+            "结果用于学术检索评价，不作为个案法律意见或专利有效性结论"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "版本效力与法律或专利意义不能仅靠检索排序决定，需要领域解释。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "版本效力与法律或专利意义不能仅靠检索排序决定，需要领域解释。",
+        "prerequisites": [
+          "法律或专利检索",
+          "资料编码",
+          "信息检索评价"
+        ],
+        "resources": [
+          "官方数据库公开材料与本机原型",
+          "领域成员复核"
+        ],
+        "minimum": "只建立一个主题的版本对照表和关键词检索。",
+        "stretch": "增加冲突案例、独立评价集与拒答规则。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-29",
+      "title": "无障碍研究界面的键盘操作与任务验证",
+      "summary": "设计一个资料查询或公共服务原型，研究键盘操作、焦点顺序和错误反馈对任务完成的影响。",
+      "type": "topic",
+      "majors": [
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m34"
+      ],
+      "groups": [
+        "design",
+        "computing",
+        "human"
+      ],
+      "sourceIds": [
+        "wcag",
+        "prereg"
+      ],
+      "tags": [
+        "拓展方向",
+        "无障碍研究界面",
+        "键盘操作"
+      ],
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-25",
+        "topic-31",
+        "topic-32"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "设计一个资料查询或公共服务原型，研究键盘操作、焦点顺序和错误反馈对任务完成的影响。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "定义三个核心任务，检查原型的语义与键盘路径",
+            "按 WCAG 参考定位可检查问题并修复",
+            "计划小型成人任务测试，记录完成、错误与理解"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告每条检查的通过、失败与未测试状态",
+            "比较修复前后任务错误与时间",
+            "覆盖焦点、输入、弹窗与小屏，不把少量条目通过写成认证"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "标准检查与真实用户体验是两种证据；用户研究和辅助技术覆盖需如实报告。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "标准检查与真实用户体验是两种证据；用户研究和辅助技术覆盖需如实报告。",
+        "prerequisites": [
+          "交互与信息设计",
+          "HTML 语义及键盘操作",
+          "任务研究基础"
+        ],
+        "resources": [
+          "浏览器与原型",
+          "成人自愿参与者；辅助技术条件先确认"
+        ],
+        "minimum": "只完成三个任务的键盘路径和语义检查。",
+        "stretch": "加入任务实验和可用的辅助技术评价。",
+        "effort": "10–16 周，每周 8–12 小时",
+        "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+      }
+    },
+    {
+      "id": "advanced-30",
+      "title": "预算受限多目标优化的跨问题比较",
+      "summary": "研究一种优化策略在多个小型问题上的表现，重点比较可行率、计算预算与结果不确定性。",
+      "type": "topic",
+      "majors": [
+        "m32",
+        "m33",
+        "m47",
+        "m11"
+      ],
+      "groups": [
+        "math",
+        "machines",
+        "materials"
+      ],
+      "sourceIds": [
+        "pymoo",
+        "ortools",
+        "scipy"
+      ],
+      "tags": [
+        "研究挑战",
+        "预算受限多目标优化",
+        "跨问题比较"
+      ],
+      "level": "导师协作",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-33"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "研究一种优化策略在多个小型问题上的表现，重点比较可行率、计算预算与结果不确定性。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "选定一个有可核对参考的小问题和一个应用问题",
+            "固定评估次数、终止规则与种子，建立随机及经典基线",
+            "预先确定比较指标，单列失败和约束违例"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告多次运行的分布、区间、耗时与可行率",
+            "只有参照前沿和规范化定义成立时使用相应前沿指标",
+            "检查第二问题与新预算，避免挑选最好的单次结果"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "难度来自方法可信性和跨问题验证。获得更好的单次最优值不足以证明策略普遍优越。"
+          ]
+        }
+      ],
+      "difficulty": "D4",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 4
+        },
+        "reason": "难度来自方法可信性和跨问题验证。获得更好的单次最优值不足以证明策略普遍优越。",
+        "prerequisites": [
+          "优化与概率统计",
+          "Python",
+          "多目标评价与实验设计"
+        ],
+        "resources": [
+          "普通电脑、公开基准与优化工具",
+          "计算预算与导师"
+        ],
+        "minimum": "只在一个可核对问题上公平比较两个基线。",
+        "stretch": "增加第二问题、多个预算与新方法消融。",
+        "effort": "16–24 周以上，每周 10–15 小时",
+        "team": "建议导师带队，按数据、方法、系统和评价分工"
+      }
+    },
+    {
+      "id": "advanced-31",
+      "title": "计数器与 PWM：数字逻辑的第一个可验证原型",
+      "summary": "用一个小计数器或 PWM 模块练习规格、时序图和自动检查，先完成能够独立核对的数字系统成果。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m22"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "cocotb",
+        "riscv"
+      ],
+      "tags": [
+        "拓展方向",
+        "计数器",
+        " PWM"
+      ],
+      "level": "入门",
+      "priority": 10,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "ic03",
+        "ic04"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "用一个小计数器或 PWM 模块练习规格、时序图和自动检查，先完成能够独立核对的数字系统成果。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "写明位宽、复位、周期与输出定义",
+            "实现 RTL，先手算几个周期的输出",
+            "用脚本自动检查复位、回绕与占空比边界"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "保存手算对照与波形、一个故意注入的错误和复现步骤",
+            "明确这只是基础原型，不含总线、跨时钟域或真实功耗研究",
+            "交付短规格、源码与自动检查"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "范围刻意限制为一个同步模块；一旦加入总线、异步时钟或硬件测量，需重新评估难度。"
+          ]
+        }
+      ],
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "范围刻意限制为一个同步模块；一旦加入总线、异步时钟或硬件测量，需重新评估难度。",
+        "prerequisites": [
+          "二进制与基本数字逻辑",
+          "Verilog 语法入门"
+        ],
+        "resources": [
+          "普通电脑与 HDL 仿真器",
+          "无开发板也可完成"
+        ],
+        "minimum": "只做计数器的复位和回绕，完成几个定向检查。",
+        "stretch": "逐步加入 PWM 和可配置参数，再进入 FIFO 验证。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "advanced-32",
+      "title": "数据划分审计：重复、对象与时间泄漏",
+      "summary": "先不训练复杂模型，用一份公开数据检查重复、对象标识和时间窗口如何影响训练测试隔离。",
+      "type": "topic",
+      "majors": [
+        "m33",
+        "m16",
+        "m19",
+        "m52",
+        "m53",
+        "m49"
+      ],
+      "groups": [
+        "math",
+        "computing",
+        "agri"
+      ],
+      "sourceIds": [
+        "sklearn-cv",
+        "har"
+      ],
+      "tags": [
+        "拓展方向",
+        "数据划分审计",
+        "重复、对象"
+      ],
+      "level": "入门",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "topic-34",
+        "ic02"
+      ],
+      "sections": [
+        {
+          "heading": "核心研究问题",
+          "items": [
+            "先不训练复杂模型，用一份公开数据检查重复、对象标识和时间窗口如何影响训练测试隔离。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "建立数据字典，标明样本来源和对象信息",
+            "输出随机划分与对象隔离划分的交叉对象清单",
+            "人工抽查重复与邻近窗口，保存清洗规则"
+          ]
+        },
+        {
+          "heading": "验证、对照与交付",
+          "items": [
+            "报告交叉对象数、重复比例和可检查的拆分文件",
+            "解释随机划分适用的条件与本数据的依赖",
+            "不宣称已完成模型泛化研究，只交付划分审计"
+          ]
+        },
+        {
+          "heading": "毕设与竞赛如何衔接",
+          "items": [
+            "先以最小版本形成可复现脚本、规格或编码手册，再与相关竞赛当届官方赛题及本校组队要求逐条核对。",
+            "毕设重点说明研究问题、已有方法对照与证据；竞赛演示需能复现核心结果，不把演示流畅度当作研究有效性。"
+          ]
+        },
+        {
+          "heading": "条件与限制",
+          "items": [
+            "只有原始数据包含真实组或时间信息时才能据此审计，缺失字段必须注明，不能编造分组。"
+          ]
+        }
+      ],
+      "difficulty": "D1",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 1,
+          "engineering": 1,
+          "resources": 1,
+          "validation": 1
+        },
+        "reason": "只有原始数据包含真实组或时间信息时才能据此审计，缺失字段必须注明，不能编造分组。",
+        "prerequisites": [
+          "Python 表格基础",
+          "训练与测试的概念"
+        ],
+        "resources": [
+          "公开 HAR 等有对象信息的数据",
+          "普通电脑"
+        ],
+        "minimum": "只核对重复和受试者交叉，输出审计表。",
+        "stretch": "加入简单基线模型和时间隔离，升级为课程综合。",
+        "effort": "3–6 周，每周 4–6 小时",
+        "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+      }
+    },
+    {
+      "id": "guide-difficulty",
+      "title": "难度分层、缩小范围与大二集成电路学习路线",
+      "summary": "用四个维度判断项目瓶颈；从小型可验证原型起步，逐步积累课程综合、毕设与竞赛成果。",
+      "type": "guide",
+      "majors": [
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11",
+        "m12",
+        "m13",
+        "m14",
+        "m15",
+        "m16",
+        "m17",
+        "m18",
+        "m19",
+        "m20",
+        "m21",
+        "m22",
+        "m23",
+        "m24",
+        "m25",
+        "m26",
+        "m27",
+        "m28",
+        "m29",
+        "m30",
+        "m31",
+        "m32",
+        "m33",
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m38",
+        "m39",
+        "m40",
+        "m41",
+        "m42",
+        "m43",
+        "m44",
+        "m45",
+        "m46",
+        "m47",
+        "m48",
+        "m49",
+        "m50",
+        "m51",
+        "m52",
+        "m53",
+        "m54",
+        "m55",
+        "m56",
+        "m57",
+        "m58",
+        "m59"
+      ],
+      "groups": [
+        "circuits",
+        "computing",
+        "machines",
+        "materials",
+        "civil",
+        "environment",
+        "agri",
+        "medicine",
+        "business",
+        "human",
+        "design",
+        "math"
+      ],
+      "sourceIds": [
+        "cocotb",
+        "sby",
+        "sklearn-cv",
+        "prereg"
+      ],
+      "tags": [
+        "难度分层",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "大二",
+        "集成电路"
+      ],
+      "level": "",
+      "priority": 8,
+      "status": "研究规划建议",
+      "date": "2026-10-01",
+      "relatedTopicIds": [
+        "advanced-31",
+        "ic03",
+        "advanced-01",
+        "advanced-04"
+      ],
+      "sections": [
+        {
+          "heading": "四档怎样理解",
+          "items": [
+            "D1 入门实践：先把一个小任务做对，形成可检查的成果。 3–6 周，每周 4–6 小时，为具备先修基础后的规划估计。",
+            "D2 课程综合：完成一个小系统或研究闭环，比较基线与误差。 6–10 周，每周 6–10 小时，为具备先修基础后的规划估计。",
+            "D3 毕设进阶：处理多模块、专业约束或泛化，形成完整研究证据。 10–16 周，每周 8–12 小时，为具备先修基础后的规划估计。",
+            "D4 科研挑战：面对复杂耦合与不确定性，需要更强的验证和协作。 16–24 周以上，每周 10–15 小时，为具备先修基础后的规划估计。"
+          ]
+        },
+        {
+          "heading": "怎样得出评级",
+          "items": [
+            "按本页拟议范围对四个维度分别给出 1–4 级，再取最高维度作为总体难度；反映主要瓶颈，不是平均分。",
+            "由本次调研评估，不是学校、竞赛主办方或来源作者给出的评级。周期是具备所列先修基础后的规划估计，不含系统补课和等待设备、数据的时间；范围改变后需重新评估。",
+            "准备阶段描述学习或指导安排；难度描述当前方案的项目门槛。一个入门准备阶段的主题，扩展范围后也可能达到 D3。"
+          ]
+        },
+        {
+          "heading": "适合大二集成电路的起步顺序",
+          "items": [
+            "D1：先做计数器与 PWM，练习规格、时序和自动核对。没有开发板也能开始。",
+            "D2：进入 FIFO 的 cocotb 自动化验证或定点 FIR，积累测试、参考模型与错误定位能力。",
+            "D3：有完整基线后做形式验证或 RISC-V 加速器，补充断言、接口与可复现对照。",
+            "D4：后续在导师和工艺资源具备时考虑 PPA 自动搜索、模拟不确定性等。大二无需直接承担整个科研系统。"
+          ]
+        },
+        {
+          "heading": "从毕设接到竞赛",
+          "items": [
+            "先保存自己的规格、实验与失败记录。竞赛渠道可作为题目灵感，正式参赛仍需逐项对照当届规则与本校通知。",
+            "同一项目可以缩小范围作为课程原型，再增加对照实验成为毕设基础；扩展后应重新判断难度和资源条件。"
+          ]
+        },
+        {
+          "heading": "开始前做一次预检",
+          "items": [
+            "是否能在一周内读懂并复现一个小例子？所需数据、软件许可、导师或设备是否可用？",
+            "是否写清主要结果、对照方法和失败条件？若工具或数据拿不到，先按详情中的最小版本降级。",
+            "D4 表示当前范围的研究门槛，不表示必然创新、发表或获奖；D1 也可以产出可靠的学习和研究材料。"
+          ]
+        }
+      ]
+    }
+  ],
+  "report": "# 集成电路专业毕设与竞赛选题调研\n\n面向集成电路设计与集成系统专业大二学生及 AI 协会讨论\n\n资料核验日期 2026年9月30日\n\n## 1 调研结论与使用方法\n\n建议以数字电路设计和验证为主线，先完成一个范围清楚、能够测量和复现的小项目，再根据下一届竞赛赛题及导师要求扩展。优先讨论三个方向：RISC-V 配套的定点运算加速器、面向端侧识别的 TinyML 软硬件优化、数字 IP 自动化验证。刚开始接触 Verilog 时，可先用 FIR 滤波器或同步 FIFO 建立基础。\n\n这份材料围绕两项研究需求：寻找能组织学生参加的竞赛，以及搜集有依据、有实现路径的毕设选题。竞赛部分提供官方入口和已核验案例；选题部分提供建议范围、实验方法、原型阶段和扩展方向。它可以用作协会讨论稿和个人学习规划，正式参赛及毕设立项仍要按当届规则与学院要求调整。\n\n本材料以集成电路专业大二学生为主要读者。编程基础、已修课程、实验室板卡、可用 EDA 软件、导师资源和预算尚未确认。因此，本文默认每周投入约 6 至 10 小时，优先借用学校设备，先仿真再购买硬件。开发周期是规划估计，不是完成承诺。\n\n文中信息分为三类：有官方链接的赛事和获奖信息属于核验事实；技术路线、优先级和建议题目属于本次调研建议；时间、预算、目标指标属于待实验和导师确认的估计。本文没有宣称已完成项目、取得性能结果或获得参赛资格。\n\n### 1.1 最适合当前阶段的选择\n\n|个人情况|建议从哪里开始|近期交付|后续发展|\n|---|---|---|---|\n|刚学数字电路和 Verilog|同步 FIFO 或定点 FIR|RTL 仿真和自动比对|FPGA 信号处理 IP 或低功耗优化|\n|会 Verilog 和基本 C|点积 MAC 加速器|独立加速模块和测试报告|接入 RISC-V SoC 及应用演示|\n|会 Python 和基本机器学习|TinyML 小模型|浮点与量化模型对照|端侧部署及硬件算子优化|\n|会 Python 想进入芯片方向|FIFO 或 UART 自动验证|测试计划与错误复现|SystemVerilog 验证和形式验证|\n|更喜欢模拟电路且有导师资源|低功耗运放仿真|原理图与关键性能分析|工艺角分析及版图后仿真|\n\n选择时先问三个问题：能否获得所需工具和数据；能否在一个月左右拿出可检查的中间结果；能否说明自己新增的电路、验证或优化贡献。满足这三点后再增加功能。\n\n## 2 竞赛渠道与准备重点\n\n### 2.1 全国大学生集成电路创新创业大赛\n\n这是建议优先跟踪的专业赛事。官网列出芯片设计与产业链、芯片应用与芯创成果等赛项，并提供企业命题、培训和文件下载入口。第十届 2026 年赛事已经公布全国总决赛获奖名单公示。当前准备应以学习往届题目和关注下一届通知为主，不应把 2026 年通知当作仍可报名的入口。[集创赛官网](https://univ.ciciec.com/)\n\n2026 年企业命题页面列出中科芯、七星微、叩持、芯海、华大九天等命题方，也记录部分题目修订。技术兴趣相同并不等于满足某个杯赛要求；企业平台、工具、提交物和评分项都需要逐项检查。[第十届企业命题页面](https://univ.ciciec.com/nr.jsp?groupId=46&jpt=4)\n\n建议关注三个层次。数字设计方向可围绕 CPU、计算 IP、总线和 FPGA 验证准备；模拟方向可围绕信号调理、运放及转换器准备；芯片应用方向可围绕具体硬件平台完成端侧识别和测量系统。协会应先保存官方赛题文件，再让学生按基础和资源选择。\n\n对你而言，最有连续性的准备是写 RTL、建立验证环境、测量延迟和资源使用，并完成可演示的 FPGA 原型。如果当届题目允许基于开源内核扩展，可以把个人工作集中在加速器、数据搬运、低功耗控制或验证上；如果要求自行设计 CPU，就必须按要求重新划定范围。\n\n### 2.2 全国大学生嵌入式芯片与系统设计竞赛\n\n建议作为应用原型的第二条主线。2026 年官网芯片应用赛道页面显示报名截止为 4 月 20 日、作品提交截止为 7 月 9 日 18 时，全国总决赛安排在 8 月，且已有获奖名单入口。这些日期仅用于说明本届进度，不能外推为下一届日期。[嵌入式竞赛官网](https://www.socchina.net/home?trackType=2)\n\n该渠道适合先完成传感器采集、端侧算法、嵌入式控制和硬件联调。与集成电路专业结合时，报告应把重点落在处理器架构、计算精度、存储占用、接口控制和能耗测量，而不是仅展示手机页面或云端功能。具体企业方向和指定平台以当届选题指南为准。\n\n协会可以让软件同学负责模型和数据，电子同学负责采集及 PCB，集成电路同学负责 RTL 或硬件计算模块。共同目标是一条能独立运行并测量的完整链路，分工必须能对应到个人代码和实验记录。\n\n### 2.3 全国大学生电子设计竞赛\n\n建议作为电路与仪器训练渠道。2026 年官方专区列出赛区赛和模拟电子系统设计专题赛等信息，不能把双数年份赛事直接等同于上一年度的全国综合赛。2025 年获奖案例可以帮助训练，但本次尚未核验 2027 年具体赛程。[2026 年官方专区](https://www.nuedc-training.com.cn/index/publicity/topic2026)\n\n这类命题竞赛更适合通过历届题练习测量、信号处理、控制、电路搭建和限时联调。长期自选项目可积累模块和技术经验，但能否在竞赛中使用及如何使用，要服从比赛规定。正式比赛通常需要围绕公布的题目完成指标，不能直接假定自己准备的作品可以原样提交。\n\n### 2.4 三类渠道怎样一起使用\n\n|渠道|本文建议用途|优先积累的成果|参赛前必须确认|\n|---|---|---|---|\n|集创赛|专业能力与长期项目主线|RTL 验证 PPA 或 FPGA 结果|赛项组别 企业题目 工具 平台和提交要求|\n|嵌入式竞赛|应用演示与跨专业组队|采集 推理 控制和测量原型|指定芯片 开发板 能力测评和提交要求|\n|电子设计竞赛|电路基础与工程训练|测量仪器用法 电路模块和限时设计|本年度赛事类别 校内选拔和当地赛区通知|\n\n暂不建议同时追三条独立项目线。更有效的做法是选一个技术核心，在规则允许的前提下形成不同用途的材料。相同成果跨赛事使用、往届作品再参赛及 AI 辅助边界都需检查当届规定，不能默认允许。\n\n## 3 已核验的获奖案例与可借鉴内容\n\n获奖案例只能证明这些方向曾被采用并获奖，不能证明项目容易、适合所有本科生或能保证获奖。下列公开页面主要是高校新闻，通常不包含完整源码和测试条件，因此不据此复制性能指标或判断技术原创性。\n\n### 3.1 RISC-V CPU 设计\n\n江南大学公布，微电子科学与工程本科生团队的项目“基于 RISC-V 指令集的 CPU 设计”获得 2025 年第九届集创赛全国一等奖。[江南大学报道](https://news.jiangnan.edu.cn/info/1284/103057.htm)\n\n对你的启发是：CPU 设计可以作为本科生项目，但应先取得完整的测试与运行结果。建议先做一个小型计算 IP，再决定自己设计 CPU 还是使用符合规则的开源内核集成。当前不要同时加入多级缓存、复杂分支预测和操作系统支持。\n\n### 3.2 多精度张量加速器\n\n南京大学公布，“面向多精度计算的可重构多核张量加速器”获得 2025 年集创赛全国一等奖，项目涉及多精度计算及访存调度。[南京大学报道](https://ese.nju.edu.cn/01/c4/c22536a786884/page.htm)\n\n可以借鉴的问题是：在有限硬件资源下如何平衡精度、并行度与访存。大二阶段建议缩小为 INT8 点积或 4×4 矩阵乘法模块，先比较串行与并行版本。完整多核、多精度系统可留作后续扩展。\n\n### 3.3 RISC-V CPU 与 FPGA 验证\n\n福州大学公布，“基于 RISC-V 的高性能 CPU 设计及 FPGA 验证”项目获得 2026 年第十届集创赛七星微杯全国二等奖。[福州大学报道](https://wx.fzu.edu.cn/info/1086/4927.htm)\n\n这一案例提示，硬件设计需要可运行的软件、验证和板级结果共同支撑。你可以研究一项具体改进，例如点积加速、数据搬运或数据相关处理，再对照原始版本测量。不要把新闻中描述的全部功能直接作为自己的第一版任务。\n\n### 3.4 低噪声模拟前端\n\n同一福州大学页面公布，“低噪声高输入阻抗信号调理模拟前端电路”获得 2026 年芯海杯企业大奖及全国一等奖。[福州大学报道](https://wx.fzu.edu.cn/info/1086/4927.htm)\n\n对模拟方向的启发是，应围绕输入信号、噪声、带宽和功耗提出可检验的设计问题。适合你的起点可以是两级运放及补偿分析；先进工艺和复杂生物电前端需要导师、工艺模型与软件支持，暂不作为默认主线。\n\n### 3.5 校园体测智能穿戴系统\n\n深圳职业技术大学集成电路学院报道，“校园体测智能穿戴系统”获得 2026 年嵌入式竞赛全国总决赛一等奖，并获软通杯企业特别奖；报道介绍了 RISC-V 主控、端侧开发及通信协作。页面全文本次访问未成功，奖项和系统概述由该校官方搜索索引核验，未进一步核验项目细节。[深圳职业技术大学报道](https://ic.szpu.edu.cn/info/1024/1266.htm)\n\n可以借鉴的是从一个具体使用场景出发，把采集、计算和数据输出连接起来。自己的方案可先做活动识别或设备状态识别，重点比较端侧模型和计算成本；不要仅因采用同类芯片就声称具备该项目的功能。\n\n### 3.6 单目视觉测量装置\n\n华中科技大学电气学院将“基于单目视觉的目标物测量装置”列为 2025 年电子设计竞赛 C 题国家一等奖作品。[华中科技大学报道](https://seee.hust.edu.cn/info/1066/3329.htm)\n\n可以借鉴的是把展示效果转化为可测量指标：测量范围、误差、重复性和处理时间。若选择 FPGA 图像处理，应先选边缘检测或阈值处理等单一算子，并清楚记录标定方式和测试条件。\n\n### 3.7 从案例转为自己的题目\n\n先提取案例解决的问题，再保留最小技术核心，最后设计对比实验。例如，“张量加速器”可以转为“不同并行度的 INT8 点积计算模块”；“智能穿戴系统”可以转为“活动识别模型量化对精度与能耗的影响”。这是范围缩减建议，不代表已获得原作者源码或授权。\n\n## 4 选题筛选方法与候选总览\n\n建议按照专业关联、近期可完成性、工具数据可获得性、竞赛相关性、后续扩展空间五项打分，各项 1 至 5 分。可使用权重 25%、25%、20%、15%、15%。分数由团队根据真实资源填写，不在基础未知时给出看似精确的总排名。\n\n本文把难度划为三级。基础级通常涉及单一模块；进阶级涉及接口联调或软硬件协同；高难度涉及完整处理器、模拟工艺设计或多模块物理实现。周期均指已有必要基础、按每周 6 至 10 小时投入的原型估计；从零学习应另加学习时间。\n\n|编号|建议方向|原型难度|原型周期估计|专业关联|当前建议|\n|---|---|---|---|---|---|\n|S1|RISC-V 配套定点点积加速器|独立 IP 进阶 SoC 高|6至10周 加集成时间|高|重点方案 分阶段做|\n|S2|TinyML 识别与端侧计算优化|进阶|6至10周|有 RTL 扩展时高|重点方案 适合 AI 协会|\n|S3|数字 IP 自动化验证|基础至进阶|4至8周|高|重点方案 设备要求低|\n|S4|参数化定点 FIR 滤波器|基础至进阶|4至6周|高|Verilog 入门首选|\n|S5|小型 INT8 矩阵乘法阵列|进阶|8至12周|高|S1 的后续扩展|\n|S6|DMA 与双缓冲数据搬运|进阶|6至10周|高|适合结合已有计算 IP|\n|S7|异步 FIFO 与跨时钟验证|进阶|6至10周|高|适合设计验证兴趣|\n|S8|FPGA 数字锁相放大器|进阶|8至12周|高|适合信号与测量方向|\n|S9|低功耗采集与事件唤醒系统|进阶|6至10周|中至高|适合跨专业场景合作|\n|S10|两级 CMOS 运放设计|有资源时进阶|8至12周|高|需导师与工艺支持|\n|S11|SAR ADC 模型与数字控制|高|10至16周|高|先模型 后混合信号|\n|S12|数字 IP 物理实现与约束实验|进阶至高|8至12周|高|在成熟 RTL 上开展|\n\n表中周期包含基本原型和一轮对比实验，不包含正式参赛、论文撰写、流片、平台采购及长期故障排查。具体赛题匹配要在当届文件发布后重新确认。\n\n## 5 十二个候选题目的实施范围\n\n### 5.1 S1 面向信号识别的定点点积加速器\n\n建议题名为“面向嵌入式信号识别的定点点积加速器设计与 FPGA 验证”。先实现输入与权重逐项相乘并求和的 INT8 或定点计算，包含输入缓存、计算状态机、累加、结果寄存器和启动完成握手。最小原型只接仿真输入，不依赖完整 CPU。\n\n你的主要贡献应是运算数据通路、位宽选择、调度或验证中的至少一项。可比较单乘法器时分复用与多乘法器并行方案。接入 RISC-V 后，用 C 程序控制加速器，对照软件版本记录端到端时间。\n\n验收应包含随机及边界输入的逐位比对、延迟周期、吞吐率和综合资源报告。所有输入范围、累加位宽、舍入及溢出规则必须写入规格。竞赛候选为数字设计或允许该平台的应用赛题；毕设可扩展为 DMA、卷积算子或能效分析。\n\n风险主要是总线集成吞掉全部时间。若独立 IP 尚未验证通过，先不接 CPU。内核引用与个人修改要单独记录；RISC-V 是指令集标准，使用现成内核不等于自行设计 CPU。[RISC-V 规范库](https://docs.riscv.org/) [Ibex 文档](https://ibex-core.readthedocs.io/en/latest/)\n\n### 5.2 S2 TinyML 端侧识别与计算优化\n\n建议题名为“面向资源受限设备的活动识别模型量化与端侧部署研究”。可从 UCI HAR 活动识别开始，或选择公开语音命令数据做关键词识别。第一版只选一种任务，不同时做语音、图像和传感器融合。\n\n最小原型是浮点模型、INT8 模型和端侧推理演示，记录测试集精度、模型大小、运行内存、推理延迟及测量条件。为增强集成电路关联，后续可选一个计算热点设计 RTL 加速 IP，或研究位宽和存储结构。\n\n主要风险是数据划分泄漏及只做软件调用。活动识别数据应按人员分组；设备声音应按原始记录或设备分组，不能把同一记录的相邻窗口随机分到训练和测试。端侧系统结果需与桌面计算分开报告。\n\nMLPerf Tiny 提供关键词、图像及异常声音等参考任务；本文仅建议学习其评价方法。自行修改模型、平台或数据的实验不能直接称为官方合规 MLPerf 成绩。[MLCommons 任务说明](https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/)\n\n### 5.3 S3 FIFO 与 UART 数字 IP 自动化验证\n\n建议题名为“基于 Python 测试平台的 FIFO 与 UART 数字 IP 验证方法研究”。先选同步 FIFO，写清深度、位宽、读写行为和复位规则，再实现驱动、监视器、参考模型、自动比对和可复现的随机测试。UART 可作为第二个模块。\n\n验收不能只报测试运行成功，应列出满空转换、指针回绕、同时读写、复位中断等功能覆盖。可人为引入满标志错误、数据顺序错误等缺陷，比较定向与随机测试的检出能力，并保存缺陷补丁和失败种子。\n\n它设备需求低，适合先形成可检查成果；作为比赛作品时需要寻找确有验证或 EDA 方向的当届题目，不能默认独立验证框架符合应用赛道。毕设可在导师支持下加入断言、形式验证或 SystemVerilog 验证。\n\ncocotb 能用 Python 验证 RTL；OpenTitan 的公开方法强调测试计划、参考模型和覆盖分析。本文只借鉴方法，不承诺完整复制工业验证环境。[cocotb 文档](https://docs.cocotb.org/en/stable/) [OpenTitan 验证方法](https://opentitan.org/book/doc/contributing/dv/methodology/index.html)\n\n### 5.4 S4 参数化定点 FIR 滤波器\n\n建议题名为“基于 FPGA 的参数化定点 FIR 滤波器设计与资源性能评估”。先实现 8 或 16 抽头版本，用离线采样数据驱动，暂时不接 ADC。输入、系数、乘积和累加器分别定义位宽，采用固定的舍入和饱和规则。\n\n最小原型包含 Python 参考模型、RTL、脉冲响应与随机数据比对、频率响应误差以及综合报告。可以比较串行 MAC、部分并行和全并行三个结构，但第一版先做正确的串行结构。\n\n适合已有数字电路基础、尚无复杂平台经验的学生。后续可加入系数可配置、流水线、采样接口与停止计算时的使能控制。即使暂未参赛，也能积累点积加速器需要的乘累加、定点和验证知识。常见问题是把截断误差误认为 RTL 错误，应同时建立浮点与逐位定点参考模型。\n\n### 5.5 S5 小型 INT8 矩阵乘法阵列\n\n建议题名为“小型 INT8 矩阵乘法阵列的数据流设计与 FPGA 实现”。以 4×4 阵列为起点，支持明确限定大小的矩阵乘法，先固定输入顺序和边界，再研究分块及可配置尺寸。\n\n最小原型包含处理单元、数据传递、装载与结果写回逻辑，比较串行 MAC 和阵列版本的总周期、DSP、LUT、BRAM 以及频率。数据装载时间必须计入端到端结果，不能只展示阵列内部峰值。\n\n毕设可研究双缓冲、不同数据驻留方式或结构化稀疏，建议每次仅增加一项变量。比赛是否要求特定精度和接口，需要逐题确认。若阵列边界和时序难以调通，退回 S1 的独立点积 IP，而不是同时扩大模型规模。\n\n### 5.6 S6 DMA 与双缓冲数据搬运\n\n建议题名为“面向计算加速 IP 的 DMA 与双缓冲数据搬运模块设计”。先使用片上存储模型和简单接口，实现固定长度传输、地址递增、长度计数、启动完成状态和基本错误报告，暂不接外部 DDR。\n\n实验比较 CPU 逐字搬运、单缓冲和双缓冲的总体执行时间、计算等待周期及有效带宽。加入回压、不同传输长度、地址边界和复位打断测试。加速器必须有明确的数据需求，否则难以解释 DMA 的作用。\n\n它适合已有 S1 或 S5 的团队，个人贡献可以集中在传输控制与调度。毕设可扩展多个通道或标准总线，但完整 AXI 功能不能靠一个读写演示来宣称。应明确支持的协议子集和未支持行为。\n\n### 5.7 S7 异步 FIFO 与跨时钟验证\n\n建议题名为“异步 FIFO 跨时钟传输的设计与验证”。采用双时钟存储、读写指针及 Gray 编码同步，先限定 FIFO 深度为 2 的幂，并定义复位与启动条件。不能把多位数据逐位加两级触发器就当作可靠跨时钟方案。\n\n测试覆盖不同时钟比例、相位、随机暂停、指针回绕、满空边界和复位情况。采用参考队列检查不丢数据、不重排及不重复输出。数字仿真通常不能证明物理亚稳态不会发生，因此还应检查同步结构和实现约束。\n\n该方向专业性强，适合作为采集或加速器系统中的关键模块。毕设可研究 CDC 约束、复位策略和形式性质。若暂缺约束及 CDC 指导，先完成 S3 的同步 FIFO 验证，不把两者混为同一难度。\n\n### 5.8 S8 FPGA 数字锁相放大器\n\n建议题名为“基于 FPGA 的数字锁相放大器设计及微弱信号提取实验”。第一版使用仿真输入，实现参考信号、正交乘法、低通滤波及幅度相位计算；板级阶段再加入信号源和采集模块。\n\n比较不同噪声水平、相位差、滤波长度与响应时间下的幅度误差。需要明确采样率、参考频率、ADC 范围和同步条件。实时示波效果应配合数值误差与重复测试。\n\n适合对数字信号处理和测量感兴趣的同学，也能与光电或传感器方向合作。后续可研究定点误差和计算资源优化。主要风险是外部模拟链路占用太多时间；先完成数字仿真，再做采集。\n\n### 5.9 S9 低功耗采集与事件唤醒系统\n\n建议题名为“面向状态监测的低功耗采集与事件唤醒策略研究”。选择一个真实场景，例如设备振动、环境变化或动物活动监测；跨动科合作时，由动科同学定义有意义的观测变量，集成电路同学负责采集和计算链路。\n\n最小原型比较持续工作与周期唤醒两种策略，记录漏检、响应时间、采样覆盖和平均电流。后续可把阈值检测或特征提取转为硬件 IP，使专业贡献更明确。\n\n正常实验条件下的分类表现不能直接推广为动物健康或疾病判断。外购节点的整机功耗也不能作为自研芯片功耗。适合有场景合作和硬件支持的团队；缺少真实数据时可先使用公开数据回放，并注明场景尚未验证。\n\n### 5.10 S10 两级 CMOS 运放设计\n\n建议题名为“面向低功耗传感接口的两级 CMOS 运算放大器设计”。先确定电源、负载、目标带宽和输入输出范围，在合法可用的工艺模型下完成原理图及补偿设计。\n\n最小阶段测量直流增益、单位增益带宽、相位裕度、摆率、功耗和适用范围。研究变量可选偏置电流或补偿参数，比较相同负载条件下的速度与功耗。后续在导师支持下开展 PVT、失配及版图后仿真。\n\n该方向适合喜欢模拟电路且能取得 EDA、PDK 和导师支持的学生。普通板级运放电路与晶体管级集成运放设计要分开描述。未取得工艺模型前，先做理论和行为模型，不预设能够完成特定工艺的芯片版图。\n\n### 5.11 S11 SAR ADC 模型与数字控制\n\n建议题名为“SAR ADC 非理想行为建模及数字控制逻辑设计”。第一版限定为 8 位行为模型，研究逐次逼近控制、转换时序和理想量化，再加入电容失配或比较器偏置等单一非理想项。\n\n最小原型包含行为模型、控制 RTL 和静态输入测试。若进一步评估动态性能，应写清激励频率、幅度、采样点和频谱处理；ENOB 等指标不能仅从理想模型推导后当作芯片实测。\n\n可以作为混合信号方向的起点，但完整 ADC 需要比较器、采样、DAC、参考和版图设计资源。建议先完成模型与数字控制，导师确认后再扩展晶体管级电路。比赛中的指定工艺和指标必须单独核验。\n\n### 5.12 S12 数字 IP 物理实现与约束实验\n\n建议题名为“定点计算 IP 的物理实现及约束对面积时序的影响”。使用已经验证的 FIR 或 MAC RTL，固定逻辑功能和技术库，改变时钟约束、面积策略或流水线结构，比较实现结果。\n\n最小原型应包含约束文件、综合与布局布线结果、静态时序分析、面积及检查报告。OpenLane 的入门资料介绍 DRC、LVS、STA 等流程，可作为学习入口。[OpenLane 入门文档](https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html)\n\n使用开源流程与工艺做教学实验时，应注明工具版本、PDK、工艺角和检查范围。不同 FPGA 或不同工艺库的面积和功耗不直接横向比较。生成版图文件不等于已经流片，也不自动达到某家企业要求的签核标准。\n\n## 6 重点方案一 RISC-V 与点积加速器\n\n### 6.1 推荐范围和结构\n\n推荐采用三步：先独立点积 IP，再用简单寄存器接口控制，最后接入 RISC-V 处理器。CPU 初期只负责写入数据、启动运算和读取结果。这样每一步都有可检查结果，平台集成失败时仍保留独立模块成果。\n\n结构可表述为“C 测试程序 → CPU 或主控 → 控制寄存器及数据缓存 → MAC 运算模块 → 结果寄存器 → 自动比对与性能记录”。输入和输出路径均要参与测试，不能只验证乘法器。\n\n第一版建议采用带符号 INT8 输入和权重、INT32 累加、固定向量长度，先支持长度 16。若需要长度 64 或更多，先推导最坏累加范围；每次运算清零累加器，明确握手过程中是否接受新任务。第一版不加缓存、不做多核、不同时修改指令集。\n\n### 6.2 六至十周的独立 IP 工作计划\n\n|阶段|主要工作|检查依据|\n|---|---|---|\n|第1周|编写规格和 Python 整数参考模型|输入范围 位宽 溢出和握手定义明确|\n|第2至3周|串行 MAC RTL 与单元测试|定向 随机和边界输入比对通过|\n|第4周|输入缓存与控制寄存器模型|连续任务和复位后数据正确|\n|第5至6周|并行版本及综合比较|功能相同 资源和周期可复现|\n|第7至8周|FPGA 下载与主机数据回放|记录板卡 时钟和端到端延迟|\n|第9至10周|修复问题 整理代码和报告|重新运行实验可得到一致结果|\n\nSoC 集成另预留约 4 至 8 周，依据现成平台成熟度调整。开源内核的集成仍涉及构建、存储映射、工具链和软件调试，不应认为下载源码后即可运行。\n\n### 6.3 必做的对比实验\n\n至少比较串行 MAC 与并行 MAC，两者使用相同数值规格和输入。若接入 CPU，再加入软件点积基线，固定算法、编译优化、输入规模和测量边界。分别记录数据装载、计算、结果取回和总体时间。\n\n建议测试向量包含全零、全正、全负、正负交替、最小负值、接近累加极限及固定种子的随机数据。端到端加速比定义为相同任务的软件总体时间除以硬件总体时间。预先不承诺加速倍数，先判断数据搬运是否成为瓶颈。\n\n同一块 FPGA 上报告 LUT、FF、DSP、BRAM 和约束频率；时钟目标可先设保守值，是否达到以布局布线和时序报告为准。板级功耗测量需报告供电位置、空闲与工作状态以及测量仪器，芯片功耗估计另列。\n\n### 6.4 成果与毕设扩展\n\n近期交付为 RTL、参考模型、测试向量、自动测试脚本、综合报告、板级演示和设计说明。后续毕设可以选择一条扩展：支持卷积、改进搬运、研究并行度或增加功耗控制。每个改进都要保留修改前基线。\n\n可供选题讨论的题名是“面向端侧识别的定点点积加速器设计与 FPGA 验证”。只有完成处理器集成后，才将题名改为“基于 RISC-V 的软硬件协同加速系统”。若赛题要求自研内核，独立核设计另行评估。\n\n## 7 重点方案二 TinyML 与硬件计算优化\n\n### 7.1 数据与任务选择\n\n建议第一版选择 UCI HAR 活动识别。官方页面描述 30 名受试者的六类活动、50 Hz 采样和 128 点窗口，并提供按受试者划分的训练测试数据。该数据来自腰部手机传感器，不直接代表手环、动物或其他安装位置。[UCI HAR 数据集](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)\n\n如果团队更想研究语音，可改用 MLPerf Tiny 中的关键词识别参考任务，但不要同时开展两种任务。若研究振动设备，CWRU 轴承数据中心可以作为资料入口；具体数据文件的采样条件、故障类型和使用要求需读取其说明。[CWRU 数据中心](https://engineering.case.edu/bearingdatacenter/welcome)\n\n最小模型建议从线性分类器或小型 MLP 开始。先建立有效的软件基线，确定输入格式与数据划分，再比较 INT8 量化。选模型时应由资源限制决定复杂度，不预先承诺使用大型网络。\n\n### 7.2 软硬件分工\n\n算法部分负责数据划分、预处理和浮点基线；嵌入式部分负责模型部署、采样或数据回放；集成电路部分负责定点参考模型、计算热点分析及可选 RTL 模块。三者使用相同模型版本和数值定义。\n\nCMSIS-NN 可为 Cortex-M 平台提供神经网络计算内核，使用前要确认处理器和算子支持；它不是自研 FPGA 加速器。[CMSIS-NN 文档](https://arm-software.github.io/CMSIS-NN/v7.0.0/index.html)\n\nhls4ml 可以用于探索模型到硬件的实现及精度、复用因子的取舍。其复用因子会影响并行程度和资源成本，实际实现仍依赖受支持的后端和工具。采用 HLS 生成模块时，应说明自己的模型、配置和结构改进；若赛题或导师要求手写 RTL，应按要求执行。[hls4ml 属性说明](https://fastmachinelearning.org/hls4ml/ir/attributes.html)\n\n### 7.3 建议实验设计\n\n保持相同测试样本，比较浮点、INT8 和一个进一步缩减的模型。精度记录 Accuracy、Macro F1 和混淆矩阵；资源记录模型文件、峰值运行内存、单次延迟和必要的能耗。Accuracy 与 Macro F1 是互补指标，不应只选择表现更好的一个。\n\n把预处理、推理和输出分开计时，同时给出完整响应时间。若使用公开数据回放，要标明没有现场实时采集。若补充自采数据，按人或采集批次分组，保留独立测试集，并记录采样位置和标注方式。\n\n第一轮可设“INT8 相比浮点的 Accuracy 下降不超过 2 个百分点”为内部讨论目标，而不是官方标准或已达到结果。若任务较难，按实际曲线重新确定。延迟先测基线再定优化目标，禁止未经测量写出固定毫秒数。\n\n### 7.4 时间与交付\n\n第 1 至 2 周完成数据审查及浮点基线；第 3 至 4 周完成量化与误差分析；第 5 至 6 周完成端侧部署或回放；第 7 至 10 周开展热点优化与对比实验。设计自研 FPGA 算子需额外时间，不包含在软件部署的默认周期内。\n\n近期交付为数据说明、模型、量化配置、测试集结果、端侧测量表和演示。毕设进一步聚焦“位宽对计算误差与资源的影响”或“某一热点算子的硬件实现”，避免同时扩展模型、平台和应用场景。\n\n## 8 重点方案三 数字 IP 自动化验证\n\n### 8.1 第一版规格\n\n选择 16 深度、8 位数据的同步 FIFO。建议采用标准读模式，写清读取请求的接受条件、输出有效时刻、满时同时读写是否允许、空时同时读写如何处理，以及复位是否清除内容或只清除有效状态。不同规则均可能合理，但模型与 RTL 必须一致。\n\n验证结构为“测试用例 → 输入驱动 → DUT → 输出监视器 → 参考队列与比对器 → 功能覆盖和结果报告”。DUT 指被测电路；参考队列独立按规格更新，避免照抄 DUT 的指针逻辑而复制同一个错误。\n\n### 8.2 功能覆盖与缺陷实验\n\n|场景|需要检查的行为|可设置的缺陷示例|\n|---|---|---|\n|复位与重新启动|标志状态 数据有效和后续读写|计数器未正确清零|\n|写满与读空|边界判断 无非法数据输出|满阈值少算或多算一项|\n|同时读写|按规格接受请求 占用量正确|计数更新顺序错误|\n|多次指针回绕|数据顺序连续|回绕地址错误|\n|随机突发与暂停|没有丢失 重复或重排|读写使能组合错误|\n\n建议制作约 5 个可复现缺陷版本，每个只改一个逻辑点。保存缺陷补丁、预期失败场景、随机种子及实际发现结果。比较定向测试和定向加随机测试的检出数及运行成本。不要把随机次数当作完整性的证明。\n\n代码覆盖与功能覆盖分开统计，并注明工具能力。测试全通过和覆盖率达到某个数值都不能证明没有所有缺陷；不可达项和未覆盖行为应解释。形式验证若加入，需写出环境假设及证明边界。\n\n### 8.3 学习与交付\n\n第 1 周确定规格与参考模型；第 2 至 3 周完成定向测试；第 4 周加入随机驱动和功能覆盖；第 5 至 6 周完成缺陷注入实验；第 7 至 8 周加入 UART 或整理验证框架。\n\n交付应包含测试计划、规格、DUT、测试代码、覆盖矩阵、缺陷补丁、失败复现说明和一条运行命令。UART 加入前先限定波特率、数据位、校验和错误行为，避免一次支持所有配置。\n\n这个方向能让你逐步进入芯片验证。后续在导师支持下可补充 SystemVerilog 断言或 UVM 方法，是否作为学院正式毕设需提前确认。比赛选择需要找到明确认可验证或 EDA 成果的赛题。\n\n## 9 学习顺序与资源准备\n\n### 9.1 大二阶段的基础顺序\n\n第一步掌握同步时序：组合与时序逻辑、非阻塞赋值、复位、有限状态机、计数器和基本握手。以计数器、同步 FIFO 和串行 MAC 为练习。第二步学习测试平台和参考模型，让结果自动比较。第三步学习综合、时序约束和 FPGA 下载。第四步再学习总线、处理器集成或复杂算法。\n\n选择 S1 时补充 C、计算机组成、定点运算和存储映射；选择 S2 时补充 Python、数据划分、模型评价和量化；选择 S3 时补充 Python 测试、协议边界和覆盖分析；选择 S10 或 S11 时补充晶体管、小信号模型、反馈与稳定性。\n\n具体工具版本应固定在项目 README。先测试一个最小示例，再扩展设计；仿真器支持的 SystemVerilog 特性、模型算子和 FPGA 软件支持的器件都要提前检查。本文不要求立即安装或购买所有工具。\n\n### 9.2 预算估计与实验室资源\n\n|准备方式|新增支出估计|适合用途|决策条件|\n|---|---|---|---|\n|使用已有电脑做仿真|可为0元|S3 S4 及各方向早期模型|确认仿真软件可合法使用|\n|借用学校 FPGA 和仪器|约0至300元杂项预留|S1 S4 S5 S8|确认器件 工具 线材和借用条件|\n|自行准备入门 FPGA 及配件|约500至2000元预留|需要板级演示的数字项目|先确认当届平台和项目资源需求|\n|MCU 与基础传感器原型|约200至800元预留|S2 S9|先确认存储 算力和接口|\n|模拟或混合信号设计|另行确认|S10 S11|依赖学校 EDA PDK 仪器和导师|\n\n以上是项目预算占位估计，未做当日商品询价，不是报价或采购清单，不含新电脑、仪器、软件商业许可及流片。优先借用已有资源，正式采购前按型号重新询价。\n\n## 10 国庆期间的执行清单\n\n以下安排是 2026 年 10 月 1 日至 7 日的个人工作建议，不是竞赛截止日期。国庆阶段的目标是完成调研、确定范围及跑通最小验证，不预期从零完成完整 SoC。\n\n|日期|工作|当天留下的结果|\n|---|---|---|\n|10月1日|整理官方入口与资源条件|三项赛事入口 可借设备和已学技术清单|\n|10月2日|阅读并比较获奖案例|三张案例卡 每张写问题 核心方法和缩减方案|\n|10月3日|从 S1 S2 S3 中选一个主方向|一页任务书和暂不实现的功能清单|\n|10月4日|建立最小参考模型|S1 点积模型 S2 简单基线 或 S3 参考队列|\n|10月5日|验证最小链路|一项自动比对或基线结果 附运行条件|\n|10月6日|补齐实验计划和风险|对照实验表 资源缺口和解决顺序|\n|10月7日|形成协会讨论稿并交流|题目候选 资源需求 下一阶段计划|\n\n如果基础不足，10 月 4 至 5 日改为同步 FIFO 或串行 MAC 的学习练习。已经完成的本次调研可直接作为第一轮讨论稿，未来一周重点应转向验证资源与技术，而不是继续无限收集题目。\n\n### 10.1 一个学期到毕设的衔接\n\n大二当前阶段先确定主方向并完成模块；一个学期内形成可复现原型和对照实验；下一届赛题发布后确认匹配并补齐指定平台；大三阶段选择一个技术问题深入优化；进入正式毕设前与导师确认工作量和学院规范。\n\n参赛报告与毕设论文的关注点不同。参赛材料需要展示规定指标、完整性和现场表现；毕设需要把设计问题、方法、实验及局限说明清楚。公开代码、第三方模块、团队分工和个人新增工作应贯穿记录，方便后续说明贡献。\n\n## 11 协会怎样组织这项工作\n\n建议先形成一个小型选题讨论组，用现有成员承担赛事整理、技术方案、应用场景和实验资源协调。跨专业研究需要协作，这可以通过共享选题库和阶段性演示落实，不需要一开始就承诺大型项目。\n\n建议每个候选题只保留一张选题卡，字段包括题名、解决问题、专业关联、技术核心、最小原型、数据来源、工具板卡、验证指标、扩展方向和待确认条件。每两周用可以检查的代码、波形或实验结果讨论一次。\n\n跨专业合作时，先约定输入输出和标签。例如动科同学定义活动类别及标注方法，集成电路同学负责采集、定点处理和算力；算法同学负责模型与评价。公开人体或设备数据只能用来验证技术链路，场景适用性需通过对应数据另外验证。\n\n### 11.1 竞赛信息库字段\n\n每条赛事记录保存赛事全名、届次、官方链接、赛项、参赛对象、团队人数、指导教师要求、指定平台、官方截止日期、校内截止日期、作品提交物、评分项、AI 辅助规定和核验日期。没有核验的字段写“待确认”，不按往年规则填入。\n\n### 11.2 选题任务书模板\n\n题目名称：填写能够描述具体技术问题的题名。\n\n目标与范围：写清要完成的模块及本阶段不包括的功能。\n\n技术方案：给出输入、运算、存储、控制和输出关系。\n\n基线与改进：说明现有方法和拟改变的一个关键变量。\n\n验证计划：列出数据、测试场景、指标、测量边界和复现方式。\n\n资源与分工：确认工具、板卡、导师、成员职责和待获得资源。\n\n阶段交付：每阶段留下代码、测试、报告或演示，并设失败后的缩减方案。\n\n### 11.3 实验记录模板\n\n|实验项|必须记录的内容|\n|---|---|\n|配置|代码版本 工具版本 板卡或工艺库 时钟和编译配置|\n|数据|来源 原始记录 分组方法 测试数量和随机种子|\n|基线|算法 数值精度 输入规模和功能约束|\n|结果|正确性 延迟 资源 精度以及有条件测得的功耗|\n|边界|是否包含预处理 数据搬运及输出 哪些项目未测|\n|复现|运行步骤 日志位置 异常原因和未解决问题|\n\n## 12 常用术语说明\n\n|术语|在这份材料中的含义|\n|---|---|\n|RTL|寄存器传输级设计 用 Verilog 等描述硬件在时钟驱动下如何工作|\n|FPGA|可配置的数字逻辑器件 可用来验证自己的电路设计|\n|IP|可复用的电路模块 例如 FIFO 运算模块或接口控制器|\n|SoC|片上系统 通常把处理器 存储 接口和其他模块集成起来|\n|RISC-V|开放的指令集标准 规定指令行为 具体内核需要另外实现|\n|MAC|乘累加运算 对多组数值相乘后累加 是许多算法的基本运算|\n|DMA|由硬件负责数据搬运 减少处理器逐项参与传输|\n|TinyML|在资源受限设备上运行小型机器学习模型的技术方向|\n|INT8|8 位整数数据表示 量化模型还需要明确缩放和舍入规则|\n|PPA|功耗 性能 面积三类指标 比较时需要统一工具和实现条件|\n|PDK|工艺设计套件 提供器件模型 设计规则及相关工艺资料|\n|CDC|跨时钟域传输 不同时钟之间的数据与控制需要专门处理|\n|PVT|工艺 电压 温度条件 用于分析不同工作条件下的电路表现|\n|DRC LVS STA|分别检查版图规则 版图与电路的一致性 以及静态时序|\n\n阅读顺序建议是先看结论和候选表，再看自己感兴趣的重点方案；术语可随用随查。第一次开展选题讨论时，重点说明选题解决什么问题、第一版能做什么、需要哪些资源。\n\n## 13 资料来源与查阅用途\n\n以下均为赛事官网、高校官方页面或项目官方文档。赛事和工具信息会更新；正式报名和使用前，应读取当届通知及实际采用的版本。高校新闻用于确认案例，不作为完整设计说明或性能证明。\n\n1. [全国大学生集成电路创新创业大赛官网](https://univ.ciciec.com/) 用于确认赛项入口及 2026 年决赛获奖公示。\n2. [第十届集创赛企业命题](https://univ.ciciec.com/nr.jsp?groupId=46&jpt=4) 用于查找命题方和题目更新。\n3. [嵌入式芯片与系统设计竞赛官网](https://www.socchina.net/home?trackType=2) 用于确认 2026 年芯片应用赛道进度及通知入口。\n4. [2026 年电子设计竞赛官方专区](https://www.nuedc-training.com.cn/index/publicity/topic2026) 用于区分本年度赛区赛与专题赛信息。\n5. [江南大学 2025 年赛事报道](https://news.jiangnan.edu.cn/info/1284/103057.htm) 用于确认本科生 RISC-V CPU 设计获奖案例。\n6. [南京大学 2025 年集创赛报道](https://ese.nju.edu.cn/01/c4/c22536a786884/page.htm) 用于确认张量加速器获奖案例。\n7. [福州大学 2026 年集创赛报道](https://wx.fzu.edu.cn/info/1086/4927.htm) 用于确认 CPU 与模拟前端获奖案例。\n8. [深圳职业技术大学 2026 年嵌入式竞赛报道](https://ic.szpu.edu.cn/info/1024/1266.htm) 本次通过官方搜索索引核验，全文访问未成功。\n9. [华中科技大学 2025 年电赛报道](https://seee.hust.edu.cn/info/1066/3329.htm) 用于确认单目视觉测量装置获奖案例。\n10. [RISC-V 已批准规范库](https://docs.riscv.org/) 用于查看指令集定义与版本。\n11. [Ibex 官方文档](https://ibex-core.readthedocs.io/en/latest/) 用于了解开源 RISC-V 内核及集成要求。\n12. [cocotb 官方文档](https://docs.cocotb.org/en/stable/) 用于建立 Python RTL 验证环境。\n13. [OpenTitan 验证方法](https://opentitan.org/book/doc/contributing/dv/methodology/index.html) 用于学习测试计划、参考模型及覆盖方法。\n14. [MLCommons MLPerf Tiny 任务说明](https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/) 用于查找端侧任务与评价思路。\n15. [UCI HAR 数据集](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones) 用于活动识别原型，注意人体与场景范围。\n16. [CWRU 轴承数据中心](https://engineering.case.edu/bearingdatacenter/welcome) 用于设备状态数据的进一步查找。\n17. [CMSIS-NN 官方文档](https://arm-software.github.io/CMSIS-NN/v7.0.0/index.html) 用于 Cortex-M 神经网络计算库参考。\n18. [hls4ml 属性说明](https://fastmachinelearning.org/hls4ml/ir/attributes.html) 用于精度与运算复用参数参考。\n19. [OpenLane 入门文档](https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html) 用于数字实现流程及检查项目参考。\n\n下一步建议先确认技术基础和实验室资源，再在 S1、S2、S3 中选一个主方向。资源不足时用 S4 或同步 FIFO 打基础，并将第一轮可复现结果作为协会下一次讨论的依据。\n",
+  "difficultyDimensions": [
+    {
+      "id": "knowledge",
+      "name": "知识门槛",
+      "criteria": [
+        "基础检索、简单统计或数字逻辑",
+        "一至两门专业基础与常用编程",
+        "跨课程知识、专业建模或形式化方法",
+        "深入机理与研究方法，需辨析未解决问题"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "实现复杂度",
+      "criteria": [
+        "一个小任务或单模块",
+        "数据—模型—评价闭环，或几个模块联调",
+        "多模块集成、约束求解或较复杂实验",
+        "系统级协同、自动搜索或复杂模型耦合"
+      ]
+    },
+    {
+      "id": "resources",
+      "name": "资源依赖",
+      "criteria": [
+        "普通电脑、公开数据或文献",
+        "开发板、小型调查或额外软件环境",
+        "工艺模型、专用实验条件或领域协作",
+        "新场景数据、多场地条件或长期实验资源"
+      ]
+    },
+    {
+      "id": "validation",
+      "name": "验证要求",
+      "criteria": [
+        "可检查的正确性与记录",
+        "基线、误差、独立测试或重复性",
+        "鲁棒性、消融、分组泛化或约束证明",
+        "跨场景外部验证、系统不确定性或新方法可信性"
+      ]
+    }
+  ],
+  "difficultyLevels": [
+    {
+      "id": "D1",
+      "rank": 1,
+      "name": "入门实践",
+      "description": "先把一个小任务做对，形成可检查的成果。",
+      "effort": "3–6 周，每周 4–6 小时",
+      "team": "可由 1 人起步，建议请学长或导师检查一次方案"
+    },
+    {
+      "id": "D2",
+      "rank": 2,
+      "name": "课程综合",
+      "description": "完成一个小系统或研究闭环，比较基线与误差。",
+      "effort": "6–10 周，每周 6–10 小时",
+      "team": "1–2 人；按模块分工，定期请导师反馈"
+    },
+    {
+      "id": "D3",
+      "rank": 3,
+      "name": "毕设进阶",
+      "description": "处理多模块、专业约束或泛化，形成完整研究证据。",
+      "effort": "10–16 周，每周 8–12 小时",
+      "team": "建议 2–3 人或导师持续指导；先完成资源预检"
+    },
+    {
+      "id": "D4",
+      "rank": 4,
+      "name": "科研挑战",
+      "description": "面对复杂耦合与不确定性，需要更强的验证和协作。",
+      "effort": "16–24 周以上，每周 10–15 小时",
+      "team": "建议导师带队，按数据、方法、系统和评价分工"
+    }
+  ],
+  "difficultyMethod": {
+    "version": "1.0",
+    "assessed": "2026-10-01",
+    "rule": "按本页拟议范围对四个维度分别给出 1–4 级，再取最高维度作为总体难度；反映主要瓶颈，不是平均分。",
+    "note": "由本次调研评估，不是学校、竞赛主办方或来源作者给出的评级。周期是具备所列先修基础后的规划估计，不含系统补课和等待设备、数据的时间；范围改变后需重新评估。"
+  }
+};

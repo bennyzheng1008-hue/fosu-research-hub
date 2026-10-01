@@ -1,0 +1,20 @@
+# Runtime state and local settings
+*.log
+*.pid
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+node_modules/
+coverage/
+.codex/
+.cache/
+.vscode/
+*.zip
+*.docx
+school-source.html
+browser-*.js
+update-*.cjs
+verification.json
+site-preview*.png
