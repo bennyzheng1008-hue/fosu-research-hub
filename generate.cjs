@@ -4,8 +4,15 @@ const errors=[],ids=new Set,majorIds=new Set(data.majors.map(m=>m.id)),sourceIds
 const difficultyIds=new Set(data.difficultyLevels.map(t=>t.id));
 for(const r of data.records){if(ids.has(r.id))errors.push('Duplicate record '+r.id);ids.add(r.id);for(const id of r.majors)if(!majorIds.has(id))errors.push('Unknown major '+id);for(const id of r.sourceIds)if(!sourceIds.has(id))errors.push('Unknown source '+id);if(!r.sourceIds.length)errors.push('No source '+r.id);if(!r.sections.length)errors.push('No details '+r.id);}
 for(const r of data.records){
+ if(r.researchBridge){
+  const b=r.researchBridge;
+  for(const [key,type] of [['contestIds','contest'],['caseIds','case'],['resourceIds','resource']])for(const id of b[key]||[])if(!data.records.some(v=>v.id===id&&v.type===type))errors.push('Invalid bridge '+r.id+' '+id);
+  for(const role of b.roles||[])for(const id of role.majorIds)if(!majorIds.has(id))errors.push('Invalid role major '+r.id+' '+id);
+  for(const key of ['roles','milestones','mentorQuestions','librarySearch'])if(!Array.isArray(b[key])||!b[key].length)errors.push('Empty bridge '+r.id+' '+key);
+ }
  for(const id of r.relatedTopicIds||[])if(!data.records.some(v=>v.id===id&&v.type==='topic'))errors.push('Unknown related topic '+id);
  if(r.type!=='topic')continue;
+ if(!r.researchBridge)errors.push('Missing research bridge '+r.id);
  const p=r.difficultyProfile;
  if(!difficultyIds.has(r.difficulty)||!p){errors.push('Missing difficulty '+r.id);continue;}
  const values=data.difficultyDimensions.map(d=>p.dimensions[d.id]);

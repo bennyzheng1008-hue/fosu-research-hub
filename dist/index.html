@@ -1,32 +1,13 @@
 <!doctype html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="佛山大学多专业毕设、竞赛与研究资源私人检索库。每条资料可追溯来源与核验日期。"><title>佛大选题资料库 · 私人研究工作台</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script></head>
-<body>
-<a class="skip" href="#results">跳到检索结果</a>
-<div class="shell">
-<aside class="sidebar" aria-label="资料导航">
-  <a class="brand" href="./"><span class="brand-icon">研</span><span>佛大选题资料库<small>PERSONAL RESEARCH LIBRARY</small></span></a>
-  <div class="space-label"><i></i> 本机私人空间</div>
-  <div class="side-title">资料视图</div><nav id="type-nav" aria-label="资料类型"></nav>
-  <div class="side-title domain-title">学科领域</div><nav id="group-nav" aria-label="学科领域"></nav>
-  <div class="sidebar-bottom"><span class="small-dot"></span> 来源可追溯<small>整理于 <span id="snapshot-date"></span><br>毕设与竞赛，一起准备。</small></div>
-</aside>
-<main>
-<header class="topbar"><div class="breadcrumb">我的研究空间 <span>/</span> <strong id="view-label">全部资料</strong></div><a href="downloads/ic-research.md" download class="download-link">↓ 集成电路完整调研</a></header>
-<section class="workspace" aria-label="资料检索">
-  <div class="heading-row"><div><div class="eyebrow">FOSHAN UNIVERSITY · RESEARCH DESK</div><h1>从一个好问题，开始研究。</h1><p class="intro">查选题、看竞赛、找数据。把值得做的方向，变成可以验证的项目。</p></div><div class="edition">资料快照<time id="edition-date"></time></div></div>
-  <form class="search-form" id="search-form" role="search"><span class="search-icon" aria-hidden="true">⌕</span><label class="sr-only" for="search-input">搜索资料</label><input id="search-input" type="search" placeholder="搜索选题、技术、竞赛或来源，例如：RISC-V、动物科学、市场调查" autocomplete="off"><button class="search-button" type="submit">搜索资料</button></form>
-  <div class="search-hints"><span>试试</span><div id="quick-search"></div><a id="web-search" href="https://www.bing.com/search?q=佛山大学+毕业设计+竞赛" target="_blank" rel="noopener noreferrer">全网继续检索 ↗</a></div>
-  <div class="overview" id="overview"></div>
-  <section class="difficulty-panel" aria-label="选题难度分层"><div class="difficulty-heading"><div><strong>选题难度分层</strong><span>按知识、实现、资源和验证的主要瓶颈评估</span></div><button id="difficulty-help" class="text-button">分层标准与学习路线 ↗</button></div><div id="difficulty-tiers" class="difficulty-tiers"></div><p class="difficulty-hint">数量随专业、关键词和准备阶段更新。选题详情含先修知识、资源条件和可缩小的版本；难度是调研评估。</p></section>
-  <div class="filter-row"><div class="select-wrap"><label for="major-select">专业</label><select id="major-select"><option value="all">所有专业</option></select></div><div class="select-wrap"><label for="difficulty-select">项目难度</label><select id="difficulty-select"><option value="all">不限难度</option><option value="D1">D1 · 入门实践</option><option value="D2">D2 · 课程综合</option><option value="D3">D3 · 毕设进阶</option><option value="D4">D4 · 科研挑战</option></select></div><div class="select-wrap"><label for="level-select">准备阶段</label><select id="level-select"><option value="all">全部阶段</option><option value="入门">入门准备</option><option value="进阶">进阶准备</option><option value="导师协作">导师协作</option></select></div><div class="select-wrap sort-wrap"><label for="sort-select">排序</label><select id="sort-select"><option value="relevance">匹配与推荐</option><option value="difficulty">难度由低到高</option><option value="date">核验日期</option><option value="title">标题名称</option></select></div><button id="reset" class="text-button">重置筛选</button></div>
-  <div class="results-head" id="results" tabindex="-1"><h2 id="result-title">全部资料 <span id="result-count"></span></h2><span id="result-description">从公开资料中寻找可落地的方向</span></div>
-  <div id="active-filters" class="active-filters"></div><div id="cards" class="cards" aria-live="polite"></div>
-  <div class="pagination" id="pagination"></div>
-  <section class="source-note"><div class="note-icon">i</div><div><strong>每个方向，都有依据。</strong><p>选题为本次调研建议；竞赛、案例和资源附原始出处。专业范围依据教育部门院校公开栏目整理，具体招生与毕设要求请以学院通知为准。站内搜索已整理的资料，全网检索会前往外部搜索引擎。</p></div></section>
-  <footer><span>佛大选题资料库 · 私人研究空间</span><button id="about-button" class="text-button">资料范围与使用说明 ↗</button></footer>
-</section>
-</main></div>
-<dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span id="detail-kicker"></span><button id="close-dialog" class="icon-button" aria-label="关闭详情">×</button></div><div id="detail-content"></div></dialog>
-<div id="toast" role="status" class="toast" hidden></div>
-</body></html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="佛山大学多专业选题、竞赛、获奖案例与研究素材检索。来源可追溯，支持难度分层和跨专业协作。"><title>佛大选题资料库</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="search-engine.js" defer></script><script src="app.js" defer></script></head>
+<body><a class="skip" href="#results">跳到检索结果</a>
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon">研</span><span>佛大选题资料库<small>选题 · 竞赛 · 研究素材</small></span></a><button id="about-button" class="text-button">使用说明</button></header>
+<main class="workspace"><div class="heading-row"><div><h1>找到方向，把项目做起来。</h1><p class="intro">看竞赛与获奖选题，找研究素材，明确难度和协作分工。</p></div><span class="edition">资料快照 <time id="edition-date"></time></span></div>
+<form class="search-form" id="search-form" role="search"><label class="sr-only" for="search-input">搜索资料</label><span aria-hidden="true" class="search-icon">⌕</span><input id="search-input" type="search" placeholder="搜索问题、技术或来源，例如：RISC-V 验证" autocomplete="off"><button type="submit" class="search-button">搜索</button></form>
+<nav id="type-nav" class="type-nav" aria-label="资料类型"></nav>
+<div class="filter-row"><div class="select-wrap"><label for="major-select">专业</label><select id="major-select"><option value="all">所有专业</option></select></div><div class="select-wrap"><label for="difficulty-select">选题难度分层</label><select id="difficulty-select"><option value="all">不限难度</option><option value="D1">D1 · 入门实践</option><option value="D2">D2 · 课程综合</option><option value="D3">D3 · 毕设进阶</option><option value="D4">D4 · 科研挑战</option></select></div><button id="difficulty-help" class="text-button">分层标准</button><button id="reset" class="text-button reset">重置</button></div>
+<details class="advanced" id="advanced-search"><summary>精细检索 <span id="advanced-summary">全文 · 同时匹配</span></summary><div class="advanced-grid"><div class="select-wrap"><label for="scope-select">搜索范围</label><select id="scope-select"><option value="all">全部内容</option><option value="title">仅标题</option><option value="body">详细方案与报告</option><option value="sources">来源机构与网址</option></select></div><div class="select-wrap"><label for="mode-select">关键词关系</label><select id="mode-select"><option value="all">同时匹配所有词</option><option value="any">匹配任一词</option><option value="phrase">完整短语</option></select></div><div class="select-wrap"><label for="group-select">学科领域</label><select id="group-select"><option value="all">所有领域</option></select></div><div class="select-wrap"><label for="level-select">准备阶段</label><select id="level-select"><option value="all">全部阶段</option><option value="入门">入门准备</option><option value="进阶">进阶准备</option><option value="导师协作">导师协作</option></select></div></div><p class="search-tip">多个词用空格分开；双引号内按短语匹配，例如 “跨个体” 牛。支持 RISC-V、IC、AI、动科等缩写。</p></details>
+<div class="results-head" id="results" tabindex="-1"><div><h2 id="result-title">全部资料 <span id="result-count"></span></h2><p id="result-description"></p></div><div class="sort-wrap"><label class="sr-only" for="sort-select">结果排序</label><select id="sort-select"><option value="relevance">相关度优先</option><option value="difficulty">难度从低到高</option><option value="date">核验日期</option><option value="title">标题名称</option></select></div></div>
+<div id="cards" class="cards" aria-live="polite"></div><div class="pagination" id="pagination"></div>
+<footer><div><span id="corpus-count"></span><p>站内搜索已整理的资料。选题与协作路线为调研建议；赛事资格、学院要求请查原始通知。</p></div><a id="web-search" href="https://www.bing.com/search?q=佛山大学+毕业设计+竞赛" target="_blank" rel="noopener noreferrer">到 Bing 继续搜索 ↗</a><a href="downloads/ic-research.md" download>下载集成电路调研 ↓</a></footer></main>
+<dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><div class="dialog-trail"><button id="detail-back" class="text-button" hidden>← 返回上条资料</button><span id="detail-kicker"></span></div><button id="close-dialog" class="icon-button" aria-label="关闭详情">×</button></div><div id="detail-content"></div></dialog><div id="toast" role="status" class="toast" hidden></div></body></html>
