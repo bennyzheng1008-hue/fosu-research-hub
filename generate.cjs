@@ -11,6 +11,12 @@ for(const r of data.records){
   for(const key of ['roles','milestones','mentorQuestions','librarySearch'])if(!Array.isArray(b[key])||!b[key].length)errors.push('Empty bridge '+r.id+' '+key);
  }
  for(const id of r.relatedTopicIds||[])if(!data.records.some(v=>v.id===id&&v.type==='topic'))errors.push('Unknown related topic '+id);
+ if(r.researchDossier){const d=r.researchDossier;
+  if(r.type!=='topic'||typeof d.question!=='string'||!d.question.trim())errors.push('Invalid dossier '+r.id);
+  for(const k of ['hypotheses','literature','baselines','experiments','metrics','ablations','pitfalls','reproducibility','stopRules','deliverables'])if(!Array.isArray(d[k])||!d[k].length)errors.push('Empty dossier '+r.id+' '+k);
+  for(const v of d.literature||[])if(!sourceIds.has(v.sourceId)||!r.sourceIds.includes(v.sourceId)||!v.finding||!v.howToUse||!v.limitation)errors.push('Invalid literature '+r.id+' '+v.sourceId);
+  for(const [key,fields] of [['baselines',['name','implementation','why']],['experiments',['name','variables','controls','split','metrics','decision']],['metrics',['name','definition','unit','aggregation']]])for(const v of d[key]||[])for(const f of fields)if(!(typeof v[f]==='string'&&v[f].trim()||Array.isArray(v[f])&&v[f].length))errors.push('Invalid '+key+' '+r.id+' '+f);
+ }
  if(r.type!=='topic')continue;
  if(!r.researchBridge)errors.push('Missing research bridge '+r.id);
  const p=r.difficultyProfile;
@@ -24,4 +30,4 @@ for(const s of Object.values(data.sources)){try{const u=new URL(s.url);if(!['htt
 for(const m of data.majors)if(!data.records.some(r=>r.type==='topic'&&r.majors.includes(m.id)))errors.push('No topic for '+m.name);
 if(errors.length)throw Error(errors.join('\n'));
 fs.writeFileSync(path.join(root,'dist','data.js'),'window.RESEARCH_DB = '+JSON.stringify(data,null,2)+';\n','utf8');
-console.log(JSON.stringify({validated:true,majors:data.majors.length,records:data.records.length,sources:sourceIds.size,difficulties:Object.fromEntries(data.difficultyLevels.map(t=>[t.id,data.records.filter(r=>r.difficulty===t.id).length])),types:Object.fromEntries(['topic','contest','case','resource','major','guide'].map(t=>[t,data.records.filter(r=>r.type===t).length]))}));
+console.log(JSON.stringify({validated:true,majors:data.majors.length,records:data.records.length,deepDossiers:data.records.filter(r=>r.researchDossier).length,sources:sourceIds.size,difficulties:Object.fromEntries(data.difficultyLevels.map(t=>[t.id,data.records.filter(r=>r.difficulty===t.id).length])),types:Object.fromEntries(['topic','contest','case','resource','major','guide'].map(t=>[t,data.records.filter(r=>r.type===t).length]))}));

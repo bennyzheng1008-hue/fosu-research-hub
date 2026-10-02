@@ -1,0 +1,1754 @@
+{
+  "sources": {
+    "kb-ic-rvfi": {
+      "title": "RISC-V Formal Interface（RVFI）规范",
+      "org": "YosysHQ / riscv-formal 项目",
+      "url": "https://github.com/YosysHQ/riscv-formal/blob/main/docs/source/rvfi.rst",
+      "kind": "作者项目规范",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "退役指令的观察接口规范；工具 main 分支会变化，实验须固定提交。接口正确性与指令正确性应分别检查。"
+    },
+    "kb-ic-act4": {
+      "title": "RISC-V Architectural Certification Tests 与 ACT4",
+      "org": "RISC-V International / riscv-arch-test",
+      "url": "https://github.com/riscv/riscv-arch-test",
+      "kind": "官方测试框架",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "当前官方 README 说明 ACT4 替代已废弃的 RISCOF。架构测试不是完整处理器验证；需保留 DUT 配置、工具链及测试提交。"
+    },
+    "kb-ic-cummings-fifo": {
+      "title": "Simulation and Synthesis Techniques for Asynchronous FIFO Design（SNUG 2002，Rev 1.2）",
+      "org": "Clifford E. Cummings / Sunburst Design",
+      "url": "https://www.researchgate.net/profile/Clifford-Cummings/publication/252160343_Simulation_and_Synthesis_Techniques_for_Asynchronous_FIFO_Design/links/54bfe9720cf28eae4a66418a/Simulation-and-Synthesis-Techniques-for-Asynchronous-FIFO-Design.pdf",
+      "kind": "作者论文",
+      "checked": "2026-10-02",
+      "access": "作者主页 PDF 正文可读",
+      "note": "2002 年经典工程论文，读取的是 Rev 1.2；原 Sunburst 下载入口未成功读取，采用作者 ResearchGate 主页版本。设计方法不替代工艺相关 CDC 与 MTBF 签核。"
+    },
+    "kb-ic-litert-int8": {
+      "title": "LiteRT 8-bit quantization specification",
+      "org": "Google AI Edge",
+      "url": "https://developers.google.com/edge/litert/conversion/tensorflow/quantization/quantization_spec",
+      "kind": "官方算子规范",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "用于核对张量范围、零点、按通道缩放与偏置约束；不同后端不一定逐比特一致，不将规范描述解释成所有模型精度保证。"
+    },
+    "kb-ic-handshake": {
+      "title": "Rules for Ready/Valid Handshakes",
+      "org": "Charles Eric LaForest / FPGA Design Elements",
+      "url": "https://fpgacpu.ca/fpga/handshake.html",
+      "kind": "作者工程说明",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "解释同步 ready/valid 的背压、状态更新、死锁与组合环问题。属于作者设计规则，不是完整 AMBA AXI 协议规范，也不是跨时钟域协议。"
+    },
+    "kb-ic-sram-march": {
+      "title": "SRAM Test with March Algorithms · Introduction",
+      "org": "Microchip Technology",
+      "url": "https://onlinedocs.microchip.com/oxy/GUID-CC542DC7-9EE1-4C9E-8355-9E4DAC3D8704-en-US-4/GUID-E50F2012-AB0B-445B-BE32-3BC4A5A44E50.html",
+      "kind": "官方算法说明",
+      "checked": "2026-10-02",
+      "access": "官方检索正文可读，直接页读取失败",
+      "note": "可核验 March C- 六阶段的算法概述。这里只据此建立教学故障模型；字宽、耦合故障分类与真实芯片诊断需另查完整实现及适用条件，不声称获得安全认证。"
+    },
+    "kb-ic-adc-mt003": {
+      "title": "MT-003：Understand SINAD, ENOB, SNR, THD, THD+N, and SFDR（2008）",
+      "org": "Walt Kester / Analog Devices",
+      "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf",
+      "kind": "官方技术教程",
+      "checked": "2026-10-02",
+      "access": "PDF 正文可读",
+      "note": "2008 年 Rev.A 教程，适合核对动态指标、测量带宽与输入幅度的关系。教程器件示例不作为拟议 SAR ADC 的性能目标。"
+    },
+    "kb-ic-orfs-metrics": {
+      "title": "OpenROAD Flow Scripts · Metrics",
+      "org": "OpenROAD Team",
+      "url": "https://openroad-flow-scripts.readthedocs.io/en/latest/contrib/Metrics.html",
+      "kind": "官方流程文档",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "说明 metadata.json 与质量比较。当前文档使用 dashboard baseline，并说明旧 rules/golden 文件机制已移除；离线课题仍应自存基线和日志。"
+    },
+    "kb-ic-tiny-rules": {
+      "title": "MLPerf Tiny Inference Rules（页面标注 v1.2，2024 草案）",
+      "org": "MLCommons / MLPerf Tiny",
+      "url": "https://github.com/mlcommons/tiny/blob/master/benchmark/MLPerfTiny_Rules.adoc",
+      "kind": "官方基准规则",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "此页仍自标 v1.2、2024-08-19 且未最终定稿，不能当作 2026 最新提交规则。用于研究模型、数据、计时边界与复现约束；正式提交须核对当前发布版本。"
+    }
+  },
+  "records": [
+    {
+      "id": "kb-topic-ic-rvfi",
+      "title": "RV32I 退役跟踪接口与微架构停顿的一致性验证",
+      "summary": "先验证 CPU 输出的 RVFI 事件是否忠实表达实际退役，再检查指令语义；用停顿、分支与存储字节掩码错误区分接口错误和核错误。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-rvfi",
+        "kb-ic-act4",
+        "riscv",
+        "sby"
+      ],
+      "tags": [
+        "RVFI",
+        "RV32I",
+        "退役跟踪",
+        "突变测试",
+        "形式验证"
+      ],
+      "level": "进阶",
+      "priority": 12,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "advanced-02",
+        "ic03"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "固定单发射、顺序退役 RV32I 小核，不做乱序、多核或全部特权扩展。研究停顿是否造成事件重复、缺失及寄存器/内存状态错位。",
+            "分开维护三项证据：接口协议检查、已实现指令的语义检查、架构测试通过情况。任何一项通过都不能代替其余项目。"
+          ]
+        },
+        {
+          "heading": "最小实现与对照",
+          "items": [
+            "选择许可允许的教学小核，先实现 ADD/ADDI 与合法停止机制的跟踪适配，再扩展到分支和访存。RVFI 首先是观察接口，不是激励输入。",
+            "在不改变架构结果的停顿注入下比对退役序列；再注入 valid 提早、order 重复、rd 错位和 byte mask 错误，检查监视器能否定位首个差异。"
+          ]
+        },
+        {
+          "heading": "输出与评价",
+          "items": [
+            "交付 DUT 配置、接口适配器、预期退役序列、断言、测试 ELF 与失败波形；报告指令/边界矩阵中通过、失败和未测试的项目。",
+            "无板卡也可完成最小研究。复现 ACT4 之前先运行官方示例配置，记录环境；无需为本题自行编译整个操作系统。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "难点在退役时机、架构状态与观察接口之间的对应关系，资源需求以仿真和形式工具为主。",
+        "prerequisites": [
+          "RV32I 指令与流水线基本概念",
+          "Verilog/SystemVerilog、Python",
+          "断言、差分检查与复位语义"
+        ],
+        "resources": [
+          "普通电脑及可运行的 RTL 仿真器",
+          "固定版本工具链与教学小核",
+          "可选 SBY/求解器环境"
+        ],
+        "minimum": "只覆盖 ADD/ADDI、x0、停顿和接口 order，复现并定位两类预先注入的接口错误。",
+        "stretch": "增加分支、访存与 ACT4 子集，研究接口适配错误和指令错误的定位差异。",
+        "effort": "预研 2 周；完整范围约 10–16 周，每周 8–12 小时",
+        "team": "集成电路负责 RTL/接口，计算机负责指令模型与复现；建议导师审阅假设"
+      }
+    },
+    {
+      "id": "kb-topic-ic-handshake",
+      "title": "Ready/valid 弹性流水线的背压正确性与延迟权衡",
+      "summary": "比较寄存器切片、两项弹性缓冲和直接连接，在突发背压下检查数据保持、无丢失与吞吐；从一个可运行模块研究系统接口。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-handshake",
+        "cocotb",
+        "sby"
+      ],
+      "tags": [
+        "ready/valid",
+        "背压",
+        "skid buffer",
+        "弹性流水线",
+        "吞吐"
+      ],
+      "level": "入门",
+      "priority": 12,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic03",
+        "ic06",
+        "advanced-01"
+      ],
+      "sections": [
+        {
+          "heading": "问题边界",
+          "items": [
+            "限定单时钟、无包边界的固定宽度流接口，先写明数据在 valid=1 且 ready=0 时必须保持。完整 AXI、CDC、仲裁公平性不属于最低版本。",
+            "安全性检查不丢失、不重复、顺序不变；最终能送达的活性判断必须明确下游不会永久停顿的环境条件。"
+          ]
+        },
+        {
+          "heading": "实现与实验",
+          "items": [
+            "对比直接连接、单项寄存器切片、两项弹性缓冲。用相同序列与背压轨迹，量测在途数据量、周期延迟和有效传输率。",
+            "在长时间 ready=0、连续满速、交替停顿和复位期间检查 scoreboarding。故意使 valid 等待 ready 或停顿时数据提前改变，确认测试能失败。"
+          ]
+        },
+        {
+          "heading": "衔接与交付",
+          "items": [
+            "可作为 FIFO、DMA 或矩阵加速器的前置模块。交付时序契约、可复用断言、参数化 RTL、可重放背压轨迹和正确性/性能表。",
+            "先用仿真测周期指标；若没有综合环境，就把频率收益留为未验证假设，不把寄存器数少直接解释成功耗低。"
+          ]
+        }
+      ],
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "只涉及单时钟接口，但需要区分安全性、活性假设及背压下的状态变化。",
+        "prerequisites": [
+          "组合与时序逻辑",
+          "简单 FIFO 与 Python 队列",
+          "valid/ready 时序图"
+        ],
+        "resources": [
+          "普通电脑",
+          "Verilator/Icarus 与 cocotb",
+          "可选 SBY"
+        ],
+        "minimum": "8 位单项缓冲，通过 4 类背压轨迹，并复现一次停顿时覆盖数据的错误。",
+        "stretch": "研究两项缓冲和多级连接，增加形式性质与综合面积/关键路径对照。",
+        "effort": "预研 1–2 周；完整范围约 6–10 周，每周 6–10 小时",
+        "team": "适合大二 1–2 人；一人实现接口，一人独立建立监视器"
+      }
+    },
+    {
+      "id": "kb-topic-ic-requant",
+      "title": "INT8 卷积再量化：零点、舍入与饱和的逐层误差定位",
+      "summary": "从乘加到输出 INT8 的整条数值链建立参考，研究遗漏零点补偿、尺度粒度和舍入顺序对结果的影响，避免只看最终分类准确率。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-litert-int8",
+        "cmsis",
+        "hls4ml",
+        "cocotb"
+      ],
+      "tags": [
+        "INT8",
+        "再量化",
+        "zero-point",
+        "per-channel",
+        "数值验证"
+      ],
+      "level": "进阶",
+      "priority": 12,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic01",
+        "ic02",
+        "ic05"
+      ],
+      "sections": [
+        {
+          "heading": "研究范围",
+          "items": [
+            "固定一种 CONV_2D 的布局和 padding/stride，最低版可从单输出通道点积开始；明确激活、权重、偏置、累加与输出类型。",
+            "把浮点模型精度损失与整数实现错误分开：前者比较同模型浮点/量化任务表现，后者比较同一量化算子的参考/候选输出。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "读取模型中的 scale/zero-point 与 quantized_dimension，建立高精度整数累加参考，再显式执行已声明的 multiplier/shift、舍入、输出零点和截断。",
+            "固定某个参考内核提交作为逐比特对照；若后端有不同数值契约，先给出容差依据，不能把所有非零误差自动视为允许。",
+            "测试全负数、极值、半 LSB、异尺度通道和长累加链；在芯片实现前先用软件检验每个阶段。"
+          ]
+        },
+        {
+          "heading": "评价与交付",
+          "items": [
+            "交付单层数值契约、整数样例生成器、逐阶段 trace、误差直方图及失败复现。通道数、点积长度和舍入模式构成可控实验矩阵。",
+            "候选优化需保持所声明的数值语义。若修改位宽/舍入，要同时报告数值误差、任务表现与资源成本，不能仅宣称 INT8 更快。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "整数范围、尺度与舍入的语义细节决定可复现性；最低交付不需要 FPGA。",
+        "prerequisites": [
+          "补码、定点算术与溢出",
+          "Python/NumPy 与卷积基础",
+          "RTL 数值验证或 C 内核阅读"
+        ],
+        "resources": [
+          "普通电脑",
+          "固定版本 LiteRT/CMSIS-NN 参考内核",
+          "模型参数与许可允许的测试数据"
+        ],
+        "minimum": "验证 1 个输出通道、3 组尺度和边界向量，能定位遗漏零点、错误 shift 两类注入缺陷。",
+        "stretch": "扩展多通道卷积及 RTL，量化不同舍入策略的误差与周期成本。",
+        "effort": "预研 2 周；完整范围约 8–14 周，每周 8–12 小时",
+        "team": "集成电路负责定点/RTL，智能科学负责模型参数与任务评价"
+      }
+    },
+    {
+      "id": "kb-topic-ic-mbist",
+      "title": "教学 SRAM 的 March C- BIST 与显式故障覆盖实验",
+      "summary": "为小型 SRAM 行为模型实现 March C- 控制器，逐个注入故障并研究检测率和首错定位；限定模型后再讨论字宽扩展。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-sram-march",
+        "cocotb",
+        "sby"
+      ],
+      "tags": [
+        "SRAM",
+        "MBIST",
+        "March C-",
+        "故障注入",
+        "DFT"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic03",
+        "advanced-01"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题",
+          "items": [
+            "最低版固定 32×1 位教学 SRAM、一个周期读延迟，定义 stuck-at、transition 与少量显式地址别名故障。不要把覆盖这些注入模型解释为覆盖所有真实失效。",
+            "对比逐地址写读 0/1 和 March C-，研究访问顺序改变是否影响已声明的故障集合；之后才考虑字内/字间耦合与字宽扩展。"
+          ]
+        },
+        {
+          "heading": "实现与故障实验",
+          "items": [
+            "将六阶段算法实现为 FSM，记录阶段、地址、预期值和首个失配；无故障存储器应完整走完，故障版本应可重放。",
+            "先由 Python 参考执行器验证序列，再实现 RTL BIST。故障注入器保持独立，允许在读/写过程中建模，禁止直接把 fail 线与故障启用信号相连。"
+          ]
+        },
+        {
+          "heading": "范围与交付",
+          "items": [
+            "报告每类故障的枚举数量、检测数量、漏检清单、访问次数和完成周期。测试会覆盖受测数据，最低版仅测试仿真模型。",
+            "输出故障语义表、参考序列、FSM、注入器、原始结果与覆盖表。8 位存储器扩展必须重新检查位内故障和数据背景，不能只把 1 位 0/1 替换为 0x00/0xFF。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "难点是故障语义、参考执行器和覆盖分母的正确建立，真实 SRAM 测试不作为最低目标。",
+        "prerequisites": [
+          "FSM 与同步 SRAM 接口",
+          "Python 故障模型",
+          "数字可测性基础"
+        ],
+        "resources": [
+          "普通电脑与 RTL 仿真器",
+          "独立参考执行器",
+          "人工可检查的小故障集合"
+        ],
+        "minimum": "32×1 位 SRAM，独立枚举 stuck-at 与 transition，记录首错地址和检测情况。",
+        "stretch": "增加特定耦合模型、字宽和读延迟参数，比较访问成本与覆盖。",
+        "effort": "预研 2 周；完整范围约 8–12 周，每周 6–10 小时",
+        "team": "1–2 人；建议导师审阅故障定义与覆盖结论"
+      }
+    },
+    {
+      "id": "kb-resource-ic-rv-tests",
+      "title": "RISC-V 验证材料：ACT4 与 RVFI 的分工",
+      "summary": "现行架构测试框架与退役观察接口分别解决什么问题；避免沿用失效安装教程，避免把测试通过当作全部正确。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-act4",
+        "kb-ic-rvfi"
+      ],
+      "tags": [
+        "ACT4",
+        "RVFI",
+        "RISC-V",
+        "工具迁移"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "官方资料",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "advanced-02",
+        "kb-topic-ic-rvfi"
+      ],
+      "sections": [
+        {
+          "heading": "阅读用途",
+          "items": [
+            "ACT4 用于生成与 DUT 配置相符的自检查 ELF；RVFI 用于观察退役状态并连接验证检查。先阅读各自输入/输出，避免把两者视为同一种工具。",
+            "旧文章里的 RISCOF 流程应标记历史版本；若复现旧结果，固定旧提交并注明，新的预研优先核对当前官方框架。"
+          ]
+        },
+        {
+          "heading": "预研清单",
+          "items": [
+            "先验证官方示例 ELF、DUT 的配置/内存映射和工具链，再检查自己的接口适配。保存未测扩展、边界行为和未完成性质。",
+            "完整处理器结论需要额外验证，本材料不提供认证保证。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-resource-ic-cdc-paper",
+      "title": "经典论文阅读：Cummings 异步 FIFO（2002）",
+      "summary": "从二进制/Gray 指针、跨域同步和满空判断理解异步 FIFO，再把论文方法变成可检查的规格与反例。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-ic-cummings-fifo"
+      ],
+      "tags": [
+        "经典论文",
+        "CDC",
+        "Gray code",
+        "异步 FIFO"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "经典工程论文",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic07"
+      ],
+      "sections": [
+        {
+          "heading": "先读哪些部分",
+          "items": [
+            "阅读 Gray 指针、同步指针比较和保守满空标志章节；版本 Rev 1.2 与早期版本实现细节可能不同。",
+            "将“满/空解除可能晚于真实占用变化”写入规格，以免把安全的保守延迟当成错误。"
+          ]
+        },
+        {
+          "heading": "转化为实验",
+          "items": [
+            "画 4 深度手算指针轨迹，对照 RTL 的 wrap 和 full 条件。注入最高位判断错误，再用异频时钟与 burst 流量定位。",
+            "数字仿真能揭示逻辑和时序契约错误，不能测出真实亚稳态概率或替代物理 CDC 检查。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-resource-ic-quant-spec",
+      "title": "整数算子规范阅读：LiteRT INT8 与实现契约",
+      "summary": "核对 scale、zero-point、按通道权重和偏置，建立能追踪到整数输出的计算契约。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-litert-int8",
+        "cmsis"
+      ],
+      "tags": [
+        "量化规范",
+        "INT8",
+        "偏置",
+        "数值契约"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "官方资料",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic02",
+        "ic05",
+        "kb-topic-ic-requant"
+      ],
+      "sections": [
+        {
+          "heading": "规范中的关键约束",
+          "items": [
+            "CONV_2D 条目规定权重零点为 0、偏置为 int32，并给出与输入/权重尺度的关系。应按具体算子读取，不将所有算子规则一概而论。",
+            "逐比特一致性要对照已固定的参考内核；规范并不保证任意后端或模型都具有相同误差。"
+          ]
+        },
+        {
+          "heading": "应保存的材料",
+          "items": [
+            "保存张量布局、量化维度、输入/输出尺度、零点、偏置、舍入方式、溢出/饱和语义及参考内核提交。",
+            "自己写的数值实验与真实模型任务评价分别记录；不能只凭整数输出看起来相似判定正确。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-resource-ic-adc-metrics",
+      "title": "ADC 指标阅读：MT-003 的测量带宽与幅度条件",
+      "summary": "区分 SNR、SINAD、SFDR 与 ENOB，并理解 FFT 噪声底不能直接替代全带宽噪声功率。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m24",
+        "m22"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-ic-adc-mt003",
+        "scipy"
+      ],
+      "tags": [
+        "ADC",
+        "SINAD",
+        "ENOB",
+        "FFT",
+        "指标定义"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "经典官方教程",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic11",
+        "advanced-06",
+        "topic-27"
+      ],
+      "sections": [
+        {
+          "heading": "指标要连同条件保存",
+          "items": [
+            "MT-003 说明 SNR 与 SINAD 的谐波处理不同，动态指标必须注明输入频率/幅度和测量带宽；ENOB 的常用转换式默认满幅正弦。",
+            "记录 FFT 样本数和频谱归一化；某个 bin 噪声很低并不意味着总噪声同样低。"
+          ]
+        },
+        {
+          "heading": "适合本科的复现练习",
+          "items": [
+            "先让理想量化器通过幅度与采样条件的自检，再加入采样抖动、失配或偏置之一。测试方法本身出错会掩盖电路问题。",
+            "区分行为模型、晶体管仿真和实物测试三个证据层级；本教程里的示例 ADC 数值不是本项目的预期结果。"
+          ]
+        }
+      ]
+    }
+  ],
+  "dossiers": [
+    {
+      "recordId": "kb-topic-ic-rvfi",
+      "question": "在同一 RV32I 指令序列下，微架构停顿改变周期但不应改变退役结果。哪些接口检查能最早区分跟踪适配缺陷与指令执行缺陷？",
+      "hypotheses": [
+        "待检验：只比较最终寄存器值会漏掉被后续指令覆盖的错误；比较退役事件能更早定位。",
+        "待检验：接口契约检查可在参考模型比对之前发现 order 重复和数据错位。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-rvfi",
+          "finding": "RVFI 描述退役事件及其架构前后状态。",
+          "howToUse": "据此建立观察器，并将适配器与 DUT 独立测试。",
+          "limitation": "接口输出本身可能实现错误；支持哪些检查取决于工具版本与 DUT 配置。"
+        },
+        {
+          "sourceId": "kb-ic-act4",
+          "finding": "ACT4 的架构测试与完整验证有明确区别。",
+          "howToUse": "把自检查 ELF 作为独立补充证据，保存实际执行的测试列表。",
+          "limitation": "测试集通过不能说明未覆盖行为正确。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "最终状态对照",
+          "implementation": "执行相同短程序后比较可见寄存器与受写内存；显式忽略未初始化区域。",
+          "why": "量化只看最终状态的定位能力与盲区。"
+        },
+        {
+          "name": "逐退役事件对照",
+          "implementation": "只在 valid 时采集 PC/指令/寄存器写回/内存掩码，按 order 比对规格模型。",
+          "why": "定位首个架构差异，避免按时钟周期硬对齐导致假报。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "停顿不变性",
+          "variables": [
+            "存储器应答延迟 0/1/3 周期",
+            "无停顿、交替停顿、固定 seed 的随机停顿"
+          ],
+          "controls": "相同 ELF、复位、初始内存、核配置与终止条件。",
+          "split": "手工核对的校准程序与保留程序分开；保留集包含 x0、负立即数、taken/not-taken 分支。",
+          "metrics": [
+            "首个不同的退役索引",
+            "错误事件数",
+            "终止周期"
+          ],
+          "decision": "任何合法停顿下状态序列不一致先定位适配器/环境，不进入性能比较。"
+        },
+        {
+          "name": "缺陷分类与定位",
+          "variables": [
+            "接口 valid/order/rd/mask 各一种缺陷",
+            "ALU/分支各一种执行缺陷"
+          ],
+          "controls": "每次只注入一个可确认已生效的缺陷；独立人工 oracle 标注错误类型。",
+          "split": "用部分注入类型开发监视器，保留至少一类接口与一类执行缺陷评价。",
+          "metrics": [
+            "检出数量/生效缺陷数量",
+            "首次报告距离真实首错的退役指令数",
+            "正常设计误报数"
+          ],
+          "decision": "报告逐缺陷结果和漏检机制；不能用某个总体比例覆盖正常设计误报。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "检出率",
+          "definition": "被监视器检出的已生效注入缺陷数 / 全部已生效注入缺陷数。",
+          "unit": "%",
+          "aggregation": "按接口与执行缺陷分别报告分子/分母，重复 seed 不算新缺陷。"
+        },
+        {
+          "name": "定位偏移",
+          "definition": "首次报告退役索引减人工确认的首错索引。",
+          "unit": "条指令",
+          "aggregation": "逐缺陷列出；未检出单列。"
+        }
+      ],
+      "ablations": [
+        "依次关闭 order、x0 和内存掩码检查，保留其余设置，观察哪些缺陷重新漏检。",
+        "比较仅最终状态、逐退役、逐退役加契约三种观察能力。"
+      ],
+      "pitfalls": [
+        "PC 或结果从执行阶段直接接出，停顿后并非真正退役状态。",
+        "参考模型与 DUT 对未对齐访问/非法指令的配置不同。",
+        "把超时当错误，却没有限制合法环境能拖延多久。"
+      ],
+      "reproducibility": [
+        "DUT、适配器、参考模型、编译器和 ACT4 提交。",
+        "ELF/反汇编/初始内存及 DUT 能力配置。",
+        "所有停顿轨迹、seed、最大周期和首错原始 trace。",
+        "正常设计与突变设计的哈希；一条命令重放最短失败程序。"
+      ],
+      "stopRules": [
+        "两周内官方示例 ELF 仍无法在所选环境运行，缩为纯 RTL 退役接口模型，明确尚未接完整核。",
+        "无法把跟踪接口错误与实际执行错误分开时，停止添加指令，先独立验证适配器。"
+      ],
+      "deliverables": [
+        "一页 RVFI 适配契约",
+        "短程序与注入缺陷集合",
+        "首错定位表和反例波形",
+        "未测指令/异常列表"
+      ]
+    },
+    {
+      "recordId": "kb-topic-ic-handshake",
+      "question": "在同一上游序列与下游背压下，两项弹性缓冲相比单项寄存器切片能否提高有效传输率，代价是什么？",
+      "hypotheses": [
+        "待检验：储存第二项在途数据能减少部分背压轨迹中的气泡，但持续下游限速时不一定增加长期吞吐。",
+        "待检验：单纯检查输出值会漏掉重复传输，序号监视器可检出。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-handshake",
+          "finding": "valid/ready 共同为高表示完成一次传输。",
+          "howToUse": "以握手事件驱动独立输入/输出队列和状态检查。",
+          "limitation": "本文采用数据在停顿时保持的单时钟契约；其他采样接口须另立规格。"
+        },
+        {
+          "sourceId": "sby",
+          "finding": "形式工具可检查有限模型中的安全性质。",
+          "howToUse": "验证数据保持、占用范围及无额外输出；单列活性假设。",
+          "limitation": "不限制下游无限停顿时不能保证有限周期送达。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "直接组合连接",
+          "implementation": "data/valid 从源到端，ready 反向；只作一段连接，不组成组合环。",
+          "why": "建立最低额外延迟及零缓冲对照。"
+        },
+        {
+          "name": "单项寄存器切片",
+          "implementation": "只在有空间或同时出队时接收下一项；合法握手后更新存储。",
+          "why": "提供独立正确性已确认的面积/延迟基线。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "流量矩阵",
+          "variables": [
+            "上游每周期、间隔 2 周期和 4 项突发",
+            "下游始终可接收、交替停顿、停顿 4 后接收 4、伪随机背压",
+            "宽度 8/32 位；级数 1/4"
+          ],
+          "controls": "每种实现使用相同有效输入和可重放 ready 轨迹，先通过数据一致性检查。",
+          "split": "定向轨迹开发；独立 seed 和额外停顿长度评价，不重调设计。",
+          "metrics": [
+            "输出握手/观察周期",
+            "每项输入握手到输出握手的周期差",
+            "丢失/重复/乱序计数"
+          ],
+          "decision": "只在正确性通过的实现间比较吞吐；呈现轨迹依赖性，不报一个脱离场景的加速倍数。"
+        },
+        {
+          "name": "边界与活性",
+          "variables": [
+            "复位时无数据/有在途数据",
+            "最长停顿 1/8/32 周期",
+            "故意提前更新 data、valid 等待 ready"
+          ],
+          "controls": "明确复位是否丢弃在途数据；最终解除停顿。",
+          "split": "人工确认短轨迹后扩展 seed；注入缺陷不加入正常正确性统计。",
+          "metrics": [
+            "正常设计误报",
+            "各注入缺陷检出情况",
+            "解除停顿后排空周期"
+          ],
+          "decision": "活性结论只适用所声明的服务假设与复位契约。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "有效吞吐",
+          "definition": "窗口中输出握手次数 / 窗口时钟周期数；另列是否排除预热/排空。",
+          "unit": "项/周期",
+          "aggregation": "逐轨迹报告，不能跨不同下游服务率平均。"
+        },
+        {
+          "name": "周期延迟",
+          "definition": "一项被输入接受到输出接受的周期数。",
+          "unit": "周期",
+          "aggregation": "报告中位数、p95、最大值和样本数；无输出项单列。"
+        },
+        {
+          "name": "正确性错误",
+          "definition": "输入已接受序列与输出已接受序列出现丢失、重复或乱序。",
+          "unit": "项",
+          "aggregation": "分别计数，复位丢弃按契约独立统计。"
+        }
+      ],
+      "ablations": [
+        "移除第二个存储槽，观察哪些轨迹产生气泡。",
+        "关闭停顿数据保持断言，比较定向检查和随机队列能否仍检出已知缺陷。"
+      ],
+      "pitfalls": [
+        "按 valid 而不是 valid&&ready 把数据加入队列。",
+        "将组合连接不合法组成环，仿真偶然稳定。",
+        "宽度不同导致综合资源差异，却误解为缓冲结构改善。"
+      ],
+      "reproducibility": [
+        "接口时序契约与复位处理。",
+        "RTL、测试平台、背压轨迹 CSV、seed。",
+        "指标统计窗口与时钟定义。",
+        "如果综合，保存平台、约束、工具版本；否则频率/功耗写未测。"
+      ],
+      "stopRules": [
+        "不能在 8 位 1 级上通过定向轨迹时，不增加多级和 AXI 功能。",
+        "没有可复现的综合约束时，只完成周期性能和逻辑资源分析。"
+      ],
+      "deliverables": [
+        "三种实现的时序图",
+        "自动 scoreboard 和断言",
+        "流量矩阵结果 CSV",
+        "至少两类短失败轨迹"
+      ]
+    },
+    {
+      "recordId": "kb-topic-ic-requant",
+      "question": "在固定量化模型参数下，零点补偿和再量化舍入如何影响单层整数输出？哪些错误只看最终准确率难以发现？",
+      "hypotheses": [
+        "待检验：遗漏激活零点补偿造成系统性偏移，其影响与权重和有关。",
+        "待检验：半 LSB、负数和饱和边界更能区分舍入实现，而普通随机小数值可能掩盖差异。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-litert-int8",
+          "finding": "量化张量具有 scale/zero-point 与算子特定约束。",
+          "howToUse": "建立候选算子必须遵循的数值契约；未规定细节由固定内核定义。",
+          "limitation": "不可据此保证所有后端逐比特一致。"
+        },
+        {
+          "sourceId": "cmsis",
+          "finding": "CMSIS-NN 提供整数神经网络内核。",
+          "howToUse": "固定现有版本作为工程对照，确认布局和参数约定。",
+          "limitation": "主机与目标编译路径可能不同，必须记录实际启用的内核与编译选项。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "高精度整数参考",
+          "implementation": "用任意精度整数计算累加，再逐步仿真约定的位宽、舍入和饱和；保存各中间阶段。",
+          "why": "隔离累加错误与再量化错误。"
+        },
+        {
+          "name": "固定版本参考内核",
+          "implementation": "把相同张量参数输入指定实现，记录真实输出。",
+          "why": "为声称兼容的实现给出直接对照；版本不能随实验变动。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "边界矩阵",
+          "variables": [
+            "激活零点 0、负值、正值",
+            "输入全 0、极值、正负交替、半 LSB 构造",
+            "点积长度 4/16/64；输出通道 1/4"
+          ],
+          "controls": "相同权重、偏置、尺度和数据布局；先确认累加位宽足够且不会意外 wrap。",
+          "split": "人工可验小向量开发；独立生成器 seed 的保留向量评价。",
+          "metrics": [
+            "逐阶段失配数量",
+            "输出最大绝对差，单位 INT8 LSB",
+            "饱和输出比例"
+          ],
+          "decision": "每个差异必须追溯至明确阶段；兼容目标的容差提前写出，不能看结果后放宽。"
+        },
+        {
+          "name": "策略与成本对照",
+          "variables": [
+            "统一尺度/按通道尺度",
+            "已声明的两种舍入策略",
+            "完整精度/缩减累加位宽"
+          ],
+          "controls": "策略研究与兼容性验证分开；相同算子和计时边界。",
+          "split": "校准参数仅由训练/校准样本得到；任务测试集不参与策略选择。",
+          "metrics": [
+            "数值误差分布",
+            "若有完整任务则分类 macro-F1 或对应任务指标",
+            "周期或软件耗时、所需参数字节数"
+          ],
+          "decision": "输出精度与成本 Pareto 表；候选若只靠破坏数值契约变快，列作有损实验而非兼容优化。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "整数最大误差",
+          "definition": "max(abs(candidate_int8-reference_int8))。",
+          "unit": "输出 LSB",
+          "aggregation": "按通道与边界类型分别报告，并保留首个最大差异样例。"
+        },
+        {
+          "name": "失配率",
+          "definition": "不同输出元素数量 / 全部比较输出元素数量。",
+          "unit": "%",
+          "aggregation": "说明精确或容差标准；分别列样例数和元素数。"
+        },
+        {
+          "name": "参数成本",
+          "definition": "量化尺度、零点、偏置及乘数/shift 存储的总字节。",
+          "unit": "B",
+          "aggregation": "逐算子/通道方案列明，含对齐方式。"
+        }
+      ],
+      "ablations": [
+        "依次移除零点补偿、偏置缩放或输出零点，每次只变一项。",
+        "保持其他项不变改变负数右移/舍入约定，使用半 LSB 定向向量。"
+      ],
+      "pitfalls": [
+        "Python/NumPy 的中间类型隐式溢出，导致所谓参考不可靠。",
+        "padding 零值未按激活零点编码。",
+        "逐通道 scale 与张量通道排列错位。",
+        "以最终预测相同掩盖单层整数错误。"
+      ],
+      "reproducibility": [
+        "模型/算子提交、参考内核、编译器和编译选项。",
+        "张量布局、quantized_dimension、所有尺度/零点/偏置。",
+        "完整整数样例、每一步 trace 与 seed。",
+        "明确乘数/shift、半 LSB 舍入、饱和/wrap 处理。"
+      ],
+      "stopRules": [
+        "没有能人工核对的小向量时，停止增加卷积通道，先固定参考。",
+        "没有完整任务数据或许可证时，只报告算子数值正确性，不外推任务准确率。"
+      ],
+      "deliverables": [
+        "数值契约",
+        "逐层误差定位脚本",
+        "边界向量包",
+        "正确性与成本对照表"
+      ]
+    },
+    {
+      "recordId": "kb-topic-ic-mbist",
+      "question": "在已明确的 32×1 位 SRAM 故障模型中，March C- 比简单写读增加了哪些可检出的故障，首错信息是否能唯一定位故障？",
+      "hypotheses": [
+        "待检验：访问顺序能够改变某些 transition/地址别名模型的可见性。",
+        "待检验：检测到失配不等于唯一定位根因，不同注入故障可能产生相同首错记录。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-sram-march",
+          "finding": "官方概述给出 March C- 的六阶段读写顺序。",
+          "howToUse": "作为参考序列，逐项记录升/降地址和预期值。",
+          "limitation": "直接页读取失败；字宽转换与全面耦合覆盖不能仅由概述证明。"
+        },
+        {
+          "sourceId": "cocotb",
+          "finding": "Python 驱动便于独立记账和重放。",
+          "howToUse": "由独立故障模型控制存储读写，参考执行器校验 FSM。",
+          "limitation": "缺陷集合由研究者定义，不能代表真实芯片失效率。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "逐地址简单写读",
+          "implementation": "每地址依次写 0 读 0 写 1 读 1，固定与 BIST 相同接口延迟。",
+          "why": "建立测试顺序、访问次数与漏检的直接对照。"
+        },
+        {
+          "name": "软件 March C- 参考",
+          "implementation": "独立 Python 序列解释器，不复用 RTL 的状态转换逻辑。",
+          "why": "先证实测试序列再评估实现，避免两个同源错误互相通过。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "显式故障枚举",
+          "variables": [
+            "每地址 stuck-at-0/1",
+            "每地址 0→1 或 1→0 写转移失效",
+            "两组事先声明的地址别名映射"
+          ],
+          "controls": "每次注入一种故障；记录故障是否实际被访问触发。无故障模型另测。",
+          "split": "4 地址实例用于人工开发；32 地址完整枚举作为保留评价。",
+          "metrics": [
+            "检测数/枚举数，及触发数",
+            "首次失配阶段/地址/期望/实际",
+            "读写访问与周期数量"
+          ],
+          "decision": "漏检逐项解释；未触发和触发但漏检分开，不以剔除困难故障提高比例。"
+        },
+        {
+          "name": "诊断歧义与时序",
+          "variables": [
+            "读延迟 1/2 周期",
+            "报告首错/完整失配序列",
+            "深度 8/32/64"
+          ],
+          "controls": "算法逻辑与故障集合保持一致；失配地址按发起读请求而非返回当前地址归属。",
+          "split": "保留部分故障组合研究歧义；多故障只作拓展，不混入单故障检出率。",
+          "metrics": [
+            "相同错误签名对应故障数",
+            "实现完成周期",
+            "无故障误报"
+          ],
+          "decision": "诊断不可唯一时明确输出候选集合，不宣称根因定位成功。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "模型检测率",
+          "definition": "被测试记录失配的枚举故障数 / 全部声明枚举故障数。",
+          "unit": "%",
+          "aggregation": "按故障类型列分子/分母，另列未触发；只对注入模型有效。"
+        },
+        {
+          "name": "测试成本",
+          "definition": "从开始到完成的周期数及读/写操作数。",
+          "unit": "周期、次",
+          "aggregation": "按深度、读延迟及早停策略分别报告。"
+        },
+        {
+          "name": "诊断歧义",
+          "definition": "同一首错签名对应的已枚举故障数量。",
+          "unit": "种故障",
+          "aggregation": "给最大值与完整映射，不将检出和诊断混为一项。"
+        }
+      ],
+      "ablations": [
+        "移除降地址阶段，用同一故障集合观察新增漏检。",
+        "仅保存 fail 标志、首错记录、完整 trace 三档比较可解释性与存储成本。"
+      ],
+      "pitfalls": [
+        "注入器直接驱动错误标志，使测试看似全部检出。",
+        "所有读均组合返回，却按同步 SRAM 控制器宣称验证通过。",
+        "字宽扩展没有字内数据背景，导致耦合模型根本没被激励。",
+        "真实运行时破坏程序数据或栈；本题最低版限定仿真模型。"
+      ],
+      "reproducibility": [
+        "每种故障的读/写语义及地址范围。",
+        "完整枚举清单与原始结果，不只保存百分比。",
+        "参考序列、RTL、seed 与仿真器版本。",
+        "读延迟、复位、首错/继续测试规则。"
+      ],
+      "stopRules": [
+        "无故障实例仍误报时，不增加耦合故障，先对齐读时序。",
+        "故障定义不能用数行示例确认时，只保留 stuck-at 与 transition，不报告耦合覆盖。"
+      ],
+      "deliverables": [
+        "故障模型说明",
+        "March C- FSM 与独立解释器",
+        "逐故障覆盖表",
+        "首错/诊断歧义报告"
+      ]
+    },
+    {
+      "recordId": "ic07",
+      "question": "在异步 FIFO 的有限逻辑模型中，Gray 指针同步与保守满空标志是否保持无丢失/无重复，代价有多少额外阻塞周期？",
+      "hypotheses": [
+        "待检验：安全实现可有保守阻塞，标志解除延迟不应直接算功能失败。",
+        "待检验：wrap、高位比较和独立复位比一般随机数据更容易触发指针错误。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-cummings-fifo",
+          "finding": "同步指针比较会产生保守的 full/empty 解除。",
+          "howToUse": "把安全性与阻塞成本拆成两项评价；复现论文范围内的幂次深度。",
+          "limitation": "纯数字模型不能估计亚稳态概率，物理时序与 CDC 签核另做。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "标准 Gray 指针双同步级",
+          "implementation": "固定 2^n 深度、各域本地指针与远端同步指针；本地握手控制读写。",
+          "why": "先确认经典实现，而非为更快旗标擅自去掉同步。"
+        },
+        {
+          "name": "指针缺陷版本",
+          "implementation": "分别改变 full 高位比较、允许满写或空读；逐次单缺陷。",
+          "why": "验证环境真的能揭示已知错误。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "时钟与边界矩阵",
+          "variables": [
+            "周期比例 1:1、2:3、3:2、1:5",
+            "初始相位 0 与半周期偏移",
+            "深度 4/8/16；连续与突发读写"
+          ],
+          "controls": "相同事务序列、可重放随机 seed，明确同时间边沿的调度规则。",
+          "split": "小深度手算轨迹开发；保留异频/相位/seed 组合评价。",
+          "metrics": [
+            "接受写入序列与接受读出序列的一致性",
+            "禁止操作是否改变指针",
+            "真实可操作但本地标志阻塞的本地周期"
+          ],
+          "decision": "保持数据顺序与完整性；单列保守阻塞，不要求 flags 对全局瞬时占用完全同步。"
+        },
+        {
+          "name": "复位契约",
+          "variables": [
+            "双域同时复位",
+            "写域或读域局部复位",
+            "有/无在途事务"
+          ],
+          "controls": "每种复位先声明是否清空、如何重同步；不默认局部复位后保留原数据。",
+          "split": "每类契约至少一个手工样例再随机。",
+          "metrics": [
+            "未知状态传播",
+            "契约外残留数据",
+            "恢复期间握手行为"
+          ],
+          "decision": "若不支持独立域复位，写为限制并断言禁止，不能悄悄删掉失败样例。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "事务一致性",
+          "definition": "按照各域实际接受的 write/read 事件建立队列，分别记录丢失/重复/乱序。",
+          "unit": "项",
+          "aggregation": "逐时钟组合、seed 和复位类型报告；同时间事件使用固定仲裁规则。"
+        },
+        {
+          "name": "保守阻塞",
+          "definition": "参考占用允许操作但本地 full/empty 仍阻止操作的本域时钟周期。",
+          "unit": "本地周期",
+          "aggregation": "写域和读域分开，报告分布和吞吐影响。"
+        }
+      ],
+      "ablations": [
+        "故意改用二进制跨域指针仅作错误示例，不把数字仿真通过解释为 CDC 安全。",
+        "移除 wrap 与复位定向测试，观察已知缺陷是否会被一般随机测试漏掉。"
+      ],
+      "pitfalls": [
+        "在目的域要求同步后的 Gray 指针每次只变一位；目的时钟可能跳过源域多个值。",
+        "根据全局即时占用要求满空同步解除，导致误报。",
+        "用仿真多 seed 结果声称 MTBF 达标。"
+      ],
+      "reproducibility": [
+        "各域周期、相位、复位契约、内存读模式。",
+        "本地/跨域指针波形和可重放事务清单。",
+        "每个 mutant 的代码差异和首次失败轨迹。",
+        "区分 RTL 仿真、形式假设与物理 CDC 检查的证据。"
+      ],
+      "stopRules": [
+        "4 深度手算与 scoreboard 无法一致时，暂停增加深度。",
+        "不能取得工艺/同步器物理参数时，不报告 MTBF 或真实芯片可靠性。"
+      ],
+      "deliverables": [
+        "CDC 与复位范围声明",
+        "事务/旗标双评价结果",
+        "wrap 与局部复位失败案例",
+        "逻辑验证证据包"
+      ]
+    },
+    {
+      "recordId": "advanced-02",
+      "question": "自定义定点点积指令接入 RV32I 后，异常、操作数别名与位宽边界是否改变可见架构状态？现行架构测试与自定义指令测试如何互补？",
+      "hypotheses": [
+        "待检验：普通合法操作数随机测试会漏掉 rd=rs1/rs2、x0 和符号扩展边界。",
+        "待检验：只运行标准架构测试不能验证项目自定义语义。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-act4",
+          "finding": "现行框架是 ACT4，旧 RISCOF 已被替代。",
+          "howToUse": "标准指令用实际运行的 ACT 子集；扩展指令另建规格与测试。",
+          "limitation": "ACT 配置和测试版本相关，项目自定义指令需要独立 oracle。"
+        },
+        {
+          "sourceId": "riscv",
+          "finding": "ISA 规范是标准指令行为的依据。",
+          "howToUse": "固定扩展、异常和未对齐处理的版本配置。",
+          "limitation": "自定义 opcode 不能因借用了 RISC-V 名称就视为官方扩展。"
+        },
+        {
+          "sourceId": "kb-ic-rvfi",
+          "finding": "可观察退役后的架构写回。",
+          "howToUse": "差分时按 retire 对齐，不按周期对齐。",
+          "limitation": "必须先检查接口适配正确。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "软件点积",
+          "implementation": "按明确的有符号输入宽度、累加宽度和 wrap/饱和语义实现参考；在小向量上人工核对。",
+          "why": "提供自定义指令的独立语义 oracle。"
+        },
+        {
+          "name": "未扩展核",
+          "implementation": "相同标准程序在原核和扩展核上运行，比较架构 trace。",
+          "why": "检查扩展加入后是否破坏已有指令。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "操作数与异常矩阵",
+          "variables": [
+            "全零、最小/最大值、正负交替",
+            "rd=rs1、rd=rs2、rd=x0",
+            "非法编码、复位或停顿边界"
+          ],
+          "controls": "固定编码表、参考语义、初始状态与构建工具链。",
+          "split": "手算用例校准，独立 seed 保留集；非法编码 oracle 由导师/规格审阅。",
+          "metrics": [
+            "架构状态失配",
+            "首次差异指令索引",
+            "执行周期和软件完整调用周期"
+          ],
+          "decision": "正确性不通过时停止加速比较；分别报告纯指令和数据准备/调用总成本。"
+        },
+        {
+          "name": "标准行为回归",
+          "variables": [
+            "标准 RV32I 子集",
+            "扩展开/关配置"
+          ],
+          "controls": "相同 memory map 与标准能力声明；不把未执行测试记为通过。",
+          "split": "ACT 实际支持测试列表固定；扩展样例不替代标准测试。",
+          "metrics": [
+            "执行测试数、通过/失败/未完成",
+            "标准退役 trace 差异"
+          ],
+          "decision": "报告覆盖边界，不用架构测试通过宣称处理器全面正确。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "语义失配",
+          "definition": "按照已声明整数语义比较写回、PC、内存副作用和异常。",
+          "unit": "条指令/状态差异",
+          "aggregation": "按指令类别与边界列出，不平均成单一分数。"
+        },
+        {
+          "name": "端到端加速",
+          "definition": "同一任务软件完整调用周期 / 扩展完整调用周期。",
+          "unit": "倍",
+          "aggregation": "含数据准备与读回，另列内核周期；仅正确版本参与。"
+        }
+      ],
+      "ablations": [
+        "去掉操作数别名/x0 用例，记录已知问题是否被漏掉。",
+        "只比较最终输出与逐退役比较对照，量测首错定位变化。"
+      ],
+      "pitfalls": [
+        "软件 reference 和 RTL 共用同一错误符号扩展。",
+        "缺少编译器指令编码或 inline assembly 约束，使被测其实是其他代码。",
+        "过多环境假设禁止产生真正异常。"
+      ],
+      "reproducibility": [
+        "opcode/位宽/异常/副作用完整表。",
+        "标准配置和 ACT4、Sail/编译器版本。",
+        "ELF/反汇编与逐退役 trace。",
+        "软件参考、seed、正常与 mutant 结果。"
+      ],
+      "stopRules": [
+        "编码与异常处理未获明确规格时，只验证抽象算术模块，不连接 CPU。",
+        "首批标准测试出现回归时，暂停更多扩展。"
+      ],
+      "deliverables": [
+        "扩展指令语义表",
+        "边界测试集与编码示例",
+        "标准行为回归表",
+        "完整任务成本报告"
+      ]
+    },
+    {
+      "recordId": "ic05",
+      "question": "固定 INT8 矩阵任务后，计算阵列并行度增加的收益何时被搬运、累加位宽与再量化成本抵消？",
+      "hypotheses": [
+        "待检验：只提高 MAC 数量不能保证完整矩阵任务更快。",
+        "待检验：把搬运和输出再量化排除在计时之外会高估系统加速。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-litert-int8",
+          "finding": "输出整数通常需要独立量化语义。",
+          "howToUse": "把数值一致性检查放在性能实验之前；按实际算子建立尺度处理。",
+          "limitation": "通用 INT8 GEMM 不自动等同于某一 LiteRT 卷积实现。"
+        },
+        {
+          "sourceId": "hls4ml",
+          "finding": "硬件生成配置包括数据类型与资源复用。",
+          "howToUse": "将复用与并行度作为可控因素，保存生成配置。",
+          "limitation": "不同后端综合报告不可脱离工具/平台直接比较。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "串行 MAC",
+          "implementation": "一个 MAC、相同整数语义与接口，一次计算一个输出。",
+          "why": "建立正确性和资源成本的最小基线。"
+        },
+        {
+          "name": "软件整数 GEMM",
+          "implementation": "相同输入布局、累加/输出定义；若在不同硬件跑，只给独立平台结果，不混算纯周期加速。",
+          "why": "提供任务级参考与软件可复现对照。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "形状与并行度",
+          "variables": [
+            "矩阵形状 4×4、8×8、16×16 及一组非整齐维度",
+            "MAC 并行度 1/2/4",
+            "片上存储允许容量与带宽固定"
+          ],
+          "controls": "同一时钟目标、数据布局和整数结果；含 tail 与不足满 tile 情形。",
+          "split": "开发使用小方阵；保留长条/非整齐形状评价泛化。",
+          "metrics": [
+            "完整任务周期",
+            "有效 MAC/周期与利用率",
+            "搬运字节、逻辑资源"
+          ],
+          "decision": "只对全部输出通过数值检查的版本排名；明确阵列空转和边界浪费。"
+        },
+        {
+          "name": "端到端边界",
+          "variables": [
+            "仅计算、含搬入/搬出、含再量化三种窗口",
+            "输入驻留一次/复用多次"
+          ],
+          "controls": "同一事务定义，逐阶段计数避免重叠周期被重复相加。",
+          "split": "固定性能向量，不按最快样本挑选。",
+          "metrics": [
+            "阶段周期与端到端周期",
+            "有效数据吞吐",
+            "输出 LSB 误差"
+          ],
+          "decision": "分别报驻留假设；不将理想无限带宽结果当板级实测。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "完整任务周期",
+          "definition": "从接受任务/首次搬入到最终输出完成的时钟数。",
+          "unit": "周期",
+          "aggregation": "逐形状/并行度报告，另列是否包括主机传输。"
+        },
+        {
+          "name": "MAC 利用率",
+          "definition": "有效完成 MAC 数 /（配置 MAC 数 × 计算窗口周期）。",
+          "unit": "%",
+          "aggregation": "给窗口定义；边界填充不能算有效工作。"
+        },
+        {
+          "name": "搬运量",
+          "definition": "实际接口传输的输入、权重与输出字节数。",
+          "unit": "B/任务",
+          "aggregation": "区分首次加载与驻留复用。"
+        }
+      ],
+      "ablations": [
+        "关闭缓冲重用但保持阵列并行度，观察收益来自计算还是数据复用。",
+        "保留算术阵列、关闭优化布局，对照存储冲突与利用率。"
+      ],
+      "pitfalls": [
+        "只测循环主体，忽略 DMA/布局转换/再量化。",
+        "累加溢出仍把输出某些样本相同当正确。",
+        "把填充乘零计算也计入有效 MAC。"
+      ],
+      "reproducibility": [
+        "任务形状、输入与权重文件、整数语义。",
+        "布局、tile、bank、并行度与端口配置。",
+        "分阶段时钟计数、实际传输日志。",
+        "综合平台与工具/约束，不同平台结果分表。"
+      ],
+      "stopRules": [
+        "串行基线与独立参考不一致时，停止并行化。",
+        "无法固定存储带宽时，只报告特定带宽模型结果。"
+      ],
+      "deliverables": [
+        "正确串行与并行版本",
+        "数值/周期自动检查",
+        "形状-并行度结果矩阵",
+        "资源与端到端成本表"
+      ]
+    },
+    {
+      "recordId": "ic11",
+      "question": "SAR ADC 行为模型加入失配或比较器噪声后，动态性能变化是否可与 FFT 测量方法错误区分？",
+      "hypotheses": [
+        "待检验：非相干采样直接取单个基波 bin 会把泄漏当噪声，低估 SINAD。",
+        "待检验：未说明输入幅度的 ENOB 比较可能混合幅度效应与电路非理想。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-adc-mt003",
+          "finding": "动态指标与输入幅度、频率及测量带宽相关。",
+          "howToUse": "先固定指标定义和理想模型自检，再分析候选 ADC。",
+          "limitation": "行为模型结果不是晶体管级或实物测量，样例器件数据不外推。"
+        },
+        {
+          "sourceId": "scipy",
+          "finding": "科学计算工具支持 FFT 与信号处理。",
+          "howToUse": "实现可测试的频谱归一化与能量积分。",
+          "limitation": "库返回频谱不等于指标自动正确，频带/窗/谐波归属由研究者定义。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "理想 N 位量化器",
+          "implementation": "明确定义满量程、码边界与饱和；输出应可与直接量化映射交叉核对。",
+          "why": "先验证动态指标脚本，不用非理想电路掩盖测试平台问题。"
+        },
+        {
+          "name": "理想 SAR 行为流程",
+          "implementation": "逐次比较理想 DAC 与输入，不加入失配或噪声。",
+          "why": "确认控制逻辑结果与理想量化器一致。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "测量方法自检",
+          "variables": [
+            "N=8/10；样本数 M=1024/4096",
+            "fin=k·fs/M 且 k 与 M 互素的相干正弦",
+            "非相干正弦加明确窗与能量补偿",
+            "输入相对满幅 -1/-6/-12 dB"
+          ],
+          "controls": "相同采样率、去 DC 规则、Nyquist 积分带宽；无饱和。",
+          "split": "已知理想信号校准；不同 k 和幅度保留测试。",
+          "metrics": [
+            "SINAD 与幅度校正 ENOB",
+            "频谱能量/时域均方能量差",
+            "是否饱和"
+          ],
+          "decision": "能量不守恒或理想模型出现异常时，先修测量方法，不评价非理想电路。"
+        },
+        {
+          "name": "非理想与校准",
+          "variables": [
+            "独立电容失配档位，单位相对标准差",
+            "比较器噪声档位，单位输入 LSB",
+            "无校准/固定算法校准"
+          ],
+          "controls": "一次先改变一类非理想；同一随机器件实例、幅度和频率配对比较。",
+          "split": "校准参数由校准激励拟合；保留频率/幅度与器件实例评价。",
+          "metrics": [
+            "SINAD dB、ENOB bit",
+            "输入-输出静态误差 LSB",
+            "每次转换控制周期"
+          ],
+          "decision": "报告实例分布与最差实例；不凭单 seed 宣称校准普遍有效。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "SINAD",
+          "definition": "基波功率 /（带内噪声与失真功率）取 10log10；去 DC、基波带宽与谐波归属需明示。",
+          "unit": "dB",
+          "aggregation": "逐频率、幅度和器件实例，保存原始频谱；不能以单个噪声 bin 代替积分功率。"
+        },
+        {
+          "name": "ENOB",
+          "definition": "满幅正弦条件下 (SINAD−1.76)/6.02；较低幅度的满幅归一化为 (SINAD−1.76+20log10(A_FS/A_in))/6.02，A_FS 与 A_in 必须采用同一峰值或 RMS 正弦幅度约定。",
+          "unit": "bit",
+          "aggregation": "幅度、是否校正及所用幅度比一起报告；不得混用校正/未校正结果。"
+        },
+        {
+          "name": "静态误差",
+          "definition": "输出换算输入电压与理想量化输出之差除以理想输入 LSB。",
+          "unit": "LSB",
+          "aggregation": "列最大绝对误差与分布；不把它直接称为 INL/DNL，除非另有转换点定义。"
+        }
+      ],
+      "ablations": [
+        "理想量化器、理想 SAR、仅失配、仅噪声、二者同时五组对照。",
+        "固定电路，仅改变相干/非相干与窗策略，以显露测量方法带来的差异。"
+      ],
+      "pitfalls": [
+        "用 SNR 的去谐波功率计算 SINAD/ENOB。",
+        "过驱动削顶被误解为比较器失配。",
+        "未归一化窗增益，混用 dBFS 与 dBc。",
+        "同一校准激励既拟合又评价，低估泛化误差。"
+      ],
+      "reproducibility": [
+        "N、满量程、fs、fin、幅度、M、窗和频带定义。",
+        "所有输出码、频谱脚本与能量自检。",
+        "失配/噪声分布、seed 与校准/保留划分。",
+        "证据明确标为行为模型；没有晶体管或实测就不写芯片指标。"
+      ],
+      "stopRules": [
+        "理想量化器的频谱能量自检不通过时，不加新非理想。",
+        "无法获得可信工艺/器件模型时，维持行为研究范围，不声称可流片性能。"
+      ],
+      "deliverables": [
+        "动态指标测试契约",
+        "理想与非理想模型",
+        "配对校准结果与分布",
+        "原始码流和复现脚本"
+      ]
+    },
+    {
+      "recordId": "ic12",
+      "question": "在同一数字 IP、库与时序约束下，布局密度和时钟目标怎样改变布线后面积、slack 与拥塞？",
+      "hypotheses": [
+        "待检验：更紧时钟目标可能增加缓冲/面积却仍无法收敛，效果不是单调。",
+        "待检验：只看综合结果无法可靠推断布线后代价。"
+      ],
+      "literature": [
+        {
+          "sourceId": "kb-ic-orfs-metrics",
+          "finding": "ORFS 从流程产物提取 metadata，并与基线比较。",
+          "howToUse": "保存各阶段报告，固定离线基线，不只抄仪表盘结论。",
+          "limitation": "latest 流程已改变旧 rules/golden 机制；网络 gate 的 INCONCLUSIVE 不是指标通过。"
+        },
+        {
+          "sourceId": "openroad",
+          "finding": "数字物理实现需要时序、布局与布线的流程条件。",
+          "howToUse": "固定技术平台、库、SDC、寄生抽取及流程版本。",
+          "limitation": "工具估计不等于实测芯片功耗或最终制造签核。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "固定默认流程",
+          "implementation": "选择已仿真验证的小 FIFO 或计数器，仅一个平台；锁定 RTL/库/SDC/流程提交。",
+          "why": "所有候选必须在相同设计与约束下比较。"
+        },
+        {
+          "name": "放宽时钟参考",
+          "implementation": "同平台同 RTL，用预检可收敛的时钟目标建立可信可运行基线。",
+          "why": "区别设计本身无法实现与优化条件过紧。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "密度×时钟矩阵",
+          "variables": [
+            "布局密度 0.35/0.50/0.65，须在所用平台允许范围内",
+            "预检基线周期的 1.0/0.9/0.8 倍",
+            "至少 3 个不同布局 seed（流程支持时）"
+          ],
+          "controls": "同 RTL、库/工艺角、电压温度、I/O delay、clock uncertainty 和寄生提取；不通过删约束获得收敛。",
+          "split": "一个小 IP 选参数；另一种结构 IP 检查迁移，不能用后者回调最佳参数。",
+          "metrics": [
+            "综合/布局/布线各阶段 cell area",
+            "布线后 setup 与 hold worst slack",
+            "DRC 数、拥塞指标、运行时与内存"
+          ],
+          "decision": "先判断时序与 DRC 条件是否满足，再比较可行集合；失败运行保留为不可行点。"
+        },
+        {
+          "name": "功率证据边界",
+          "variables": [
+            "无活动信息",
+            "固定同任务 VCD/SAIF 活动（流程支持时）"
+          ],
+          "controls": "相同频率、电压、温度与活动时间窗口；保存工具使用的输入。",
+          "split": "活动轨迹覆盖相同合法任务；空闲和满负载分开。",
+          "metrics": [
+            "工具估计动态/泄漏功率及假设",
+            "估算每任务能量"
+          ],
+          "decision": "无可信活动模型则报告面积-时序，不填功率值；任何功率均标工具估计。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "布线后面积",
+          "definition": "明确 cell area（所有纳入单元面积之和）与 core area（版图核心区域）二者区别。",
+          "unit": "µm²",
+          "aggregation": "同平台逐配置报告；不可跨工艺直接以面积优劣排名。"
+        },
+        {
+          "name": "Worst slack",
+          "definition": "报告指定分析角与约束下最差 setup/hold 时间裕量，负值表示相应约束违反。",
+          "unit": "ns 或库声明单位",
+          "aggregation": "setup/hold 分开，保留完整路径报告；单位先从库/工具确认。"
+        },
+        {
+          "name": "工具估计功率",
+          "definition": "指定活动、频率与工艺条件的估计动态加泄漏功率。",
+          "unit": "mW",
+          "aggregation": "仅有真实分析输入时填写；不用面积代换功率。"
+        }
+      ],
+      "ablations": [
+        "仅改密度与仅改时钟目标分别对照，避免同时改两者解释因果。",
+        "综合阶段与布线后阶段排名并列，解释排序翻转。"
+      ],
+      "pitfalls": [
+        "优化版漏设 I/O delay 或 clock uncertainty，约束变弱。",
+        "失败/超时样本被删掉后只展示可行最优点。",
+        "把总 core area 与 cell area 混用。",
+        "不同运行使用不同 PDK/库角，功率与频率不能比较。"
+      ],
+      "reproducibility": [
+        "RTL、SDC、PDK/库来源和许可、工具/流程提交。",
+        "每次 config、seed、开始/结束时间及退出状态。",
+        "metadata、各阶段 timing/DRC 报告和原始单位。",
+        "失败点及固定基线；活动文件与分析角（若报告功率）。"
+      ],
+      "stopRules": [
+        "同一基线无法连续复现有效结果时，停止搜索，先锁定环境与约束。",
+        "电脑预算无法承担矩阵时缩为 2×2，固定一次改一因子；不靠省略关键约束减负。"
+      ],
+      "deliverables": [
+        "流程版本与约束说明",
+        "可行/失败全部配置表",
+        "面积-时序散点与阶段排序",
+        "工具估计功率的输入清单或未测说明"
+      ]
+    },
+    {
+      "recordId": "ic02",
+      "question": "在按受试者隔离的活动识别评估中，INT8 量化对任务表现和板端 RAM/延迟的影响能否与数据泄漏或测量边界区分？",
+      "hypotheses": [
+        "待检验：随机拆重叠窗口可能比隔离受试者高估表现。",
+        "待检验：推理内核更快不保证采样到输出的端到端响应更快。"
+      ],
+      "literature": [
+        {
+          "sourceId": "har",
+          "finding": "HAR 数据有受试者和活动标注。",
+          "howToUse": "保留受试者隔离，将归一化与校准限定在开发样本。",
+          "limitation": "手机佩戴场景不能直接外推腕带、牛行为或未见传感器。"
+        },
+        {
+          "sourceId": "kb-ic-tiny-rules",
+          "finding": "官方基准规则要求明确模型、数据与计时边界。",
+          "howToUse": "参考其复现思想，但独立报告自有 HAR 实验的计时边界。",
+          "limitation": "此链接标注旧 v1.2 草案；HAR 改编结果不自动成为正式 MLPerf 结果。"
+        },
+        {
+          "sourceId": "kb-ic-litert-int8",
+          "finding": "数值规范与后端容差需核对。",
+          "howToUse": "抽样逐层核对整数输出，再做任务指标比较。",
+          "limitation": "满足数值规范不保证该任务准确率不下降。"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "轻量特征模型",
+          "implementation": "训练集统计特征加 logistic regression 或同等轻量分类器，特征缩放在训练集拟合。",
+          "why": "检验复杂网络是否真有收益，提供容易部署的任务基线。"
+        },
+        {
+          "name": "同一网络 FP32/INT8",
+          "implementation": "架构与训练权重固定，只改变明确的量化过程；校准样本来自训练受试者。",
+          "why": "隔离量化影响，防止把改架构/训练的收益归于 INT8。"
+        }
+      ],
+      "experiments": [
+        {
+          "name": "任务与划分对照",
+          "variables": [
+            "FP32、INT8；校准样本数的 3 个预先选定档位",
+            "受试者隔离开发/测试划分",
+            "随机窗口划分仅作泄漏风险演示，不作主结论"
+          ],
+          "controls": "归一化、校准和超参数选择仅用训练/开发受试者；测试只运行一次锁定方案。",
+          "split": "按 subject 分组，先划分再生成/筛选窗口；原始官方 split 保留并注明。",
+          "metrics": [
+            "macro-F1、每类召回率",
+            "FP32 到 INT8 的配对差异",
+            "按受试者指标与置信区间"
+          ],
+          "decision": "预先定义能接受的任务损失与资源预算；报告受试者差异，不凭整体准确率隐藏某类失败。"
+        },
+        {
+          "name": "目标端测量",
+          "variables": [
+            "固定主频与优化选项下 FP32/INT8 可运行路径",
+            "推理内核与含预处理的窗口分别计时",
+            "重复至少 30 次固定输入，并另测实际样本序列"
+          ],
+          "controls": "同板、同输入、相同主频与供电；预热与中断条件明示。",
+          "split": "性能样本不能用于调模型；输入分布和测试批次保存。",
+          "metrics": [
+            "延迟中位数/p95/max，单位 ms",
+            "flash/RAM/峰值 tensor arena，单位 B",
+            "如具备仪器则每次推理积分能量，单位 µJ"
+          ],
+          "decision": "无仪器不报告能量实测；无板卡只给模型大小和主机结果，不写 MCU 延迟。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Macro-F1",
+          "definition": "逐类 F1 的不加权平均；没有预测/真实样本类的处理规则先固定。",
+          "unit": "0–1",
+          "aggregation": "整体、按受试者和每类分别列；区间重采样单位为受试者，不是重叠窗口。"
+        },
+        {
+          "name": "端到端延迟",
+          "definition": "从本窗口原始数据可用到最终输出的耗时，另列窗口积累时间。",
+          "unit": "ms",
+          "aggregation": "中位数、p95、最大值及重复数；不与只含内核计时混用。"
+        },
+        {
+          "name": "内存占用",
+          "definition": "模型、静态缓冲和实际峰值 arena/stack 分开统计。",
+          "unit": "B",
+          "aggregation": "列设备可用预算与是否测得峰值，不能仅用参数数目代替 RAM。"
+        },
+        {
+          "name": "实测能量",
+          "definition": "指定边界内对电压×电流积分；记录空闲扣除与采样带宽。",
+          "unit": "µJ/推理",
+          "aggregation": "只有有仪器时填写，模型估算单独标示。"
+        }
+      ],
+      "ablations": [
+        "同网络移除 per-channel 量化（算子支持时），其余参数不变。",
+        "比较泄漏风险演示划分和受试者隔离，但不据测试结果再选择主划分。",
+        "仅用均值/方差特征与完整特征基线，估计复杂度收益。"
+      ],
+      "pitfalls": [
+        "同一个受试者或高度重叠窗口同时进训练和测试。",
+        "测试受试者参与 scaler/校准。",
+        "延迟只测一个缓存热样本，无预热/中断说明。",
+        "用芯片手册典型电流×时间宣称实测 µJ。"
+      ],
+      "reproducibility": [
+        "受试者清单、split、窗口规则与数据版本。",
+        "训练、校准脚本、权重、量化文件及逐层抽样输出。",
+        "板型号、主频、编译器/flags、内核版本。",
+        "原始计时、RAM测量方法及能量波形（如有）。"
+      ],
+      "stopRules": [
+        "数据无法按受试者追溯时，暂停泛化结论。",
+        "模型超出板上 RAM 预算先缩架构/输入，停止额外功能。",
+        "没有板端条件时完成软件研究，并明确 MCU 资源评价待做。"
+      ],
+      "deliverables": [
+        "划分与数据泄漏检查表",
+        "FP32/INT8/轻量基线任务结果",
+        "设备预算与原始测量",
+        "按受试者失败样例与部署限制"
+      ]
+    }
+  ],
+  "notes": [
+    "新增 9 个 source，8 条 record（4 topic + 4 resource），10 个 dossier（4 新 topic + 6 既有 topic）。",
+    "本包是拟议研究方案，实验中的变量档位、重复数和最低范围由作者为可复现预研设计，不是论文已证实性能或竞赛硬性要求。",
+    "最新 ACT4 替代 RISCOF 的事实由 RISC-V 官方仓库 README 核验；旧工具仅在复现历史版本时保留。",
+    "Cummings 2002 论文以作者 ResearchGate PDF 核验；ADI MT-003 的版本为 2008 Rev.A，不伪装为最新标准。",
+    "Microchip 官方检索内容可读但直接页失败，故对 SRAM 算法仅使用可核验概述，不引用完整 API 条件或认证结论。",
+    "MLPerf Tiny 链接页面仍标 v1.2 2024 草案，按历史规则材料使用；现有 tiny source 为另一个当前结果页面，两者用途不同。",
+    "IC 相关拟议选题可关联集创赛/嵌入式竞赛，但需逐项确认当届赛题、工具授权、硬件和本校组队要求；本包不声称已满足报名资格。",
+    "来源采用简短自有摘要，实验矩阵和评价方案为明确标注的原创建议；未下载或转载外部论文全文。"
+  ]
+}

@@ -2,8 +2,8 @@
   'use strict';
   const aliases=[['risc-v','riscv','risc v'],['芯片','集成电路','ic'],['人工智能','ai'],['动科','动物科学'],['动医','动物医学'],['数模','数学建模'],['毕设','毕业设计'],['fpga','现场可编程门阵列'],['mcu','单片机','微控制器'],['tinyml','端侧机器学习'],['验证','verification'],['fifo','先进先出']];
   const fold=s=>String(s??'').normalize('NFKC').toLowerCase().replace(/risc[\s_-]*v/g,'riscv').replace(/\s+/g,' ').trim();
-  const labels={title:'标题',summary:'摘要',tags:'标签',major:'专业',body:'详细方案',difficulty:'难度与先修',bridge:'竞赛与协作',sources:'来源',report:'完整调研报告'};
-  const weights={title:16,summary:8,tags:10,major:5,body:4,difficulty:3,bridge:3,sources:2,report:1};
+  const labels={title:'标题',summary:'摘要',tags:'标签',major:'专业',body:'详细方案',difficulty:'难度与先修',dossier:'深度研究档案',bridge:'竞赛与协作',sources:'来源',report:'完整调研报告'};
+  const weights={title:16,summary:8,tags:10,major:5,body:4,dossier:5,difficulty:3,bridge:3,sources:2,report:1};
   function parse(q,mode='all'){
     if(mode==='phrase')return q.trim()?[{raw:q.trim(),variants:[fold(q)],exact:true}]:[];
     const result=[];for(const m of q.replace(/\brisc[\s_-]+v\b/gi,'RISC-V').matchAll(/"([^"]+)"|“([^”]+)”|(\S+)/g)){
@@ -21,15 +21,17 @@
       for(const s of r.sections||[])add('body',s.items.map(item=>s.heading+'：'+item));
       if(r.difficultyProfile){const p=r.difficultyProfile;add('difficulty',[r.difficulty,tiers.get(r.difficulty)?.name,r.level,p.reason,...p.prerequisites,...p.resources,p.minimum,p.stretch,p.effort,p.team]);}
       if(r.researchBridge){const b=r.researchBridge;add('bridge',[...(b.contestIds||[]),...(b.caseIds||[]),...(b.resourceIds||[])].map(id=>records.get(id)?.title));add('bridge',[b.contestNote,b.caseNote,...b.librarySearch,...b.milestones,...b.mentorQuestions,...b.roles.flatMap(v=>[v.role,v.deliverable,...v.majorIds.map(id=>majors.get(id)?.name)])]);}
+      if(r.researchDossier){const d=r.researchDossier;const walk=(value,label)=>{if(typeof value==='string')add('dossier',label+'：'+value);else if(Array.isArray(value))value.forEach(v=>walk(v,label));else if(value&&typeof value==='object')for(const [k,v] of Object.entries(value))if(!['sourceId','assessed'].includes(k))walk(v,label);};for(const [k,label] of Object.entries({question:'研究问题',hypotheses:'假设',literature:'文献脉络',baselines:'对照方法',experiments:'实验设计',metrics:'指标',ablations:'消融',pitfalls:'风险',reproducibility:'复现',stopRules:'范围收敛',deliverables:'交付'}))walk(d[k],label);}
       add('sources',(r.sourceIds||[]).flatMap(id=>{const s=db.sources[id];return s?[s.title,s.org,s.url,s.note]:[]}));
       if(r.report)add('report',db.report);return {r,parts};
     });
     return {
       search(state={}){
-        const terms=parse(state.q||'',state.mode),scope=state.scope||'all',allowed=p=>scope==='all'||(scope==='title'?p.field==='title':scope==='sources'?p.field==='sources':['body','difficulty','bridge','report'].includes(p.field));
+        const terms=parse(state.q||'',state.mode),scope=state.scope||'all',allowed=p=>scope==='all'||(scope==='title'?p.field==='title':scope==='sources'?p.field==='sources':scope==='dossier'?p.field==='dossier':['body','dossier','difficulty','bridge','report'].includes(p.field));
         const output=[];
         for(const {r,parts} of index){
           if(state.type&&state.type!=='all'&&r.type!==state.type||state.group&&state.group!=='all'&&!r.groups.includes(state.group)||state.major&&state.major!=='all'&&!r.majors.includes(state.major)||state.level&&state.level!=='all'&&r.level!==state.level||state.difficulty&&state.difficulty!=='all'&&r.difficulty!==state.difficulty)continue;
+          if(scope==='dossier'&&!r.researchDossier)continue;
           const hits=[],found=new Set();let score=0;const scored=new Set();
           for(const part of parts.filter(allowed)){
             const matched=[];for(let i=0;i<terms.length;i++){const t=terms[i],variant=t.variants.find(v=>position(part.folded,v)>=0);if(!variant)continue;found.add(i);matched.push(variant);const key=i+':'+part.field;if(!scored.has(key)){score+=weights[part.field]+(position(part.folded,fold(t.raw))>=0?weights[part.field]/2:0);scored.add(key);}}

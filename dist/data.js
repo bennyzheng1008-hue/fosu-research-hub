@@ -1,5 +1,5 @@
 window.RESEARCH_DB = {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "groups": [
     {
       "id": "circuits",
@@ -1212,6 +1212,285 @@ window.RESEARCH_DB = {
       "checked": "2026-10-01",
       "access": "已读取公开页面 / 不包含未公开的报告、代码和实验数据",
       "note": "赛事日程只支持准备时序；具体赛道资格、提交材料、下一届日期须查对应通知。"
+    },
+    "kb-eng-ukdale": {
+      "title": "UK-DALE：作者数据页与低频用电下载",
+      "org": "Jack Kelly / UKERC EDC",
+      "url": "https://jack-kelly.com/data/",
+      "kind": "作者数据说明",
+      "checked": "2026-10-02",
+      "access": "作者页面可读；页面提供托管方 CSV/HDF5 和 DOI 下载入口，文件未下载",
+      "note": "使用 2017 低频版本与 CC BY 4.0 署名要求；五户英国家庭，不代表佛山家庭或工业产线。"
+    },
+    "kb-eng-nilmtk": {
+      "title": "NILMTK：数据转换、对齐与评价工具",
+      "org": "NILMTK 作者团队",
+      "url": "https://github.com/nilmtk/nilmtk",
+      "kind": "作者代码",
+      "checked": "2026-10-02",
+      "access": "README 可读；代码和数据未运行",
+      "note": "当前 core 是数据与评价层；代码许可 Apache-2.0，数据需从保管方另行获取。安装与算法接口按锁定版本核对。"
+    },
+    "kb-eng-calce": {
+      "title": "CALCE：分温度 OCV 与动态电池测试",
+      "org": "University of Maryland CALCE",
+      "url": "https://calce.umd.edu/battery-data",
+      "kind": "高校实验数据",
+      "checked": "2026-10-02",
+      "access": "测试协议及按温度数据链接可读；文件未下载",
+      "note": "分清 INR 18650-20R、A123 与其他电池子集；说明页不等于已检查每个原始字段，出版时按所用测试子集引用对应论文。"
+    },
+    "kb-eng-bdg2": {
+      "title": "Building Data Genome 2：建筑表计、天气与元数据",
+      "org": "BUDS Lab / 数据论文作者团队",
+      "url": "https://github.com/buds-lab/building-data-genome-project-2",
+      "kind": "作者数据与代码",
+      "checked": "2026-10-02",
+      "access": "README 可读，data/ 与 notebooks/ 入口已确认；未下载",
+      "note": "作者给出 2016–2017 年小时级非住宅表计数据；筛选同一表计类型、按建筑/场地和时间留出，不推断没有记录的遮阳构造。"
+    },
+    "kb-eng-matbench": {
+      "title": "Matbench v0.1：材料任务、目标与单位元数据",
+      "org": "Materials Project / Matbench 作者团队",
+      "url": "https://github.com/materialsproject/matbench/blob/main/matbench/matbench_v0.1_dataset_metadata.json",
+      "kind": "作者基准定义",
+      "checked": "2026-10-02",
+      "access": "任务元数据可读；未下载数据，排行榜完整页本轮未成功读取",
+      "note": "matbench_expt_gap 的输入是成分、目标是实验带隙、单位 eV；不能将实验任务与结构/PBE 带隙任务混为一项。代码和数据使用条件分别核对。"
+    },
+    "kb-eng-epanet": {
+      "title": "EPANET 2.2：供水管网模型、工具包与示例",
+      "org": "US EPA",
+      "url": "https://www.epa.gov/water-research/epanet",
+      "kind": "官方模型与手册",
+      "checked": "2026-10-02",
+      "access": "模型功能、ZIP、工具包和手册入口可读；未下载安装",
+      "note": "可做压力相关需水量、管网水力和水质扩展时段仿真；示例管网不是佛山实际管网，构造漏损与传感器场景须标明模拟。"
+    },
+    "kb-eng-swmm": {
+      "title": "SWMM：雨洪、管网与低影响开发模型",
+      "org": "US EPA",
+      "url": "https://www.epa.gov/water-research/storm-water-management-model-swmm",
+      "kind": "官方模型与手册",
+      "checked": "2026-10-02",
+      "access": "功能、安装包、应用手册入口可读；未下载安装",
+      "note": "用于降雨径流及排水管网情景。不能将 SWMM 一维管网结果直接画成已验证的二维积水图；SWMM-CAT 已停止维护，不作为新项目路线。"
+    },
+    "kb-eng-sumo-e2": {
+      "title": "SUMO E2：排队长度与车道区间检测定义",
+      "org": "DLR / Eclipse SUMO",
+      "url": "https://sumo.dlr.de/docs/Simulation/Output/Lanearea_Detectors_(E2).html",
+      "kind": "官方测量定义",
+      "checked": "2026-10-02",
+      "access": "属性和输出单位可读",
+      "note": "队列长度与检测区长度、停止阈值和聚合周期有关；meanSpeed 的语义不等同于感应线圈测速，检测区外回堵会被截断。"
+    },
+    "kb-eng-steering": {
+      "title": "Python Control：转向动力学与观测器示例",
+      "org": "Python Control Systems Library 作者团队",
+      "url": "https://python-control.readthedocs.io/en/latest/examples/steering.html",
+      "kind": "作者建模示例",
+      "checked": "2026-10-02",
+      "access": "非线性更新、转角饱和与观测器代码可读；未运行",
+      "note": "教学转向模型支持控制与规划接口实验；不能替代轮胎侧滑、碰撞和实际车辆安全验证。"
+    },
+    "kb-ic-rvfi": {
+      "title": "RISC-V Formal Interface（RVFI）规范",
+      "org": "YosysHQ / riscv-formal 项目",
+      "url": "https://github.com/YosysHQ/riscv-formal/blob/main/docs/source/rvfi.rst",
+      "kind": "作者项目规范",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "退役指令的观察接口规范；工具 main 分支会变化，实验须固定提交。接口正确性与指令正确性应分别检查。"
+    },
+    "kb-ic-act4": {
+      "title": "RISC-V Architectural Certification Tests 与 ACT4",
+      "org": "RISC-V International / riscv-arch-test",
+      "url": "https://github.com/riscv/riscv-arch-test",
+      "kind": "官方测试框架",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "当前官方 README 说明 ACT4 替代已废弃的 RISCOF。架构测试不是完整处理器验证；需保留 DUT 配置、工具链及测试提交。"
+    },
+    "kb-ic-cummings-fifo": {
+      "title": "Simulation and Synthesis Techniques for Asynchronous FIFO Design（SNUG 2002，Rev 1.2）",
+      "org": "Clifford E. Cummings / Sunburst Design",
+      "url": "https://www.researchgate.net/profile/Clifford-Cummings/publication/252160343_Simulation_and_Synthesis_Techniques_for_Asynchronous_FIFO_Design/links/54bfe9720cf28eae4a66418a/Simulation-and-Synthesis-Techniques-for-Asynchronous-FIFO-Design.pdf",
+      "kind": "作者论文",
+      "checked": "2026-10-02",
+      "access": "作者主页 PDF 正文可读",
+      "note": "2002 年经典工程论文，读取的是 Rev 1.2；原 Sunburst 下载入口未成功读取，采用作者 ResearchGate 主页版本。设计方法不替代工艺相关 CDC 与 MTBF 签核。"
+    },
+    "kb-ic-litert-int8": {
+      "title": "LiteRT 8-bit quantization specification",
+      "org": "Google AI Edge",
+      "url": "https://developers.google.com/edge/litert/conversion/tensorflow/quantization/quantization_spec",
+      "kind": "官方算子规范",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "用于核对张量范围、零点、按通道缩放与偏置约束；不同后端不一定逐比特一致，不将规范描述解释成所有模型精度保证。"
+    },
+    "kb-ic-handshake": {
+      "title": "Rules for Ready/Valid Handshakes",
+      "org": "Charles Eric LaForest / FPGA Design Elements",
+      "url": "https://fpgacpu.ca/fpga/handshake.html",
+      "kind": "作者工程说明",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "解释同步 ready/valid 的背压、状态更新、死锁与组合环问题。属于作者设计规则，不是完整 AMBA AXI 协议规范，也不是跨时钟域协议。"
+    },
+    "kb-ic-sram-march": {
+      "title": "SRAM Test with March Algorithms · Introduction",
+      "org": "Microchip Technology",
+      "url": "https://onlinedocs.microchip.com/oxy/GUID-CC542DC7-9EE1-4C9E-8355-9E4DAC3D8704-en-US-4/GUID-E50F2012-AB0B-445B-BE32-3BC4A5A44E50.html",
+      "kind": "官方算法说明",
+      "checked": "2026-10-02",
+      "access": "官方检索正文可读，直接页读取失败",
+      "note": "可核验 March C- 六阶段的算法概述。这里只据此建立教学故障模型；字宽、耦合故障分类与真实芯片诊断需另查完整实现及适用条件，不声称获得安全认证。"
+    },
+    "kb-ic-adc-mt003": {
+      "title": "MT-003：Understand SINAD, ENOB, SNR, THD, THD+N, and SFDR（2008）",
+      "org": "Walt Kester / Analog Devices",
+      "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf",
+      "kind": "官方技术教程",
+      "checked": "2026-10-02",
+      "access": "PDF 正文可读",
+      "note": "2008 年 Rev.A 教程，适合核对动态指标、测量带宽与输入幅度的关系。教程器件示例不作为拟议 SAR ADC 的性能目标。"
+    },
+    "kb-ic-orfs-metrics": {
+      "title": "OpenROAD Flow Scripts · Metrics",
+      "org": "OpenROAD Team",
+      "url": "https://openroad-flow-scripts.readthedocs.io/en/latest/contrib/Metrics.html",
+      "kind": "官方流程文档",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "说明 metadata.json 与质量比较。当前文档使用 dashboard baseline，并说明旧 rules/golden 文件机制已移除；离线课题仍应自存基线和日志。"
+    },
+    "kb-ic-tiny-rules": {
+      "title": "MLPerf Tiny Inference Rules（页面标注 v1.2，2024 草案）",
+      "org": "MLCommons / MLPerf Tiny",
+      "url": "https://github.com/mlcommons/tiny/blob/master/benchmark/MLPerfTiny_Rules.adoc",
+      "kind": "官方基准规则",
+      "checked": "2026-10-02",
+      "access": "正文可读",
+      "note": "此页仍自标 v1.2、2024-08-19 且未最终定稿，不能当作 2026 最新提交规则。用于研究模型、数据、计时边界与复现约束；正式提交须核对当前发布版本。"
+    },
+    "kb-inter-actbecalf": {
+      "title": "AcTBeCalf：作者公开的犊牛加速度、个体和行为片段数据",
+      "org": "Dissanayake 等；UCD / Teagasc / VistaMilk",
+      "url": "https://zenodo.org/records/13259482",
+      "kind": "作者数据仓库",
+      "checked": "2026-10-02",
+      "access": "页面可读，CSV 与代码开放下载；可读页许可名称未显示，使用与再分发前核对仓库许可及代码内许可。",
+      "note": "30 头断奶前犊牛，颈部三轴 25 Hz；CSV 含 calfid、segId 与行为标注。不要与成年牛数据不经对齐直接合并；作者给出的模型分数不等于本项目结果。"
+    },
+    "kb-inter-oulad": {
+      "title": "OULAD：开放大学学习分析数据说明与许可",
+      "org": "The Open University",
+      "url": "https://research.stem.open.ac.uk/ouanalyse/open-dataset-more/",
+      "kind": "官方数据文档",
+      "checked": "2026-10-02",
+      "access": "页面、数据结构和下载入口公开；数据为 CC BY 4.0，须署名原作者与数据版本。",
+      "note": "七个课程模块，多张 CSV 以学生、课程和开课批次关联；含相对课程起始日的学习日志、测验与退课时间。公开字段说明未列随机教学干预分配，因此本方案仅按观察数据使用。"
+    },
+    "kb-inter-acs": {
+      "title": "ACS PUMS 2024：权重、字典与微观调查使用文档",
+      "org": "U.S. Census Bureau",
+      "url": "https://www.census.gov/programs-surveys/acs/microdata/documentation.2024.html",
+      "kind": "官方调查文档",
+      "checked": "2026-10-02",
+      "access": "官方文档公开，链接用户指南、字典、核验估计与数据访问入口；本库仅整理方法与网址，不打包微观数据。",
+      "note": "个人和家庭权重必须与评价对象一致；提供 80 个复制权重供标准误与误差限计算。美国数据用于调查方法练习，不代表佛山居民或企业。"
+    },
+    "kb-inter-tlx": {
+      "title": "NASA TLX：六维主观工作负担工具及手册",
+      "org": "NASA Ames / Human Systems Integration Division",
+      "url": "https://www.nasa.gov/human-systems-integration-division/nasa-task-load-index-tlx/",
+      "kind": "官方评价方法",
+      "checked": "2026-10-02",
+      "access": "官方页、量表手册公开；官方明确使用与翻译工具无需另取 NASA 许可。",
+      "note": "用于主观负担，不等同学习成绩、任务成功或产品安全性。提前声明加权 TLX 或 Raw TLX，并固定翻译和计分方向；页面注明历史参考。"
+    },
+    "kb-inter-wwc": {
+      "title": "WWC 5.0：教育干预研究设计与证据审查入口",
+      "org": "U.S. Department of Education / Institute of Education Sciences",
+      "url": "https://ies.ed.gov/ncee/wwc/handbooks",
+      "kind": "官方研究标准入口",
+      "checked": "2026-10-02",
+      "access": "入口可读并列出 5.0 手册与作者报告指南；本次 PDF 直读超时，具体条款应沿官方入口下载核对。",
+      "note": "已核验入口列出 5.0 手册、作者报告指南与样本流失等资源；随机分配、基线和测量检查是本库的研究设计建议。本站小型实验不是 WWC 认证；本次未读 PDF 全文，不引用其具体阈值或宣称满足标准。"
+    },
+    "kb-inter-doe": {
+      "title": "NIST 实验设计：随机区组与干扰因素",
+      "org": "NIST / SEMATECH e-Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri332.htm",
+      "kind": "官方统计方法",
+      "checked": "2026-10-02",
+      "access": "页面公开可读，含区组模型与工程示例；本库提供原创食品研究适配建议，原示例属于工程领域。",
+      "note": "用区组控制可记录的干扰因素，在区组内比较处理；食品配方、成人任务和批次规划均需另行设定真实实验单位。"
+    },
+    "kb-inter-ptbxl": {
+      "title": "PTB-XL v1.0.3：ECG 波形、患者分组与质量元数据",
+      "org": "Wagner / Strodthoff 等；PTB / PhysioNet",
+      "url": "https://physionet.org/content/ptb-xl/1.0.3/",
+      "kind": "作者公开数据文档",
+      "checked": "2026-10-02",
+      "access": "无需资质认证即可按 CC BY 4.0 访问文件；下载后署名数据、论文及版本。",
+      "note": "文档提供 100/500 Hz 波形、患者标识、推荐分组折和质量字段，并列出去重修正。后续须按所下载版本的 CSV 核验记录数与唯一患者数；本次只核验网页，未下载数据。仅用于离线信号方法研究，公开数据不等于可用于真实诊断。"
+    },
+    "kb-method-checklist": {
+      "title": "NeurIPS Paper Checklist",
+      "org": "NeurIPS",
+      "url": "https://neurips.cc/public/guides/PaperChecklist",
+      "kind": "研究检查清单",
+      "checked": "2026-10-02",
+      "access": "已读取公开正文；未下载数据或执行实验",
+      "note": "公开清单强调结论、限制、实验细节与复现材料；此处借鉴方法，不作为佛山大学毕设要求。"
+    },
+    "kb-method-fair": {
+      "title": "FAIR Principles",
+      "org": "GO FAIR Foundation",
+      "url": "https://www.gofair.foundation/fair-principles",
+      "kind": "数据管理原则",
+      "checked": "2026-10-02",
+      "access": "已读取公开正文；未下载数据或执行实验",
+      "note": "用于数据标识、元数据、来源与许可记录；可访问可以包含授权条件，不等于全部公开。"
+    },
+    "kb-method-pitfalls": {
+      "title": "Common pitfalls and recommended practices",
+      "org": "scikit-learn",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "kind": "官方方法文档",
+      "checked": "2026-10-02",
+      "access": "已读取公开正文；未下载数据或执行实验",
+      "note": "讨论预处理不一致和数据泄漏，Pipeline 有助于控制拟合范围；仍须检查人员、时间、批次等划分单位。"
+    },
+    "kb-method-beir-code": {
+      "title": "BEIR 官方评估代码与数据入口",
+      "org": "BEIR 作者团队",
+      "url": "https://github.com/beir-cellar/beir",
+      "kind": "作者代码仓库",
+      "checked": "2026-10-02",
+      "access": "已读取公开正文；未下载数据或执行实验",
+      "note": "异质信息检索评估工具；代码许可与各语料许可分开核对。"
+    },
+    "kb-method-beir-paper": {
+      "title": "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+      "org": "Thakur 等，2021",
+      "url": "https://arxiv.org/abs/2104.08663",
+      "kind": "作者论文",
+      "checked": "2026-10-02",
+      "access": "已读取公开正文；未下载数据或执行实验",
+      "note": "读取摘要及版本元数据；论文比较多种检索体系，不能把其英文任务结果当作本库中文检索成绩。"
+    },
+    "kb-method-trec": {
+      "title": "TREC Data 与 trec_eval 入口",
+      "org": "NIST TREC",
+      "url": "https://trec.nist.gov/data.html",
+      "kind": "官方评测资源",
+      "checked": "2026-10-02",
+      "access": "已读取公开正文；未下载数据或执行实验",
+      "note": "公开目录列出不同检索任务与评估工具；各任务语料访问条件须单独查看。"
     }
   },
   "records": [
@@ -3384,7 +3663,9 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "har",
         "cmsis",
-        "tiny"
+        "tiny",
+        "kb-ic-tiny-rules",
+        "kb-ic-litert-int8"
       ],
       "tags": [
         "TinyML",
@@ -3437,7 +3718,7 @@ window.RESEARCH_DB = {
       "level": "入门",
       "priority": 15,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D2",
       "difficultyProfile": {
         "dimensions": {
@@ -3512,6 +3793,134 @@ window.RESEARCH_DB = {
           "TinyML INT8 数据集 实验 对照",
           "digital circuit verification benchmark TinyML INT8"
         ]
+      },
+      "researchDossier": {
+        "question": "在按受试者隔离的活动识别评估中，INT8 量化对任务表现和板端 RAM/延迟的影响能否与数据泄漏或测量边界区分？",
+        "hypotheses": [
+          "待检验：随机拆重叠窗口可能比隔离受试者高估表现。",
+          "待检验：推理内核更快不保证采样到输出的端到端响应更快。"
+        ],
+        "literature": [
+          {
+            "sourceId": "har",
+            "finding": "HAR 数据有受试者和活动标注。",
+            "howToUse": "保留受试者隔离，将归一化与校准限定在开发样本。",
+            "limitation": "手机佩戴场景不能直接外推腕带、牛行为或未见传感器。"
+          },
+          {
+            "sourceId": "kb-ic-tiny-rules",
+            "finding": "官方基准规则要求明确模型、数据与计时边界。",
+            "howToUse": "参考其复现思想，但独立报告自有 HAR 实验的计时边界。",
+            "limitation": "此链接标注旧 v1.2 草案；HAR 改编结果不自动成为正式 MLPerf 结果。"
+          },
+          {
+            "sourceId": "kb-ic-litert-int8",
+            "finding": "数值规范与后端容差需核对。",
+            "howToUse": "抽样逐层核对整数输出，再做任务指标比较。",
+            "limitation": "满足数值规范不保证该任务准确率不下降。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "轻量特征模型",
+            "implementation": "训练集统计特征加 logistic regression 或同等轻量分类器，特征缩放在训练集拟合。",
+            "why": "检验复杂网络是否真有收益，提供容易部署的任务基线。"
+          },
+          {
+            "name": "同一网络 FP32/INT8",
+            "implementation": "架构与训练权重固定，只改变明确的量化过程；校准样本来自训练受试者。",
+            "why": "隔离量化影响，防止把改架构/训练的收益归于 INT8。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "任务与划分对照",
+            "variables": [
+              "FP32、INT8；校准样本数的 3 个预先选定档位",
+              "受试者隔离开发/测试划分",
+              "随机窗口划分仅作泄漏风险演示，不作主结论"
+            ],
+            "controls": "归一化、校准和超参数选择仅用训练/开发受试者；测试只运行一次锁定方案。",
+            "split": "按 subject 分组，先划分再生成/筛选窗口；原始官方 split 保留并注明。",
+            "metrics": [
+              "macro-F1、每类召回率",
+              "FP32 到 INT8 的配对差异",
+              "按受试者指标与置信区间"
+            ],
+            "decision": "预先定义能接受的任务损失与资源预算；报告受试者差异，不凭整体准确率隐藏某类失败。"
+          },
+          {
+            "name": "目标端测量",
+            "variables": [
+              "固定主频与优化选项下 FP32/INT8 可运行路径",
+              "推理内核与含预处理的窗口分别计时",
+              "重复至少 30 次固定输入，并另测实际样本序列"
+            ],
+            "controls": "同板、同输入、相同主频与供电；预热与中断条件明示。",
+            "split": "性能样本不能用于调模型；输入分布和测试批次保存。",
+            "metrics": [
+              "延迟中位数/p95/max，单位 ms",
+              "flash/RAM/峰值 tensor arena，单位 B",
+              "如具备仪器则每次推理积分能量，单位 µJ"
+            ],
+            "decision": "无仪器不报告能量实测；无板卡只给模型大小和主机结果，不写 MCU 延迟。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Macro-F1",
+            "definition": "逐类 F1 的不加权平均；没有预测/真实样本类的处理规则先固定。",
+            "unit": "0–1",
+            "aggregation": "整体、按受试者和每类分别列；区间重采样单位为受试者，不是重叠窗口。"
+          },
+          {
+            "name": "端到端延迟",
+            "definition": "从本窗口原始数据可用到最终输出的耗时，另列窗口积累时间。",
+            "unit": "ms",
+            "aggregation": "中位数、p95、最大值及重复数；不与只含内核计时混用。"
+          },
+          {
+            "name": "内存占用",
+            "definition": "模型、静态缓冲和实际峰值 arena/stack 分开统计。",
+            "unit": "B",
+            "aggregation": "列设备可用预算与是否测得峰值，不能仅用参数数目代替 RAM。"
+          },
+          {
+            "name": "实测能量",
+            "definition": "指定边界内对电压×电流积分；记录空闲扣除与采样带宽。",
+            "unit": "µJ/推理",
+            "aggregation": "只有有仪器时填写，模型估算单独标示。"
+          }
+        ],
+        "ablations": [
+          "同网络移除 per-channel 量化（算子支持时），其余参数不变。",
+          "比较泄漏风险演示划分和受试者隔离，但不据测试结果再选择主划分。",
+          "仅用均值/方差特征与完整特征基线，估计复杂度收益。"
+        ],
+        "pitfalls": [
+          "同一个受试者或高度重叠窗口同时进训练和测试。",
+          "测试受试者参与 scaler/校准。",
+          "延迟只测一个缓存热样本，无预热/中断说明。",
+          "用芯片手册典型电流×时间宣称实测 µJ。"
+        ],
+        "reproducibility": [
+          "受试者清单、split、窗口规则与数据版本。",
+          "训练、校准脚本、权重、量化文件及逐层抽样输出。",
+          "板型号、主频、编译器/flags、内核版本。",
+          "原始计时、RAM测量方法及能量波形（如有）。"
+        ],
+        "stopRules": [
+          "数据无法按受试者追溯时，暂停泛化结论。",
+          "模型超出板上 RAM 预算先缩架构/输入，停止额外功能。",
+          "没有板端条件时完成软件研究，并明确 MCU 资源评价待做。"
+        ],
+        "deliverables": [
+          "划分与数据泄漏检查表",
+          "FP32/INT8/轻量基线任务结果",
+          "设备预算与原始测量",
+          "按受试者失败样例与部署限制"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -3815,7 +4224,8 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "hls4ml",
         "cocotb",
-        "nju"
+        "nju",
+        "kb-ic-litert-int8"
       ],
       "tags": [
         "矩阵乘法",
@@ -3867,7 +4277,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 2,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D3",
       "difficultyProfile": {
         "dimensions": {
@@ -3938,6 +4348,118 @@ window.RESEARCH_DB = {
           "矩阵乘法 INT8 仿真 测试 平台",
           "digital circuit verification benchmark INT8 FPGA"
         ]
+      },
+      "researchDossier": {
+        "question": "固定 INT8 矩阵任务后，计算阵列并行度增加的收益何时被搬运、累加位宽与再量化成本抵消？",
+        "hypotheses": [
+          "待检验：只提高 MAC 数量不能保证完整矩阵任务更快。",
+          "待检验：把搬运和输出再量化排除在计时之外会高估系统加速。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-litert-int8",
+            "finding": "输出整数通常需要独立量化语义。",
+            "howToUse": "把数值一致性检查放在性能实验之前；按实际算子建立尺度处理。",
+            "limitation": "通用 INT8 GEMM 不自动等同于某一 LiteRT 卷积实现。"
+          },
+          {
+            "sourceId": "hls4ml",
+            "finding": "硬件生成配置包括数据类型与资源复用。",
+            "howToUse": "将复用与并行度作为可控因素，保存生成配置。",
+            "limitation": "不同后端综合报告不可脱离工具/平台直接比较。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "串行 MAC",
+            "implementation": "一个 MAC、相同整数语义与接口，一次计算一个输出。",
+            "why": "建立正确性和资源成本的最小基线。"
+          },
+          {
+            "name": "软件整数 GEMM",
+            "implementation": "相同输入布局、累加/输出定义；若在不同硬件跑，只给独立平台结果，不混算纯周期加速。",
+            "why": "提供任务级参考与软件可复现对照。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "形状与并行度",
+            "variables": [
+              "矩阵形状 4×4、8×8、16×16 及一组非整齐维度",
+              "MAC 并行度 1/2/4",
+              "片上存储允许容量与带宽固定"
+            ],
+            "controls": "同一时钟目标、数据布局和整数结果；含 tail 与不足满 tile 情形。",
+            "split": "开发使用小方阵；保留长条/非整齐形状评价泛化。",
+            "metrics": [
+              "完整任务周期",
+              "有效 MAC/周期与利用率",
+              "搬运字节、逻辑资源"
+            ],
+            "decision": "只对全部输出通过数值检查的版本排名；明确阵列空转和边界浪费。"
+          },
+          {
+            "name": "端到端边界",
+            "variables": [
+              "仅计算、含搬入/搬出、含再量化三种窗口",
+              "输入驻留一次/复用多次"
+            ],
+            "controls": "同一事务定义，逐阶段计数避免重叠周期被重复相加。",
+            "split": "固定性能向量，不按最快样本挑选。",
+            "metrics": [
+              "阶段周期与端到端周期",
+              "有效数据吞吐",
+              "输出 LSB 误差"
+            ],
+            "decision": "分别报驻留假设；不将理想无限带宽结果当板级实测。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "完整任务周期",
+            "definition": "从接受任务/首次搬入到最终输出完成的时钟数。",
+            "unit": "周期",
+            "aggregation": "逐形状/并行度报告，另列是否包括主机传输。"
+          },
+          {
+            "name": "MAC 利用率",
+            "definition": "有效完成 MAC 数 /（配置 MAC 数 × 计算窗口周期）。",
+            "unit": "%",
+            "aggregation": "给窗口定义；边界填充不能算有效工作。"
+          },
+          {
+            "name": "搬运量",
+            "definition": "实际接口传输的输入、权重与输出字节数。",
+            "unit": "B/任务",
+            "aggregation": "区分首次加载与驻留复用。"
+          }
+        ],
+        "ablations": [
+          "关闭缓冲重用但保持阵列并行度，观察收益来自计算还是数据复用。",
+          "保留算术阵列、关闭优化布局，对照存储冲突与利用率。"
+        ],
+        "pitfalls": [
+          "只测循环主体，忽略 DMA/布局转换/再量化。",
+          "累加溢出仍把输出某些样本相同当正确。",
+          "把填充乘零计算也计入有效 MAC。"
+        ],
+        "reproducibility": [
+          "任务形状、输入与权重文件、整数语义。",
+          "布局、tile、bank、并行度与端口配置。",
+          "分阶段时钟计数、实际传输日志。",
+          "综合平台与工具/约束，不同平台结果分表。"
+        ],
+        "stopRules": [
+          "串行基线与独立参考不一致时，停止并行化。",
+          "无法固定存储带宽时，只报告特定带宽模型结果。"
+        ],
+        "deliverables": [
+          "正确串行与并行版本",
+          "数值/周期自动检查",
+          "形状-并行度结果矩阵",
+          "资源与端到端成本表"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -4094,7 +4616,8 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "cocotb",
-        "opentitan"
+        "opentitan",
+        "kb-ic-cummings-fifo"
       ],
       "tags": [
         "CDC",
@@ -4145,7 +4668,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 2,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D3",
       "difficultyProfile": {
         "dimensions": {
@@ -4216,6 +4739,107 @@ window.RESEARCH_DB = {
           "CDC 异步 FIFO 仿真 测试 平台",
           "digital circuit verification benchmark CDC 异步 FIFO"
         ]
+      },
+      "researchDossier": {
+        "question": "在异步 FIFO 的有限逻辑模型中，Gray 指针同步与保守满空标志是否保持无丢失/无重复，代价有多少额外阻塞周期？",
+        "hypotheses": [
+          "待检验：安全实现可有保守阻塞，标志解除延迟不应直接算功能失败。",
+          "待检验：wrap、高位比较和独立复位比一般随机数据更容易触发指针错误。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-cummings-fifo",
+            "finding": "同步指针比较会产生保守的 full/empty 解除。",
+            "howToUse": "把安全性与阻塞成本拆成两项评价；复现论文范围内的幂次深度。",
+            "limitation": "纯数字模型不能估计亚稳态概率，物理时序与 CDC 签核另做。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "标准 Gray 指针双同步级",
+            "implementation": "固定 2^n 深度、各域本地指针与远端同步指针；本地握手控制读写。",
+            "why": "先确认经典实现，而非为更快旗标擅自去掉同步。"
+          },
+          {
+            "name": "指针缺陷版本",
+            "implementation": "分别改变 full 高位比较、允许满写或空读；逐次单缺陷。",
+            "why": "验证环境真的能揭示已知错误。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "时钟与边界矩阵",
+            "variables": [
+              "周期比例 1:1、2:3、3:2、1:5",
+              "初始相位 0 与半周期偏移",
+              "深度 4/8/16；连续与突发读写"
+            ],
+            "controls": "相同事务序列、可重放随机 seed，明确同时间边沿的调度规则。",
+            "split": "小深度手算轨迹开发；保留异频/相位/seed 组合评价。",
+            "metrics": [
+              "接受写入序列与接受读出序列的一致性",
+              "禁止操作是否改变指针",
+              "真实可操作但本地标志阻塞的本地周期"
+            ],
+            "decision": "保持数据顺序与完整性；单列保守阻塞，不要求 flags 对全局瞬时占用完全同步。"
+          },
+          {
+            "name": "复位契约",
+            "variables": [
+              "双域同时复位",
+              "写域或读域局部复位",
+              "有/无在途事务"
+            ],
+            "controls": "每种复位先声明是否清空、如何重同步；不默认局部复位后保留原数据。",
+            "split": "每类契约至少一个手工样例再随机。",
+            "metrics": [
+              "未知状态传播",
+              "契约外残留数据",
+              "恢复期间握手行为"
+            ],
+            "decision": "若不支持独立域复位，写为限制并断言禁止，不能悄悄删掉失败样例。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "事务一致性",
+            "definition": "按照各域实际接受的 write/read 事件建立队列，分别记录丢失/重复/乱序。",
+            "unit": "项",
+            "aggregation": "逐时钟组合、seed 和复位类型报告；同时间事件使用固定仲裁规则。"
+          },
+          {
+            "name": "保守阻塞",
+            "definition": "参考占用允许操作但本地 full/empty 仍阻止操作的本域时钟周期。",
+            "unit": "本地周期",
+            "aggregation": "写域和读域分开，报告分布和吞吐影响。"
+          }
+        ],
+        "ablations": [
+          "故意改用二进制跨域指针仅作错误示例，不把数字仿真通过解释为 CDC 安全。",
+          "移除 wrap 与复位定向测试，观察已知缺陷是否会被一般随机测试漏掉。"
+        ],
+        "pitfalls": [
+          "在目的域要求同步后的 Gray 指针每次只变一位；目的时钟可能跳过源域多个值。",
+          "根据全局即时占用要求满空同步解除，导致误报。",
+          "用仿真多 seed 结果声称 MTBF 达标。"
+        ],
+        "reproducibility": [
+          "各域周期、相位、复位契约、内存读模式。",
+          "本地/跨域指针波形和可重放事务清单。",
+          "每个 mutant 的代码差异和首次失败轨迹。",
+          "区分 RTL 仿真、形式假设与物理 CDC 检查的证据。"
+        ],
+        "stopRules": [
+          "4 深度手算与 scoreboard 无法一致时，暂停增加深度。",
+          "不能取得工艺/同步器物理参数时，不报告 MTBF 或真实芯片可靠性。"
+        ],
+        "deliverables": [
+          "CDC 与复位范围声明",
+          "事务/旗标双评价结果",
+          "wrap 与局部复位失败案例",
+          "逻辑验证证据包"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -4659,7 +5283,9 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "ciciec-topics",
-        "cocotb"
+        "cocotb",
+        "kb-ic-adc-mt003",
+        "scipy"
       ],
       "tags": [
         "SAR ADC",
@@ -4710,7 +5336,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 2,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D3",
       "difficultyProfile": {
         "dimensions": {
@@ -4780,6 +5406,121 @@ window.RESEARCH_DB = {
           "SAR ADC 行为模型 仿真 测试 平台",
           "analog circuit simulation corner analysis SAR ADC"
         ]
+      },
+      "researchDossier": {
+        "question": "SAR ADC 行为模型加入失配或比较器噪声后，动态性能变化是否可与 FFT 测量方法错误区分？",
+        "hypotheses": [
+          "待检验：非相干采样直接取单个基波 bin 会把泄漏当噪声，低估 SINAD。",
+          "待检验：未说明输入幅度的 ENOB 比较可能混合幅度效应与电路非理想。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-adc-mt003",
+            "finding": "动态指标与输入幅度、频率及测量带宽相关。",
+            "howToUse": "先固定指标定义和理想模型自检，再分析候选 ADC。",
+            "limitation": "行为模型结果不是晶体管级或实物测量，样例器件数据不外推。"
+          },
+          {
+            "sourceId": "scipy",
+            "finding": "科学计算工具支持 FFT 与信号处理。",
+            "howToUse": "实现可测试的频谱归一化与能量积分。",
+            "limitation": "库返回频谱不等于指标自动正确，频带/窗/谐波归属由研究者定义。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "理想 N 位量化器",
+            "implementation": "明确定义满量程、码边界与饱和；输出应可与直接量化映射交叉核对。",
+            "why": "先验证动态指标脚本，不用非理想电路掩盖测试平台问题。"
+          },
+          {
+            "name": "理想 SAR 行为流程",
+            "implementation": "逐次比较理想 DAC 与输入，不加入失配或噪声。",
+            "why": "确认控制逻辑结果与理想量化器一致。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "测量方法自检",
+            "variables": [
+              "N=8/10；样本数 M=1024/4096",
+              "fin=k·fs/M 且 k 与 M 互素的相干正弦",
+              "非相干正弦加明确窗与能量补偿",
+              "输入相对满幅 -1/-6/-12 dB"
+            ],
+            "controls": "相同采样率、去 DC 规则、Nyquist 积分带宽；无饱和。",
+            "split": "已知理想信号校准；不同 k 和幅度保留测试。",
+            "metrics": [
+              "SINAD 与幅度校正 ENOB",
+              "频谱能量/时域均方能量差",
+              "是否饱和"
+            ],
+            "decision": "能量不守恒或理想模型出现异常时，先修测量方法，不评价非理想电路。"
+          },
+          {
+            "name": "非理想与校准",
+            "variables": [
+              "独立电容失配档位，单位相对标准差",
+              "比较器噪声档位，单位输入 LSB",
+              "无校准/固定算法校准"
+            ],
+            "controls": "一次先改变一类非理想；同一随机器件实例、幅度和频率配对比较。",
+            "split": "校准参数由校准激励拟合；保留频率/幅度与器件实例评价。",
+            "metrics": [
+              "SINAD dB、ENOB bit",
+              "输入-输出静态误差 LSB",
+              "每次转换控制周期"
+            ],
+            "decision": "报告实例分布与最差实例；不凭单 seed 宣称校准普遍有效。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "SINAD",
+            "definition": "基波功率 /（带内噪声与失真功率）取 10log10；去 DC、基波带宽与谐波归属需明示。",
+            "unit": "dB",
+            "aggregation": "逐频率、幅度和器件实例，保存原始频谱；不能以单个噪声 bin 代替积分功率。"
+          },
+          {
+            "name": "ENOB",
+            "definition": "满幅正弦条件下 (SINAD−1.76)/6.02；较低幅度的满幅归一化为 (SINAD−1.76+20log10(A_FS/A_in))/6.02，A_FS 与 A_in 必须采用同一峰值或 RMS 正弦幅度约定。",
+            "unit": "bit",
+            "aggregation": "幅度、是否校正及所用幅度比一起报告；不得混用校正/未校正结果。"
+          },
+          {
+            "name": "静态误差",
+            "definition": "输出换算输入电压与理想量化输出之差除以理想输入 LSB。",
+            "unit": "LSB",
+            "aggregation": "列最大绝对误差与分布；不把它直接称为 INL/DNL，除非另有转换点定义。"
+          }
+        ],
+        "ablations": [
+          "理想量化器、理想 SAR、仅失配、仅噪声、二者同时五组对照。",
+          "固定电路，仅改变相干/非相干与窗策略，以显露测量方法带来的差异。"
+        ],
+        "pitfalls": [
+          "用 SNR 的去谐波功率计算 SINAD/ENOB。",
+          "过驱动削顶被误解为比较器失配。",
+          "未归一化窗增益，混用 dBFS 与 dBc。",
+          "同一校准激励既拟合又评价，低估泛化误差。"
+        ],
+        "reproducibility": [
+          "N、满量程、fs、fin、幅度、M、窗和频带定义。",
+          "所有输出码、频谱脚本与能量自检。",
+          "失配/噪声分布、seed 与校准/保留划分。",
+          "证据明确标为行为模型；没有晶体管或实测就不写芯片指标。"
+        ],
+        "stopRules": [
+          "理想量化器的频谱能量自检不通过时，不加新非理想。",
+          "无法获得可信工艺/器件模型时，维持行为研究范围，不声称可流片性能。"
+        ],
+        "deliverables": [
+          "动态指标测试契约",
+          "理想与非理想模型",
+          "配对校准结果与分布",
+          "原始码流和复现脚本"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -4796,7 +5537,9 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "openlane",
-        "cocotb"
+        "cocotb",
+        "kb-ic-orfs-metrics",
+        "openroad"
       ],
       "tags": [
         "物理设计",
@@ -4848,7 +5591,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 2,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D3",
       "difficultyProfile": {
         "dimensions": {
@@ -4919,6 +5662,118 @@ window.RESEARCH_DB = {
           "物理设计 PPA 仿真 测试 平台",
           "digital circuit verification benchmark PPA OpenLane"
         ]
+      },
+      "researchDossier": {
+        "question": "在同一数字 IP、库与时序约束下，布局密度和时钟目标怎样改变布线后面积、slack 与拥塞？",
+        "hypotheses": [
+          "待检验：更紧时钟目标可能增加缓冲/面积却仍无法收敛，效果不是单调。",
+          "待检验：只看综合结果无法可靠推断布线后代价。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-orfs-metrics",
+            "finding": "ORFS 从流程产物提取 metadata，并与基线比较。",
+            "howToUse": "保存各阶段报告，固定离线基线，不只抄仪表盘结论。",
+            "limitation": "latest 流程已改变旧 rules/golden 机制；网络 gate 的 INCONCLUSIVE 不是指标通过。"
+          },
+          {
+            "sourceId": "openroad",
+            "finding": "数字物理实现需要时序、布局与布线的流程条件。",
+            "howToUse": "固定技术平台、库、SDC、寄生抽取及流程版本。",
+            "limitation": "工具估计不等于实测芯片功耗或最终制造签核。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "固定默认流程",
+            "implementation": "选择已仿真验证的小 FIFO 或计数器，仅一个平台；锁定 RTL/库/SDC/流程提交。",
+            "why": "所有候选必须在相同设计与约束下比较。"
+          },
+          {
+            "name": "放宽时钟参考",
+            "implementation": "同平台同 RTL，用预检可收敛的时钟目标建立可信可运行基线。",
+            "why": "区别设计本身无法实现与优化条件过紧。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "密度×时钟矩阵",
+            "variables": [
+              "布局密度 0.35/0.50/0.65，须在所用平台允许范围内",
+              "预检基线周期的 1.0/0.9/0.8 倍",
+              "至少 3 个不同布局 seed（流程支持时）"
+            ],
+            "controls": "同 RTL、库/工艺角、电压温度、I/O delay、clock uncertainty 和寄生提取；不通过删约束获得收敛。",
+            "split": "一个小 IP 选参数；另一种结构 IP 检查迁移，不能用后者回调最佳参数。",
+            "metrics": [
+              "综合/布局/布线各阶段 cell area",
+              "布线后 setup 与 hold worst slack",
+              "DRC 数、拥塞指标、运行时与内存"
+            ],
+            "decision": "先判断时序与 DRC 条件是否满足，再比较可行集合；失败运行保留为不可行点。"
+          },
+          {
+            "name": "功率证据边界",
+            "variables": [
+              "无活动信息",
+              "固定同任务 VCD/SAIF 活动（流程支持时）"
+            ],
+            "controls": "相同频率、电压、温度与活动时间窗口；保存工具使用的输入。",
+            "split": "活动轨迹覆盖相同合法任务；空闲和满负载分开。",
+            "metrics": [
+              "工具估计动态/泄漏功率及假设",
+              "估算每任务能量"
+            ],
+            "decision": "无可信活动模型则报告面积-时序，不填功率值；任何功率均标工具估计。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "布线后面积",
+            "definition": "明确 cell area（所有纳入单元面积之和）与 core area（版图核心区域）二者区别。",
+            "unit": "µm²",
+            "aggregation": "同平台逐配置报告；不可跨工艺直接以面积优劣排名。"
+          },
+          {
+            "name": "Worst slack",
+            "definition": "报告指定分析角与约束下最差 setup/hold 时间裕量，负值表示相应约束违反。",
+            "unit": "ns 或库声明单位",
+            "aggregation": "setup/hold 分开，保留完整路径报告；单位先从库/工具确认。"
+          },
+          {
+            "name": "工具估计功率",
+            "definition": "指定活动、频率与工艺条件的估计动态加泄漏功率。",
+            "unit": "mW",
+            "aggregation": "仅有真实分析输入时填写；不用面积代换功率。"
+          }
+        ],
+        "ablations": [
+          "仅改密度与仅改时钟目标分别对照，避免同时改两者解释因果。",
+          "综合阶段与布线后阶段排名并列，解释排序翻转。"
+        ],
+        "pitfalls": [
+          "优化版漏设 I/O delay 或 clock uncertainty，约束变弱。",
+          "失败/超时样本被删掉后只展示可行最优点。",
+          "把总 core area 与 cell area 混用。",
+          "不同运行使用不同 PDK/库角，功率与频率不能比较。"
+        ],
+        "reproducibility": [
+          "RTL、SDC、PDK/库来源和许可、工具/流程提交。",
+          "每次 config、seed、开始/结束时间及退出状态。",
+          "metadata、各阶段 timing/DRC 报告和原始单位。",
+          "失败点及固定基线；活动文件与分析角（若报告功率）。"
+        ],
+        "stopRules": [
+          "同一基线无法连续复现有效结果时，停止搜索，先锁定环境与约束。",
+          "电脑预算无法承担矩阵时缩为 2×2，固定一次改一因子；不靠省略关键约束减负。"
+        ],
+        "deliverables": [
+          "流程版本与约束说明",
+          "可行/失败全部配置表",
+          "面积-时序散点与阶段排序",
+          "工具估计功率的输入清单或未测说明"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -6058,7 +6913,9 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "nuedc",
-        "scipy"
+        "scipy",
+        "kb-eng-ukdale",
+        "kb-eng-nilmtk"
       ],
       "tags": [
         "电气",
@@ -6109,7 +6966,7 @@ window.RESEARCH_DB = {
       "level": "入门",
       "priority": 3,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D2",
       "difficultyProfile": {
         "dimensions": {
@@ -6174,6 +7031,100 @@ window.RESEARCH_DB = {
           "电气 测量 数据集 实验 对照",
           "mechanical system simulation validation "
         ]
+      },
+      "researchDossier": {
+        "question": "低频功率事件检测能否区分真实电器开关、通信缺测与测量异常，误报成本如何随采样周期变化？",
+        "hypotheses": [
+          "固定变化阈值可能把缺测恢复误判为开关事件。",
+          "按电器/日期留出并区分事件类别，可能比随机分点得到更可信评价。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-ukdale",
+            "finding": "总表和分表提供事件对照通道。",
+            "howToUse": "用分表状态变化建立待人工抽查的开关事件参考，保留总表未知事件。",
+            "limitation": "数据并非设备故障标注库，模拟测量异常不得称真实电气故障。"
+          },
+          {
+            "sourceId": "kb-eng-nilmtk",
+            "finding": "数据质量和时间窗口工具可帮助复核对齐。",
+            "howToUse": "分开输出缺测、有效重叠时间及事件抽取规则。",
+            "limitation": "接口版本变动，应冻结依赖；工具输出不替代人工事件语义检查。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "固定功率差分阈值",
+            "implementation": "在训练期用绝对功率变化和最短间隔触发；不插值跨长断档。",
+            "why": "低算力参考，直接展示采样分辨率限制。"
+          },
+          {
+            "name": "稳健中位数/MAD",
+            "implementation": "训练期局部噪声估计，自适应阈值与缺测门控。",
+            "why": "比较噪声适应和缺测保护是否真正降低误报。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "采样×阈值",
+            "variables": "原始低频与 12/30/60 秒重采样，阈值在训练时间选择。",
+            "controls": "同一有效区间、同一事件匹配容差，粗采样容差须事先说明。",
+            "split": "日期连续留出；按住户/电器分层，不按单个采样点随机切。",
+            "metrics": "事件 precision/recall/F1、误报/有效日、延迟/s。",
+            "decision": "若采样过粗无法区分短事件，缩题到可分辨电器，不用容差无限放宽。"
+          },
+          {
+            "name": "测量故障注入",
+            "variables": "注入断档、常值冻结、尖峰和时间戳错位；同时保留真实开关事件。",
+            "controls": "注入强度/位置脚本固定，训练和测试日期独立。",
+            "split": "整故障片段为单位；与真实开关参考两张结果表。",
+            "metrics": "异常检测召回/%、误报/日、恢复识别时间/s。",
+            "decision": "结果只描述人工测量故障；没有设备故障标签时删除真实电气故障识别表述。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "事件 F1",
+            "definition": "在冻结时间容差内，一对一匹配开关事件的 precision 与 recall 调和均值",
+            "unit": "0–1",
+            "aggregation": "逐电器/日，附事件总数与容差"
+          },
+          {
+            "name": "误报强度",
+            "definition": "未匹配触发次数/有效测量时长",
+            "unit": "次/24h 有效时间",
+            "aggregation": "缺测时间不入分母；住户逐项"
+          },
+          {
+            "name": "检测延迟",
+            "definition": "匹配触发时刻减参考事件起点",
+            "unit": "s",
+            "aggregation": "中位数、95 分位；漏检单独计"
+          }
+        ],
+        "ablations": [
+          "关闭缺测门控、关闭 MAD 自适应；比较是否只是牺牲召回降低误报。",
+          "只看绝对功率和增加差分分别报告。"
+        ],
+        "pitfalls": [
+          "缺测填零制造虚假事件；阈值在测试日重选；多触发都算同一个正确事件。",
+          "总表叠加事件不必对应单电器开关；无标注不能把未知事件全判错。"
+        ],
+        "reproducibility": [
+          "事件定义、人工抽查规则、时间容差和采样间隔。",
+          "冻结日期切分、异常注入种子、有效时间掩码和原始触发日志。",
+          "各住户通道映射、物理单位与引用许可。"
+        ],
+        "stopRules": [
+          "无对齐参考或人工抽查失败时先回到数据审计。",
+          "没有实物低压采样条件时交付离线算法，不伪称完成硬件测量。",
+          "仅模拟故障时限定结论为测量数据质量检测。"
+        ],
+        "deliverables": [
+          "事件与异常分离的任务卡；触发回放、误报/日与延迟表。",
+          "小算法可部署资源估算，硬件采样作为另一个待确认阶段。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -6587,7 +7538,8 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "sumo",
-        "qgis"
+        "qgis",
+        "kb-eng-sumo-e2"
       ],
       "tags": [
         "信号配时",
@@ -6637,7 +7589,7 @@ window.RESEARCH_DB = {
       "level": "入门",
       "priority": 3,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D2",
       "difficultyProfile": {
         "dimensions": {
@@ -6703,6 +7655,101 @@ window.RESEARCH_DB = {
           "信号配时 交通仿真 数据集 实验 对照",
           "civil engineering simulation sensitivity validation "
         ]
+      },
+      "researchDossier": {
+        "question": "交叉口配时策略是否同时减少平均延误和极端排队；检测区截断、车流生成与未完成车辆会如何影响结论？",
+        "hypotheses": [
+          "只看已完成车辆平均行程，可能遗漏严重拥堵下滞留车辆。",
+          "有限 E2 检测区会低估回堵，排队结论应对检测范围做敏感性。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-sumo-e2",
+            "finding": "官方定义 E2 队列长度、停止阈值、聚合周期与单位。",
+            "howToUse": "在同一位置/长度设置检测器，统一读取 meanTimeLoss 和 maxJamLengthInMeters 等定义。",
+            "limitation": "检测区外队列不被完整观察；nVehSeen 不是交叉口流量计数。"
+          },
+          {
+            "sourceId": "sumo",
+            "finding": "可在可重复仿真中保持车辆输入并比较配时。",
+            "howToUse": "路网、路线和跟驰参数固定，仅改变信号规则。",
+            "limitation": "合成输入证明的是仿真情景；真实路口需独立流量与几何校验。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "固定周期均分",
+            "implementation": "预先选周期与等分绿灯，安全冲突和相间清空时间固定。",
+            "why": "基本且可解释的参照。"
+          },
+          {
+            "name": "需求比例配时",
+            "implementation": "只从训练需求计算各相位绿灯比；上下限冻结。",
+            "why": "衡量新策略是否只利用了已知需求信息。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "需求与转向",
+            "variables": "低/中/高流量、平衡/主路偏重、转向比例三类；每组合至少 5 个共同种子。",
+            "controls": "同路网、车辆输入、仿真起止、热身、相间清空与跟驰参数。",
+            "split": "完整需求场景留出；不在测试高峰调周期。",
+            "metrics": "每车延误/s、95 分位排队/m、完成率/%、总未完成数/辆。",
+            "decision": "只有延误改善且完成率不下降才继续；严重回堵场景须全部报告。"
+          },
+          {
+            "name": "检测与仿真设置",
+            "variables": "E2 长度 50/100/200m 或不超过道路实际长度；停止阈值/聚合周期敏感性。",
+            "controls": "保持信号策略与车辆输入完全相同。",
+            "split": "同种子配对；场景是评价单位，车辆非独立重复。",
+            "metrics": "最长队列/m、检测区占满时间/%、仿真 teleport 数/辆。",
+            "decision": "检测区持续占满时报告截断，不把有限观测当队列上界；teleport 不应被当作成功通行。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "行程延误",
+            "definition": "相对定义清楚的自由流参考的时间损失；另列未完成车辆",
+            "unit": "s/车",
+            "aggregation": "逐场景、相同种子配对；避免只选完成车辆"
+          },
+          {
+            "name": "队列",
+            "definition": "固定 E2 定义和范围的最长排队，报告检测区占满情况",
+            "unit": "m",
+            "aggregation": "逐进口与场景，95 分位与最大值并列"
+          },
+          {
+            "name": "完成率",
+            "definition": "仿真结束前完成目标行程车辆数/应生成车辆数",
+            "unit": "%",
+            "aggregation": "场景级，附尚未发车与滞留数"
+          }
+        ],
+        "ablations": [
+          "去掉需求自适应；无异常需求与高峰突发分开；检测器长度固定/扩展比较。",
+          "移除信息提前量，确保在线策略不偷看未来流量。"
+        ],
+        "pitfalls": [
+          "生成车辆少于计划车辆却只按已插入车辆统计；回堵靠 teleport 消失。",
+          "不同控制器使用不同跟驰/热身参数；优化测试随机种子。",
+          "E2 计数和平均速度语义当真实线圈计数；只截一段好看的动画。"
+        ],
+        "reproducibility": [
+          "SUMO 版本、net/route/additional/config、冲突相位和安全时间设置。",
+          "需求矩阵、共同种子、热身时长、结束规则与未完成统计。",
+          "检测范围/阈值、原始 XML、图表后处理及失败日志。"
+        ],
+        "stopRules": [
+          "冲突相位或车辆守恒统计未通过时先停配时优化。",
+          "持续 teleport/截断而未解释时不公布精度排名。",
+          "无真实路口数据时只给合成交叉口结论。"
+        ],
+        "deliverables": [
+          "可重复情景包，延误—排队—完成率三指标表。",
+          "逐进口回堵图、检测区截断说明和实际路口还需采集的数据清单。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -7114,7 +8161,9 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "materials",
-        "scipy"
+        "scipy",
+        "kb-eng-matbench",
+        "sklearn-cv"
       ],
       "tags": [
         "材料",
@@ -7165,7 +8214,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 3,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D2",
       "difficultyProfile": {
         "dimensions": {
@@ -7231,6 +8280,101 @@ window.RESEARCH_DB = {
           "材料 性质预测 数据集 实验 对照",
           "materials property prediction uncertainty "
         ]
+      },
+      "researchDossier": {
+        "question": "从化学成分预测实验带隙时，模型在未见化学体系上是否仍优于简单基线，重复化学式和预处理会造成多大虚假优势？",
+        "hypotheses": [
+          "同分布基准成绩未必反映未见元素组合外推。",
+          "训练中位数/成分描述符基线可能已经解释大部分效果，复杂模型须证明增益。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-matbench",
+            "finding": "作者元数据确认 matbench_expt_gap 是成分→实验带隙回归，单位 eV。",
+            "howToUse": "限定同一任务与输入，建立官方协议对照和另命名的化学体系留出。",
+            "limitation": "实验带隙和 PBE/结构任务不同；该任务不含足够结构输入去公平复现结构图网络。"
+          },
+          {
+            "sourceId": "sklearn-cv",
+            "finding": "分组与训练折内处理有助于防止重复材料泄漏。",
+            "howToUse": "相同/等价化学式识别后设置组，缩放/填缺/特征选择在训练部分拟合。",
+            "limitation": "自定义化学体系划分不是官方榜单协议。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "训练中位数",
+            "implementation": "仅使用训练目标中位数预测；全数据中位数禁止。",
+            "why": "给出材料任务必须超过的零特征参考。"
+          },
+          {
+            "name": "成分描述符岭回归",
+            "implementation": "用统一描述符，训练内选择正则化；再比较随机森林。",
+            "why": "结构透明、预算可控，能检验非线性是否必要。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "标准协议与化学体系留出",
+            "variables": "官方任务折按包核验；另按元素集合/化学体系分组留出。",
+            "controls": "相同数据清理、单位、训练预算和描述符。",
+            "split": "官方协议结果单表；自定义外推协议单表，各自在训练内调参。",
+            "metrics": "MAE/eV、RMSE/eV、每化学体系样本数、最坏分组 MAE/eV。",
+            "decision": "标准成绩改善而体系留出退化时称同分布改善，不宣称新材料发现。"
+          },
+          {
+            "name": "学习曲线与重复审计",
+            "variables": "训练预算 10/25/50/100%；重复化学式归组前后检查。",
+            "controls": "同外层测试、随机种子与特征管线。",
+            "split": "训练部分子采样，以材料体系为评价分组。",
+            "metrics": "MAE/eV、训练时间/s、预测时间/ms/样本、重复交叠数。",
+            "decision": "发现重复跨集合即冻结旧结果并重跑；小预算无增益就缩小模型。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "带隙 MAE",
+            "definition": "实验带隙预测误差绝对均值",
+            "unit": "eV",
+            "aggregation": "外层折及化学体系宏平均；列样本数"
+          },
+          {
+            "name": "带隙 RMSE",
+            "definition": "误差平方均值开方，关注大误差",
+            "unit": "eV",
+            "aggregation": "同一留出集，不更换去异常规则"
+          },
+          {
+            "name": "重复交叠",
+            "definition": "等价化学式或已定义材料组同时出现在训练/测试的数量",
+            "unit": "组",
+            "aggregation": "每次切分，预期应为零或按官方协议明确说明"
+          }
+        ],
+        "ablations": [
+          "去掉元素统计或含量特征；岭回归 vs 森林；不含测试信息的预处理。",
+          "对重复目标矛盾单独审计，不为了降误差私自删测试样本。"
+        ],
+        "pitfalls": [
+          "把 DFT 带隙当实验带隙；成分等价字符串未标准化；泄漏目标派生描述符。",
+          "同一化学式有不同测量条件，简单平均可能抹掉实际差异。",
+          "先看测试误差再决定哪些化学体系算适用域。"
+        ],
+        "reproducibility": [
+          "任务名、原数据版本、单位、化学式规范化和数据许可。",
+          "官方/自定义切分索引、全部管线和搜索预算。",
+          "按材料/体系的预测、误差、描述符及失败解析日志。"
+        ],
+        "stopRules": [
+          "任务标签/单位无法统一时不混数据。",
+          "数据未提供结构时不声称结构模型公平比较。",
+          "外推无改进则将交付定位为可解释筛选与适用域审计。"
+        ],
+        "deliverables": [
+          "任务卡、两类协议比较、学习曲线和误差材料清单。",
+          "可复现基线与成分描述符；待独立实验验证的候选只列为建议。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -8321,7 +9465,9 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "scipy",
-        "mcm"
+        "mcm",
+        "kb-method-beir-paper",
+        "kb-method-trec"
       ],
       "tags": [
         "搜索",
@@ -8372,7 +9518,7 @@ window.RESEARCH_DB = {
       "level": "入门",
       "priority": 3,
       "status": "",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "difficulty": "D2",
       "difficultyProfile": {
         "dimensions": {
@@ -8438,6 +9584,107 @@ window.RESEARCH_DB = {
           "搜索 信息检索 数据集 实验 对照",
           "software system evaluation reproducibility "
         ]
+      },
+      "researchDossier": {
+        "question": "对于固定版本的中文选题语料，字段权重、同义词和 BM25 相比简单字符串匹配，能否提升不同查询意图的前列相关性，并维持可接受延迟？",
+        "hypotheses": [
+          "字段权重可能提升明确题名与技术词查询，但无法保证自然语言问题也改善。",
+          "别名映射可能提高缩写命中，同时造成歧义；需要单独评估。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-method-beir-paper",
+            "finding": "论文摘要将 BM25 作为稳健的比较基线，并报告复杂方法的计算代价。",
+            "howToUse": "设置词项检索基线，同时记录成本，不预设神经检索一定优越。",
+            "limitation": "英文异质基准与本库中文查询不同；原论文结果不能移作本题结论。"
+          },
+          {
+            "sourceId": "kb-method-trec",
+            "finding": "官方目录提供检索任务和评测工具入口。",
+            "howToUse": "以查询、语料和相关性判断组织可复用评测。",
+            "limitation": "必须确认具体任务的评测设置和语料许可。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "二元字符串匹配",
+            "implementation": "固定分词、大小写和中文规范化规则，所有字段同权；明确没有命中时的处理。",
+            "why": "测量字段权重相对于最小可解释系统的收益。"
+          },
+          {
+            "name": "BM25",
+            "implementation": "使用与其他方法相同的语料、分词和开发集；冻结参数并记录实现版本。",
+            "why": "与成熟词项排序方法比较，而不是只和弱方法比较。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "离线相关性评测",
+            "variables": "字段权重、别名开关、排序方法",
+            "controls": "冻结 corpus 版本、分词、K 与标注指南",
+            "split": "先建议准备 60–100 个查询，按题名、技术、专业、方法、来源及无答案分组；同意图近似问题同组分到开发或测试，双人给候选结果标 0/1/2，分歧协商；样本量以预研可行性确认",
+            "metrics": "nDCG@10、MRR@10、Precision@5，按查询组报告",
+            "decision": "开发集选参数后只对保留测试集评估；报告差值及按查询重采样的不确定性，不能只展示成功示例"
+          },
+          {
+            "name": "规模与响应成本",
+            "variables": "语料规模、索引方式",
+            "controls": "同一设备、浏览器和查询清单；区分冷启动与热查询",
+            "split": "相同语料逐级抽样，固定抽样种子；每阶段重复运行",
+            "metrics": "构建时间、索引字节、P50/P95 查询延迟",
+            "decision": "是否超过预先定义的交互预算；规模合成或重复文档须单独注明，不能当新增知识"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "nDCG@10",
+            "definition": "DCG 为前 10 项 (2^相关等级−1)/log2(排名+1) 之和，再除以理想 DCG；没有正相关项的查询单列并说明约定",
+            "unit": "0–1",
+            "aggregation": "逐查询计算后平均，同时分查询类型"
+          },
+          {
+            "name": "Precision@5",
+            "definition": "前 5 项中达到相关性阈值的数量 / 5；不足 5 项是否补零在协议中固定",
+            "unit": "比例",
+            "aggregation": "逐查询平均"
+          },
+          {
+            "name": "MRR@10",
+            "definition": "前 10 项首个相关结果排名的倒数；没有则为 0",
+            "unit": "0–1",
+            "aggregation": "逐查询平均"
+          },
+          {
+            "name": "P95 延迟",
+            "definition": "固定条件下完整查询响应耗时的 95 百分位，包含相同定义的索引查询与排序阶段",
+            "unit": "ms",
+            "aggregation": "报告重复次数、设备与冷/热状态"
+          }
+        ],
+        "ablations": [
+          "去掉标题加权，比较题名查询与自然语言问题的差异。",
+          "关闭同义词展开，统计别名查询的改进与错误命中。",
+          "去掉深度档案字段，评估只在实验文本中存在的查询。"
+        ],
+        "pitfalls": [
+          "相关性标注只覆盖候选池时，Recall 只能相对已判定集合计算，不能宣称全语料真实召回率。",
+          "开发集与测试集查询重复会夸大效果；多名标注者有分歧须保留一致性记录。",
+          "本网站当前为关键词检索；BM25、向量检索及自动回答属于拟议实验，不能把方案写成已实现功能。"
+        ],
+        "reproducibility": [
+          "保存 corpus 校验值、查询 ID、标注指南、qrels、分割清单、代码提交和参数。",
+          "保存每次检索的排名、分数、文档 ID；指标可从原始排名重算。",
+          "保持离线测试集封存；数据或字段变更后创建新基准版本。"
+        ],
+        "stopRules": [
+          "若双人不能稳定判定相关性，先修订研究问题和标注指南，再比较算法。",
+          "若 BM25 已满足精度和速度需求，先完成错误分析，不为模型复杂度增加无依据的范围。"
+        ],
+        "deliverables": [
+          "小型可公开或有授权说明的中文选题检索基准。",
+          "基线和消融的分组指标、失败查询清单及可重跑评测脚本。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -16047,7 +17294,9 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "riscv",
         "ibex",
-        "cocotb"
+        "cocotb",
+        "kb-ic-act4",
+        "kb-ic-rvfi"
       ],
       "tags": [
         "拓展方向",
@@ -16057,7 +17306,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 10,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "ic01",
         "ic03"
@@ -16170,6 +17419,117 @@ window.RESEARCH_DB = {
           "拓展方向 RISC-V 扩展指令 仿真 测试 平台",
           "digital circuit verification benchmark RISC-V 扩展指令"
         ]
+      },
+      "researchDossier": {
+        "question": "自定义定点点积指令接入 RV32I 后，异常、操作数别名与位宽边界是否改变可见架构状态？现行架构测试与自定义指令测试如何互补？",
+        "hypotheses": [
+          "待检验：普通合法操作数随机测试会漏掉 rd=rs1/rs2、x0 和符号扩展边界。",
+          "待检验：只运行标准架构测试不能验证项目自定义语义。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-act4",
+            "finding": "现行框架是 ACT4，旧 RISCOF 已被替代。",
+            "howToUse": "标准指令用实际运行的 ACT 子集；扩展指令另建规格与测试。",
+            "limitation": "ACT 配置和测试版本相关，项目自定义指令需要独立 oracle。"
+          },
+          {
+            "sourceId": "riscv",
+            "finding": "ISA 规范是标准指令行为的依据。",
+            "howToUse": "固定扩展、异常和未对齐处理的版本配置。",
+            "limitation": "自定义 opcode 不能因借用了 RISC-V 名称就视为官方扩展。"
+          },
+          {
+            "sourceId": "kb-ic-rvfi",
+            "finding": "可观察退役后的架构写回。",
+            "howToUse": "差分时按 retire 对齐，不按周期对齐。",
+            "limitation": "必须先检查接口适配正确。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "软件点积",
+            "implementation": "按明确的有符号输入宽度、累加宽度和 wrap/饱和语义实现参考；在小向量上人工核对。",
+            "why": "提供自定义指令的独立语义 oracle。"
+          },
+          {
+            "name": "未扩展核",
+            "implementation": "相同标准程序在原核和扩展核上运行，比较架构 trace。",
+            "why": "检查扩展加入后是否破坏已有指令。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "操作数与异常矩阵",
+            "variables": [
+              "全零、最小/最大值、正负交替",
+              "rd=rs1、rd=rs2、rd=x0",
+              "非法编码、复位或停顿边界"
+            ],
+            "controls": "固定编码表、参考语义、初始状态与构建工具链。",
+            "split": "手算用例校准，独立 seed 保留集；非法编码 oracle 由导师/规格审阅。",
+            "metrics": [
+              "架构状态失配",
+              "首次差异指令索引",
+              "执行周期和软件完整调用周期"
+            ],
+            "decision": "正确性不通过时停止加速比较；分别报告纯指令和数据准备/调用总成本。"
+          },
+          {
+            "name": "标准行为回归",
+            "variables": [
+              "标准 RV32I 子集",
+              "扩展开/关配置"
+            ],
+            "controls": "相同 memory map 与标准能力声明；不把未执行测试记为通过。",
+            "split": "ACT 实际支持测试列表固定；扩展样例不替代标准测试。",
+            "metrics": [
+              "执行测试数、通过/失败/未完成",
+              "标准退役 trace 差异"
+            ],
+            "decision": "报告覆盖边界，不用架构测试通过宣称处理器全面正确。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "语义失配",
+            "definition": "按照已声明整数语义比较写回、PC、内存副作用和异常。",
+            "unit": "条指令/状态差异",
+            "aggregation": "按指令类别与边界列出，不平均成单一分数。"
+          },
+          {
+            "name": "端到端加速",
+            "definition": "同一任务软件完整调用周期 / 扩展完整调用周期。",
+            "unit": "倍",
+            "aggregation": "含数据准备与读回，另列内核周期；仅正确版本参与。"
+          }
+        ],
+        "ablations": [
+          "去掉操作数别名/x0 用例，记录已知问题是否被漏掉。",
+          "只比较最终输出与逐退役比较对照，量测首错定位变化。"
+        ],
+        "pitfalls": [
+          "软件 reference 和 RTL 共用同一错误符号扩展。",
+          "缺少编译器指令编码或 inline assembly 约束，使被测其实是其他代码。",
+          "过多环境假设禁止产生真正异常。"
+        ],
+        "reproducibility": [
+          "opcode/位宽/异常/副作用完整表。",
+          "标准配置和 ACT4、Sail/编译器版本。",
+          "ELF/反汇编与逐退役 trace。",
+          "软件参考、seed、正常与 mutant 结果。"
+        ],
+        "stopRules": [
+          "编码与异常处理未获明确规格时，只验证抽象算术模块，不连接 CPU。",
+          "首批标准测试出现回归时，暂停更多扩展。"
+        ],
+        "deliverables": [
+          "扩展指令语义表",
+          "边界测试集与编码示例",
+          "标准行为回归表",
+          "完整任务成本报告"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -16746,7 +18106,9 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "sklearn-cv",
-        "prereg"
+        "prereg",
+        "kb-method-beir-code",
+        "kb-method-checklist"
       ],
       "tags": [
         "拓展方向",
@@ -16756,7 +18118,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-21",
         "topic-39"
@@ -16865,6 +18227,107 @@ window.RESEARCH_DB = {
           "拓展方向 资料检索 文献 评价 方法",
           "education text analysis research evaluation "
         ]
+      },
+      "researchDossier": {
+        "question": "在固定选题资料中，怎样让每一条回答主张能够追溯到支持它的证据，并在证据不足、过时或冲突时合理拒答？",
+        "hypotheses": [
+          "检索命中相关文档不一定能支持回答中的具体主张。",
+          "证据阈值和拒答机制可能降低错误引用，但会降低回答覆盖率；需要联合评价。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-method-beir-code",
+            "finding": "作者仓库组织检索语料、查询及相关性判断并提供常见检索指标。",
+            "howToUse": "先独立评价证据检索，再评价回答主张支持。",
+            "limitation": "相关性指标不是答案真实性或因果证明。"
+          },
+          {
+            "sourceId": "kb-method-checklist",
+            "finding": "检查清单要求结论与证据、限制和实验细节相符。",
+            "howToUse": "记录证据读取范围、时间和无法支持的结论。",
+            "limitation": "研究检查方法不是学校官方规范，也不能保证模型输出正确。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "纯检索证据列表",
+            "implementation": "展示前 K 文档、实际命中片段、来源和核验日期，不生成额外结论。",
+            "why": "区分检索与生成的独立价值。"
+          },
+          {
+            "name": "有证据阈值的回答",
+            "implementation": "在开发集设置可答判定和拒答规则；如调用模型，冻结版本、提示、检索 K 与生成参数并单列费用。",
+            "why": "衡量引用约束和拒答机制的效果及覆盖损失。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "回答证据审计",
+            "variables": "固定返回与阈值拒答；生成组件仅作单独变量",
+            "controls": "同一 corpus、query、检索结果；人工支持判定指南",
+            "split": "建议从 40–60 个可答、无答案、跨时间、来源冲突的问题开始预研；同意图问题分组留出测试；两位审阅者逐主张核对所引片段",
+            "metrics": "主张支持率、错误引用率、可答覆盖率、无答案误答率",
+            "decision": "阈值仅开发集选择；同时报告支持和覆盖，不能删除拒答问题美化质量"
+          },
+          {
+            "name": "证据扰动测试",
+            "variables": "移除关键证据、注入过时但相关材料、降低检索 K",
+            "controls": "问题和其余语料固定，变动单独登记",
+            "split": "对保留问题建立成对扰动版本，同对不跨开发测试划分",
+            "metrics": "支持率变化、拒答变化、时间冲突识别",
+            "decision": "证据缺失后仍给确定结论则记录为失败；不得以语气流畅代替证据判断"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "主张支持率",
+            "definition": "得到引用材料支持的可核验主张数 / 全部可核验主张数；没有主张记为不适用，不计满分",
+            "unit": "比例",
+            "aggregation": "逐答案与总体主张加权两种口径分列"
+          },
+          {
+            "name": "错误引用率",
+            "definition": "不存在或不能支持所附主张的引用数 / 全部引用数；重复引用及无引用如何计入需固定",
+            "unit": "比例",
+            "aggregation": "逐回答统计，零分母单列"
+          },
+          {
+            "name": "无答案误答率",
+            "definition": "金标准判为证据不足的问题中，仍给出确定答案的问题数 / 证据不足问题数",
+            "unit": "比例",
+            "aggregation": "按无答案、冲突、过时分组"
+          },
+          {
+            "name": "可答覆盖率",
+            "definition": "金标准可答问题中实际提供有效回答的数量 / 金标准可答数量",
+            "unit": "比例",
+            "aggregation": "与支持率和误答率同时报告"
+          }
+        ],
+        "ablations": [
+          "关闭拒答，只保留相同检索和回答流程，测覆盖与误答的代价。",
+          "去掉来源日期提示，检查跨时间问题失败。",
+          "逐级降低 K，定位关键证据缺失的影响。"
+        ],
+        "pitfalls": [
+          "引用存在不等于支持主张；人工审阅时逐条核对上下文和时间。",
+          "观察性材料不能支持因果式回答，题名公示不能替代论文全文。",
+          "生成模型可能不确定，同配置重复执行并记录变化；系统提示不得暴露私人报告。"
+        ],
+        "reproducibility": [
+          "保存问题 ID、答案可答性标签、证据片段、来源版本和逐主张审计表。",
+          "记录检索与生成组件版本、参数、原始输出、耗时及费用；纯检索与生成阶段指标分列。",
+          "若不可公开原始资料，给出授权获取方式和可公开最小样例。"
+        ],
+        "stopRules": [
+          "无合法全文或人工审阅资源时，收敛为引用检索和证据列表，不声称完成自动答案验证。",
+          "若拒答提高支持率但覆盖不足，报告取舍并保留纯检索入口，不在测试集反复调阈值。"
+        ],
+        "deliverables": [
+          "可答与不可答问题集、证据审计表和支持率/覆盖率比较。",
+          "记录引用跳转、版本与拒答原因的原型；模型方案未实施时明确注明。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -17028,7 +18491,8 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "ros",
         "ortools",
-        "scipy"
+        "scipy",
+        "kb-eng-steering"
       ],
       "tags": [
         "拓展方向",
@@ -17038,7 +18502,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-05"
       ],
@@ -17149,6 +18613,107 @@ window.RESEARCH_DB = {
           "拓展方向 移动设备路径规划 数据集 实验 对照",
           "mechanical system simulation validation "
         ]
+      },
+      "researchDossier": {
+        "question": "移动设备在加入转向饱和、观测误差和重规划延迟后，几何可达路径还能否由物理运动模型执行？",
+        "hypotheses": [
+          "格点最短路径可能含不可执行急转弯，路径长度优不等于完成率高。",
+          "提高重规划频率可能降低几何偏差，但延迟和噪声可能使控制更抖动。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-steering",
+            "finding": "作者示例给出非线性转向与转角饱和、线性化及观测器。",
+            "howToUse": "选择转向车而非差速车任务时，复核轴距/速度/转角单位，接入路径追踪环节。",
+            "limitation": "模型是教学抽象，缺少轮胎侧滑和真实碰撞验证；不能推广为自动驾驶安全结论。"
+          },
+          {
+            "sourceId": "ros",
+            "finding": "生态索引可用于选择后续消息与仿真工具。",
+            "howToUse": "最小二维仿真先通过，再决定是否用 ROS 做接口。",
+            "limitation": "完整机器人栈联调不是本小基准必选条件。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "几何路径+简单追踪",
+            "implementation": "A* 几何路径配统一跟踪控制，速度固定，保持同一车辆模型。",
+            "why": "展示规划/控制接口是否遗漏运动约束。"
+          },
+          {
+            "name": "转向约束路径+统一追踪",
+            "implementation": "在状态含朝向、最小曲率约束的图上规划，追踪器不随方法更换。",
+            "why": "把规划收益与控制器收益分离。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "几何×动力学",
+            "variables": "窄通道/弯道/开放区地图；速度低/中/高，转角上限与轴距在模型范围内扰动。",
+            "controls": "同起终点、障碍、控制器、时间步和碰撞几何。",
+            "split": "训练地图选参数；整地图与任务留出，至少 10 个配对起终点。",
+            "metrics": "成功率/%、碰撞/任务、路径长度/m、跟踪 RMSE/m、时间/s。",
+            "decision": "路径短但不可执行时保留约束规划；评价所有任务含失败，不只播放成功。"
+          },
+          {
+            "name": "噪声×延迟×更新频率",
+            "variables": "定位噪声 0/0.05/0.2m、重规划延迟 0/100/300ms 属模拟；更新率三档。",
+            "controls": "同障碍脚本和随机种子；延迟真实施加，不只计求解时间。",
+            "split": "完整动态任务留出；调参地图与评价地图分开。",
+            "metrics": "碰撞率/%、超时率/%、95 分位控制延迟/ms、转角变化/rad。",
+            "decision": "若延迟/噪声下明显失稳则限制速度或范围，仿真最优不转称硬件可靠。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "任务成功率",
+            "definition": "规定时限内无碰撞进入终点位置/朝向容差的任务数占比",
+            "unit": "%",
+            "aggregation": "按地图与扰动分层，附完整任务数"
+          },
+          {
+            "name": "跟踪 RMSE",
+            "definition": "采样时刻设备参考点到目标路径的横向距离均方根",
+            "unit": "m",
+            "aggregation": "逐任务；失败任务的有效轨迹与失败原因并列"
+          },
+          {
+            "name": "规划/控制延迟",
+            "definition": "规划与控制每次计算及人为通讯延迟的实际总耗时",
+            "unit": "ms",
+            "aggregation": "中位数和95分位，硬件/模拟延迟分开"
+          },
+          {
+            "name": "控制变化",
+            "definition": "相邻采样转角变化绝对和或最大值，定义和采样率固定",
+            "unit": "rad 或 rad/s",
+            "aggregation": "逐任务；平滑不作为安全证明"
+          }
+        ],
+        "ablations": [
+          "移除转角饱和作失败对照；去掉观测器或假设真值定位比较。",
+          "无动态障碍 vs 同脚本动态障碍；仅调控制器和仅改规划器分别报告。"
+        ],
+        "pitfalls": [
+          "轨迹中心点无碰撞但车身边角穿障碍；秒/毫秒延迟和转角度/弧度混用。",
+          "不同规划器更换控制器/速度；把碰撞失败任务从平均长度中删除。",
+          "车辆转向模型与差速机器人公式混用，绕过真实运动约束。"
+        ],
+        "reproducibility": [
+          "地图、设备轮廓、轴距、速度/转角上限、积分步长和终点容差。",
+          "障碍脚本、噪声/延迟种子、调参/测试地图及起终点表。",
+          "轨迹/控制日志、碰撞判据、回放与所有失败任务。"
+        ],
+        "stopRules": [
+          "碰撞几何或模型单位无法通过简单直行/转弯预检时先停动态规划。",
+          "几何路径无法追踪时先收窄速度和曲率，不直接加复杂模型。",
+          "未进行实物试验则只交付离线仿真，不声称实际机器人安全。"
+        ],
+        "deliverables": [
+          "规划—控制闭环仿真，完整任务成功/碰撞/延迟表。",
+          "运动约束失效回放、参数边界和后续实物试验接口清单。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -17448,7 +19013,8 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "pybamm",
-        "scipy"
+        "scipy",
+        "kb-eng-calce"
       ],
       "tags": [
         "拓展方向",
@@ -17458,7 +19024,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-15"
       ],
@@ -17566,6 +19132,101 @@ window.RESEARCH_DB = {
           "拓展方向 电池模型参数识别 数据集 实验 对照",
           "materials property prediction uncertainty "
         ]
+      },
+      "researchDossier": {
+        "question": "一个电芯的动态电压能否唯一确定 R0/R1/C1，哪些参数只能共同识别，增加模型阶数是否真的改善未见工况？",
+        "hypotheses": [
+          "多组 RC 参数可能在拟合输入上误差相近，但未见工况偏差不同。",
+          "参数正值与时间常数边界可能改善稳定性，增阶不一定改善可辨识性。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-calce",
+            "finding": "同型号不同动态输入允许识别/验证分离。",
+            "howToUse": "固定温度、型号与 SOC 区间，从 DST 拟合，在另一完整输入上检验电压。",
+            "limitation": "必须下载后核对字段、时间步和阶段；不同电芯型号不能当重复试验。"
+          },
+          {
+            "sourceId": "pybamm",
+            "finding": "物理仿真为参数识别提供后续模型选择。",
+            "howToUse": "先在低阶等效电路证明单位、参数边界和可辨识性，再考虑物理模型。",
+            "limitation": "默认参数不是被测电芯真值；低阶拟合也不等于恢复电化学机制。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "R0 模型",
+            "implementation": "OCV−I×R0，训练识别 R0，明确 OCV 和 SOC 输入来源。",
+            "why": "确认动态极化是否提供超过静态阻抗的解释。"
+          },
+          {
+            "name": "一阶 RC",
+            "implementation": "识别正值 R0/R1/C1，多起点约束最小二乘，记录时间常数 τ=R1C1。",
+            "why": "先衡量最小动态模型和参数相关性。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "模型阶数×输入激励",
+            "variables": "R0/1RC/2RC；同温度同 SOC 覆盖下识别，至少 10 个参数初值。",
+            "controls": "同 OCV、噪声假设、识别段和优化预算。",
+            "split": "完整 DST 识别，FUDS 或 US06 验证；避免窗口切分泄漏。",
+            "metrics": "拟合/验证电压 RMSE/mV、参数变异系数/%、条件数/无量纲。",
+            "decision": "增阶验证无改进且参数不稳定则保留低阶，报告可辨识组合而非每个参数真值。"
+          },
+          {
+            "name": "噪声与激励不足",
+            "variables": "电压扰动 0/1/5mV 属模拟；识别段长度 25/50/100%，保留完整验证。",
+            "controls": "同随机种子和优化边界，数据真实时间步不重排。",
+            "split": "按电芯工况为独立单元；时间相关残差用块 bootstrap。",
+            "metrics": "参数区间、τ/s 区间、外推 RMSE/mV。",
+            "decision": "区间触碰边界或出现多组同样好解时停物理解释，转向辨识实验设计。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "电压 RMSE",
+            "definition": "端电压拟合/验证残差平方均值开方",
+            "unit": "mV",
+            "aggregation": "完整输入及电流突变分段"
+          },
+          {
+            "name": "参数稳定性",
+            "definition": "多初值/重采样得到的参数分布、相对标准差",
+            "unit": "% 或参数原单位",
+            "aggregation": "每参数与 τ 分列，不只报单次最优"
+          },
+          {
+            "name": "辨识条件数",
+            "definition": "标准化敏感度矩阵奇异值比；奇异列需标明",
+            "unit": "无量纲",
+            "aggregation": "给计算位置、尺度和参数变换"
+          }
+        ],
+        "ablations": [
+          "取消正值约束只作失效审计；固定 OCV vs 同时拟合 OCV 分开。",
+          "移除高电流变化片段检验激励不足；拟合 τ 与直接拟合 C1 参数化比较。"
+        ],
+        "pitfalls": [
+          "OCV/SOC 未知却将残差全部归因 RC；缺少初值导致瞬态补偿伪装参数。",
+          "参数单位电阻 Ω、电容 F、时间 s 不统一；独立点 bootstrap 忽略时间相关。",
+          "模型拟合参数不直接等于真实电芯电化学测量。"
+        ],
+        "reproducibility": [
+          "型号、温度、阶段、OCV 来源、时间步和容量假设。",
+          "方程离散化、参数边界/尺度、初值清单和求解容差。",
+          "识别/验证原始预测、多解参数表、残差相关图。"
+        ],
+        "stopRules": [
+          "输入激励不足或 Jacobian 近奇异时不报唯一参数。",
+          "二阶模型违反约束或验证变差时撤回增阶。",
+          "没有可信电芯参数条件时不强行与默认 PyBaMM 参数做性能归因。"
+        ],
+        "deliverables": [
+          "可辨识性报告、低阶模型、参数区间和完整验证工况结果。",
+          "一页需要补充什么激励/观测才能继续的实验设计。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -17999,7 +19660,8 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "energy",
-        "pymoo"
+        "pymoo",
+        "kb-eng-bdg2"
       ],
       "tags": [
         "拓展方向",
@@ -18009,7 +19671,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-10"
       ],
@@ -18117,6 +19779,107 @@ window.RESEARCH_DB = {
           "拓展方向 建筑遮阳、能耗 数据集 实验 对照",
           "civil engineering simulation sensitivity validation "
         ]
+      },
+      "researchDossier": {
+        "question": "建筑遮阳方案在天气、占用与设备日程变化下的节能排序是否稳健，实测用能能支持哪些校准而不能支持哪些因果结论？",
+        "hypotheses": [
+          "单一典型日/固定日程的最优遮阳可能在其他季节或占用条件下退化。",
+          "仅凭总表用能相关性不足以识别遮阳的因果贡献。"
+        ],
+        "literature": [
+          {
+            "sourceId": "energy",
+            "finding": "EnergyPlus 文档提供建筑能源仿真方法入口。",
+            "howToUse": "建立构造、窗、遮阳、天气、设备日程明确的最小模型，先查能量和温度输出单位。",
+            "limitation": "本轮未运行模型；自建假设不可冒充实测校准。"
+          },
+          {
+            "sourceId": "kb-eng-bdg2",
+            "finding": "作者有小时表计、天气和建筑元数据。",
+            "howToUse": "用来学习计量边界、时间区、缺测与跨建筑验证；只使用与问题物理量相符表计。",
+            "limitation": "缺少具体遮阳/构造和设备配置时不能把 BDG2 建筑当已知遮阳实验组。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "无遮阳/固定遮阳",
+            "implementation": "同一假设建筑和 HVAC、天气、占用日程，比较无遮阳与简单固定遮阳。",
+            "why": "为复杂可动遮阳提供可审查基准。"
+          },
+          {
+            "name": "可解释规则",
+            "implementation": "仅用当时太阳条件/室温触发规则，参数训练情景选定。",
+            "why": "防止优化策略偷偷获得全天未来天气或更多舒适容忍。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "方案×天气×日程",
+            "variables": "遮阳深度/角度小网格；至少两个天气情景和低/常规/高占用日程，场景来源明示。",
+            "controls": "同玻璃/围护结构、设定温度、设备功率和舒适指标。",
+            "split": "一批场景优化、另一批冻结验证；建筑假设不随策略改变。",
+            "metrics": "HVAC 电能/kWh、超温小时/h、峰值功率/kW、Pareto 方案数。",
+            "decision": "节能与超温必须同时报告；排序不稳则给适用情景而非唯一最优。"
+          },
+          {
+            "name": "观测与校准边界",
+            "variables": "若有对应实测，用能/天气按时间校准；无对应构造只做 BDG2 预测练习并分开命名。",
+            "controls": "同表计种类、时间区和有效时长；参数仅在训练期估计。",
+            "split": "整月份或季节留出；跨建筑任务单独报告。",
+            "metrics": "表计 MAE/kWh、偏差/%、覆盖率/%、仿真收敛和能量检查。",
+            "decision": "无真实构造/设备边界不得以低表计误差声称遮阳因果验证；改交付合成稳健性研究。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "周期 HVAC 用电",
+            "definition": "同一计量边界和周期的 HVAC 电能积分/读数",
+            "unit": "kWh/周期",
+            "aggregation": "逐天气×日程情景；不混整栋总表"
+          },
+          {
+            "name": "舒适超限时间",
+            "definition": "按预定室内操作温度或其他明确指标范围，统计有人时超限时长",
+            "unit": "h",
+            "aggregation": "逐区域/情景；这是研究阈值，不能冒充适用规范"
+          },
+          {
+            "name": "峰值功率",
+            "definition": "固定报告间隔内的 HVAC 峰功率",
+            "unit": "kW",
+            "aggregation": "逐情景；报告间隔一致"
+          },
+          {
+            "name": "实测覆盖率",
+            "definition": "表计/天气有效对齐小时数/应有小时数",
+            "unit": "%",
+            "aggregation": "每表计每月份，缺测处理单列"
+          }
+        ],
+        "ablations": [
+          "只优化能耗与加入舒适约束分别比较；固定与扰动占用日程比较。",
+          "取消遮阳但保留控制规则；避免新策略只是调高制冷设定温度。"
+        ],
+        "pitfalls": [
+          "把全楼电表与 HVAC 子系统仿真直接对齐；天气时区错位；读数能量当功率。",
+          "没有建筑构造却将数据库建筑强行映射校园楼。",
+          "由表计预测精度或季节相关性推断遮阳因果；看测试天气后重设参数。"
+        ],
+        "reproducibility": [
+          "IDF/天气文件、EnergyPlus 版本、几何、材料、HVAC、日程与单位。",
+          "情景生成及优化/验证切分，舒适阈值出处或研究假设。",
+          "原始输出、失败模型、时间对齐/缺测审计与所有 Pareto 候选。"
+        ],
+        "stopRules": [
+          "建筑几何/能源输出不自洽时先停优化。",
+          "无法确认真实构造和计量边界时撤回地点级校准结论。",
+          "节能只来自舒适恶化或改变用能边界时视为方案不成立。"
+        ],
+        "deliverables": [
+          "仿真模型、天气×日程稳健性结果和舒适—节能权衡图。",
+          "观测需求/构造缺项清单；数据预测练习与遮阳因果问题分开归档。"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -18555,7 +20318,8 @@ window.RESEARCH_DB = {
         "cattle",
         "calf-paper",
         "sklearn-cv",
-        "cmsis"
+        "cmsis",
+        "kb-inter-actbecalf"
       ],
       "tags": [
         "拓展方向",
@@ -18565,7 +20329,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 10,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-53",
         "topic-54"
@@ -18685,6 +20449,95 @@ window.RESEARCH_DB = {
           "拓展方向 牛行为识别 数据集 实验 对照",
           "agriculture biological data validation "
         ]
+      },
+      "researchDossier": {
+        "question": "颈部加速度模型面对从未见过的犊牛时，拒绝低置信度片段能否以有限覆盖损失降低错误？",
+        "hypotheses": [
+          "跨个体误差高于随机窗口测试；随机窗口结果只作为泄漏对照。",
+          "训练内校准后的拒绝机制可能降低已接受片段错误，但必须报告覆盖率。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-inter-actbecalf",
+            "finding": "数据保留犊牛标识及连续行为片段，并附原作者分组与特征代码。",
+            "howToUse": "先复现作者一种标签映射，再新增留个体与选择性分类评价。",
+            "limitation": "原作者网页分数受映射和切分协议影响；成年牛 Precision Beef 与犊牛标签不能直接互评。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "多数类与行为先验",
+            "implementation": "只在训练个体估计各类先验，预测最多类并计算宏F1。",
+            "why": "识别类别不平衡造成的假高分。"
+          },
+          {
+            "name": "特征＋随机森林",
+            "implementation": "窗口计算轴向均值、标准差与模长特征；训练内调参，冻结测试个体。",
+            "why": "与复杂时序模型比较而保持可解释的低成本起点。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "窗口与个体隔离",
+            "variables": "窗口2/5/10秒；固定候选行为类别",
+            "controls": "先按 calfid 分组，窗口不得跨 segId；标准化只拟合训练组",
+            "split": "外层留一犊牛；内层按个体调参；另随机窗口作泄漏演示",
+            "metrics": "逐犊牛宏F1、平衡准确率、混淆矩阵",
+            "decision": "若结果仅随机切分好，结论转为泄漏审计，不宣称泛化。"
+          },
+          {
+            "name": "校准与拒绝",
+            "variables": "无校准/训练内校准；预设覆盖90%/80%",
+            "controls": "拒绝阈值在验证个体选，不看测试标签",
+            "split": "沿同一外层个体划分",
+            "metrics": "接受片段错误率、覆盖率、每动物指标",
+            "decision": "只有成对误差下降且覆盖可接受才保留拒绝方案。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "宏F1",
+            "definition": "各行为F1等权平均；缺失类别规则提前固定",
+            "unit": "0–1",
+            "aggregation": "先每犊牛计算，再给中位数、范围与以动物为单位的区间"
+          },
+          {
+            "name": "覆盖率",
+            "definition": "接受片段数/可评价片段数",
+            "unit": "%",
+            "aggregation": "逐个体报告，另按原始时间加权汇总"
+          },
+          {
+            "name": "选择性错误率",
+            "definition": "接受片段中预测错误数/接受片段数",
+            "unit": "%",
+            "aggregation": "与同覆盖的基线配对比较"
+          }
+        ],
+        "ablations": [
+          "去除姿态方向特征，检查佩戴方向捷径。",
+          "将重叠窗口与不重叠窗口分开评价，避免独立样本幻觉。"
+        ],
+        "pitfalls": [
+          "同一动物相邻窗口进入不同集合。",
+          "用行为段边界构造特征等于借用未来标注；部署阶段应只用传感输入。",
+          "低频行为样本少时宏F1区间可能很宽；不得合并稀有类而不公开映射。"
+        ],
+        "reproducibility": [
+          "保存数据版本、哈希、许可检查结果。",
+          "公布动物清单、标签映射、窗口步长、随机种子、内外层分组。",
+          "保存每片段预测、置信度、拒绝决策和每犊牛聚合脚本。"
+        ],
+        "stopRules": [
+          "数据个体字段不完整或同一片段无法隔离时停止泛化主张，先修复元数据。",
+          "许可证不明时不打包再分发数据/代码，保留入口与自主实现。"
+        ],
+        "deliverables": [
+          "跨个体复现报告",
+          "误判与拒绝片段册",
+          "动物级风险—覆盖曲线"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -18827,8 +20680,8 @@ window.RESEARCH_DB = {
     },
     {
       "id": "advanced-22",
-      "title": "食品质量预测的批次漂移与解释稳定性",
-      "summary": "研究食品理化指标模型在来源或批次变化时的表现，并检查特征解释是否随数据划分改变。",
+      "title": "食品质量预测的合成漂移与解释稳定性",
+      "summary": "以公开理化数据研究解释稳定性和人为漂移压力；真实跨批次验证需另有可靠批次元数据。",
       "type": "topic",
       "majors": [
         "m49",
@@ -18842,7 +20695,8 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "wine",
         "sklearn-cv",
-        "statsmodels"
+        "statsmodels",
+        "kb-inter-doe"
       ],
       "tags": [
         "拓展方向",
@@ -18852,7 +20706,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-49"
       ],
@@ -18961,6 +20815,101 @@ window.RESEARCH_DB = {
           "拓展方向 食品质量预测 数据集 实验 对照",
           "agriculture biological data validation "
         ]
+      },
+      "researchDossier": {
+        "question": "在没有真实批次标识的 Wine Quality 上，解释稳定性与人为漂移压力测试能回答哪些问题，哪些不能回答？",
+        "hypotheses": [
+          "测试误差相近的模型，其特征解释可能随训练重采样改变。",
+          "人为改变协变量分布后的性能仅表示所设压力情景，不证明真实批次泛化。"
+        ],
+        "literature": [
+          {
+            "sourceId": "wine",
+            "finding": "现有 Wine Quality 理化特征与评分可作为公开基准；本题先核对批次字段。",
+            "howToUse": "使用现有数据复现解释稳定性；缺真实批次时把标题结论限定为合成漂移。",
+            "limitation": "不能依据行号、评分或聚类结果虚构生产批次。"
+          },
+          {
+            "sourceId": "kb-inter-doe",
+            "finding": "区组可以用于显式记录的干扰因素。",
+            "howToUse": "如果导师另有真实实验记录，建立制备批次与技术重复字典。",
+            "limitation": "区组设计方法不能补回旧数据中缺失的批次信息。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "中位数预测",
+            "implementation": "训练评分中位数作为所有样本预测。",
+            "why": "给MAE提供无特征下界参照。"
+          },
+          {
+            "name": "岭回归与随机森林",
+            "implementation": "训练内预处理、交叉验证；非线性方法仅一类以控制成本。",
+            "why": "检验复杂模型收益和解释变动。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "解释稳定性",
+            "variables": "训练数据多次重采样；同一冻结测试集",
+            "controls": "固定特征与超参搜索空间",
+            "split": "训练内重采样；真实批次存在时改用整批重采样",
+            "metrics": "MAE、置换重要性排序相关、符号稳定率",
+            "decision": "若预测收益小而解释不稳，优先简化模型。"
+          },
+          {
+            "name": "合成漂移压力",
+            "variables": "只对测试副本施加预先声明的特征偏移/缺失比例",
+            "controls": "保留未改动测试副本；响应标签不擅自修改",
+            "split": "压力情景独立列示，不能称批次外测试",
+            "metrics": "误差增量与区间、缺失率",
+            "decision": "结果用于定位脆弱性，不作新批次准确率保证。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "MAE",
+            "definition": "平均绝对评分误差",
+            "unit": "评分单位",
+            "aggregation": "测试样本平均；真实批次数据时另逐批报告"
+          },
+          {
+            "name": "解释排序相关",
+            "definition": "各重采样重要性排序与基准排序的秩相关",
+            "unit": "−1–1",
+            "aggregation": "展示所有重采样分布"
+          },
+          {
+            "name": "误差增量",
+            "definition": "压力情景MAE−原测试MAE",
+            "unit": "评分单位",
+            "aggregation": "按情景与模型配对"
+          }
+        ],
+        "ablations": [
+          "去除最重要单特征并重新训练，检验冗余与捷径。",
+          "不同尺度标准化只放训练管线，比较模型系数解释变化。"
+        ],
+        "pitfalls": [
+          "把红酒/白酒子数据当真实生产批次。",
+          "测试集反复挑选漂移幅度或特征后仅报告最好结果。",
+          "置换重要性是预测依赖，不证明理化因素造成质量改变。"
+        ],
+        "reproducibility": [
+          "附数据字典与缺少批次标识的审计结论。",
+          "保存冻结测试ID、训练重采样种子、漂移参数及未修改基线。",
+          "区分实际数据事实、合成情景和因果未知。"
+        ],
+        "stopRules": [
+          "若主任务要求真实批次外结论但无法获得批次元数据，改题为稳定性研究或停做该主张。",
+          "真实实验批次只有一个时不估计批次外泛化。"
+        ],
+        "deliverables": [
+          "解释稳定性图册",
+          "合成漂移情景表",
+          "真实批次数据申请清单"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -19261,7 +21210,8 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "prereg",
         "statsmodels",
-        "ad"
+        "ad",
+        "kb-inter-tlx"
       ],
       "tags": [
         "拓展方向",
@@ -19271,7 +21221,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-48",
         "topic-31"
@@ -19382,6 +21332,101 @@ window.RESEARCH_DB = {
           "拓展方向 文旅服务信息呈现 文献 评价 方法",
           "survey sampling consumer behavior reproducibility "
         ]
+      },
+      "researchDossier": {
+        "question": "内容等量的图形化与文字文旅路线说明，能否提高成人在限定查询任务中的准确率，并改变主观负担？",
+        "hypotheses": [
+          "图形化材料可能提高特定路线信息检索正确率，但不一定减少所有任务时间。",
+          "主观负担与正确率是不同结果，应分开检验。"
+        ],
+        "literature": [
+          {
+            "sourceId": "prereg",
+            "finding": "预注册用于提前界定主要结果和分析。",
+            "howToUse": "冻结材料、主要任务成功指标、排除与样本计划。",
+            "limitation": "预注册不自动消除便利抽样或执行偏差。"
+          },
+          {
+            "sourceId": "kb-inter-tlx",
+            "finding": "TLX测量主观工作负担。",
+            "howToUse": "用固定量表补充客观任务记录，事先声明计分。",
+            "limitation": "不能仅凭负担分数推断旅游决策质量。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "内容匹配文字版",
+            "implementation": "固定路线、时间、价格与地名，用清晰文字排版。",
+            "why": "避免信息量与设计版本混杂。"
+          },
+          {
+            "name": "图形版",
+            "implementation": "相同事实改用结构图，原型功能与加载速度一致。",
+            "why": "只比较信息组织形式。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "成人随机组间任务",
+            "variables": "文字/图形；预设3个查询任务",
+            "controls": "同事实、同设备、同说明；不让参与者先看另一版",
+            "split": "人作为分配和分析单位；先做独立预检再正式冻结",
+            "metrics": "任务成功率、时间、TLX",
+            "decision": "按预设主要指标与效应区间判断，不按满意度选胜者。"
+          },
+          {
+            "name": "材料与任务稳健性",
+            "variables": "第二条同难度路线；交换任务顺序",
+            "controls": "新任务内容与顺序方案在研究前冻结",
+            "split": "与主试验分开标注为复制或探索",
+            "metrics": "成功差、时间比、错误类型",
+            "decision": "若收益只在一种材料出现，结论限于该材料。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "任务成功率",
+            "definition": "预先规定完成标准的成功人数/参与人数",
+            "unit": "%",
+            "aggregation": "按人聚合后分组；给差值与区间"
+          },
+          {
+            "name": "完成时间",
+            "definition": "从任务开始到提交的秒数；超时规则提前定",
+            "unit": "秒",
+            "aggregation": "报告中位数和分布，成功与失败分别列示"
+          },
+          {
+            "name": "TLX",
+            "definition": "按预先选择的加权或Raw方案计算",
+            "unit": "0–100分",
+            "aggregation": "按人、组报告各维度与总分"
+          }
+        ],
+        "ablations": [
+          "删除装饰元素，保持相同信息，检查收益是否来自层级。",
+          "比较熟悉佛山与不熟悉者，作为预先声明的探索。"
+        ],
+        "pitfalls": [
+          "声称方便招募大学生能代表全部佛山游客。",
+          "按正确者计算时间而隐藏失败者，造成选择偏差。",
+          "试验后更改题目或排除慢参与者来提升显著性。"
+        ],
+        "reproducibility": [
+          "公开两版材料哈希和任务评分规则。",
+          "保存分配种子、招募流程、剔除原因、匿名任务日志。",
+          "公开预注册偏离表，标注主要与探索分析。"
+        ],
+        "stopRules": [
+          "材料事实不一致或其中一版不可操作时先修复再招募。",
+          "预检显示任务理解不一致时重设任务，预检样本不合并正式结果。"
+        ],
+        "deliverables": [
+          "两版可复用文旅原型",
+          "任务评价与错误编码册",
+          "成人样本效果及外推边界报告"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -19401,7 +21446,8 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "statsmodels",
         "prereg",
-        "stats"
+        "stats",
+        "kb-inter-acs"
       ],
       "tags": [
         "研究挑战",
@@ -19411,7 +21457,7 @@ window.RESEARCH_DB = {
       "level": "导师协作",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-44",
         "topic-42"
@@ -19523,6 +21569,101 @@ window.RESEARCH_DB = {
           "研究挑战 企业数字工具采用 文献 评价 方法",
           "survey sampling consumer behavior reproducibility "
         ]
+      },
+      "researchDossier": {
+        "question": "企业采用数字工具后的经营指标变化，在可获得的数据里能否与自选择、同期市场变化和失访区分？",
+        "hypotheses": [
+          "采用企业在采用前可能已有不同趋势；简单前后对比可能混合这些差异。",
+          "缺少可信对照和前期记录时，只能形成描述性关联。"
+        ],
+        "literature": [
+          {
+            "sourceId": "prereg",
+            "finding": "预先写分析问题可减少结果驱动的选择。",
+            "howToUse": "冻结采用定义、主要经营指标、时间窗口和识别边界。",
+            "limitation": "注册方案不提供自然实验或消除未观测混杂。"
+          },
+          {
+            "sourceId": "kb-inter-acs",
+            "finding": "调查权重和对象口径需与统计目标一致。",
+            "howToUse": "借鉴样本纳入、非应答与加权审计；不把美国个人调查套作企业数据。",
+            "limitation": "ACS本身不是企业数字采用面板，不能用其支持本题因果结论。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "描述性趋势",
+            "implementation": "画各企业采用前后原始指标并展示缺失；先不做因果措辞。",
+            "why": "暴露数据可用性、提前趋势和异质性。"
+          },
+          {
+            "name": "企业与时期固定效应关联模型",
+            "implementation": "有企业×时间记录才拟合；采用定义固定并报告组内变异。",
+            "why": "控制可观察的稳定企业差异与共同时间变化，仍保留因果限制。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "数据可用性与选择审计",
+            "variables": "采用/未采用、完整/失访",
+            "controls": "同口径指标、明确采用日期与日志",
+            "split": "先完整保留纳入流；不以效果大小删企业",
+            "metrics": "失访率、基线差、前期趋势图",
+            "decision": "若没有多期或对照，不推进准实验主张。"
+          },
+          {
+            "name": "敏感性分析",
+            "variables": "替代采用定义、不同时间窗、加入预先规定协变量",
+            "controls": "固定主要分析；替代项明确为稳健性而非择优",
+            "split": "以企业为聚合单位；不按交易记录数冒充独立企业数",
+            "metrics": "系数区间、符号/量级稳定性",
+            "decision": "若结论高度依赖口径，交付证据不足而非强因果。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "采用后变化",
+            "definition": "同口径指标与采用前均值差",
+            "unit": "指标本身单位",
+            "aggregation": "先每企业计算，再报告分布与加权方案"
+          },
+          {
+            "name": "失访率",
+            "definition": "未观测到计划随访的企业/初始企业",
+            "unit": "%",
+            "aggregation": "按采用状态和企业特征分层"
+          },
+          {
+            "name": "条件关联估计",
+            "definition": "固定效应或调整模型的采用系数",
+            "unit": "结果单位",
+            "aggregation": "企业聚类的不确定性，少企业时如实限定"
+          }
+        ],
+        "ablations": [
+          "去掉采用后才测得的协变量，避免调整中介或后果。",
+          "将没有准确采用日期的企业另列，不随意填日期。"
+        ],
+        "pitfalls": [
+          "同时采用其他经营措施、需求变化和工具采用混杂。",
+          "未采用企业后来采用造成对照污染。",
+          "缺真实外生变化时，用复杂模型包装因果。"
+        ],
+        "reproducibility": [
+          "保存合法可用的匿名企业ID、口径字典、缺失与随访表。",
+          "绘制识别假设图，逐条写可验证证据与不可验证假设。",
+          "记录全部规格与结论，不仅保留显著模型。"
+        ],
+        "stopRules": [
+          "无法合法获得至少多期同口径企业记录时，退回横截面采用意愿调查。",
+          "导师无法论证识别条件时，标题与正文改为关联研究。"
+        ],
+        "deliverables": [
+          "企业面板可用性审计",
+          "描述性趋势与规格敏感性报告",
+          "明确的不可识别结论清单"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -19544,7 +21685,9 @@ window.RESEARCH_DB = {
       "sourceIds": [
         "prereg",
         "statsmodels",
-        "smartedu"
+        "smartedu",
+        "kb-inter-wwc",
+        "kb-inter-oulad"
       ],
       "tags": [
         "拓展方向",
@@ -19554,7 +21697,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-35",
         "topic-25"
@@ -19664,6 +21807,101 @@ window.RESEARCH_DB = {
           "拓展方向 交互学习工具 文献 评价 方法",
           "education text analysis research evaluation "
         ]
+      },
+      "researchDossier": {
+        "question": "对同一知识点，交互材料相对于内容等量静态材料是否提高成人延后迁移测验成绩？",
+        "hypotheses": [
+          "若只是界面更有趣，满意度可能增加但迁移测验不变。",
+          "前测与即时成绩的优势不必持续到延后测验。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-inter-wwc",
+            "finding": "WWC官方入口整理教育研究设计与作者报告资源。",
+            "howToUse": "沿分配、基线、结果测量和流失检查试验报告，不引用未读PDF阈值。",
+            "limitation": "本项目不是标准认证；小样本便利参与者限制外推。"
+          },
+          {
+            "sourceId": "kb-inter-oulad",
+            "finding": "公开学习日志可支持观察分析，缺随机干预分配。",
+            "howToUse": "作为学习过程指标字典示例，另行设计真正随机材料比较。",
+            "limitation": "不能用OULAD替代本地干预试验。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "静态材料",
+            "implementation": "固定知识点、例题数量、学习时长，保持可读性。",
+            "why": "作为公平教学内容对照。"
+          },
+          {
+            "name": "交互材料",
+            "implementation": "相同文字与例题，仅增加可操作变量和反馈。",
+            "why": "隔离交互性作用，不把更多教学内容混进处理。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "随机组间前后与延后测量",
+            "variables": "材料形式；即时与7天后测验",
+            "controls": "成人参与者、同学习时间；测验内容经领域导师审查",
+            "split": "按人随机；前测用于预设调整；避免同一知识点交叉学习迁移",
+            "metrics": "延后迁移分数、即时分数、流失率",
+            "decision": "主要结论以预先规定的延后指标及区间为准。"
+          },
+          {
+            "name": "测量与执行审计",
+            "variables": "是否完整完成、测验题型与背景差异",
+            "controls": "主分析保留随机分配原则，排除条件预先固定",
+            "split": "按人聚合，多题作为测量而非多名样本",
+            "metrics": "组间差、缺失情景敏感性、测试可靠性描述",
+            "decision": "流失或失配过大时以可行性试验报告，不宣称普遍教学效果。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "延后迁移成绩",
+            "definition": "新问题按冻结评分rubric得分",
+            "unit": "分或%",
+            "aggregation": "每人总分；给组间调整差与区间"
+          },
+          {
+            "name": "即时成绩",
+            "definition": "学习后同难度知识测验得分",
+            "unit": "分",
+            "aggregation": "每人总分；与主要指标分开"
+          },
+          {
+            "name": "延后流失率",
+            "definition": "未完成延后测验人数/随机分配人数",
+            "unit": "%",
+            "aggregation": "按组与基线特征报告"
+          }
+        ],
+        "ablations": [
+          "移除自动提示，检查收益是否主要来自额外反馈。",
+          "用等量不同题型测验复核，避免原题记忆。"
+        ],
+        "pitfalls": [
+          "后测题与练习题相同导致测试熟悉。",
+          "按完成者分析而忽略延后失访。",
+          "成人实验结论未经验证推广到幼儿或中小学生。"
+        ],
+        "reproducibility": [
+          "保存两版材料、学习时长、题目与评分表。",
+          "公开随机分配与样本流程，按组记录缺失原因。",
+          "事先计算目标精度所需样本并报告实际区间，允许结果不确定。"
+        ],
+        "stopRules": [
+          "专家无法确认测验测到目标知识时先修测验。",
+          "招募与延后随访不足以支持主要问题时改为可行性报告。"
+        ],
+        "deliverables": [
+          "内容等量原型",
+          "测验效度与执行档案",
+          "即时/延后成人学习效果报告"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -19825,7 +22063,8 @@ window.RESEARCH_DB = {
       ],
       "sourceIds": [
         "wcag",
-        "prereg"
+        "prereg",
+        "kb-inter-tlx"
       ],
       "tags": [
         "拓展方向",
@@ -19835,7 +22074,7 @@ window.RESEARCH_DB = {
       "level": "进阶",
       "priority": 4,
       "status": "拟议选题",
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "relatedTopicIds": [
         "topic-25",
         "topic-31",
@@ -19945,6 +22184,101 @@ window.RESEARCH_DB = {
           "拓展方向 无障碍研究界面 文献 评价 方法",
           "product design usability evaluation "
         ]
+      },
+      "researchDossier": {
+        "question": "修复资料查询界面的键盘焦点与错误提示后，成人键盘任务的成功和负担是否改善？",
+        "hypotheses": [
+          "焦点顺序修复可能减少恢复错误，但未必改善视觉信息理解。",
+          "WCAG条目检查通过与真实任务成功是不同证据。"
+        ],
+        "literature": [
+          {
+            "sourceId": "wcag",
+            "finding": "WCAG提供可逐项核对的无障碍成功标准。",
+            "howToUse": "把适用条目映射到输入、结果列表和弹窗流程。",
+            "limitation": "只测一部分条目不得写成完整合规认证。"
+          },
+          {
+            "sourceId": "kb-inter-tlx",
+            "finding": "TLX用于主观任务负担评价。",
+            "howToUse": "客观成功/错误之外收集成人完成后的固定量表。",
+            "limitation": "有视觉/运动障碍用户的可用性不能由无障碍经验较少成人替代证明。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "修复前冻结版",
+            "implementation": "保存焦点路径与控件行为，不临时改任务。",
+            "why": "保持可追溯比较基线。"
+          },
+          {
+            "name": "最小修复版",
+            "implementation": "修复语义、焦点返回、提示关联，内容与搜索结果一致。",
+            "why": "避免功能数量改变导致任务差异。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "三流程键盘测试",
+            "variables": "查找资料、修改条件、打开关闭详情",
+            "controls": "同数据、同键盘与浏览器；任务答案固定",
+            "split": "自动检查＋人工流程；成人A/B版本顺序平衡，按人聚合",
+            "metrics": "任务成功、焦点错误、时间、TLX",
+            "decision": "优先判定关键阻断是否消失，主观评分只作补充。"
+          },
+          {
+            "name": "辅助技术覆盖核对",
+            "variables": "屏幕阅读器/放大/移动焦点方案",
+            "controls": "明确版本与环境；未测环境标记未测",
+            "split": "技术检查与用户试验分别列示",
+            "metrics": "通过/失败/未测条目、实际错误",
+            "decision": "没有目标用户与工具覆盖时限制用户体验结论。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "关键任务成功",
+            "definition": "无需协助完成预定目标",
+            "unit": "%",
+            "aggregation": "每人×任务记录，再按人或任务列示"
+          },
+          {
+            "name": "焦点恢复错误",
+            "definition": "弹窗关闭等操作后焦点落入不可预期位置次数",
+            "unit": "次/任务",
+            "aggregation": "按流程报告原始事件与发生率"
+          },
+          {
+            "name": "工作负担",
+            "definition": "固定NASA计分方案的主观负担",
+            "unit": "0–100分",
+            "aggregation": "参与者级配对差，顺序效应另列"
+          }
+        ],
+        "ablations": [
+          "分别仅修焦点与仅修文案，检查关键阻断来源。",
+          "保留同搜索结果与相同文字，隔离交互改动。"
+        ],
+        "pitfalls": [
+          "把自动扫描无错误等同完整无障碍。",
+          "主持人提示键盘路径造成效果虚高。",
+          "重复任务学习效应未平衡。"
+        ],
+        "reproducibility": [
+          "保存版本哈希、浏览器/辅助技术版本及键盘脚本。",
+          "公布适用条目、测试证据与未测范围。",
+          "匿名日志保留任务起止、错误编码与求助次数。"
+        ],
+        "stopRules": [
+          "关键焦点陷阱未解决前停止主试验，修复并预检。",
+          "无法覆盖目标障碍人群时，只报告技术和所测成人任务证据。"
+        ],
+        "deliverables": [
+          "逐条证据清单",
+          "任务与焦点日志",
+          "修复前后结果及未覆盖边界"
+        ],
+        "assessed": "2026-10-02"
       }
     },
     {
@@ -21253,6 +23587,3568 @@ window.RESEARCH_DB = {
       "priority": 17,
       "status": "研究组织建议",
       "date": "2026-10-01"
+    },
+    {
+      "id": "kb-topic-eng-nilm",
+      "title": "家庭总表功率分解与跨住户泛化",
+      "summary": "用公开总表与分表对齐数据研究电器功率分解；比较同住户时间留出和跨住户迁移，关注误差单位、缺测与未计量负载。",
+      "type": "topic",
+      "majors": [
+        "m04",
+        "m05",
+        "m16",
+        "m21"
+      ],
+      "groups": [
+        "machines",
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-eng-ukdale",
+        "kb-eng-nilmtk",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "NILM",
+        "非侵入式负载监测",
+        "总表分解",
+        "住户留出",
+        "用电",
+        "工程深度"
+      ],
+      "sections": [
+        {
+          "heading": "先取得什么",
+          "items": [
+            "从 UK-DALE 作者页进入低频下载 DOI 10.5286/UKERC.EDC.000004，先取一户总表和一种电器；记录文件版本、通道与表计覆盖时间。",
+            "先核对 mains 与 appliance 真实物理量、时间戳和采样周期；不把缺测填成关机。"
+          ]
+        },
+        {
+          "heading": "最小实现路线",
+          "items": [
+            "只用一个电器，做常数功率/开关阈值和非负线性回归对照；先证明对齐无误，再扩展到多电器序列模型。",
+            "训练窗口仅从训练区间产生；测试跨住户时冻结电器字典、阈值、归一化和模型。"
+          ]
+        },
+        {
+          "heading": "协作与交付",
+          "items": [
+            "电气同学解释有功/视在功率、开关事件；计算机同学维护分组切分和模型；集成电路同学可评估定点推理与存储，不先做芯片流片。",
+            "交付分表对齐报告、逐住户 MAE/W 与日能量误差/kWh、失败电器清单，成果可作为用电监测系统的算法前期。"
+          ]
+        },
+        {
+          "heading": "使用边界",
+          "items": [
+            "UK-DALE 作者提供五户英国样本；样本量与地域限制必须写清，不能由跨住户结果宣称跨国家或工业泛化。",
+            "本网站给的是研究计划，尚未下载数据或完成分解实验；先核对当届电赛/嵌入式赛题是否接受该范围。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "难点在总分表语义对齐、事件不平衡和按住户评价，不由模型名称决定。",
+        "prerequisites": [
+          "Python 时间序列处理",
+          "功率与电能单位",
+          "训练/测试分组"
+        ],
+        "resources": [
+          "低频数据及元数据",
+          "普通笔记本；先做小子集"
+        ],
+        "minimum": "单住户单电器，连续时间留出与两个小基线。",
+        "stretch": "多电器、未见住户、低频降采样和定点资源测量。",
+        "effort": "8–12 周，每周 6–10 小时",
+        "team": "建议电气/自动化与计算机 2 人"
+      },
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "topic-04"
+      ],
+      "researchDossier": {
+        "question": "只看家庭总表时，电器分解误差有多少来自住户差异、时间缺测和未计量负载，而非模型容量？",
+        "hypotheses": [
+          "跨住户留出可能比同住户未来区间困难，应比较逐住户误差而非只报混合窗口平均。",
+          "显式缺测屏蔽可能比把断档填零更可靠；这是待检验假设。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-ukdale",
+            "finding": "作者提供总表与电器分表低频记录，可建立真实目标。",
+            "howToUse": "先核对一个通道与总表的重叠区间，然后建立跨住户任务。",
+            "limitation": "五户样本；不同住户安装电器不同，未计量剩余负载不等于噪声。"
+          },
+          {
+            "sourceId": "kb-eng-nilmtk",
+            "finding": "core 分离了数据、表计和评价层。",
+            "howToUse": "利用固定版本转换器和时间窗口工具；算法与训练脚本单独锁定。",
+            "limitation": "不把工具支持当作已复现神经模型或官方榜单。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "关机/平均功率",
+            "implementation": "全零预测与训练集中位数功率均保留；分别报告开启与关闭区间。",
+            "why": "衡量高关机比例造成的表面低 MAE。"
+          },
+          {
+            "name": "非负回归/阈值开关",
+            "implementation": "由过去总功率和差分预测单电器功率，阈值只在训练数据确定。",
+            "why": "提供可解释、低资源的比较，不先依赖复杂序列模型。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "时间留出与住户留出",
+            "variables": "至少一种跨住户共同存在电器；窗口 1/5/15 分钟，模型固定。",
+            "controls": "同采样周期、标签定义、训练预算和缺测掩码。",
+            "split": "实验 A 各住户连续未来段；实验 B 完整住户留出，训练集内部按时间选超参数。",
+            "metrics": "MAE/W、能量误差/kWh、开启事件 F1、推理毫秒/窗口。",
+            "decision": "只有住户留出也稳定优于小基线才扩展多电器；展示每户结果，样本不足则缩为同住户任务。"
+          },
+          {
+            "name": "缺测与覆盖敏感性",
+            "variables": "额外屏蔽 0/5/20% 测试时段；有覆盖统计时按分表覆盖比例分层。",
+            "controls": "相同有效真值区间；不改变实际分表目标。",
+            "split": "完整测试日为评价单位，缺测随机种子相同。",
+            "metrics": "MAE/W、有效时间覆盖率/%、日能量误差/kWh。",
+            "decision": "若填零导致误差明显偏乐观，保留掩码并撤回全时段精度结论。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "MAE",
+            "definition": "有效对齐样本的 |预测功率−分表功率| 均值",
+            "unit": "W",
+            "aggregation": "先逐住户/电器，再宏平均；开启/关闭分别报"
+          },
+          {
+            "name": "日能量误差",
+            "definition": "同一有效日内按时间间隔积分的预测与实测能量差绝对值",
+            "unit": "kWh/日",
+            "aggregation": "逐住户逐日；缺测日覆盖率附列"
+          },
+          {
+            "name": "事件 F1",
+            "definition": "在预先固定阈值和最短开启长度后，以一次开启事件为单位匹配",
+            "unit": "0–1",
+            "aggregation": "逐电器并列事件数，不将关机秒数当事件"
+          }
+        ],
+        "ablations": [
+          "移除功率差分；移除缺测掩码；仅时间特征与功率输入分别比较。",
+          "标准化训练限定与错误全数据标准化做审计，错误版本只用于说明泄漏，不作为候选。"
+        ],
+        "pitfalls": [
+          "有功/视在功率混用；把分表总和强制当全屋真值；重采样后时间错位。",
+          "相邻或重叠窗口跨训练测试；用测试电器阈值和未来均值选择模型。",
+          "能量积分遗漏采样秒数/3600；不同有效时长比较日能量。"
+        ],
+        "reproducibility": [
+          "数据发布年月、DOI、通道表、文件校验值和署名清单。",
+          "保留住户及时间切分、窗口边界、掩码、对齐抽查图。",
+          "锁定 Python/NILMTK/模型版本、随机种子、训练预算及原始预测 CSV。"
+        ],
+        "stopRules": [
+          "总表/分表物理量或时钟无法解释时先停建模。",
+          "共同电器不足以形成住户留出时改做单户，不保留跨住户宣传。",
+          "小基线在有效数据上未跑通时不增加深度模型。"
+        ],
+        "deliverables": [
+          "一页任务契约和对齐审计；按住户的功率/能量误差表。",
+          "训练/推理脚本、冻结切分、失败事件回放与许可引用清单。"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-mech",
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "kb-resource-eng-nilm",
+          "resource-v2-sklearn-cv",
+          "kb-resource-eng-bdg2"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m04"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m05",
+              "m16",
+              "m21"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：单住户单电器，连续时间留出与两个小基线。",
+          "第 7–10 天：预检“时间留出与住户留出”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "只看家庭总表时，电器分解误差有多少来自住户差异、时间缺测和未计量负载，而非模型容量？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "家庭总表功率分解与跨住户泛化 baseline reproducibility",
+          "NILM 非侵入式负载监测 总表分解 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-eng-soc",
+      "title": "电池 SOC 估计的跨温度与未知初值验证",
+      "summary": "使用 CALCE 动态电流和 OCV 子集，将单温度参数识别与跨温度验证分开，比较库仑积分、OCV 修正和一阶等效电路估计。",
+      "type": "topic",
+      "majors": [
+        "m11",
+        "m10",
+        "m04",
+        "m03"
+      ],
+      "groups": [
+        "materials",
+        "machines"
+      ],
+      "sourceIds": [
+        "kb-eng-calce",
+        "pybamm",
+        "scipy"
+      ],
+      "tags": [
+        "SOC",
+        "OCV",
+        "DST",
+        "FUDS",
+        "温度留出",
+        "等效电路",
+        "工程深度"
+      ],
+      "sections": [
+        {
+          "heading": "数据使用步骤",
+          "items": [
+            "选定一个电池型号和协议，再核对下载文件中的电流符号、时间、端电压、温度、容量单位与试验阶段；CALCE 页面给出分温度动态工况入口。",
+            "以 DST 识别参数，FUDS/US06 作为不同输入验证；若使用 0/25/45℃子集，先说明型号及对应温度文件，不能把不同电池拼成同一电芯。"
+          ]
+        },
+        {
+          "heading": "最小实现路线",
+          "items": [
+            "先做库仑积分和 OCV 查表；只识别一阶 RC 等效电路。明确 SOC 参考值如何由容量、初始状态和电流构造。",
+            "再比较固定温度模型与温度插值模型，加未知初值误差；独立留出整段工况，而非随机打散秒级样本。"
+          ]
+        },
+        {
+          "heading": "协作与交付",
+          "items": [
+            "储能/新能源材料负责测试协议和电芯边界；电气负责状态估计、单位与参数可辨识性；车辆工程提供工况解释。",
+            "交付电池协议表、参数与置信区间、按温度及工况的 SOC 误差曲线和失效清单；扩展实物 BMS 之前单独获得实验条件。"
+          ]
+        },
+        {
+          "heading": "使用边界",
+          "items": [
+            "若参考 SOC 本身由库仑积分得到，应称其为计算参考并讨论容量和初值误差，不能据此声称获得独立高精度真值。",
+            "公开离线电池数据不证明实际电池包安全性；尚未下载或验证原始字段。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "跨工况切分、参考 SOC 定义与参数可辨识性比堆叠神经网络更关键。",
+        "prerequisites": [
+          "电路与状态空间",
+          "数值优化与基础滤波",
+          "SOC/容量单位"
+        ],
+        "resources": [
+          "CALCE 单型号温度子集",
+          "Python/SciPy；无需先进行充放电实物实验"
+        ],
+        "minimum": "单温度、整工况留出，库仑积分与 OCV 修正比较。",
+        "stretch": "温度迁移、一阶 RC+滤波、未知初值与电流偏置敏感性。",
+        "effort": "10–14 周，每周 8–10 小时",
+        "team": "建议储能/电气 2 人，导师检查参考值"
+      },
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "advanced-12",
+        "advanced-13"
+      ],
+      "researchDossier": {
+        "question": "仅在 25℃ DST 识别的电池模型，在未知初始 SOC、不同温度和未见驾驶工况下能否可靠追踪？",
+        "hypotheses": [
+          "固定温度 OCV/参数在温度外推时可能出现系统偏差。",
+          "初始 SOC 与电流偏置可能比模型阶数对长期误差更敏感。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-calce",
+            "finding": "页面给出同型号 OCV、温度和不同动态输入协议。",
+            "howToUse": "只选同一型号；将 DST 用于识别、其他完整工况用于验证。",
+            "limitation": "还需实际核验每个文件字段和参考 SOC；不能把公开离线测试当电池包真值。"
+          },
+          {
+            "sourceId": "pybamm",
+            "finding": "物理模型代码可用于后续模型对照。",
+            "howToUse": "先证明低阶模型与参数单位自洽，再考虑同一电芯适配的物理模型。",
+            "limitation": "公开参数集不一定对应 CALCE 电芯；未经参数核对不做公平性能排名。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "库仑积分",
+            "implementation": "用同一容量基准、电流符号和效率积分，分别采用正确初值与人为初值偏差。",
+            "why": "暴露漂移来源，避免滤波器只赢弱初值基线。"
+          },
+          {
+            "name": "OCV 修正与一阶 RC",
+            "implementation": "先训练温度 OCV 查表，再拟合 R0/R1/C1；仅在实际满足静置条件时使用 OCV 校正。",
+            "why": "区分纯积分、静态电压和动态极化贡献。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "温度与工况迁移",
+            "variables": "同型号温度子集，25℃ DST 识别；验证 FUDS/US06 与其他温度。",
+            "controls": "容量、初值、截止条件和参数搜索预算一致；温度名称以文件核验为准。",
+            "split": "按整段电芯—温度—工况切分；测试工况不得用于拟合 OCV 或参数。",
+            "metrics": "电压 RMSE/mV、SOC MAE/百分点、最大 SOC 误差/百分点。",
+            "decision": "只在来源覆盖的工况上论证；温度插值不能称未见极端温度保证。"
+          },
+          {
+            "name": "初值与传感偏置",
+            "variables": "初始 SOC 偏移 ±5/±10 百分点；电流偏置 0/±0.5/±1% 量程，设定属模拟扰动。",
+            "controls": "同一真实测试输入和固定参考 SOC 构造。",
+            "split": "在整段留出工况重复，不把扰动复制样本分到训练。",
+            "metrics": "误差随时间曲线、收敛时间/s、积分末端电量差/Ah。",
+            "decision": "若偏置下无稳定收敛，限定为离线无偏测量任务；不通过调真实参考值掩盖失败。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "SOC MAE",
+            "definition": "估计与明确说明的参考 SOC 差值绝对均值；SOC 使用 0–100%",
+            "unit": "百分点",
+            "aggregation": "先整工况再温度汇总；附参考值误差来源"
+          },
+          {
+            "name": "电压 RMSE",
+            "definition": "端电压预测与观测残差平方均值开方",
+            "unit": "mV",
+            "aggregation": "整工况及电流突变阶段分别报告"
+          },
+          {
+            "name": "收敛时间",
+            "definition": "误差首次进入预先规定容差并连续保持指定时长的时间；失败记未收敛",
+            "unit": "s",
+            "aggregation": "每种初值/偏置情景，容差和持续时长在看测试结果前定"
+          }
+        ],
+        "ablations": [
+          "移除温度插值；固定容量与随可用容量修正分别比较。",
+          "一阶 RC 与纯 R0 模型比较，并报告参数不确定性而非仅 RMSE。"
+        ],
+        "pitfalls": [
+          "mAh/Ah、秒/小时、充放电正负号不统一。",
+          "用未来整段放电容量构造在线模型特征；同一动态轨迹随机切秒。",
+          "参考 SOC 由同一个电流积分生成，需承認参考相关性，不能声称独立标定。"
+        ],
+        "reproducibility": [
+          "电池型号、试验子集、温度、容量来源、阶段剔除规则。",
+          "参考 SOC 构造和初值来源；参数边界、损失权重、优化初值。",
+          "固定工况切分、温度留出表、扰动注入脚本和逐时间步结果。"
+        ],
+        "stopRules": [
+          "电流符号和电量守恒未确认时不继续滤波。",
+          "无法构造可信参考值则缩为电压建模，不保留 SOC 精度承诺。",
+          "参数多组同样拟合但外推差异大时缩减模型，并报告不可辨识。"
+        ],
+        "deliverables": [
+          "协议字典、OCV 曲线和参数表；温度×工况误差矩阵。",
+          "可重复的估计器、初值/偏置失败图，以及部署前尚需验证事项。"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-chem",
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-scipy",
+          "resource-v2-pybamm",
+          "kb-resource-eng-calce"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m11"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m10",
+              "m04",
+              "m03"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：单温度、整工况留出，库仑积分与 OCV 修正比较。",
+          "第 7–10 天：预检“温度与工况迁移”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "仅在 25℃ DST 识别的电池模型，在未知初始 SOC、不同温度和未见驾驶工况下能否可靠追踪？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "电池 SOC 估计的跨温度与未知初值验证 baseline reproducibility",
+          "SOC OCV DST evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-eng-swmm",
+      "title": "小流域雨洪模拟与透水设施稳健评价",
+      "summary": "用 SWMM 示例/自建明确标注的合成小流域，比较无措施、透水铺装与雨水调蓄，检查降雨类型、入渗和数值步长对结论的影响。",
+      "type": "topic",
+      "majors": [
+        "m06",
+        "m14",
+        "m15",
+        "m27",
+        "m59"
+      ],
+      "groups": [
+        "civil",
+        "environment"
+      ],
+      "sourceIds": [
+        "kb-eng-swmm",
+        "qgis",
+        "scipy"
+      ],
+      "tags": [
+        "SWMM",
+        "雨洪",
+        "LID",
+        "透水铺装",
+        "径流",
+        "连续性误差",
+        "工程深度"
+      ],
+      "sections": [
+        {
+          "heading": "数据与建模步骤",
+          "items": [
+            "先复现官方手册/安装样例的子汇水区、雨量计、节点和管道；本轮只核验到入口，未下载样例。",
+            "没有实测几何、雨量和出口流量时，显式采用合成输入并做敏感性实验；不冠名为佛大校园现状评估。"
+          ]
+        },
+        {
+          "heading": "最小实现路线",
+          "items": [
+            "固定流域面积和总降雨量，比较前峰/中峰/后峰雨型；再比较 LID 占地比例和入渗参数。",
+            "出口总径流体积、峰值与达峰时间同时报告，检查水量连续性和步长收敛；有观测再按完整降雨事件校准/留出。"
+          ]
+        },
+        {
+          "heading": "协作与交付",
+          "items": [
+            "土木同学管理管网与坡度，环境同学管理水量过程，风景园林同学提供可实施的 LID 位置与面积约束。",
+            "交付 INP 模型、雨型文件、参数范围出处、各情景对照表；可形成结构/环保类作品的定量论证材料。"
+          ]
+        },
+        {
+          "heading": "使用边界",
+          "items": [
+            "SWMM 排水网络模拟不直接等于二维地表淹没地图；如果需要实际设计重现期或地方规范，应补充当地正式资料并经导师核对。",
+            "不使用已停止维护的 SWMM-CAT 作为新项目主要路线；不虚构模拟结果、实际地形或实测降雨。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "需要连通模型、水量守恒与多情景验证；有实测数据时再讨论校准。",
+        "prerequisites": [
+          "水文水力基础",
+          "GIS 与单位换算",
+          "参数敏感性"
+        ],
+        "resources": [
+          "SWMM 官方模型及示例",
+          "明确的雨量输入/合成雨型"
+        ],
+        "minimum": "三个子汇水区、两种方案与水量平衡检查。",
+        "stretch": "雨型/入渗不确定性、事件留出和 LID 面积约束优化。",
+        "effort": "8–14 周，每周 6–10 小时",
+        "team": "建议土木/环境/园林 2–3 人"
+      },
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "topic-18",
+        "advanced-19"
+      ],
+      "researchDossier": {
+        "question": "在同样 LID 占地约束下，透水设施或调蓄的优势是否在不同雨型、入渗参数和数值步长下仍成立？",
+        "hypotheses": [
+          "按单一雨型选出的最佳方案可能对峰值位置敏感。",
+          "峰值下降不一定伴随总径流下降，须同时看体积与排空过程。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-swmm",
+            "finding": "官方模型覆盖降雨径流、排水网络和 LID 情景。",
+            "howToUse": "先用同一小流域无措施模型做基线，再单独修改可解释设施参数。",
+            "limitation": "没有实测数据只能论证该合成模型，不是当地设施设计依据。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "无 LID",
+            "implementation": "保留固定下垫面、管网、雨量和蒸发输入的模型。",
+            "why": "所有措施在同一雨量与面积条件下比较。"
+          },
+          {
+            "name": "简单等体积调蓄",
+            "implementation": "比较同等占地/可说明容积的调蓄与透水措施；成本无可靠来源时只报告面积和体积。",
+            "why": "防止只让新措施拥有更多空间资源。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "雨型×入渗×占地",
+            "variables": "总雨量固定；前/中/后峰三雨型；入渗参数低/中/高范围；LID 0/5/10% 面积。",
+            "controls": "相同流域面积、初始湿润状态、出流边界和计算设置。",
+            "split": "按完整降雨事件评价；若有观测，一组完整事件校准、另一组验证。",
+            "metrics": "峰流量/m³/s、径流量/m³、达峰时间/min、设施占地/m²。",
+            "decision": "只有多雨型均表现合理才称稳健；同总雨量不能替代真实气候频率。"
+          },
+          {
+            "name": "数值与守恒预检",
+            "variables": "路由步长由粗到细至少三档，保持雨量和输出采样规则。",
+            "controls": "所有工程参数不变；必要时比较动态波与适用简化路由并解释差异。",
+            "split": "同一事件配对，不重新调参抵消步长误差。",
+            "metrics": "水量连续性误差/%、峰值变化/%、求解时间/s。",
+            "decision": "先设内部预检阈值：连续性误差绝对值 <1%、相邻细化峰值变化 <2%；未达标先修模型，阈值并非通用工程验收规范。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "出口峰流量",
+            "definition": "同一报告步长下出口流量的最大值",
+            "unit": "m³/s",
+            "aggregation": "逐事件；附峰值时刻和步长"
+          },
+          {
+            "name": "出口径流体积",
+            "definition": "事件及合理退水期的流量时间积分",
+            "unit": "m³",
+            "aggregation": "逐事件；设施前后相同积分边界"
+          },
+          {
+            "name": "水量平衡误差",
+            "definition": "按模型连续性报告核对入水、出水、入渗/蒸发及储量变化",
+            "unit": "%",
+            "aggregation": "每次仿真；数值错误与物理效应分别解释"
+          }
+        ],
+        "ablations": [
+          "将透水铺装面积置零；调蓄出口规则固定后比较；取消雨型不确定性看排序是否翻转。",
+          "初始干燥与湿润状态比较，不隐去不利前期条件。"
+        ],
+        "pitfalls": [
+          "mm/h 雨强当累计 mm；面积 ha/m² 和流量单位混用。",
+          "改设施时同时改变总流域面积或不透水分配，破坏公平对照。",
+          "只给积水动画，无连续性/步长收敛检查；将管网水位误画成二维淹没范围。"
+        ],
+        "reproducibility": [
+          "INP、雨量文件、软件版本、单位系统和时间步长。",
+          "参数范围来源与合成假设单独记录；保留无措施模型。",
+          "批量情景表、报错/不收敛清单、原始报告及后处理脚本。"
+        ],
+        "stopRules": [
+          "网络断连、负几何参数或水量误差超阈值时停优化。",
+          "无真实地形/降雨/观测时移除地点级校准或安全设计结论。",
+          "方案排名由未经证实的单一参数控制时改做敏感性研究。"
+        ],
+        "deliverables": [
+          "小流域可复现模型、数值预检表、措施×雨型×入渗结果矩阵。",
+          "一页设施空间约束说明及未取得的实测资料清单。"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-qgis",
+          "resource-scipy",
+          "kb-resource-ic-adc-metrics"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m06"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m14",
+              "m15",
+              "m27",
+              "m59"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：三个子汇水区、两种方案与水量平衡检查。",
+          "第 7–10 天：预检“雨型×入渗×占地”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "在同样 LID 占地约束下，透水设施或调蓄的优势是否在不同雨型、入渗参数和数值步长下仍成立？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "小流域雨洪模拟与透水设施稳健评价 baseline reproducibility",
+          "SWMM 雨洪 LID evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-eng-epanet",
+      "title": "管网漏损定位的传感器数量与需水扰动",
+      "summary": "在公开 EPANET 示例管网中构造单点漏损场景，研究有限压力测点能否区分漏损与日需水变化；比较物理残差与轻量分类方法。",
+      "type": "topic",
+      "majors": [
+        "m14",
+        "m06",
+        "m05",
+        "m19",
+        "m32"
+      ],
+      "groups": [
+        "environment",
+        "civil",
+        "machines",
+        "computing",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-eng-epanet",
+        "scipy",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "EPANET",
+        "供水",
+        "漏损定位",
+        "压力",
+        "物理残差",
+        "传感器布置",
+        "工程深度"
+      ],
+      "sections": [
+        {
+          "heading": "最小模型",
+          "items": [
+            "从 EPA 官方 ZIP/手册进入示例模型；先检查单位、水头、节点高程、需水模式与收敛。",
+            "用额外出流或压力相关出流模拟漏损并注明实现；保留无漏损但需求扰动对照，不将这些合成场景称为现场数据。"
+          ]
+        },
+        {
+          "heading": "比较路线",
+          "items": [
+            "先做正常压力残差阈值检测，再用候选节点的模拟残差匹配定位；轻量分类器作为后续对照。",
+            "测点 2/4/8 个、需水幅度变化和传感器噪声分开控制；按完整需求模式、漏损位置/幅度留出，避免一组场景变体跨集合。"
+          ]
+        },
+        {
+          "heading": "协作与交付",
+          "items": [
+            "环境/土木同学核对水力与边界条件；自动化负责采样噪声、测点和异常判据；数学/智能专业负责场景切分与不确定性。",
+            "交付网络模型、场景生成器、测点方案、每节点定位混淆表和无漏损误报率；先用于离线研究演示。"
+          ]
+        },
+        {
+          "heading": "使用边界",
+          "items": [
+            "公开示例不是佛山市或学校实际供水网络；未读实测拓扑不能推断真实漏损。",
+            "若多节点的压力变化不可区分，应报告可辨识的候选区域，并停止追求虚假的单节点高准确率。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 2,
+          "validation": 3
+        },
+        "reason": "挑战在物理残差可辨识性和需求扰动，不能只训练分类器忽略正常工况误报。",
+        "prerequisites": [
+          "管网水力与压力单位",
+          "敏感性/反问题",
+          "分组评价"
+        ],
+        "resources": [
+          "EPANET 官方示例与工具包",
+          "离线 Python/CSV 分析"
+        ],
+        "minimum": "小网络、固定 4 测点、单漏损与无漏损对照。",
+        "stretch": "测点优化、未见需水模式、漏损幅度与噪声敏感性。",
+        "effort": "10–14 周，每周 6–10 小时",
+        "team": "建议环境/土木与自动化 2 人"
+      },
+      "level": "进阶",
+      "priority": 4,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "topic-18",
+        "advanced-19"
+      ],
+      "researchDossier": {
+        "question": "少量压力测点能否把单节点漏损与正常需水波动区分开，哪些候选节点实际不可辨识？",
+        "hypotheses": [
+          "正常需水扰动可能与小漏损产生相似压力残差。",
+          "测点增多并不必然等于可辨识性提高，布局可能比数量更重要。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-eng-epanet",
+            "finding": "官方工具支持扩展时段水力及压力相关需求分析。",
+            "howToUse": "通过同一示例网络生成正常/额外出流情景，先看压力灵敏度再做定位。",
+            "limitation": "额外出流是模拟漏损假设；没有现场数据不称实际故障识别。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "正常模型残差阈值",
+            "implementation": "用训练正常工况估计压力残差分布，冻结每测点或联合阈值。",
+            "why": "明确无漏损需求扰动下的误报。"
+          },
+          {
+            "name": "物理场景最近残差",
+            "implementation": "将测试压力变化与候选节点模拟特征的距离比较，允许输出候选区域。",
+            "why": "为分类器提供物理、可解释和可辨识性对照。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "需求与漏损交叉留出",
+            "variables": "需求倍率 0.8/1.0/1.2 属合成；漏损小/中/大级按正常总需求比例定义；测点 2/4/8。",
+            "controls": "同一网络、压力单位、求解精度、时间段与漏损实现。",
+            "split": "完整需求模式留出，漏损幅度另留一档；同种子场景变体不可跨集合。",
+            "metrics": "无漏损误报率/%、检测 F1、定位图距离/管段数、压力 MAE/m。",
+            "decision": "定位失败但候选区一致时报告区级能力；不得排除困难节点后报全网准确率。"
+          },
+          {
+            "name": "测点与噪声消融",
+            "variables": "随机/灵敏度选点；压力噪声 0/0.1/0.5m 与少量测点缺失属模拟设置。",
+            "controls": "数量、场景和种子相同；选点只用训练模拟。",
+            "split": "按节点和需求模式报告；完整留出节点评估要声明为未见漏损位置。",
+            "metrics": "定位 top-k 覆盖率/%、图距离、无漏损误报率。",
+            "decision": "如果物理灵敏度列近乎同向，先合并不可区分节点区域；不靠增加模型深度制造精度。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "无漏损误报率",
+            "definition": "无漏损但正常需求变化的被误判事件数/总无漏损事件数",
+            "unit": "%",
+            "aggregation": "整事件为单位，分需求模式"
+          },
+          {
+            "name": "定位图距离",
+            "definition": "预测节点到真实模拟漏损节点的最短管段路径长度",
+            "unit": "管段数",
+            "aggregation": "逐节点及宏平均；候选集另报 top-k"
+          },
+          {
+            "name": "压力残差 MAE",
+            "definition": "测试测点压力与无漏损参考模型压力差的绝对均值",
+            "unit": "m 水头",
+            "aggregation": "逐测点与整事件；节点高程单独处理"
+          }
+        ],
+        "ablations": [
+          "固定需求 vs 未见模式；去掉压力相关需求处理；减少测点或移除最灵敏测点。",
+          "无漏损测试必须保留，不只在已知发生漏损样本上定位。"
+        ],
+        "pitfalls": [
+          "压力/水头/高程混用，流量单位不一致。",
+          "漏损位置标识或场景命名泄入特征；测点选择用测试标签。",
+          "将未收敛场景当正常零压；漏损额外出流与真实破裂机制混同。"
+        ],
+        "reproducibility": [
+          "网络版本、INP 校验值、SI 单位和漏损公式。",
+          "需求模式、漏损幅度、测点/噪声种子、不可辨识区域判定。",
+          "求解日志、完整场景切分与逐事件预测 CSV。"
+        ],
+        "stopRules": [
+          "正常网络未收敛/边界不清时先停生成数据。",
+          "缺少无漏损需求扰动对照时不作故障检测结论。",
+          "观测无法区分节点时改为区级定位或测点敏感性题，不虚构精细定位。"
+        ],
+        "deliverables": [
+          "漏损场景生成器、选点表、可辨识性热图和误报/定位结果。",
+          "演示页面及模型适用边界；与实际管网数据需求清单。"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-scipy",
+          "resource-v2-sklearn-cv",
+          "kb-resource-eng-bdg2"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m14"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m06",
+              "m05",
+              "m19",
+              "m32"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：小网络、固定 4 测点、单漏损与无漏损对照。",
+          "第 7–10 天：预检“需求与漏损交叉留出”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "少量压力测点能否把单节点漏损与正常需水波动区分开，哪些候选节点实际不可辨识？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "管网漏损定位的传感器数量与需水扰动 baseline reproducibility",
+          "EPANET 供水 漏损定位 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-resource-eng-nilm",
+      "title": "UK-DALE × NILMTK：总分表对齐实验素材",
+      "summary": "面向用电监测和负载分解的可下载数据与作者工具入口，先查表计关系和缺测，再建立评价窗口。",
+      "type": "resource",
+      "majors": [
+        "m04",
+        "m05",
+        "m16",
+        "m21"
+      ],
+      "groups": [
+        "machines",
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-eng-ukdale",
+        "kb-eng-nilmtk"
+      ],
+      "tags": [
+        "数据使用",
+        "NILM",
+        "分表",
+        "对齐",
+        "许可"
+      ],
+      "sections": [
+        {
+          "heading": "拿来做什么",
+          "items": [
+            "使用作者低频页面/DOI，建立 household/channel/物理量/采样周期/缺失段清单；core 可辅助转换、对齐和指标计算，算法须看锁定版本。",
+            "全量低频 ZIP 也可能较大；先做一个住户一个通道的资源预检，不先下载 16kHz 全集。"
+          ]
+        },
+        {
+          "heading": "复现入口与限制",
+          "items": [
+            "引用数据 DOI、数据论文及所用工具论文；UK-DALE 数据为 CC BY 4.0，代码许可单独处理。",
+            "核心工具不重新分发授权数据；当前 README 支持 Python 3.11+，不要照搬旧 Python 3.6 安装教程。"
+          ]
+        },
+        {
+          "heading": "最低交付",
+          "items": [
+            "输出 48 小时总分表对齐图、缺测统计、窗口构造检查和 W/kWh 单位核验；这一步通过才扩大到跨住户实验。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "公开资料入口；未下载数据",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "kb-topic-eng-nilm",
+        "topic-04"
+      ]
+    },
+    {
+      "id": "kb-resource-eng-calce",
+      "title": "CALCE：电池协议与参考 SOC 核验素材",
+      "summary": "分清型号、温度、OCV 和动态工况，建立电芯与工况级数据字典，再研究模型参数识别。",
+      "type": "resource",
+      "majors": [
+        "m11",
+        "m10",
+        "m04",
+        "m03"
+      ],
+      "groups": [
+        "materials",
+        "machines"
+      ],
+      "sourceIds": [
+        "kb-eng-calce"
+      ],
+      "tags": [
+        "实验协议",
+        "电池",
+        "SOC",
+        "温度",
+        "字段核验"
+      ],
+      "sections": [
+        {
+          "heading": "实用入口",
+          "items": [
+            "从同一电池型号栏目选择 OCV 与动态工况文件；CALCE 给出 DST/FUDS/US06 等输入协议，部分栏目同时含试验阶段解释。",
+            "下载后再检查文件列、符号和单位；当前仅阅读协议和链接，不能声称原始列已核验。"
+          ]
+        },
+        {
+          "heading": "参考值如何记",
+          "items": [
+            "记录初始充电状态、容量基准、库仑效率与积分时间；参考 SOC 和模型预测分列，保留构造参考值的脚本。",
+            "别把 NMC 与 LFP 的 OCV 关系共用；跨型号和跨温度必须分别评价。"
+          ]
+        },
+        {
+          "heading": "最低交付",
+          "items": [
+            "一张电芯—温度—工况—文件—引用论文表，一段可解析的动态测试和电量守恒检查；原文件条款和论文引用另行保留。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "公开资料入口；未下载数据",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "kb-topic-eng-soc",
+        "advanced-12"
+      ]
+    },
+    {
+      "id": "kb-resource-eng-matbench",
+      "title": "Matbench：材料预测任务与物理单位检查",
+      "summary": "用作者基准元数据建立任务契约，将实验带隙、DFT 带隙、屈服强度等任务和评价单位分清。",
+      "type": "resource",
+      "majors": [
+        "m08",
+        "m09",
+        "m10",
+        "m33"
+      ],
+      "groups": [
+        "materials",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-eng-matbench",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "Matbench",
+        "成分",
+        "带隙",
+        "eV",
+        "材料外推"
+      ],
+      "sections": [
+        {
+          "heading": "可操作的起点",
+          "items": [
+            "选择 matbench_expt_gap，以成分为输入、实验带隙为目标，报告 MAE/eV；先复现训练中位数和成分描述符岭回归。",
+            "既有官方基准切分的成绩与自定义化学体系留出的成绩分别命名，不能用自定义切分声称刷新官方排行榜。"
+          ]
+        },
+        {
+          "heading": "检查边界",
+          "items": [
+            "实验/计算性质以及输入类型不同，不能混用标签；若用同一化学式多条记录，先在切分前识别重复与目标差异。",
+            "拟合特征筛选、填缺与缩放只在训练折完成；无法提供结构信息时不假装复现结构图网络。"
+          ]
+        },
+        {
+          "heading": "最低交付",
+          "items": [
+            "任务卡、数据/依赖版本、切分索引、基线指标与最大误差样本；预测结果只是候选筛选证据，需要独立材料测量确认。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "公开资料入口；未下载数据",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "topic-12",
+        "advanced-14"
+      ]
+    },
+    {
+      "id": "kb-resource-eng-bdg2",
+      "title": "BDG2：建筑表计、天气与跨建筑验证素材",
+      "summary": "使用非住宅小时级用能、天气和建筑元数据练习实测性能建模，适合作为建筑节能项目的观测基础。",
+      "type": "resource",
+      "majors": [
+        "m26",
+        "m11",
+        "m04",
+        "m33"
+      ],
+      "groups": [
+        "civil",
+        "materials",
+        "machines",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-eng-bdg2",
+        "energy",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "建筑能源",
+        "BDG2",
+        "小时表计",
+        "天气",
+        "跨建筑"
+      ],
+      "sections": [
+        {
+          "heading": "从哪里开始",
+          "items": [
+            "作者仓库 data/meters、data/metadata 与 notebooks 提供表计和探索入口；先限制为电力表、一个场地的一组建筑。",
+            "记录表计类型、时间区、读数单位、面积和缺测；天气数据按场地、时间连接，禁止静默跨时区错位。"
+          ]
+        },
+        {
+          "heading": "用于什么验证",
+          "items": [
+            "以过去同星期同小时为基线，再用天气/日历模型；先按未来时间段留出，再按整建筑或场地留出。",
+            "不能将不同表计种类的原始读数直接相加；计量边界改变、停运与缺表必须单列。"
+          ]
+        },
+        {
+          "heading": "用于遮阳研究的边界",
+          "items": [
+            "此库可教实测误差和校准流程，但没有完整每栋建筑的遮阳几何/设备配置时，不能由用能关联直接归因于遮阳效果。",
+            "若继续既有 EnergyPlus 题，必须自己明确建筑构造、天气、日程和边界假设，不能称已完成佛大建筑实测校准。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 3,
+      "status": "公开资料入口；未下载数据",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "topic-10",
+        "advanced-16"
+      ]
+    },
+    {
+      "id": "kb-topic-ic-rvfi",
+      "title": "RV32I 退役跟踪接口与微架构停顿的一致性验证",
+      "summary": "先验证 CPU 输出的 RVFI 事件是否忠实表达实际退役，再检查指令语义；用停顿、分支与存储字节掩码错误区分接口错误和核错误。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-rvfi",
+        "kb-ic-act4",
+        "riscv",
+        "sby"
+      ],
+      "tags": [
+        "RVFI",
+        "RV32I",
+        "退役跟踪",
+        "突变测试",
+        "形式验证"
+      ],
+      "level": "进阶",
+      "priority": 12,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "advanced-02",
+        "ic03"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题与范围",
+          "items": [
+            "固定单发射、顺序退役 RV32I 小核，不做乱序、多核或全部特权扩展。研究停顿是否造成事件重复、缺失及寄存器/内存状态错位。",
+            "分开维护三项证据：接口协议检查、已实现指令的语义检查、架构测试通过情况。任何一项通过都不能代替其余项目。"
+          ]
+        },
+        {
+          "heading": "最小实现与对照",
+          "items": [
+            "选择许可允许的教学小核，先实现 ADD/ADDI 与合法停止机制的跟踪适配，再扩展到分支和访存。RVFI 首先是观察接口，不是激励输入。",
+            "在不改变架构结果的停顿注入下比对退役序列；再注入 valid 提早、order 重复、rd 错位和 byte mask 错误，检查监视器能否定位首个差异。"
+          ]
+        },
+        {
+          "heading": "输出与评价",
+          "items": [
+            "交付 DUT 配置、接口适配器、预期退役序列、断言、测试 ELF 与失败波形；报告指令/边界矩阵中通过、失败和未测试的项目。",
+            "无板卡也可完成最小研究。复现 ACT4 之前先运行官方示例配置，记录环境；无需为本题自行编译整个操作系统。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "难点在退役时机、架构状态与观察接口之间的对应关系，资源需求以仿真和形式工具为主。",
+        "prerequisites": [
+          "RV32I 指令与流水线基本概念",
+          "Verilog/SystemVerilog、Python",
+          "断言、差分检查与复位语义"
+        ],
+        "resources": [
+          "普通电脑及可运行的 RTL 仿真器",
+          "固定版本工具链与教学小核",
+          "可选 SBY/求解器环境"
+        ],
+        "minimum": "只覆盖 ADD/ADDI、x0、停顿和接口 order，复现并定位两类预先注入的接口错误。",
+        "stretch": "增加分支、访存与 ACT4 子集，研究接口适配错误和指令错误的定位差异。",
+        "effort": "预研 2 周；完整范围约 10–16 周，每周 8–12 小时",
+        "team": "集成电路负责 RTL/接口，计算机负责指令模型与复现；建议导师审阅假设"
+      },
+      "researchDossier": {
+        "question": "在同一 RV32I 指令序列下，微架构停顿改变周期但不应改变退役结果。哪些接口检查能最早区分跟踪适配缺陷与指令执行缺陷？",
+        "hypotheses": [
+          "待检验：只比较最终寄存器值会漏掉被后续指令覆盖的错误；比较退役事件能更早定位。",
+          "待检验：接口契约检查可在参考模型比对之前发现 order 重复和数据错位。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-rvfi",
+            "finding": "RVFI 描述退役事件及其架构前后状态。",
+            "howToUse": "据此建立观察器，并将适配器与 DUT 独立测试。",
+            "limitation": "接口输出本身可能实现错误；支持哪些检查取决于工具版本与 DUT 配置。"
+          },
+          {
+            "sourceId": "kb-ic-act4",
+            "finding": "ACT4 的架构测试与完整验证有明确区别。",
+            "howToUse": "把自检查 ELF 作为独立补充证据，保存实际执行的测试列表。",
+            "limitation": "测试集通过不能说明未覆盖行为正确。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "最终状态对照",
+            "implementation": "执行相同短程序后比较可见寄存器与受写内存；显式忽略未初始化区域。",
+            "why": "量化只看最终状态的定位能力与盲区。"
+          },
+          {
+            "name": "逐退役事件对照",
+            "implementation": "只在 valid 时采集 PC/指令/寄存器写回/内存掩码，按 order 比对规格模型。",
+            "why": "定位首个架构差异，避免按时钟周期硬对齐导致假报。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "停顿不变性",
+            "variables": [
+              "存储器应答延迟 0/1/3 周期",
+              "无停顿、交替停顿、固定 seed 的随机停顿"
+            ],
+            "controls": "相同 ELF、复位、初始内存、核配置与终止条件。",
+            "split": "手工核对的校准程序与保留程序分开；保留集包含 x0、负立即数、taken/not-taken 分支。",
+            "metrics": [
+              "首个不同的退役索引",
+              "错误事件数",
+              "终止周期"
+            ],
+            "decision": "任何合法停顿下状态序列不一致先定位适配器/环境，不进入性能比较。"
+          },
+          {
+            "name": "缺陷分类与定位",
+            "variables": [
+              "接口 valid/order/rd/mask 各一种缺陷",
+              "ALU/分支各一种执行缺陷"
+            ],
+            "controls": "每次只注入一个可确认已生效的缺陷；独立人工 oracle 标注错误类型。",
+            "split": "用部分注入类型开发监视器，保留至少一类接口与一类执行缺陷评价。",
+            "metrics": [
+              "检出数量/生效缺陷数量",
+              "首次报告距离真实首错的退役指令数",
+              "正常设计误报数"
+            ],
+            "decision": "报告逐缺陷结果和漏检机制；不能用某个总体比例覆盖正常设计误报。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "检出率",
+            "definition": "被监视器检出的已生效注入缺陷数 / 全部已生效注入缺陷数。",
+            "unit": "%",
+            "aggregation": "按接口与执行缺陷分别报告分子/分母，重复 seed 不算新缺陷。"
+          },
+          {
+            "name": "定位偏移",
+            "definition": "首次报告退役索引减人工确认的首错索引。",
+            "unit": "条指令",
+            "aggregation": "逐缺陷列出；未检出单列。"
+          }
+        ],
+        "ablations": [
+          "依次关闭 order、x0 和内存掩码检查，保留其余设置，观察哪些缺陷重新漏检。",
+          "比较仅最终状态、逐退役、逐退役加契约三种观察能力。"
+        ],
+        "pitfalls": [
+          "PC 或结果从执行阶段直接接出，停顿后并非真正退役状态。",
+          "参考模型与 DUT 对未对齐访问/非法指令的配置不同。",
+          "把超时当错误，却没有限制合法环境能拖延多久。"
+        ],
+        "reproducibility": [
+          "DUT、适配器、参考模型、编译器和 ACT4 提交。",
+          "ELF/反汇编/初始内存及 DUT 能力配置。",
+          "所有停顿轨迹、seed、最大周期和首错原始 trace。",
+          "正常设计与突变设计的哈希；一条命令重放最短失败程序。"
+        ],
+        "stopRules": [
+          "两周内官方示例 ELF 仍无法在所选环境运行，缩为纯 RTL 退役接口模型，明确尚未接完整核。",
+          "无法把跟踪接口错误与实际执行错误分开时，停止添加指令，先独立验证适配器。"
+        ],
+        "deliverables": [
+          "一页 RVFI 适配契约",
+          "短程序与注入缺陷集合",
+          "首错定位表和反例波形",
+          "未测指令/异常列表"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-ic",
+          "contest-soc"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "kb-resource-ic-rv-tests",
+          "resource-riscv",
+          "resource-v2-sby"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m21"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m20",
+              "m16"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：只覆盖 ADD/ADDI、x0、停顿和接口 order，复现并定位两类预先注入的接口错误。",
+          "第 7–10 天：预检“停顿不变性”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "在同一 RV32I 指令序列下，微架构停顿改变周期但不应改变退役结果。哪些接口检查能最早区分跟踪适配缺陷与指令执行缺陷？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "RV32I 退役跟踪接口与微架构停顿的一致性验证 baseline reproducibility",
+          "RVFI RV32I 退役跟踪 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-ic-handshake",
+      "title": "Ready/valid 弹性流水线的背压正确性与延迟权衡",
+      "summary": "比较寄存器切片、两项弹性缓冲和直接连接，在突发背压下检查数据保持、无丢失与吞吐；从一个可运行模块研究系统接口。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-handshake",
+        "cocotb",
+        "sby"
+      ],
+      "tags": [
+        "ready/valid",
+        "背压",
+        "skid buffer",
+        "弹性流水线",
+        "吞吐"
+      ],
+      "level": "入门",
+      "priority": 12,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic03",
+        "ic06",
+        "advanced-01"
+      ],
+      "sections": [
+        {
+          "heading": "问题边界",
+          "items": [
+            "限定单时钟、无包边界的固定宽度流接口，先写明数据在 valid=1 且 ready=0 时必须保持。完整 AXI、CDC、仲裁公平性不属于最低版本。",
+            "安全性检查不丢失、不重复、顺序不变；最终能送达的活性判断必须明确下游不会永久停顿的环境条件。"
+          ]
+        },
+        {
+          "heading": "实现与实验",
+          "items": [
+            "对比直接连接、单项寄存器切片、两项弹性缓冲。用相同序列与背压轨迹，量测在途数据量、周期延迟和有效传输率。",
+            "在长时间 ready=0、连续满速、交替停顿和复位期间检查 scoreboarding。故意使 valid 等待 ready 或停顿时数据提前改变，确认测试能失败。"
+          ]
+        },
+        {
+          "heading": "衔接与交付",
+          "items": [
+            "可作为 FIFO、DMA 或矩阵加速器的前置模块。交付时序契约、可复用断言、参数化 RTL、可重放背压轨迹和正确性/性能表。",
+            "先用仿真测周期指标；若没有综合环境，就把频率收益留为未验证假设，不把寄存器数少直接解释成功耗低。"
+          ]
+        }
+      ],
+      "difficulty": "D2",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 2,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 2
+        },
+        "reason": "只涉及单时钟接口，但需要区分安全性、活性假设及背压下的状态变化。",
+        "prerequisites": [
+          "组合与时序逻辑",
+          "简单 FIFO 与 Python 队列",
+          "valid/ready 时序图"
+        ],
+        "resources": [
+          "普通电脑",
+          "Verilator/Icarus 与 cocotb",
+          "可选 SBY"
+        ],
+        "minimum": "8 位单项缓冲，通过 4 类背压轨迹，并复现一次停顿时覆盖数据的错误。",
+        "stretch": "研究两项缓冲和多级连接，增加形式性质与综合面积/关键路径对照。",
+        "effort": "预研 1–2 周；完整范围约 6–10 周，每周 6–10 小时",
+        "team": "适合大二 1–2 人；一人实现接口，一人独立建立监视器"
+      },
+      "researchDossier": {
+        "question": "在同一上游序列与下游背压下，两项弹性缓冲相比单项寄存器切片能否提高有效传输率，代价是什么？",
+        "hypotheses": [
+          "待检验：储存第二项在途数据能减少部分背压轨迹中的气泡，但持续下游限速时不一定增加长期吞吐。",
+          "待检验：单纯检查输出值会漏掉重复传输，序号监视器可检出。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-handshake",
+            "finding": "valid/ready 共同为高表示完成一次传输。",
+            "howToUse": "以握手事件驱动独立输入/输出队列和状态检查。",
+            "limitation": "本文采用数据在停顿时保持的单时钟契约；其他采样接口须另立规格。"
+          },
+          {
+            "sourceId": "sby",
+            "finding": "形式工具可检查有限模型中的安全性质。",
+            "howToUse": "验证数据保持、占用范围及无额外输出；单列活性假设。",
+            "limitation": "不限制下游无限停顿时不能保证有限周期送达。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "直接组合连接",
+            "implementation": "data/valid 从源到端，ready 反向；只作一段连接，不组成组合环。",
+            "why": "建立最低额外延迟及零缓冲对照。"
+          },
+          {
+            "name": "单项寄存器切片",
+            "implementation": "只在有空间或同时出队时接收下一项；合法握手后更新存储。",
+            "why": "提供独立正确性已确认的面积/延迟基线。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "流量矩阵",
+            "variables": [
+              "上游每周期、间隔 2 周期和 4 项突发",
+              "下游始终可接收、交替停顿、停顿 4 后接收 4、伪随机背压",
+              "宽度 8/32 位；级数 1/4"
+            ],
+            "controls": "每种实现使用相同有效输入和可重放 ready 轨迹，先通过数据一致性检查。",
+            "split": "定向轨迹开发；独立 seed 和额外停顿长度评价，不重调设计。",
+            "metrics": [
+              "输出握手/观察周期",
+              "每项输入握手到输出握手的周期差",
+              "丢失/重复/乱序计数"
+            ],
+            "decision": "只在正确性通过的实现间比较吞吐；呈现轨迹依赖性，不报一个脱离场景的加速倍数。"
+          },
+          {
+            "name": "边界与活性",
+            "variables": [
+              "复位时无数据/有在途数据",
+              "最长停顿 1/8/32 周期",
+              "故意提前更新 data、valid 等待 ready"
+            ],
+            "controls": "明确复位是否丢弃在途数据；最终解除停顿。",
+            "split": "人工确认短轨迹后扩展 seed；注入缺陷不加入正常正确性统计。",
+            "metrics": [
+              "正常设计误报",
+              "各注入缺陷检出情况",
+              "解除停顿后排空周期"
+            ],
+            "decision": "活性结论只适用所声明的服务假设与复位契约。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "有效吞吐",
+            "definition": "窗口中输出握手次数 / 窗口时钟周期数；另列是否排除预热/排空。",
+            "unit": "项/周期",
+            "aggregation": "逐轨迹报告，不能跨不同下游服务率平均。"
+          },
+          {
+            "name": "周期延迟",
+            "definition": "一项被输入接受到输出接受的周期数。",
+            "unit": "周期",
+            "aggregation": "报告中位数、p95、最大值和样本数；无输出项单列。"
+          },
+          {
+            "name": "正确性错误",
+            "definition": "输入已接受序列与输出已接受序列出现丢失、重复或乱序。",
+            "unit": "项",
+            "aggregation": "分别计数，复位丢弃按契约独立统计。"
+          }
+        ],
+        "ablations": [
+          "移除第二个存储槽，观察哪些轨迹产生气泡。",
+          "关闭停顿数据保持断言，比较定向检查和随机队列能否仍检出已知缺陷。"
+        ],
+        "pitfalls": [
+          "按 valid 而不是 valid&&ready 把数据加入队列。",
+          "将组合连接不合法组成环，仿真偶然稳定。",
+          "宽度不同导致综合资源差异，却误解为缓冲结构改善。"
+        ],
+        "reproducibility": [
+          "接口时序契约与复位处理。",
+          "RTL、测试平台、背压轨迹 CSV、seed。",
+          "指标统计窗口与时钟定义。",
+          "如果综合，保存平台、约束、工具版本；否则频率/功耗写未测。"
+        ],
+        "stopRules": [
+          "不能在 8 位 1 级上通过定向轨迹时，不增加多级和 AXI 功能。",
+          "没有可复现的综合约束时，只完成周期性能和逻辑资源分析。"
+        ],
+        "deliverables": [
+          "三种实现的时序图",
+          "自动 scoreboard 和断言",
+          "流量矩阵结果 CSV",
+          "至少两类短失败轨迹"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-ic",
+          "contest-soc"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-cocotb",
+          "resource-v2-sby",
+          "resource-riscv"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m21"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m20",
+              "m16"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：8 位单项缓冲，通过 4 类背压轨迹，并复现一次停顿时覆盖数据的错误。",
+          "第 7–10 天：预检“流量矩阵”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "在同一上游序列与下游背压下，两项弹性缓冲相比单项寄存器切片能否提高有效传输率，代价是什么？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "Ready/valid 弹性流水线的背压正确性与延迟权衡 baseline reproducibility",
+          "ready/valid 背压 skid buffer evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-ic-requant",
+      "title": "INT8 卷积再量化：零点、舍入与饱和的逐层误差定位",
+      "summary": "从乘加到输出 INT8 的整条数值链建立参考，研究遗漏零点补偿、尺度粒度和舍入顺序对结果的影响，避免只看最终分类准确率。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-litert-int8",
+        "cmsis",
+        "hls4ml",
+        "cocotb"
+      ],
+      "tags": [
+        "INT8",
+        "再量化",
+        "zero-point",
+        "per-channel",
+        "数值验证"
+      ],
+      "level": "进阶",
+      "priority": 12,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic01",
+        "ic02",
+        "ic05"
+      ],
+      "sections": [
+        {
+          "heading": "研究范围",
+          "items": [
+            "固定一种 CONV_2D 的布局和 padding/stride，最低版可从单输出通道点积开始；明确激活、权重、偏置、累加与输出类型。",
+            "把浮点模型精度损失与整数实现错误分开：前者比较同模型浮点/量化任务表现，后者比较同一量化算子的参考/候选输出。"
+          ]
+        },
+        {
+          "heading": "实现路线",
+          "items": [
+            "读取模型中的 scale/zero-point 与 quantized_dimension，建立高精度整数累加参考，再显式执行已声明的 multiplier/shift、舍入、输出零点和截断。",
+            "固定某个参考内核提交作为逐比特对照；若后端有不同数值契约，先给出容差依据，不能把所有非零误差自动视为允许。",
+            "测试全负数、极值、半 LSB、异尺度通道和长累加链；在芯片实现前先用软件检验每个阶段。"
+          ]
+        },
+        {
+          "heading": "评价与交付",
+          "items": [
+            "交付单层数值契约、整数样例生成器、逐阶段 trace、误差直方图及失败复现。通道数、点积长度和舍入模式构成可控实验矩阵。",
+            "候选优化需保持所声明的数值语义。若修改位宽/舍入，要同时报告数值误差、任务表现与资源成本，不能仅宣称 INT8 更快。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 3,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "整数范围、尺度与舍入的语义细节决定可复现性；最低交付不需要 FPGA。",
+        "prerequisites": [
+          "补码、定点算术与溢出",
+          "Python/NumPy 与卷积基础",
+          "RTL 数值验证或 C 内核阅读"
+        ],
+        "resources": [
+          "普通电脑",
+          "固定版本 LiteRT/CMSIS-NN 参考内核",
+          "模型参数与许可允许的测试数据"
+        ],
+        "minimum": "验证 1 个输出通道、3 组尺度和边界向量，能定位遗漏零点、错误 shift 两类注入缺陷。",
+        "stretch": "扩展多通道卷积及 RTL，量化不同舍入策略的误差与周期成本。",
+        "effort": "预研 2 周；完整范围约 8–14 周，每周 8–12 小时",
+        "team": "集成电路负责定点/RTL，智能科学负责模型参数与任务评价"
+      },
+      "researchDossier": {
+        "question": "在固定量化模型参数下，零点补偿和再量化舍入如何影响单层整数输出？哪些错误只看最终准确率难以发现？",
+        "hypotheses": [
+          "待检验：遗漏激活零点补偿造成系统性偏移，其影响与权重和有关。",
+          "待检验：半 LSB、负数和饱和边界更能区分舍入实现，而普通随机小数值可能掩盖差异。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-litert-int8",
+            "finding": "量化张量具有 scale/zero-point 与算子特定约束。",
+            "howToUse": "建立候选算子必须遵循的数值契约；未规定细节由固定内核定义。",
+            "limitation": "不可据此保证所有后端逐比特一致。"
+          },
+          {
+            "sourceId": "cmsis",
+            "finding": "CMSIS-NN 提供整数神经网络内核。",
+            "howToUse": "固定现有版本作为工程对照，确认布局和参数约定。",
+            "limitation": "主机与目标编译路径可能不同，必须记录实际启用的内核与编译选项。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "高精度整数参考",
+            "implementation": "用任意精度整数计算累加，再逐步仿真约定的位宽、舍入和饱和；保存各中间阶段。",
+            "why": "隔离累加错误与再量化错误。"
+          },
+          {
+            "name": "固定版本参考内核",
+            "implementation": "把相同张量参数输入指定实现，记录真实输出。",
+            "why": "为声称兼容的实现给出直接对照；版本不能随实验变动。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "边界矩阵",
+            "variables": [
+              "激活零点 0、负值、正值",
+              "输入全 0、极值、正负交替、半 LSB 构造",
+              "点积长度 4/16/64；输出通道 1/4"
+            ],
+            "controls": "相同权重、偏置、尺度和数据布局；先确认累加位宽足够且不会意外 wrap。",
+            "split": "人工可验小向量开发；独立生成器 seed 的保留向量评价。",
+            "metrics": [
+              "逐阶段失配数量",
+              "输出最大绝对差，单位 INT8 LSB",
+              "饱和输出比例"
+            ],
+            "decision": "每个差异必须追溯至明确阶段；兼容目标的容差提前写出，不能看结果后放宽。"
+          },
+          {
+            "name": "策略与成本对照",
+            "variables": [
+              "统一尺度/按通道尺度",
+              "已声明的两种舍入策略",
+              "完整精度/缩减累加位宽"
+            ],
+            "controls": "策略研究与兼容性验证分开；相同算子和计时边界。",
+            "split": "校准参数仅由训练/校准样本得到；任务测试集不参与策略选择。",
+            "metrics": [
+              "数值误差分布",
+              "若有完整任务则分类 macro-F1 或对应任务指标",
+              "周期或软件耗时、所需参数字节数"
+            ],
+            "decision": "输出精度与成本 Pareto 表；候选若只靠破坏数值契约变快，列作有损实验而非兼容优化。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "整数最大误差",
+            "definition": "max(abs(candidate_int8-reference_int8))。",
+            "unit": "输出 LSB",
+            "aggregation": "按通道与边界类型分别报告，并保留首个最大差异样例。"
+          },
+          {
+            "name": "失配率",
+            "definition": "不同输出元素数量 / 全部比较输出元素数量。",
+            "unit": "%",
+            "aggregation": "说明精确或容差标准；分别列样例数和元素数。"
+          },
+          {
+            "name": "参数成本",
+            "definition": "量化尺度、零点、偏置及乘数/shift 存储的总字节。",
+            "unit": "B",
+            "aggregation": "逐算子/通道方案列明，含对齐方式。"
+          }
+        ],
+        "ablations": [
+          "依次移除零点补偿、偏置缩放或输出零点，每次只变一项。",
+          "保持其他项不变改变负数右移/舍入约定，使用半 LSB 定向向量。"
+        ],
+        "pitfalls": [
+          "Python/NumPy 的中间类型隐式溢出，导致所谓参考不可靠。",
+          "padding 零值未按激活零点编码。",
+          "逐通道 scale 与张量通道排列错位。",
+          "以最终预测相同掩盖单层整数错误。"
+        ],
+        "reproducibility": [
+          "模型/算子提交、参考内核、编译器和编译选项。",
+          "张量布局、quantized_dimension、所有尺度/零点/偏置。",
+          "完整整数样例、每一步 trace 与 seed。",
+          "明确乘数/shift、半 LSB 舍入、饱和/wrap 处理。"
+        ],
+        "stopRules": [
+          "没有能人工核对的小向量时，停止增加卷积通道，先固定参考。",
+          "没有完整任务数据或许可证时，只报告算子数值正确性，不外推任务准确率。"
+        ],
+        "deliverables": [
+          "数值契约",
+          "逐层误差定位脚本",
+          "边界向量包",
+          "正确性与成本对照表"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-ic",
+          "contest-soc"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "kb-resource-ic-quant-spec",
+          "resource-cocotb",
+          "resource-cmsis"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m21"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m20",
+              "m19",
+              "m16"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：验证 1 个输出通道、3 组尺度和边界向量，能定位遗漏零点、错误 shift 两类注入缺陷。",
+          "第 7–10 天：预检“边界矩阵”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "在固定量化模型参数下，零点补偿和再量化舍入如何影响单层整数输出？哪些错误只看最终准确率难以发现？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "INT8 卷积再量化：零点、舍入与饱和的逐层误差定位 baseline reproducibility",
+          "INT8 再量化 zero-point evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-ic-mbist",
+      "title": "教学 SRAM 的 March C- BIST 与显式故障覆盖实验",
+      "summary": "为小型 SRAM 行为模型实现 March C- 控制器，逐个注入故障并研究检测率和首错定位；限定模型后再讨论字宽扩展。",
+      "type": "topic",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-sram-march",
+        "cocotb",
+        "sby"
+      ],
+      "tags": [
+        "SRAM",
+        "MBIST",
+        "March C-",
+        "故障注入",
+        "DFT"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "拟议选题",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic03",
+        "advanced-01"
+      ],
+      "sections": [
+        {
+          "heading": "研究问题",
+          "items": [
+            "最低版固定 32×1 位教学 SRAM、一个周期读延迟，定义 stuck-at、transition 与少量显式地址别名故障。不要把覆盖这些注入模型解释为覆盖所有真实失效。",
+            "对比逐地址写读 0/1 和 March C-，研究访问顺序改变是否影响已声明的故障集合；之后才考虑字内/字间耦合与字宽扩展。"
+          ]
+        },
+        {
+          "heading": "实现与故障实验",
+          "items": [
+            "将六阶段算法实现为 FSM，记录阶段、地址、预期值和首个失配；无故障存储器应完整走完，故障版本应可重放。",
+            "先由 Python 参考执行器验证序列，再实现 RTL BIST。故障注入器保持独立，允许在读/写过程中建模，禁止直接把 fail 线与故障启用信号相连。"
+          ]
+        },
+        {
+          "heading": "范围与交付",
+          "items": [
+            "报告每类故障的枚举数量、检测数量、漏检清单、访问次数和完成周期。测试会覆盖受测数据，最低版仅测试仿真模型。",
+            "输出故障语义表、参考序列、FSM、注入器、原始结果与覆盖表。8 位存储器扩展必须重新检查位内故障和数据背景，不能只把 1 位 0/1 替换为 0x00/0xFF。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "难点是故障语义、参考执行器和覆盖分母的正确建立，真实 SRAM 测试不作为最低目标。",
+        "prerequisites": [
+          "FSM 与同步 SRAM 接口",
+          "Python 故障模型",
+          "数字可测性基础"
+        ],
+        "resources": [
+          "普通电脑与 RTL 仿真器",
+          "独立参考执行器",
+          "人工可检查的小故障集合"
+        ],
+        "minimum": "32×1 位 SRAM，独立枚举 stuck-at 与 transition，记录首错地址和检测情况。",
+        "stretch": "增加特定耦合模型、字宽和读延迟参数，比较访问成本与覆盖。",
+        "effort": "预研 2 周；完整范围约 8–12 周，每周 6–10 小时",
+        "team": "1–2 人；建议导师审阅故障定义与覆盖结论"
+      },
+      "researchDossier": {
+        "question": "在已明确的 32×1 位 SRAM 故障模型中，March C- 比简单写读增加了哪些可检出的故障，首错信息是否能唯一定位故障？",
+        "hypotheses": [
+          "待检验：访问顺序能够改变某些 transition/地址别名模型的可见性。",
+          "待检验：检测到失配不等于唯一定位根因，不同注入故障可能产生相同首错记录。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-ic-sram-march",
+            "finding": "官方概述给出 March C- 的六阶段读写顺序。",
+            "howToUse": "作为参考序列，逐项记录升/降地址和预期值。",
+            "limitation": "直接页读取失败；字宽转换与全面耦合覆盖不能仅由概述证明。"
+          },
+          {
+            "sourceId": "cocotb",
+            "finding": "Python 驱动便于独立记账和重放。",
+            "howToUse": "由独立故障模型控制存储读写，参考执行器校验 FSM。",
+            "limitation": "缺陷集合由研究者定义，不能代表真实芯片失效率。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "逐地址简单写读",
+            "implementation": "每地址依次写 0 读 0 写 1 读 1，固定与 BIST 相同接口延迟。",
+            "why": "建立测试顺序、访问次数与漏检的直接对照。"
+          },
+          {
+            "name": "软件 March C- 参考",
+            "implementation": "独立 Python 序列解释器，不复用 RTL 的状态转换逻辑。",
+            "why": "先证实测试序列再评估实现，避免两个同源错误互相通过。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "显式故障枚举",
+            "variables": [
+              "每地址 stuck-at-0/1",
+              "每地址 0→1 或 1→0 写转移失效",
+              "两组事先声明的地址别名映射"
+            ],
+            "controls": "每次注入一种故障；记录故障是否实际被访问触发。无故障模型另测。",
+            "split": "4 地址实例用于人工开发；32 地址完整枚举作为保留评价。",
+            "metrics": [
+              "检测数/枚举数，及触发数",
+              "首次失配阶段/地址/期望/实际",
+              "读写访问与周期数量"
+            ],
+            "decision": "漏检逐项解释；未触发和触发但漏检分开，不以剔除困难故障提高比例。"
+          },
+          {
+            "name": "诊断歧义与时序",
+            "variables": [
+              "读延迟 1/2 周期",
+              "报告首错/完整失配序列",
+              "深度 8/32/64"
+            ],
+            "controls": "算法逻辑与故障集合保持一致；失配地址按发起读请求而非返回当前地址归属。",
+            "split": "保留部分故障组合研究歧义；多故障只作拓展，不混入单故障检出率。",
+            "metrics": [
+              "相同错误签名对应故障数",
+              "实现完成周期",
+              "无故障误报"
+            ],
+            "decision": "诊断不可唯一时明确输出候选集合，不宣称根因定位成功。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "模型检测率",
+            "definition": "被测试记录失配的枚举故障数 / 全部声明枚举故障数。",
+            "unit": "%",
+            "aggregation": "按故障类型列分子/分母，另列未触发；只对注入模型有效。"
+          },
+          {
+            "name": "测试成本",
+            "definition": "从开始到完成的周期数及读/写操作数。",
+            "unit": "周期、次",
+            "aggregation": "按深度、读延迟及早停策略分别报告。"
+          },
+          {
+            "name": "诊断歧义",
+            "definition": "同一首错签名对应的已枚举故障数量。",
+            "unit": "种故障",
+            "aggregation": "给最大值与完整映射，不将检出和诊断混为一项。"
+          }
+        ],
+        "ablations": [
+          "移除降地址阶段，用同一故障集合观察新增漏检。",
+          "仅保存 fail 标志、首错记录、完整 trace 三档比较可解释性与存储成本。"
+        ],
+        "pitfalls": [
+          "注入器直接驱动错误标志，使测试看似全部检出。",
+          "所有读均组合返回，却按同步 SRAM 控制器宣称验证通过。",
+          "字宽扩展没有字内数据背景，导致耦合模型根本没被激励。",
+          "真实运行时破坏程序数据或栈；本题最低版限定仿真模型。"
+        ],
+        "reproducibility": [
+          "每种故障的读/写语义及地址范围。",
+          "完整枚举清单与原始结果，不只保存百分比。",
+          "参考序列、RTL、seed 与仿真器版本。",
+          "读延迟、复位、首错/继续测试规则。"
+        ],
+        "stopRules": [
+          "无故障实例仍误报时，不增加耦合故障，先对齐读时序。",
+          "故障定义不能用数行示例确认时，只保留 stuck-at 与 transition，不报告耦合覆盖。"
+        ],
+        "deliverables": [
+          "故障模型说明",
+          "March C- FSM 与独立解释器",
+          "逐故障覆盖表",
+          "首错/诊断歧义报告"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-ic",
+          "contest-soc"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-cocotb",
+          "resource-v2-sby",
+          "resource-riscv"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m21"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m20",
+              "m16"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：32×1 位 SRAM，独立枚举 stuck-at 与 transition，记录首错地址和检测情况。",
+          "第 7–10 天：预检“显式故障枚举”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "在已明确的 32×1 位 SRAM 故障模型中，March C- 比简单写读增加了哪些可检出的故障，首错信息是否能唯一定位故障？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "教学 SRAM 的 March C- BIST 与显式故障覆盖实验 baseline reproducibility",
+          "SRAM MBIST March C- evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-resource-ic-rv-tests",
+      "title": "RISC-V 验证材料：ACT4 与 RVFI 的分工",
+      "summary": "现行架构测试框架与退役观察接口分别解决什么问题；避免沿用失效安装教程，避免把测试通过当作全部正确。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-act4",
+        "kb-ic-rvfi"
+      ],
+      "tags": [
+        "ACT4",
+        "RVFI",
+        "RISC-V",
+        "工具迁移"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "官方资料",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "advanced-02",
+        "kb-topic-ic-rvfi"
+      ],
+      "sections": [
+        {
+          "heading": "阅读用途",
+          "items": [
+            "ACT4 用于生成与 DUT 配置相符的自检查 ELF；RVFI 用于观察退役状态并连接验证检查。先阅读各自输入/输出，避免把两者视为同一种工具。",
+            "旧文章里的 RISCOF 流程应标记历史版本；若复现旧结果，固定旧提交并注明，新的预研优先核对当前官方框架。"
+          ]
+        },
+        {
+          "heading": "预研清单",
+          "items": [
+            "先验证官方示例 ELF、DUT 的配置/内存映射和工具链，再检查自己的接口适配。保存未测扩展、边界行为和未完成性质。",
+            "完整处理器结论需要额外验证，本材料不提供认证保证。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-resource-ic-cdc-paper",
+      "title": "经典论文阅读：Cummings 异步 FIFO（2002）",
+      "summary": "从二进制/Gray 指针、跨域同步和满空判断理解异步 FIFO，再把论文方法变成可检查的规格与反例。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-ic-cummings-fifo"
+      ],
+      "tags": [
+        "经典论文",
+        "CDC",
+        "Gray code",
+        "异步 FIFO"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "经典工程论文",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic07"
+      ],
+      "sections": [
+        {
+          "heading": "先读哪些部分",
+          "items": [
+            "阅读 Gray 指针、同步指针比较和保守满空标志章节；版本 Rev 1.2 与早期版本实现细节可能不同。",
+            "将“满/空解除可能晚于真实占用变化”写入规格，以免把安全的保守延迟当成错误。"
+          ]
+        },
+        {
+          "heading": "转化为实验",
+          "items": [
+            "画 4 深度手算指针轨迹，对照 RTL 的 wrap 和 full 条件。注入最高位判断错误，再用异频时钟与 burst 流量定位。",
+            "数字仿真能揭示逻辑和时序契约错误，不能测出真实亚稳态概率或替代物理 CDC 检查。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-resource-ic-quant-spec",
+      "title": "整数算子规范阅读：LiteRT INT8 与实现契约",
+      "summary": "核对 scale、zero-point、按通道权重和偏置，建立能追踪到整数输出的计算契约。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m19",
+        "m16"
+      ],
+      "groups": [
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-ic-litert-int8",
+        "cmsis"
+      ],
+      "tags": [
+        "量化规范",
+        "INT8",
+        "偏置",
+        "数值契约"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "官方资料",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic02",
+        "ic05",
+        "kb-topic-ic-requant"
+      ],
+      "sections": [
+        {
+          "heading": "规范中的关键约束",
+          "items": [
+            "CONV_2D 条目规定权重零点为 0、偏置为 int32，并给出与输入/权重尺度的关系。应按具体算子读取，不将所有算子规则一概而论。",
+            "逐比特一致性要对照已固定的参考内核；规范并不保证任意后端或模型都具有相同误差。"
+          ]
+        },
+        {
+          "heading": "应保存的材料",
+          "items": [
+            "保存张量布局、量化维度、输入/输出尺度、零点、偏置、舍入方式、溢出/饱和语义及参考内核提交。",
+            "自己写的数值实验与真实模型任务评价分别记录；不能只凭整数输出看起来相似判定正确。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-resource-ic-adc-metrics",
+      "title": "ADC 指标阅读：MT-003 的测量带宽与幅度条件",
+      "summary": "区分 SNR、SINAD、SFDR 与 ENOB，并理解 FFT 噪声底不能直接替代全带宽噪声功率。",
+      "type": "resource",
+      "majors": [
+        "m21",
+        "m20",
+        "m24",
+        "m22"
+      ],
+      "groups": [
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-ic-adc-mt003",
+        "scipy"
+      ],
+      "tags": [
+        "ADC",
+        "SINAD",
+        "ENOB",
+        "FFT",
+        "指标定义"
+      ],
+      "level": "进阶",
+      "priority": 11,
+      "status": "经典官方教程",
+      "date": "2026-10-02",
+      "relatedTopicIds": [
+        "ic11",
+        "advanced-06",
+        "topic-27"
+      ],
+      "sections": [
+        {
+          "heading": "指标要连同条件保存",
+          "items": [
+            "MT-003 说明 SNR 与 SINAD 的谐波处理不同，动态指标必须注明输入频率/幅度和测量带宽；ENOB 的常用转换式默认满幅正弦。",
+            "记录 FFT 样本数和频谱归一化；某个 bin 噪声很低并不意味着总噪声同样低。"
+          ]
+        },
+        {
+          "heading": "适合本科的复现练习",
+          "items": [
+            "先让理想量化器通过幅度与采样条件的自检，再加入采样抖动、失配或偏置之一。测试方法本身出错会掩盖电路问题。",
+            "区分行为模型、晶体管仿真和实物测试三个证据层级；本教程里的示例 ADC 数值不是本项目的预期结果。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kb-topic-oulad",
+      "title": "学习预警的时间截断、校准与跨开课批次测试",
+      "summary": "基于公开 OULAD，在第 14/28/42 天只使用当时已知信息，研究退课预警在下一开课批次的稳定性。",
+      "type": "topic",
+      "majors": [
+        "m34",
+        "m16",
+        "m33"
+      ],
+      "groups": [
+        "human",
+        "computing",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-inter-oulad",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "OULAD",
+        "学习分析",
+        "时间泄漏",
+        "Brier",
+        "校准",
+        "早期预警"
+      ],
+      "sections": [
+        {
+          "heading": "已核验资料",
+          "items": [
+            "OULAD 官方提供课程、学生、测验与日志 CSV，日志日期相对开课日；B/J 开课结构可能不同。",
+            "公开字段说明未列随机干预分配；本库据此把预警建模作为观察研究，不能证明发送提醒能减少退课。"
+          ]
+        },
+        {
+          "heading": "研究建议与最小路线",
+          "items": [
+            "先选一个有前后开课批次的模块，固定目标：第 28 天仍在读者之后的退课风险；退课发生在截断日前者从风险集排除并单列。",
+            "连接表前审计主键、重复与一对多关系；仅聚合截断日前的点击、提交和已公布成绩，不使用未来退课日期或最终成绩作特征。",
+            "训练旧批次、验证中间批次、测试后批次；同一学生跨批次须隔离，无法隔离时报告限制并另做学生分组分析。"
+          ]
+        },
+        {
+          "heading": "先交付什么",
+          "items": [
+            "交付时间可用性字典、样本纳入流程、常数风险与逻辑回归基线、逐批次校准图。",
+            "教育同学定义预警后的合理支持问题；计算机同学保证截断管线可复现；统计同学评估区间与小群体误差。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "难点是标签时间、风险集与跨批次有效性，模型规模较小。",
+        "prerequisites": [
+          "表连接与逻辑回归",
+          "教育测量基本概念"
+        ],
+        "resources": [
+          "OULAD CSV",
+          "普通电脑"
+        ],
+        "minimum": "一个模块、第 28 天、旧批次到后批次基线。",
+        "stretch": "多截断时间、校准与组间误差审计；干预效果另设计研究。",
+        "effort": "8–12 周，每周 6–10 小时",
+        "team": "建议 2–3 人：领域同学定义变量，数据同学实现，导师检查研究边界"
+      },
+      "level": "导师协作",
+      "priority": 82,
+      "status": "研究建议；需导师确认范围",
+      "date": "2026-10-02",
+      "researchDossier": {
+        "question": "早期退课风险模型在未来开课批次中的校准，是否优于常数风险并保持时间可用性？",
+        "hypotheses": [
+          "引入截断日前的过程特征可能提高排序，但校准会随开课批次变化。",
+          "未来成绩与退课日期作为特征会造成明显泄漏。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-inter-oulad",
+            "finding": "日志和测验有相对开课时间，开课结构B/J可能不同。",
+            "howToUse": "写每个特征何时可见，选择有前后开课的数据。",
+            "limitation": "历史英国开放大学观察数据，不能证明干预有效或直接外推本校。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "常数风险",
+            "implementation": "只使用训练风险集的退课比例。",
+            "why": "检验复杂特征是否有真正增益。"
+          },
+          {
+            "name": "逻辑回归",
+            "implementation": "前28天的有效点击日数、已公布作业与先修特征，正则化训练内选。",
+            "why": "提供低成本、可解释、可校准起点。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "时间截断",
+            "variables": "14/28/42天截断",
+            "controls": "每次仅纳入当时仍在读者；未来退课作标签不作特征",
+            "split": "旧批次训练，后批次测试；同学生隔离",
+            "metrics": "Brier、AUROC、PR-AUC、群体校准",
+            "decision": "所有模型先通过时间可用性审计，否则无效。"
+          },
+          {
+            "name": "模型与校准",
+            "variables": "常数/逻辑回归/一个树模型；可选训练内校准",
+            "controls": "固定测试批次，校准仅用验证批次",
+            "split": "外层开课批次，内层学生分组",
+            "metrics": "校准误差与风险分层、每批次样本数",
+            "decision": "若模型排序提升但校准不稳定，结果转为风险排序研究。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "Brier",
+            "definition": "预测概率与退课二元标签平方差平均",
+            "unit": "0–1",
+            "aggregation": "每批次并按学生聚合；标明相对常数风险变化"
+          },
+          {
+            "name": "PR-AUC",
+            "definition": "精确率—召回曲线下面积",
+            "unit": "0–1",
+            "aggregation": "各截断与批次，附阳性比例"
+          },
+          {
+            "name": "校准曲线",
+            "definition": "预设风险分箱的预测均值与观测比例",
+            "unit": "概率",
+            "aggregation": "分箱样本数、区间及群体不足标记"
+          }
+        ],
+        "ablations": [
+          "只用开课前背景，对比过程特征。",
+          "故意加入未来信息仅作泄漏演示，明确不作为有效模型。"
+        ],
+        "pitfalls": [
+          "id_student跨课重复造成训练测试同人。",
+          "未公布的成绩在截断前被误用。",
+          "预警分数作为惩罚或标签化学生的理由。"
+        ],
+        "reproducibility": [
+          "保存关联主键、字段可用性表和风险集规则。",
+          "公开每批次纳入/排除数量与学生隔离策略。",
+          "保存数据版本、模型、预测和环境。"
+        ],
+        "stopRules": [
+          "无法可靠确定某特征公布时间时从主要模型删除。",
+          "未来批次事件过少时仅报告区间和可行性，不宣称稳定提升。"
+        ],
+        "deliverables": [
+          "无泄漏数据管线",
+          "时间外风险/校准报告",
+          "干预效果未识别声明"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-v2-sklearn-cv",
+          "kb-resource-education",
+          "kb-resource-eng-matbench"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m34"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m16",
+              "m33"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：一个模块、第 28 天、旧批次到后批次基线。",
+          "第 7–10 天：预检“时间截断”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "早期退课风险模型在未来开课批次中的校准，是否优于常数风险并保持时间可用性？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "学习预警的时间截断、校准与跨开课批次测试 baseline reproducibility",
+          "OULAD 学习分析 时间泄漏 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-acs",
+      "title": "复杂调查权重下的通勤时长分布与不确定性",
+      "summary": "使用 ACS PUMS 的一个固定年份和地区，比较未加权、正确个人权重及复制权重估计，练习调查结论的代表性边界。",
+      "type": "topic",
+      "majors": [
+        "m41",
+        "m43",
+        "m44",
+        "m46",
+        "m33"
+      ],
+      "groups": [
+        "business",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-inter-acs",
+        "statsmodels"
+      ],
+      "tags": [
+        "抽样调查",
+        "PUMS",
+        "调查权重",
+        "复制权重",
+        "标准误",
+        "通勤"
+      ],
+      "sections": [
+        {
+          "heading": "已核验资料",
+          "items": [
+            "美国 Census 文档区分个人权重与家庭权重，并提供 80 个复制权重及官方核验估计。",
+            "数据对象为美国 ACS 样本，地理口径与统计定义应按所选年字典核对；不能替代佛山调查。"
+          ]
+        },
+        {
+          "heading": "研究建议与最小路线",
+          "items": [
+            "选 2024 一年期、一个州的个人记录，限定有有效通勤时间的就业对象；先写过滤规则，再下载必要字段。",
+            "比较未加权均值、PWGTP 加权均值与正确复制权重标准误；把非应答、分配标志和特殊代码列入质量审计。",
+            "用官方同口径核验表校验至少一个统计量；均值、分位数与模型系数的标准误算法要分别说明，不能套一个公式。"
+          ]
+        },
+        {
+          "heading": "与竞赛/毕设衔接",
+          "items": [
+            "可先作为市调赛方法附录与复现练习，再为佛山校园调查设计抽样框、分层与非应答记录。",
+            "研究结论为加权描述或条件关联；收入、教育与通勤回归不自动获得政策因果解释。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "权重口径、复制估计与对象筛选比普通回归更关键。",
+        "prerequisites": [
+          "概率统计",
+          "加权估计与数据字典"
+        ],
+        "resources": [
+          "官方数据与字典",
+          "普通电脑"
+        ],
+        "minimum": "一个州、一个统计量、与官方核验值对齐。",
+        "stretch": "比较群体分布和不同年份的口径变化，附不确定性。",
+        "effort": "6–10 周，每周 6–8 小时",
+        "team": "建议 2–3 人：领域同学定义变量，数据同学实现，导师检查研究边界"
+      },
+      "level": "导师协作",
+      "priority": 82,
+      "status": "研究建议；需导师确认范围",
+      "date": "2026-10-02",
+      "researchDossier": {
+        "question": "通勤时长的调查加权描述与不确定性，能否复现官方口径并解释未加权偏差？",
+        "hypotheses": [
+          "未加权均值可能偏离目标人口加权均值。",
+          "普通独立同分布标准误可能不同于调查复制权重标准误。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-inter-acs",
+            "finding": "官方区分个人/家庭权重并附复制权重和核验值。",
+            "howToUse": "对个人通勤问题使用个人权重，查字典确认特殊代码。",
+            "limitation": "仅美国调查方法练习；不提供佛山因果或代表性证据。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "未加权描述",
+            "implementation": "报告样本均值、样本数和分布。",
+            "why": "用于展示样本和目标人口的区别。"
+          },
+          {
+            "name": "官方加权描述",
+            "implementation": "使用PWGTP与80复制权重，按用户指南计算目标统计量。",
+            "why": "作为规范统计方法，不是机器学习竞赛分数。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "同口径复现",
+            "variables": "一个州、就业与通勤筛选、权重选择",
+            "controls": "固定年份/一年期和个人单位，不混五年期",
+            "split": "独立复现脚本对官方核验估计，不拆随机训练测试",
+            "metrics": "加权均值、复制SE、核验差",
+            "decision": "核验差超出四舍五入先查口径，不解释为新发现。"
+          },
+          {
+            "name": "群体与缺失敏感性",
+            "variables": "预定群体、分配标志、特殊值处理",
+            "controls": "保持官方主要口径；替代分析明确标注",
+            "split": "统计推断按调查设计；不将个人记录数直接当有效样本数",
+            "metrics": "分组差及误差限、缺失/分配比例",
+            "decision": "小群体区间宽时只报告不确定，不排行优劣。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "人口加权均值",
+            "definition": "sum(w*x)/sum(w)；有效对象定义提前固定",
+            "unit": "分钟",
+            "aggregation": "同年份同地理同对象"
+          },
+          {
+            "name": "复制标准误",
+            "definition": "据官方指南的80复制估计偏离主估计计算",
+            "unit": "分钟",
+            "aggregation": "固定公式和适用统计量；分位数另核对"
+          },
+          {
+            "name": "核验差",
+            "definition": "本地估计−官方同口径核验估计",
+            "unit": "分钟或人数",
+            "aggregation": "说明舍入、筛选和字典差异"
+          }
+        ],
+        "ablations": [
+          "个人/家庭权重误用仅列教学错误对照。",
+          "对分配标志和特殊值规则做预定敏感性分析。"
+        ],
+        "pitfalls": [
+          "跨年收入或地理口径未经调整。",
+          "把观察回归写成教育对收入或通勤的因果。",
+          "不能从PUMA精确回溯匿名个体或细街区。"
+        ],
+        "reproducibility": [
+          "保存所需字段、年份、地区、下载入口与字典版本。",
+          "公开过滤顺序及每步人数。",
+          "保留主权重与复制权重估计代码和官方核验对照。"
+        ],
+        "stopRules": [
+          "对象、权重和核验口径不能对齐时，先做方法审计不发表差异结论。",
+          "复制权重缺失时只给点估计，暂不输出自称设计有效的区间。"
+        ],
+        "deliverables": [
+          "权重复现笔记本",
+          "人口/样本区别图",
+          "佛山本地调查抽样框建议"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-survey",
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-v2-statsmodels",
+          "resource-pymc",
+          "resource-smartedu"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m41"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m43",
+              "m44",
+              "m46",
+              "m33"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：一个州、一个统计量、与官方核验值对齐。",
+          "第 7–10 天：预检“同口径复现”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "通勤时长的调查加权描述与不确定性，能否复现官方口径并解释未加权偏差？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "复杂调查权重下的通勤时长分布与不确定性 baseline reproducibility",
+          "抽样调查 PUMS 调查权重 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-food-design",
+      "title": "食品物性小试中的区组、独立批次与技术重复",
+      "summary": "围绕导师允许的一种食品配方或物性测量，研究处理效应是否可与生产日、原料批次和仪器漂移区分。",
+      "type": "topic",
+      "majors": [
+        "m49",
+        "m50",
+        "m51",
+        "m33"
+      ],
+      "groups": [
+        "agri",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-inter-doe",
+        "statsmodels"
+      ],
+      "tags": [
+        "食品实验",
+        "实验单位",
+        "技术重复",
+        "独立批次",
+        "随机区组",
+        "伪重复"
+      ],
+      "sections": [
+        {
+          "heading": "已核验方法与适配边界",
+          "items": [
+            "NIST 提供随机区组思路：区组内改变关注因素，控制可记录干扰；其网页示例为工程实验。",
+            "食品方案、配方范围与评价方法是本库研究建议，需由食品实验导师按仪器和目标确认。"
+          ]
+        },
+        {
+          "heading": "研究建议与最小路线",
+          "items": [
+            "先固定一个响应量，如导师规定的黏度或物性读数；选一个处理因素两个水平，把独立制备日/原料批次作为区组。",
+            "每区组都分别独立制备两种处理并随机测量顺序；处理分配单位为独立制备容器。同一锅分装、同一容器重复读数或不同测量日，不自动产生独立批次；技术重复先汇总到独立制备单位。",
+            "建议先做 3 个独立区组用于流程预检，不把它自动视为足够统计功效；正式区组数量按目标区间精度和预检方差重新规划。",
+            "记录 batch_id、day、operator、instrument_id、处理参数、技术重复号、缺测原因；不要事后把质量相近样本拼成虚构批次。"
+          ]
+        },
+        {
+          "heading": "首阶段交付与协作",
+          "items": [
+            "食品同学确定测量协议和原料处理范围；生物/化学同学维护记录与校准；数据同学画各批次结果和效应区间。",
+            "先交付空白记录表、随机化表、独立单位示意图和预检变异来源，再决定是否进入正式试验。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 3,
+          "validation": 3
+        },
+        "reason": "真实独立制备、仪器校准与导师实验资源决定可行性。",
+        "prerequisites": [
+          "食品物性或分析实验基础",
+          "区组设计与重复测量"
+        ],
+        "resources": [
+          "导师确认的实验空间与仪器",
+          "独立原料/制备批次记录"
+        ],
+        "minimum": "一个因素、两个水平、独立区组流程预检。",
+        "stretch": "增加一项机理解释或响应面；仅在样本与设备支持时开展。",
+        "effort": "10–14 周，每周 6–10 小时",
+        "team": "建议 2–3 人：领域同学定义变量，数据同学实现，导师检查研究边界"
+      },
+      "level": "导师协作",
+      "priority": 82,
+      "status": "研究建议；需导师确认范围",
+      "date": "2026-10-02",
+      "researchDossier": {
+        "question": "两种配方处理对指定物性指标的差异，在独立批次间是否稳定且大于技术重复误差？",
+        "hypotheses": [
+          "同容器技术重复误差低，不代表独立制备差异小。",
+          "批次区组可降低处理比较中的可记录干扰。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-inter-doe",
+            "finding": "随机区组在可控制干扰因素内比较处理。",
+            "howToUse": "把制备日或原料批次列为区组，区组内同时包含全部处理。",
+            "limitation": "食品适配为本项目方案；原网页工程示例并非食品数据证据。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "批次内处理差",
+            "implementation": "每个独立区组的两处理单位先各汇总技术重复，再计算差值。",
+            "why": "直接显示是否跨批次方向一致。"
+          },
+          {
+            "name": "区组线性模型",
+            "implementation": "响应~处理+区组，模型假设与残差检查公开。",
+            "why": "与忽略批次的分析比较，解释误差来源。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "流程预检",
+            "variables": "一个因素两水平；建议先3区组预检",
+            "controls": "每批均有两个水平、测量顺序随机，仪器按领域协议校准",
+            "split": "以各区组内真正独立制备的处理容器为实验单位；同锅分装与技术重复不计作独立样本",
+            "metrics": "独立差值、技术CV、缺测率",
+            "decision": "预检用于估计变异与正式样本计划，不能自动支持确定性结论。"
+          },
+          {
+            "name": "正式区组比较",
+            "variables": "正式批次数按目标精度重新规划",
+            "controls": "冻结主要响应与测量时点，保持配方范围",
+            "split": "区组作为干扰因素、独立制备容器作为处理分配单位；对技术或纵向重复测量另建层级",
+            "metrics": "处理差及区间、批次×处理图",
+            "decision": "只有量级与区间符合预定实践意义才推进扩展。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "处理效应",
+            "definition": "同批独立制备单位的处理响应差",
+            "unit": "领域物性单位",
+            "aggregation": "展示逐区组处理差及总体区间；报告独立区组数、各处理独立制备数与技术重复数，不用读数总数作n"
+          },
+          {
+            "name": "技术重复CV",
+            "definition": "同单位技术重复SD/均值×100%；均值近零时不用CV",
+            "unit": "%",
+            "aggregation": "每独立单位单列"
+          },
+          {
+            "name": "独立批次变异",
+            "definition": "不同独立制备的响应离散度",
+            "unit": "领域单位",
+            "aggregation": "分处理展示；预检批次少时只描述"
+          }
+        ],
+        "ablations": [
+          "比较含/不含区组模型，检查干扰而非择显著模型。",
+          "分操作员或测量次序查看残差，明确探索属性。"
+        ],
+        "pitfalls": [
+          "把同容器三次读数当三个独立样本。",
+          "处理水平与日期完全重合导致效应不可分。",
+          "正式试验失败批次无记录删除。"
+        ],
+        "reproducibility": [
+          "记录独立单位、区组、技术重复关系图。",
+          "保存随机化表、仪器单位、校准及缺测原因。",
+          "预检与正式数据分开，公布所有批次。"
+        ],
+        "stopRules": [
+          "无法独立制备或每批不能包含全部处理时重设设计。",
+          "仪器重复误差高于预定处理差时先解决测量方法。"
+        ],
+        "deliverables": [
+          "食品实验记录模板",
+          "变异来源审计",
+          "独立批次效应与不确定性报告"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-life",
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-v2-statsmodels",
+          "kb-resource-methods",
+          "resource-plant"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m49"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m50",
+              "m51",
+              "m33"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：一个因素、两个水平、独立区组流程预检。",
+          "第 7–10 天：预检“流程预检”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "两种配方处理对指定物性指标的差异，在独立批次间是否稳定且大于技术重复误差？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "食品物性小试中的区组、独立批次与技术重复 baseline reproducibility",
+          "食品实验 实验单位 技术重复 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-topic-ecg-quality",
+      "title": "公开 ECG 的质量元数据一致性与噪声压力测试",
+      "summary": "在 PTB-XL 离线公开数据上审计质量字段，比较传统信号指标与合成噪声响应，评价信号处理方法而不输出诊断。",
+      "type": "topic",
+      "majors": [
+        "m57",
+        "m58",
+        "m20",
+        "m24",
+        "m16"
+      ],
+      "groups": [
+        "medicine",
+        "circuits",
+        "computing"
+      ],
+      "sourceIds": [
+        "kb-inter-ptbxl",
+        "scipy",
+        "sklearn-cv"
+      ],
+      "tags": [
+        "ECG",
+        "PTB-XL",
+        "信号质量",
+        "患者分组",
+        "基线漂移",
+        "合成噪声"
+      ],
+      "sections": [
+        {
+          "heading": "已核验资料",
+          "items": [
+            "PTB-XL v1.0.3 提供患者标识、100/500 Hz 波形、推荐分组折及基线漂移、静态噪声等质量元数据，数据 CC BY 4.0。",
+            "版本页列出历次去重修正；实施时须核验所下载 CSV 的行数、唯一患者数及患者折重叠，本次未下载并计数。"
+          ]
+        },
+        {
+          "heading": "研究建议与最小路线",
+          "items": [
+            "先读 100 Hz 小子集并核对 WFDB 单位；选两种非诊断指标，如低频功率占比与突变比例。",
+            "沿患者隔离的官方折划分，训练部分确定阈值；自然质量字段缺失或否定含义不明时保留未知状态。",
+            "人为加入已知幅度的基线漂移或白噪声，记录注入前后指标变化；合成噪声结果单列，不能当作真实医院噪声鲁棒性证明。"
+          ]
+        },
+        {
+          "heading": "使用边界与交付",
+          "items": [
+            "只交付匿名公开波形的方法比较、质量字段字典、去重审计和噪声敏感性曲线。",
+            "护理/检验同学解释记录质量场景，电子同学核对采样与滤波，计算机同学复现管线；不做个体疾病判断或临床阈值建议。"
+          ]
+        }
+      ],
+      "difficulty": "D3",
+      "difficultyProfile": {
+        "dimensions": {
+          "knowledge": 3,
+          "engineering": 2,
+          "resources": 1,
+          "validation": 3
+        },
+        "reason": "信号单位、患者泄漏与质量标签含义需认真审计。",
+        "prerequisites": [
+          "数字信号处理",
+          "数据字典与分组划分"
+        ],
+        "resources": [
+          "PTB-XL 公开文件",
+          "普通电脑，先用小子集"
+        ],
+        "minimum": "100 Hz 子集、两个质量指标、患者分组与一种合成噪声。",
+        "stretch": "多导联一致性与100/500 Hz处理差异；仍限离线研究。",
+        "effort": "8–12 周，每周 6–10 小时",
+        "team": "建议 2–3 人：领域同学定义变量，数据同学实现，导师检查研究边界"
+      },
+      "level": "导师协作",
+      "priority": 82,
+      "status": "研究建议；需导师确认范围",
+      "date": "2026-10-02",
+      "researchDossier": {
+        "question": "非诊断信号指标在患者隔离的ECG子集中，能否检测预先设定的噪声增加并与质量元数据合理对应？",
+        "hypotheses": [
+          "低频功率占比应对合成基线漂移有响应，但不一定等同自然质量标签。",
+          "不同采样率或导联可能改变指标阈值。"
+        ],
+        "literature": [
+          {
+            "sourceId": "kb-inter-ptbxl",
+            "finding": "官方有质量字段、患者隔离折、去重版本说明与不同采样率。",
+            "howToUse": "先审计元数据和单位，采用推荐患者折再做信号实验。",
+            "limitation": "质量字段不是完整金标准，数据开放不代表临床适用。"
+          }
+        ],
+        "baselines": [
+          {
+            "name": "透明信号规则",
+            "implementation": "固定低频功率占比、突变比例，参数仅在训练折设定。",
+            "why": "便于解释噪声压力响应。"
+          },
+          {
+            "name": "无处理与简单滤波",
+            "implementation": "对同波形分别不处理与采用明确参数滤波。",
+            "why": "比较是否滤噪并检查波形失真，不输出疾病标签。"
+          }
+        ],
+        "experiments": [
+          {
+            "name": "质量元数据审计",
+            "variables": "缺失、文本标记、去重与患者重叠",
+            "controls": "版本1.0.3；以实际CSV统计；未知不等于无噪声",
+            "split": "官方1–8训练、9验证、10测试并检查患者ID",
+            "metrics": "未知比例、重复/重叠数、指标分布",
+            "decision": "先通过结构与单位审计，标签不可靠时不计算分类准确率。"
+          },
+          {
+            "name": "合成噪声压力",
+            "variables": "预设基线漂移与噪声幅度梯度",
+            "controls": "每条波形相同原始副本；噪声种子记录",
+            "split": "所有原波形、100/500 Hz副本和人工噪声副本继承同一患者所属折；阈值仅用训练/验证患者，测试患者不调参",
+            "metrics": "噪声响应斜率、失真与处理前后指标",
+            "decision": "响应只证明所设合成情景；自然场景结论另需证据。"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "指标变化",
+            "definition": "注噪后−原波形指标",
+            "unit": "各指标单位",
+            "aggregation": "每患者先汇总，按导联/情景分层"
+          },
+          {
+            "name": "已知注噪SNR",
+            "definition": "10×log10(原信号能量/人工噪声能量)，仅用于已知注入噪声的情景",
+            "unit": "dB",
+            "aggregation": "仅合成情景；注明计算窗口"
+          },
+          {
+            "name": "处理失真",
+            "definition": "原波形与滤波输出差异的明确定义误差",
+            "unit": "μV或归一化误差",
+            "aggregation": "逐记录再患者聚合，不能等同临床有效性"
+          }
+        ],
+        "ablations": [
+          "不同导联与100/500Hz对比；截止频率按采样率正确换算。",
+          "改变人工噪声种子检查偶然结果。"
+        ],
+        "pitfalls": [
+          "缩放或单位错误使SNR/阈值不可比。",
+          "将质量字段缺失误标为正常。",
+          "同一患者波形随机拆分；去重历史被忽略。"
+        ],
+        "reproducibility": [
+          "记录数据许可、DOI、版本、波形哈希。",
+          "保存患者分组、导联、采样率、WFDB单位与去重结果。",
+          "公开噪声函数、随机种子、滤波参数和全部情景结果。",
+          "统计原始记录、唯一患者与衍生副本分别多少；核验同患者及同源波形副本跨集合重叠为零。"
+        ],
+        "stopRules": [
+          "波形单位、质量字段语义或患者划分不能确认时停止性能结论，先做数据审计。",
+          "任何实际诊断/护理应用超出离线题目，先另立研究条件。"
+        ],
+        "deliverables": [
+          "公开波形质量审计报告",
+          "合成噪声响应图",
+          "信号处理方法复现包"
+        ],
+        "assessed": "2026-10-02"
+      },
+      "researchBridge": {
+        "contestIds": [
+          "contest-life",
+          "contest-math"
+        ],
+        "caseIds": [],
+        "resourceIds": [
+          "resource-scipy",
+          "resource-v2-sklearn-cv",
+          "kb-resource-ic-adc-metrics"
+        ],
+        "contestNote": "先核对当前届次的任务、组别、作品要求和资格。本题可作为准备方向；命题赛需按当届赛题调整，不能用已有题目代替规定任务。",
+        "caseNote": "本轮未确认与本题足够接近的获奖作品全文，暂不绑定案例。优先借鉴同领域的研究过程，避免把历史奖项当作本题效果证明。",
+        "roles": [
+          {
+            "majorIds": [
+              "m57"
+            ],
+            "role": "定义领域对象、评价口径与任务边界，核对材料适用性。",
+            "deliverable": "问题定义、数据字典、限制与纳入规则。"
+          },
+          {
+            "majorIds": [
+              "m58",
+              "m20",
+              "m24",
+              "m16"
+            ],
+            "role": "实现基线、分割管线和评价脚本，独立复核指标。",
+            "deliverable": "可重跑基线、实验日志、指标和失败案例。"
+          }
+        ],
+        "milestones": [
+          "第 1–3 天：核对资料权限、版本、字段或硬件条件，建立阅读矩阵。",
+          "第 4–6 天：完成最小基线：100 Hz 子集、两个质量指标、患者分组与一种合成噪声。",
+          "第 7–10 天：预检“质量元数据审计”，登记无法执行的条件与风险。",
+          "第 11–14 天：提交基线结果或失败记录，和导师冻结变量、指标、范围及正式数据划分。"
+        ],
+        "mentorQuestions": [
+          "非诊断信号指标在患者隔离的ECG子集中，能否检测预先设定的噪声增加并与质量元数据合理对应？",
+          "资源、数据许可和评价单位是否支持该范围？哪些条件缺失时应按停止规则缩小题目？",
+          "是否适合当前培养阶段与竞赛组别？正式验证和时间预算如何调整？"
+        ],
+        "librarySearch": [
+          "公开 ECG 的质量元数据一致性与噪声压力测试 baseline reproducibility",
+          "ECG PTB-XL 信号质量 evaluation dataset"
+        ]
+      }
+    },
+    {
+      "id": "kb-resource-calves",
+      "title": "犊牛行为真实数据：字段、分组脚本与复现入口",
+      "summary": "补充成年牛资料以外的真实犊牛传感数据，便于核验采样率、个体边界和原作者代码。",
+      "type": "resource",
+      "majors": [
+        "m53",
+        "m54",
+        "m18",
+        "m21",
+        "m33"
+      ],
+      "groups": [
+        "agri",
+        "computing",
+        "circuits"
+      ],
+      "sourceIds": [
+        "kb-inter-actbecalf",
+        "calf-paper"
+      ],
+      "tags": [
+        "犊牛",
+        "ActBeCalf",
+        "25Hz",
+        "calfid",
+        "segId",
+        "行为标签"
+      ],
+      "sections": [
+        {
+          "heading": "可获取内容",
+          "items": [
+            "作者 Zenodo 页面列 CSV 和代码包；CSV 含 calfid、segId、dateTime、三轴加速度和行为，适合按犊牛和连续行为片段隔离。",
+            "作者提供时间对齐和分组相关脚本，复现时先读脚本与标签映射，不直接复制网页报告分数。"
+          ]
+        },
+        {
+          "heading": "使用前检查",
+          "items": [
+            "记录 DOI、版本、文件哈希、代码环境和许可；许可名未在本次可读页显示，勿推定数据或代码适用本网站 MIT。",
+            "仅有行为标签，不将异常运动等同疾病；颈部传感器与人体腰部 HAR 的对象、位置和标签不同。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 75,
+      "status": "公开入口；许可与版本见详情",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "kb-resource-education",
+      "title": "教育研究资料包：学习日志数据与干预证据检查",
+      "summary": "一个入口用于公开观察数据复现，一个入口用于设计教学干预评价；分别说明能回答的问题。",
+      "type": "resource",
+      "majors": [
+        "m34",
+        "m35",
+        "m36",
+        "m37",
+        "m33"
+      ],
+      "groups": [
+        "human",
+        "math"
+      ],
+      "sourceIds": [
+        "kb-inter-oulad",
+        "kb-inter-wwc",
+        "prereg"
+      ],
+      "tags": [
+        "教育数据",
+        "OULAD",
+        "WWC",
+        "随机分配",
+        "样本流失",
+        "测验效度"
+      ],
+      "sections": [
+        {
+          "heading": "两种不同证据",
+          "items": [
+            "OULAD 可练习表连接、学习轨迹与时间外预测；不能由点击相关性推出教学干预有效。",
+            "WWC 官方入口提供手册和作者报告资源，可沿随机分配、基线、结果测量与流失逐项检查校园实验。"
+          ]
+        },
+        {
+          "heading": "适用对象与权限",
+          "items": [
+            "OULAD 是英国开放大学记录，数据 CC BY 4.0；不默认适用于佛山本科、幼儿或中小学生。",
+            "若先用成人大学生小型实验，应写明任务、主要指标、同意与排除规则；招募未成年人属于另一套研究范围。",
+            "本次 WWC PDF 下载超时，具体阈值未引用；先查官方手册正文再在论文中声明条款。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 75,
+      "status": "公开入口；许可与版本见详情",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "kb-resource-methods",
+      "title": "实验评价方法：区组随机化与 NASA 主观负担",
+      "summary": "给食品小试、成人交互任务和工业产品比较提供可执行评价思路，避免只问满意度。",
+      "type": "resource",
+      "majors": [
+        "m28",
+        "m30",
+        "m31",
+        "m49",
+        "m50",
+        "m34",
+        "m43"
+      ],
+      "groups": [
+        "design",
+        "agri",
+        "human",
+        "business"
+      ],
+      "sourceIds": [
+        "kb-inter-doe",
+        "kb-inter-tlx"
+      ],
+      "tags": [
+        "随机区组",
+        "NASA TLX",
+        "任务负担",
+        "技术重复",
+        "任务成功"
+      ],
+      "sections": [
+        {
+          "heading": "方法作用",
+          "items": [
+            "NIST 区组设计帮助区分关注处理与日期、操作者等干扰因素；先定义独立实验单位。",
+            "NASA TLX 评估六维主观工作负担；对界面比较应同时记录任务成功、错误和时间。"
+          ]
+        },
+        {
+          "heading": "实际使用规则",
+          "items": [
+            "提前固定 TLX 或 Raw TLX 计分、译文和测量时点，报告各维度，不把低主观负担等同正确率提升。",
+            "同一被试多任务时随机/平衡顺序并按人聚合，不能把每次点击当独立样本。",
+            "NASA 明确工具可直接使用与翻译；翻译可理解性、目标人群适用性仍需预检。"
+          ]
+        }
+      ],
+      "level": "进阶",
+      "priority": 75,
+      "status": "公开入口；许可与版本见详情",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "guide-evidence-matrix",
+      "type": "guide",
+      "title": "文献阅读矩阵：从搜到材料到提出可检验问题",
+      "summary": "给每篇材料记录证据范围、可复用方法和局限，用对照表收敛问题，避免只有题名和链接。",
+      "sourceIds": [
+        "kb-method-checklist",
+        "kb-method-beir-paper"
+      ],
+      "tags": [
+        "文献综述",
+        "阅读矩阵",
+        "研究问题"
+      ],
+      "sections": [
+        {
+          "heading": "推荐阅读矩阵字段",
+          "items": [
+            "题名、作者、年份、DOI 或稳定网址、全文权限、读取范围、软件或数据版本。",
+            "问题与对象；样本与划分单位；输入输出；对照方法；评价指标口径；结论所适用的范围。",
+            "原作者报告的结果、你自己的推断、拟复现的部分分列。没有读到全文就不能补写实验细节。"
+          ]
+        },
+        {
+          "heading": "从矩阵收敛一页研究计划",
+          "items": [
+            "先选 3–5 篇最相关材料，定位一个可控变量，写成“在什么条件下，相比哪种基线，哪个指标是否改善”。",
+            "把最小实验与扩展实验分开；数据、设备或许可缺失先登记，不以换一个热门模型代替根本问题。",
+            "记录正反证据及最近核验日期。新论文、竞赛届次和现行培养要求分别核验，旧资料不能直接证明当前可报名。"
+          ]
+        }
+      ],
+      "majors": [
+        "m16",
+        "m33",
+        "m34"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "human"
+      ],
+      "level": "",
+      "priority": 85,
+      "status": "方法建议 / 原始来源可查",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "guide-reproducible-pack",
+      "type": "guide",
+      "title": "可复现材料包：数据、代码、环境与失败记录",
+      "summary": "按可追溯、可重跑、可解释的要求整理材料；复现需要授权数据时提供获取方式和公开小样本。",
+      "sourceIds": [
+        "kb-method-fair",
+        "kb-method-checklist"
+      ],
+      "tags": [
+        "复现",
+        "元数据",
+        "版本"
+      ],
+      "sections": [
+        {
+          "heading": "材料目录与最小信息",
+          "items": [
+            "README 写问题、命令、预期输出；环境记录系统、依赖版本、硬件和随机种子；代码记录提交 SHA。",
+            "data-manifest 写来源网址、许可、下载日期、版本、校验值、样本数、字段含义、划分清单和排除理由；不把敏感原始数据放到公开仓库。",
+            "runs 保存配置、完整指标、运行时间、错误日志和输出文件清单。图表可由一条记录明确的命令重新生成，人工操作单独登记。"
+          ]
+        },
+        {
+          "heading": "怎样验收",
+          "items": [
+            "让另一位同学在干净目录按说明重跑最小实验；无法重现时记录缺失条件，修订文档和范围。",
+            "公开材料不等于全部数据公开；授权数据提供合法获取说明、字段结构和可运行的小型替代样例。",
+            "阴性结果和失败运行也保留；无法完成的实验标为未执行，避免只发布成功截图。"
+          ]
+        }
+      ],
+      "majors": [
+        "m16",
+        "m33",
+        "m34"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "human"
+      ],
+      "level": "",
+      "priority": 85,
+      "status": "方法建议 / 原始来源可查",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "guide-baselines-ablation",
+      "type": "guide",
+      "title": "基线、消融与结论边界：怎样证明改进来自哪里",
+      "summary": "固定数据和评价条件，再逐项改变方法；将泛化、效果、成本和不确定性分别报告。",
+      "sourceIds": [
+        "kb-method-pitfalls",
+        "kb-method-checklist"
+      ],
+      "tags": [
+        "基线",
+        "消融",
+        "数据泄漏"
+      ],
+      "sections": [
+        {
+          "heading": "做实验前冻结的条件",
+          "items": [
+            "划分单位与测试集先固定。所有归一化、特征选择和调参只用训练或验证部分，最后一次统一评估测试集。",
+            "基线包含简单可解释方法和与任务相关的公开方法，使用相同输入、资源预算与指标口径；重新实现偏差明确记录。",
+            "性能目标、可接受误差和停止条件来自任务需求或预研估计，不能看完测试结果再改变成功定义。"
+          ]
+        },
+        {
+          "heading": "结果报告",
+          "items": [
+            "逐项去掉组件做消融，单独记录准确性、资源、延迟和工程成本；多因素一起变化无法定位原因。",
+            "统计不确定性按真正独立的单位计算，不能把同一人的多个窗口当作独立人员。报告重复次数、区间计算方法与实际差值。",
+            "观察性数据相关不等于因果；仿真不等于实物部署；单校、单批或单设备结果不直接推广。没有改进也可以形成有效的边界结论。"
+          ]
+        }
+      ],
+      "majors": [
+        "m16",
+        "m33",
+        "m34"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "human"
+      ],
+      "level": "",
+      "priority": 85,
+      "status": "方法建议 / 原始来源可查",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "material-beir",
+      "type": "resource",
+      "title": "BEIR：检索基线与可复用评测格式",
+      "summary": "查阅作者论文和代码，了解 corpus、queries、qrels 与词项、稠密检索的比较方法。",
+      "sourceIds": [
+        "kb-method-beir-paper",
+        "kb-method-beir-code"
+      ],
+      "tags": [
+        "BM25",
+        "信息检索",
+        "qrels"
+      ],
+      "sections": [
+        {
+          "heading": "使用方式",
+          "items": [
+            "先检查目标子数据集语言、任务与许可，固定数据版本；作者工具可用于组织查询、语料和相关性标注。",
+            "优先建立 BM25 等简单基线，再考虑语义检索或重排；分别记录效果与计算成本。"
+          ]
+        },
+        {
+          "heading": "迁移边界",
+          "items": [
+            "本库的中文、多专业选题查询须建立自己的相关性评测；在英文数据集上复现不代表本库已改善。",
+            "这里未下载或运行 BEIR。论文摘要中的原始结论仅作为方法线索，不作为任何拟议选题的实测成绩。"
+          ]
+        }
+      ],
+      "majors": [
+        "m16",
+        "m33",
+        "m34"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "human"
+      ],
+      "level": "",
+      "priority": 85,
+      "status": "方法建议 / 原始来源可查",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "material-trec",
+      "type": "resource",
+      "title": "NIST TREC：检索任务、语料与评测入口",
+      "summary": "官方目录可用于查找信息检索的评测工具及特定任务材料。",
+      "sourceIds": [
+        "kb-method-trec"
+      ],
+      "tags": [
+        "TREC",
+        "trec_eval",
+        "相关性标注"
+      ],
+      "sections": [
+        {
+          "heading": "预研清单",
+          "items": [
+            "从与研究问题接近的任务进入，核对语料、查询、相关性判定和评测命令；说明判断池和未判定文档的处理。",
+            "保存运行结果的 query-id、document-id、rank、score；确认指标设置、相关性阈值和截止 K。"
+          ]
+        },
+        {
+          "heading": "使用限制",
+          "items": [
+            "目录链接不保证全部语料开放下载；按对应任务核验许可和获取要求。不要把不同年份、不同语料的指标直接并排比较。"
+          ]
+        }
+      ],
+      "majors": [
+        "m16",
+        "m33",
+        "m34"
+      ],
+      "groups": [
+        "computing",
+        "math",
+        "human"
+      ],
+      "level": "",
+      "priority": 85,
+      "status": "方法建议 / 原始来源可查",
+      "date": "2026-10-02"
     }
   ],
   "report": "# 集成电路专业毕设与竞赛选题调研\n\n面向集成电路设计与集成系统专业大二学生及 AI 协会讨论\n\n资料核验日期 2026年9月30日\n\n## 1 调研结论与使用方法\n\n建议以数字电路设计和验证为主线，先完成一个范围清楚、能够测量和复现的小项目，再根据下一届竞赛赛题及导师要求扩展。优先讨论三个方向：RISC-V 配套的定点运算加速器、面向端侧识别的 TinyML 软硬件优化、数字 IP 自动化验证。刚开始接触 Verilog 时，可先用 FIR 滤波器或同步 FIFO 建立基础。\n\n这份材料围绕两项研究需求：寻找能组织学生参加的竞赛，以及搜集有依据、有实现路径的毕设选题。竞赛部分提供官方入口和已核验案例；选题部分提供建议范围、实验方法、原型阶段和扩展方向。它可以用作协会讨论稿和个人学习规划，正式参赛及毕设立项仍要按当届规则与学院要求调整。\n\n本材料以集成电路专业大二学生为主要读者。编程基础、已修课程、实验室板卡、可用 EDA 软件、导师资源和预算尚未确认。因此，本文默认每周投入约 6 至 10 小时，优先借用学校设备，先仿真再购买硬件。开发周期是规划估计，不是完成承诺。\n\n文中信息分为三类：有官方链接的赛事和获奖信息属于核验事实；技术路线、优先级和建议题目属于本次调研建议；时间、预算、目标指标属于待实验和导师确认的估计。本文没有宣称已完成项目、取得性能结果或获得参赛资格。\n\n### 1.1 最适合当前阶段的选择\n\n|个人情况|建议从哪里开始|近期交付|后续发展|\n|---|---|---|---|\n|刚学数字电路和 Verilog|同步 FIFO 或定点 FIR|RTL 仿真和自动比对|FPGA 信号处理 IP 或低功耗优化|\n|会 Verilog 和基本 C|点积 MAC 加速器|独立加速模块和测试报告|接入 RISC-V SoC 及应用演示|\n|会 Python 和基本机器学习|TinyML 小模型|浮点与量化模型对照|端侧部署及硬件算子优化|\n|会 Python 想进入芯片方向|FIFO 或 UART 自动验证|测试计划与错误复现|SystemVerilog 验证和形式验证|\n|更喜欢模拟电路且有导师资源|低功耗运放仿真|原理图与关键性能分析|工艺角分析及版图后仿真|\n\n选择时先问三个问题：能否获得所需工具和数据；能否在一个月左右拿出可检查的中间结果；能否说明自己新增的电路、验证或优化贡献。满足这三点后再增加功能。\n\n## 2 竞赛渠道与准备重点\n\n### 2.1 全国大学生集成电路创新创业大赛\n\n这是建议优先跟踪的专业赛事。官网列出芯片设计与产业链、芯片应用与芯创成果等赛项，并提供企业命题、培训和文件下载入口。第十届 2026 年赛事已经公布全国总决赛获奖名单公示。当前准备应以学习往届题目和关注下一届通知为主，不应把 2026 年通知当作仍可报名的入口。[集创赛官网](https://univ.ciciec.com/)\n\n2026 年企业命题页面列出中科芯、七星微、叩持、芯海、华大九天等命题方，也记录部分题目修订。技术兴趣相同并不等于满足某个杯赛要求；企业平台、工具、提交物和评分项都需要逐项检查。[第十届企业命题页面](https://univ.ciciec.com/nr.jsp?groupId=46&jpt=4)\n\n建议关注三个层次。数字设计方向可围绕 CPU、计算 IP、总线和 FPGA 验证准备；模拟方向可围绕信号调理、运放及转换器准备；芯片应用方向可围绕具体硬件平台完成端侧识别和测量系统。协会应先保存官方赛题文件，再让学生按基础和资源选择。\n\n对你而言，最有连续性的准备是写 RTL、建立验证环境、测量延迟和资源使用，并完成可演示的 FPGA 原型。如果当届题目允许基于开源内核扩展，可以把个人工作集中在加速器、数据搬运、低功耗控制或验证上；如果要求自行设计 CPU，就必须按要求重新划定范围。\n\n### 2.2 全国大学生嵌入式芯片与系统设计竞赛\n\n建议作为应用原型的第二条主线。2026 年官网芯片应用赛道页面显示报名截止为 4 月 20 日、作品提交截止为 7 月 9 日 18 时，全国总决赛安排在 8 月，且已有获奖名单入口。这些日期仅用于说明本届进度，不能外推为下一届日期。[嵌入式竞赛官网](https://www.socchina.net/home?trackType=2)\n\n该渠道适合先完成传感器采集、端侧算法、嵌入式控制和硬件联调。与集成电路专业结合时，报告应把重点落在处理器架构、计算精度、存储占用、接口控制和能耗测量，而不是仅展示手机页面或云端功能。具体企业方向和指定平台以当届选题指南为准。\n\n协会可以让软件同学负责模型和数据，电子同学负责采集及 PCB，集成电路同学负责 RTL 或硬件计算模块。共同目标是一条能独立运行并测量的完整链路，分工必须能对应到个人代码和实验记录。\n\n### 2.3 全国大学生电子设计竞赛\n\n建议作为电路与仪器训练渠道。2026 年官方专区列出赛区赛和模拟电子系统设计专题赛等信息，不能把双数年份赛事直接等同于上一年度的全国综合赛。2025 年获奖案例可以帮助训练，但本次尚未核验 2027 年具体赛程。[2026 年官方专区](https://www.nuedc-training.com.cn/index/publicity/topic2026)\n\n这类命题竞赛更适合通过历届题练习测量、信号处理、控制、电路搭建和限时联调。长期自选项目可积累模块和技术经验，但能否在竞赛中使用及如何使用，要服从比赛规定。正式比赛通常需要围绕公布的题目完成指标，不能直接假定自己准备的作品可以原样提交。\n\n### 2.4 三类渠道怎样一起使用\n\n|渠道|本文建议用途|优先积累的成果|参赛前必须确认|\n|---|---|---|---|\n|集创赛|专业能力与长期项目主线|RTL 验证 PPA 或 FPGA 结果|赛项组别 企业题目 工具 平台和提交要求|\n|嵌入式竞赛|应用演示与跨专业组队|采集 推理 控制和测量原型|指定芯片 开发板 能力测评和提交要求|\n|电子设计竞赛|电路基础与工程训练|测量仪器用法 电路模块和限时设计|本年度赛事类别 校内选拔和当地赛区通知|\n\n暂不建议同时追三条独立项目线。更有效的做法是选一个技术核心，在规则允许的前提下形成不同用途的材料。相同成果跨赛事使用、往届作品再参赛及 AI 辅助边界都需检查当届规定，不能默认允许。\n\n## 3 已核验的获奖案例与可借鉴内容\n\n获奖案例只能证明这些方向曾被采用并获奖，不能证明项目容易、适合所有本科生或能保证获奖。下列公开页面主要是高校新闻，通常不包含完整源码和测试条件，因此不据此复制性能指标或判断技术原创性。\n\n### 3.1 RISC-V CPU 设计\n\n江南大学公布，微电子科学与工程本科生团队的项目“基于 RISC-V 指令集的 CPU 设计”获得 2025 年第九届集创赛全国一等奖。[江南大学报道](https://news.jiangnan.edu.cn/info/1284/103057.htm)\n\n对你的启发是：CPU 设计可以作为本科生项目，但应先取得完整的测试与运行结果。建议先做一个小型计算 IP，再决定自己设计 CPU 还是使用符合规则的开源内核集成。当前不要同时加入多级缓存、复杂分支预测和操作系统支持。\n\n### 3.2 多精度张量加速器\n\n南京大学公布，“面向多精度计算的可重构多核张量加速器”获得 2025 年集创赛全国一等奖，项目涉及多精度计算及访存调度。[南京大学报道](https://ese.nju.edu.cn/01/c4/c22536a786884/page.htm)\n\n可以借鉴的问题是：在有限硬件资源下如何平衡精度、并行度与访存。大二阶段建议缩小为 INT8 点积或 4×4 矩阵乘法模块，先比较串行与并行版本。完整多核、多精度系统可留作后续扩展。\n\n### 3.3 RISC-V CPU 与 FPGA 验证\n\n福州大学公布，“基于 RISC-V 的高性能 CPU 设计及 FPGA 验证”项目获得 2026 年第十届集创赛七星微杯全国二等奖。[福州大学报道](https://wx.fzu.edu.cn/info/1086/4927.htm)\n\n这一案例提示，硬件设计需要可运行的软件、验证和板级结果共同支撑。你可以研究一项具体改进，例如点积加速、数据搬运或数据相关处理，再对照原始版本测量。不要把新闻中描述的全部功能直接作为自己的第一版任务。\n\n### 3.4 低噪声模拟前端\n\n同一福州大学页面公布，“低噪声高输入阻抗信号调理模拟前端电路”获得 2026 年芯海杯企业大奖及全国一等奖。[福州大学报道](https://wx.fzu.edu.cn/info/1086/4927.htm)\n\n对模拟方向的启发是，应围绕输入信号、噪声、带宽和功耗提出可检验的设计问题。适合你的起点可以是两级运放及补偿分析；先进工艺和复杂生物电前端需要导师、工艺模型与软件支持，暂不作为默认主线。\n\n### 3.5 校园体测智能穿戴系统\n\n深圳职业技术大学集成电路学院报道，“校园体测智能穿戴系统”获得 2026 年嵌入式竞赛全国总决赛一等奖，并获软通杯企业特别奖；报道介绍了 RISC-V 主控、端侧开发及通信协作。页面全文本次访问未成功，奖项和系统概述由该校官方搜索索引核验，未进一步核验项目细节。[深圳职业技术大学报道](https://ic.szpu.edu.cn/info/1024/1266.htm)\n\n可以借鉴的是从一个具体使用场景出发，把采集、计算和数据输出连接起来。自己的方案可先做活动识别或设备状态识别，重点比较端侧模型和计算成本；不要仅因采用同类芯片就声称具备该项目的功能。\n\n### 3.6 单目视觉测量装置\n\n华中科技大学电气学院将“基于单目视觉的目标物测量装置”列为 2025 年电子设计竞赛 C 题国家一等奖作品。[华中科技大学报道](https://seee.hust.edu.cn/info/1066/3329.htm)\n\n可以借鉴的是把展示效果转化为可测量指标：测量范围、误差、重复性和处理时间。若选择 FPGA 图像处理，应先选边缘检测或阈值处理等单一算子，并清楚记录标定方式和测试条件。\n\n### 3.7 从案例转为自己的题目\n\n先提取案例解决的问题，再保留最小技术核心，最后设计对比实验。例如，“张量加速器”可以转为“不同并行度的 INT8 点积计算模块”；“智能穿戴系统”可以转为“活动识别模型量化对精度与能耗的影响”。这是范围缩减建议，不代表已获得原作者源码或授权。\n\n## 4 选题筛选方法与候选总览\n\n建议按照专业关联、近期可完成性、工具数据可获得性、竞赛相关性、后续扩展空间五项打分，各项 1 至 5 分。可使用权重 25%、25%、20%、15%、15%。分数由团队根据真实资源填写，不在基础未知时给出看似精确的总排名。\n\n本文把难度划为三级。基础级通常涉及单一模块；进阶级涉及接口联调或软硬件协同；高难度涉及完整处理器、模拟工艺设计或多模块物理实现。周期均指已有必要基础、按每周 6 至 10 小时投入的原型估计；从零学习应另加学习时间。\n\n|编号|建议方向|原型难度|原型周期估计|专业关联|当前建议|\n|---|---|---|---|---|---|\n|S1|RISC-V 配套定点点积加速器|独立 IP 进阶 SoC 高|6至10周 加集成时间|高|重点方案 分阶段做|\n|S2|TinyML 识别与端侧计算优化|进阶|6至10周|有 RTL 扩展时高|重点方案 适合 AI 协会|\n|S3|数字 IP 自动化验证|基础至进阶|4至8周|高|重点方案 设备要求低|\n|S4|参数化定点 FIR 滤波器|基础至进阶|4至6周|高|Verilog 入门首选|\n|S5|小型 INT8 矩阵乘法阵列|进阶|8至12周|高|S1 的后续扩展|\n|S6|DMA 与双缓冲数据搬运|进阶|6至10周|高|适合结合已有计算 IP|\n|S7|异步 FIFO 与跨时钟验证|进阶|6至10周|高|适合设计验证兴趣|\n|S8|FPGA 数字锁相放大器|进阶|8至12周|高|适合信号与测量方向|\n|S9|低功耗采集与事件唤醒系统|进阶|6至10周|中至高|适合跨专业场景合作|\n|S10|两级 CMOS 运放设计|有资源时进阶|8至12周|高|需导师与工艺支持|\n|S11|SAR ADC 模型与数字控制|高|10至16周|高|先模型 后混合信号|\n|S12|数字 IP 物理实现与约束实验|进阶至高|8至12周|高|在成熟 RTL 上开展|\n\n表中周期包含基本原型和一轮对比实验，不包含正式参赛、论文撰写、流片、平台采购及长期故障排查。具体赛题匹配要在当届文件发布后重新确认。\n\n## 5 十二个候选题目的实施范围\n\n### 5.1 S1 面向信号识别的定点点积加速器\n\n建议题名为“面向嵌入式信号识别的定点点积加速器设计与 FPGA 验证”。先实现输入与权重逐项相乘并求和的 INT8 或定点计算，包含输入缓存、计算状态机、累加、结果寄存器和启动完成握手。最小原型只接仿真输入，不依赖完整 CPU。\n\n你的主要贡献应是运算数据通路、位宽选择、调度或验证中的至少一项。可比较单乘法器时分复用与多乘法器并行方案。接入 RISC-V 后，用 C 程序控制加速器，对照软件版本记录端到端时间。\n\n验收应包含随机及边界输入的逐位比对、延迟周期、吞吐率和综合资源报告。所有输入范围、累加位宽、舍入及溢出规则必须写入规格。竞赛候选为数字设计或允许该平台的应用赛题；毕设可扩展为 DMA、卷积算子或能效分析。\n\n风险主要是总线集成吞掉全部时间。若独立 IP 尚未验证通过，先不接 CPU。内核引用与个人修改要单独记录；RISC-V 是指令集标准，使用现成内核不等于自行设计 CPU。[RISC-V 规范库](https://docs.riscv.org/) [Ibex 文档](https://ibex-core.readthedocs.io/en/latest/)\n\n### 5.2 S2 TinyML 端侧识别与计算优化\n\n建议题名为“面向资源受限设备的活动识别模型量化与端侧部署研究”。可从 UCI HAR 活动识别开始，或选择公开语音命令数据做关键词识别。第一版只选一种任务，不同时做语音、图像和传感器融合。\n\n最小原型是浮点模型、INT8 模型和端侧推理演示，记录测试集精度、模型大小、运行内存、推理延迟及测量条件。为增强集成电路关联，后续可选一个计算热点设计 RTL 加速 IP，或研究位宽和存储结构。\n\n主要风险是数据划分泄漏及只做软件调用。活动识别数据应按人员分组；设备声音应按原始记录或设备分组，不能把同一记录的相邻窗口随机分到训练和测试。端侧系统结果需与桌面计算分开报告。\n\nMLPerf Tiny 提供关键词、图像及异常声音等参考任务；本文仅建议学习其评价方法。自行修改模型、平台或数据的实验不能直接称为官方合规 MLPerf 成绩。[MLCommons 任务说明](https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/)\n\n### 5.3 S3 FIFO 与 UART 数字 IP 自动化验证\n\n建议题名为“基于 Python 测试平台的 FIFO 与 UART 数字 IP 验证方法研究”。先选同步 FIFO，写清深度、位宽、读写行为和复位规则，再实现驱动、监视器、参考模型、自动比对和可复现的随机测试。UART 可作为第二个模块。\n\n验收不能只报测试运行成功，应列出满空转换、指针回绕、同时读写、复位中断等功能覆盖。可人为引入满标志错误、数据顺序错误等缺陷，比较定向与随机测试的检出能力，并保存缺陷补丁和失败种子。\n\n它设备需求低，适合先形成可检查成果；作为比赛作品时需要寻找确有验证或 EDA 方向的当届题目，不能默认独立验证框架符合应用赛道。毕设可在导师支持下加入断言、形式验证或 SystemVerilog 验证。\n\ncocotb 能用 Python 验证 RTL；OpenTitan 的公开方法强调测试计划、参考模型和覆盖分析。本文只借鉴方法，不承诺完整复制工业验证环境。[cocotb 文档](https://docs.cocotb.org/en/stable/) [OpenTitan 验证方法](https://opentitan.org/book/doc/contributing/dv/methodology/index.html)\n\n### 5.4 S4 参数化定点 FIR 滤波器\n\n建议题名为“基于 FPGA 的参数化定点 FIR 滤波器设计与资源性能评估”。先实现 8 或 16 抽头版本，用离线采样数据驱动，暂时不接 ADC。输入、系数、乘积和累加器分别定义位宽，采用固定的舍入和饱和规则。\n\n最小原型包含 Python 参考模型、RTL、脉冲响应与随机数据比对、频率响应误差以及综合报告。可以比较串行 MAC、部分并行和全并行三个结构，但第一版先做正确的串行结构。\n\n适合已有数字电路基础、尚无复杂平台经验的学生。后续可加入系数可配置、流水线、采样接口与停止计算时的使能控制。即使暂未参赛，也能积累点积加速器需要的乘累加、定点和验证知识。常见问题是把截断误差误认为 RTL 错误，应同时建立浮点与逐位定点参考模型。\n\n### 5.5 S5 小型 INT8 矩阵乘法阵列\n\n建议题名为“小型 INT8 矩阵乘法阵列的数据流设计与 FPGA 实现”。以 4×4 阵列为起点，支持明确限定大小的矩阵乘法，先固定输入顺序和边界，再研究分块及可配置尺寸。\n\n最小原型包含处理单元、数据传递、装载与结果写回逻辑，比较串行 MAC 和阵列版本的总周期、DSP、LUT、BRAM 以及频率。数据装载时间必须计入端到端结果，不能只展示阵列内部峰值。\n\n毕设可研究双缓冲、不同数据驻留方式或结构化稀疏，建议每次仅增加一项变量。比赛是否要求特定精度和接口，需要逐题确认。若阵列边界和时序难以调通，退回 S1 的独立点积 IP，而不是同时扩大模型规模。\n\n### 5.6 S6 DMA 与双缓冲数据搬运\n\n建议题名为“面向计算加速 IP 的 DMA 与双缓冲数据搬运模块设计”。先使用片上存储模型和简单接口，实现固定长度传输、地址递增、长度计数、启动完成状态和基本错误报告，暂不接外部 DDR。\n\n实验比较 CPU 逐字搬运、单缓冲和双缓冲的总体执行时间、计算等待周期及有效带宽。加入回压、不同传输长度、地址边界和复位打断测试。加速器必须有明确的数据需求，否则难以解释 DMA 的作用。\n\n它适合已有 S1 或 S5 的团队，个人贡献可以集中在传输控制与调度。毕设可扩展多个通道或标准总线，但完整 AXI 功能不能靠一个读写演示来宣称。应明确支持的协议子集和未支持行为。\n\n### 5.7 S7 异步 FIFO 与跨时钟验证\n\n建议题名为“异步 FIFO 跨时钟传输的设计与验证”。采用双时钟存储、读写指针及 Gray 编码同步，先限定 FIFO 深度为 2 的幂，并定义复位与启动条件。不能把多位数据逐位加两级触发器就当作可靠跨时钟方案。\n\n测试覆盖不同时钟比例、相位、随机暂停、指针回绕、满空边界和复位情况。采用参考队列检查不丢数据、不重排及不重复输出。数字仿真通常不能证明物理亚稳态不会发生，因此还应检查同步结构和实现约束。\n\n该方向专业性强，适合作为采集或加速器系统中的关键模块。毕设可研究 CDC 约束、复位策略和形式性质。若暂缺约束及 CDC 指导，先完成 S3 的同步 FIFO 验证，不把两者混为同一难度。\n\n### 5.8 S8 FPGA 数字锁相放大器\n\n建议题名为“基于 FPGA 的数字锁相放大器设计及微弱信号提取实验”。第一版使用仿真输入，实现参考信号、正交乘法、低通滤波及幅度相位计算；板级阶段再加入信号源和采集模块。\n\n比较不同噪声水平、相位差、滤波长度与响应时间下的幅度误差。需要明确采样率、参考频率、ADC 范围和同步条件。实时示波效果应配合数值误差与重复测试。\n\n适合对数字信号处理和测量感兴趣的同学，也能与光电或传感器方向合作。后续可研究定点误差和计算资源优化。主要风险是外部模拟链路占用太多时间；先完成数字仿真，再做采集。\n\n### 5.9 S9 低功耗采集与事件唤醒系统\n\n建议题名为“面向状态监测的低功耗采集与事件唤醒策略研究”。选择一个真实场景，例如设备振动、环境变化或动物活动监测；跨动科合作时，由动科同学定义有意义的观测变量，集成电路同学负责采集和计算链路。\n\n最小原型比较持续工作与周期唤醒两种策略，记录漏检、响应时间、采样覆盖和平均电流。后续可把阈值检测或特征提取转为硬件 IP，使专业贡献更明确。\n\n正常实验条件下的分类表现不能直接推广为动物健康或疾病判断。外购节点的整机功耗也不能作为自研芯片功耗。适合有场景合作和硬件支持的团队；缺少真实数据时可先使用公开数据回放，并注明场景尚未验证。\n\n### 5.10 S10 两级 CMOS 运放设计\n\n建议题名为“面向低功耗传感接口的两级 CMOS 运算放大器设计”。先确定电源、负载、目标带宽和输入输出范围，在合法可用的工艺模型下完成原理图及补偿设计。\n\n最小阶段测量直流增益、单位增益带宽、相位裕度、摆率、功耗和适用范围。研究变量可选偏置电流或补偿参数，比较相同负载条件下的速度与功耗。后续在导师支持下开展 PVT、失配及版图后仿真。\n\n该方向适合喜欢模拟电路且能取得 EDA、PDK 和导师支持的学生。普通板级运放电路与晶体管级集成运放设计要分开描述。未取得工艺模型前，先做理论和行为模型，不预设能够完成特定工艺的芯片版图。\n\n### 5.11 S11 SAR ADC 模型与数字控制\n\n建议题名为“SAR ADC 非理想行为建模及数字控制逻辑设计”。第一版限定为 8 位行为模型，研究逐次逼近控制、转换时序和理想量化，再加入电容失配或比较器偏置等单一非理想项。\n\n最小原型包含行为模型、控制 RTL 和静态输入测试。若进一步评估动态性能，应写清激励频率、幅度、采样点和频谱处理；ENOB 等指标不能仅从理想模型推导后当作芯片实测。\n\n可以作为混合信号方向的起点，但完整 ADC 需要比较器、采样、DAC、参考和版图设计资源。建议先完成模型与数字控制，导师确认后再扩展晶体管级电路。比赛中的指定工艺和指标必须单独核验。\n\n### 5.12 S12 数字 IP 物理实现与约束实验\n\n建议题名为“定点计算 IP 的物理实现及约束对面积时序的影响”。使用已经验证的 FIR 或 MAC RTL，固定逻辑功能和技术库，改变时钟约束、面积策略或流水线结构，比较实现结果。\n\n最小原型应包含约束文件、综合与布局布线结果、静态时序分析、面积及检查报告。OpenLane 的入门资料介绍 DRC、LVS、STA 等流程，可作为学习入口。[OpenLane 入门文档](https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html)\n\n使用开源流程与工艺做教学实验时，应注明工具版本、PDK、工艺角和检查范围。不同 FPGA 或不同工艺库的面积和功耗不直接横向比较。生成版图文件不等于已经流片，也不自动达到某家企业要求的签核标准。\n\n## 6 重点方案一 RISC-V 与点积加速器\n\n### 6.1 推荐范围和结构\n\n推荐采用三步：先独立点积 IP，再用简单寄存器接口控制，最后接入 RISC-V 处理器。CPU 初期只负责写入数据、启动运算和读取结果。这样每一步都有可检查结果，平台集成失败时仍保留独立模块成果。\n\n结构可表述为“C 测试程序 → CPU 或主控 → 控制寄存器及数据缓存 → MAC 运算模块 → 结果寄存器 → 自动比对与性能记录”。输入和输出路径均要参与测试，不能只验证乘法器。\n\n第一版建议采用带符号 INT8 输入和权重、INT32 累加、固定向量长度，先支持长度 16。若需要长度 64 或更多，先推导最坏累加范围；每次运算清零累加器，明确握手过程中是否接受新任务。第一版不加缓存、不做多核、不同时修改指令集。\n\n### 6.2 六至十周的独立 IP 工作计划\n\n|阶段|主要工作|检查依据|\n|---|---|---|\n|第1周|编写规格和 Python 整数参考模型|输入范围 位宽 溢出和握手定义明确|\n|第2至3周|串行 MAC RTL 与单元测试|定向 随机和边界输入比对通过|\n|第4周|输入缓存与控制寄存器模型|连续任务和复位后数据正确|\n|第5至6周|并行版本及综合比较|功能相同 资源和周期可复现|\n|第7至8周|FPGA 下载与主机数据回放|记录板卡 时钟和端到端延迟|\n|第9至10周|修复问题 整理代码和报告|重新运行实验可得到一致结果|\n\nSoC 集成另预留约 4 至 8 周，依据现成平台成熟度调整。开源内核的集成仍涉及构建、存储映射、工具链和软件调试，不应认为下载源码后即可运行。\n\n### 6.3 必做的对比实验\n\n至少比较串行 MAC 与并行 MAC，两者使用相同数值规格和输入。若接入 CPU，再加入软件点积基线，固定算法、编译优化、输入规模和测量边界。分别记录数据装载、计算、结果取回和总体时间。\n\n建议测试向量包含全零、全正、全负、正负交替、最小负值、接近累加极限及固定种子的随机数据。端到端加速比定义为相同任务的软件总体时间除以硬件总体时间。预先不承诺加速倍数，先判断数据搬运是否成为瓶颈。\n\n同一块 FPGA 上报告 LUT、FF、DSP、BRAM 和约束频率；时钟目标可先设保守值，是否达到以布局布线和时序报告为准。板级功耗测量需报告供电位置、空闲与工作状态以及测量仪器，芯片功耗估计另列。\n\n### 6.4 成果与毕设扩展\n\n近期交付为 RTL、参考模型、测试向量、自动测试脚本、综合报告、板级演示和设计说明。后续毕设可以选择一条扩展：支持卷积、改进搬运、研究并行度或增加功耗控制。每个改进都要保留修改前基线。\n\n可供选题讨论的题名是“面向端侧识别的定点点积加速器设计与 FPGA 验证”。只有完成处理器集成后，才将题名改为“基于 RISC-V 的软硬件协同加速系统”。若赛题要求自研内核，独立核设计另行评估。\n\n## 7 重点方案二 TinyML 与硬件计算优化\n\n### 7.1 数据与任务选择\n\n建议第一版选择 UCI HAR 活动识别。官方页面描述 30 名受试者的六类活动、50 Hz 采样和 128 点窗口，并提供按受试者划分的训练测试数据。该数据来自腰部手机传感器，不直接代表手环、动物或其他安装位置。[UCI HAR 数据集](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)\n\n如果团队更想研究语音，可改用 MLPerf Tiny 中的关键词识别参考任务，但不要同时开展两种任务。若研究振动设备，CWRU 轴承数据中心可以作为资料入口；具体数据文件的采样条件、故障类型和使用要求需读取其说明。[CWRU 数据中心](https://engineering.case.edu/bearingdatacenter/welcome)\n\n最小模型建议从线性分类器或小型 MLP 开始。先建立有效的软件基线，确定输入格式与数据划分，再比较 INT8 量化。选模型时应由资源限制决定复杂度，不预先承诺使用大型网络。\n\n### 7.2 软硬件分工\n\n算法部分负责数据划分、预处理和浮点基线；嵌入式部分负责模型部署、采样或数据回放；集成电路部分负责定点参考模型、计算热点分析及可选 RTL 模块。三者使用相同模型版本和数值定义。\n\nCMSIS-NN 可为 Cortex-M 平台提供神经网络计算内核，使用前要确认处理器和算子支持；它不是自研 FPGA 加速器。[CMSIS-NN 文档](https://arm-software.github.io/CMSIS-NN/v7.0.0/index.html)\n\nhls4ml 可以用于探索模型到硬件的实现及精度、复用因子的取舍。其复用因子会影响并行程度和资源成本，实际实现仍依赖受支持的后端和工具。采用 HLS 生成模块时，应说明自己的模型、配置和结构改进；若赛题或导师要求手写 RTL，应按要求执行。[hls4ml 属性说明](https://fastmachinelearning.org/hls4ml/ir/attributes.html)\n\n### 7.3 建议实验设计\n\n保持相同测试样本，比较浮点、INT8 和一个进一步缩减的模型。精度记录 Accuracy、Macro F1 和混淆矩阵；资源记录模型文件、峰值运行内存、单次延迟和必要的能耗。Accuracy 与 Macro F1 是互补指标，不应只选择表现更好的一个。\n\n把预处理、推理和输出分开计时，同时给出完整响应时间。若使用公开数据回放，要标明没有现场实时采集。若补充自采数据，按人或采集批次分组，保留独立测试集，并记录采样位置和标注方式。\n\n第一轮可设“INT8 相比浮点的 Accuracy 下降不超过 2 个百分点”为内部讨论目标，而不是官方标准或已达到结果。若任务较难，按实际曲线重新确定。延迟先测基线再定优化目标，禁止未经测量写出固定毫秒数。\n\n### 7.4 时间与交付\n\n第 1 至 2 周完成数据审查及浮点基线；第 3 至 4 周完成量化与误差分析；第 5 至 6 周完成端侧部署或回放；第 7 至 10 周开展热点优化与对比实验。设计自研 FPGA 算子需额外时间，不包含在软件部署的默认周期内。\n\n近期交付为数据说明、模型、量化配置、测试集结果、端侧测量表和演示。毕设进一步聚焦“位宽对计算误差与资源的影响”或“某一热点算子的硬件实现”，避免同时扩展模型、平台和应用场景。\n\n## 8 重点方案三 数字 IP 自动化验证\n\n### 8.1 第一版规格\n\n选择 16 深度、8 位数据的同步 FIFO。建议采用标准读模式，写清读取请求的接受条件、输出有效时刻、满时同时读写是否允许、空时同时读写如何处理，以及复位是否清除内容或只清除有效状态。不同规则均可能合理，但模型与 RTL 必须一致。\n\n验证结构为“测试用例 → 输入驱动 → DUT → 输出监视器 → 参考队列与比对器 → 功能覆盖和结果报告”。DUT 指被测电路；参考队列独立按规格更新，避免照抄 DUT 的指针逻辑而复制同一个错误。\n\n### 8.2 功能覆盖与缺陷实验\n\n|场景|需要检查的行为|可设置的缺陷示例|\n|---|---|---|\n|复位与重新启动|标志状态 数据有效和后续读写|计数器未正确清零|\n|写满与读空|边界判断 无非法数据输出|满阈值少算或多算一项|\n|同时读写|按规格接受请求 占用量正确|计数更新顺序错误|\n|多次指针回绕|数据顺序连续|回绕地址错误|\n|随机突发与暂停|没有丢失 重复或重排|读写使能组合错误|\n\n建议制作约 5 个可复现缺陷版本，每个只改一个逻辑点。保存缺陷补丁、预期失败场景、随机种子及实际发现结果。比较定向测试和定向加随机测试的检出数及运行成本。不要把随机次数当作完整性的证明。\n\n代码覆盖与功能覆盖分开统计，并注明工具能力。测试全通过和覆盖率达到某个数值都不能证明没有所有缺陷；不可达项和未覆盖行为应解释。形式验证若加入，需写出环境假设及证明边界。\n\n### 8.3 学习与交付\n\n第 1 周确定规格与参考模型；第 2 至 3 周完成定向测试；第 4 周加入随机驱动和功能覆盖；第 5 至 6 周完成缺陷注入实验；第 7 至 8 周加入 UART 或整理验证框架。\n\n交付应包含测试计划、规格、DUT、测试代码、覆盖矩阵、缺陷补丁、失败复现说明和一条运行命令。UART 加入前先限定波特率、数据位、校验和错误行为，避免一次支持所有配置。\n\n这个方向能让你逐步进入芯片验证。后续在导师支持下可补充 SystemVerilog 断言或 UVM 方法，是否作为学院正式毕设需提前确认。比赛选择需要找到明确认可验证或 EDA 成果的赛题。\n\n## 9 学习顺序与资源准备\n\n### 9.1 大二阶段的基础顺序\n\n第一步掌握同步时序：组合与时序逻辑、非阻塞赋值、复位、有限状态机、计数器和基本握手。以计数器、同步 FIFO 和串行 MAC 为练习。第二步学习测试平台和参考模型，让结果自动比较。第三步学习综合、时序约束和 FPGA 下载。第四步再学习总线、处理器集成或复杂算法。\n\n选择 S1 时补充 C、计算机组成、定点运算和存储映射；选择 S2 时补充 Python、数据划分、模型评价和量化；选择 S3 时补充 Python 测试、协议边界和覆盖分析；选择 S10 或 S11 时补充晶体管、小信号模型、反馈与稳定性。\n\n具体工具版本应固定在项目 README。先测试一个最小示例，再扩展设计；仿真器支持的 SystemVerilog 特性、模型算子和 FPGA 软件支持的器件都要提前检查。本文不要求立即安装或购买所有工具。\n\n### 9.2 预算估计与实验室资源\n\n|准备方式|新增支出估计|适合用途|决策条件|\n|---|---|---|---|\n|使用已有电脑做仿真|可为0元|S3 S4 及各方向早期模型|确认仿真软件可合法使用|\n|借用学校 FPGA 和仪器|约0至300元杂项预留|S1 S4 S5 S8|确认器件 工具 线材和借用条件|\n|自行准备入门 FPGA 及配件|约500至2000元预留|需要板级演示的数字项目|先确认当届平台和项目资源需求|\n|MCU 与基础传感器原型|约200至800元预留|S2 S9|先确认存储 算力和接口|\n|模拟或混合信号设计|另行确认|S10 S11|依赖学校 EDA PDK 仪器和导师|\n\n以上是项目预算占位估计，未做当日商品询价，不是报价或采购清单，不含新电脑、仪器、软件商业许可及流片。优先借用已有资源，正式采购前按型号重新询价。\n\n## 10 国庆期间的执行清单\n\n以下安排是 2026 年 10 月 1 日至 7 日的个人工作建议，不是竞赛截止日期。国庆阶段的目标是完成调研、确定范围及跑通最小验证，不预期从零完成完整 SoC。\n\n|日期|工作|当天留下的结果|\n|---|---|---|\n|10月1日|整理官方入口与资源条件|三项赛事入口 可借设备和已学技术清单|\n|10月2日|阅读并比较获奖案例|三张案例卡 每张写问题 核心方法和缩减方案|\n|10月3日|从 S1 S2 S3 中选一个主方向|一页任务书和暂不实现的功能清单|\n|10月4日|建立最小参考模型|S1 点积模型 S2 简单基线 或 S3 参考队列|\n|10月5日|验证最小链路|一项自动比对或基线结果 附运行条件|\n|10月6日|补齐实验计划和风险|对照实验表 资源缺口和解决顺序|\n|10月7日|形成协会讨论稿并交流|题目候选 资源需求 下一阶段计划|\n\n如果基础不足，10 月 4 至 5 日改为同步 FIFO 或串行 MAC 的学习练习。已经完成的本次调研可直接作为第一轮讨论稿，未来一周重点应转向验证资源与技术，而不是继续无限收集题目。\n\n### 10.1 一个学期到毕设的衔接\n\n大二当前阶段先确定主方向并完成模块；一个学期内形成可复现原型和对照实验；下一届赛题发布后确认匹配并补齐指定平台；大三阶段选择一个技术问题深入优化；进入正式毕设前与导师确认工作量和学院规范。\n\n参赛报告与毕设论文的关注点不同。参赛材料需要展示规定指标、完整性和现场表现；毕设需要把设计问题、方法、实验及局限说明清楚。公开代码、第三方模块、团队分工和个人新增工作应贯穿记录，方便后续说明贡献。\n\n## 11 协会怎样组织这项工作\n\n建议先形成一个小型选题讨论组，用现有成员承担赛事整理、技术方案、应用场景和实验资源协调。跨专业研究需要协作，这可以通过共享选题库和阶段性演示落实，不需要一开始就承诺大型项目。\n\n建议每个候选题只保留一张选题卡，字段包括题名、解决问题、专业关联、技术核心、最小原型、数据来源、工具板卡、验证指标、扩展方向和待确认条件。每两周用可以检查的代码、波形或实验结果讨论一次。\n\n跨专业合作时，先约定输入输出和标签。例如动科同学定义活动类别及标注方法，集成电路同学负责采集、定点处理和算力；算法同学负责模型与评价。公开人体或设备数据只能用来验证技术链路，场景适用性需通过对应数据另外验证。\n\n### 11.1 竞赛信息库字段\n\n每条赛事记录保存赛事全名、届次、官方链接、赛项、参赛对象、团队人数、指导教师要求、指定平台、官方截止日期、校内截止日期、作品提交物、评分项、AI 辅助规定和核验日期。没有核验的字段写“待确认”，不按往年规则填入。\n\n### 11.2 选题任务书模板\n\n题目名称：填写能够描述具体技术问题的题名。\n\n目标与范围：写清要完成的模块及本阶段不包括的功能。\n\n技术方案：给出输入、运算、存储、控制和输出关系。\n\n基线与改进：说明现有方法和拟改变的一个关键变量。\n\n验证计划：列出数据、测试场景、指标、测量边界和复现方式。\n\n资源与分工：确认工具、板卡、导师、成员职责和待获得资源。\n\n阶段交付：每阶段留下代码、测试、报告或演示，并设失败后的缩减方案。\n\n### 11.3 实验记录模板\n\n|实验项|必须记录的内容|\n|---|---|\n|配置|代码版本 工具版本 板卡或工艺库 时钟和编译配置|\n|数据|来源 原始记录 分组方法 测试数量和随机种子|\n|基线|算法 数值精度 输入规模和功能约束|\n|结果|正确性 延迟 资源 精度以及有条件测得的功耗|\n|边界|是否包含预处理 数据搬运及输出 哪些项目未测|\n|复现|运行步骤 日志位置 异常原因和未解决问题|\n\n## 12 常用术语说明\n\n|术语|在这份材料中的含义|\n|---|---|\n|RTL|寄存器传输级设计 用 Verilog 等描述硬件在时钟驱动下如何工作|\n|FPGA|可配置的数字逻辑器件 可用来验证自己的电路设计|\n|IP|可复用的电路模块 例如 FIFO 运算模块或接口控制器|\n|SoC|片上系统 通常把处理器 存储 接口和其他模块集成起来|\n|RISC-V|开放的指令集标准 规定指令行为 具体内核需要另外实现|\n|MAC|乘累加运算 对多组数值相乘后累加 是许多算法的基本运算|\n|DMA|由硬件负责数据搬运 减少处理器逐项参与传输|\n|TinyML|在资源受限设备上运行小型机器学习模型的技术方向|\n|INT8|8 位整数数据表示 量化模型还需要明确缩放和舍入规则|\n|PPA|功耗 性能 面积三类指标 比较时需要统一工具和实现条件|\n|PDK|工艺设计套件 提供器件模型 设计规则及相关工艺资料|\n|CDC|跨时钟域传输 不同时钟之间的数据与控制需要专门处理|\n|PVT|工艺 电压 温度条件 用于分析不同工作条件下的电路表现|\n|DRC LVS STA|分别检查版图规则 版图与电路的一致性 以及静态时序|\n\n阅读顺序建议是先看结论和候选表，再看自己感兴趣的重点方案；术语可随用随查。第一次开展选题讨论时，重点说明选题解决什么问题、第一版能做什么、需要哪些资源。\n\n## 13 资料来源与查阅用途\n\n以下均为赛事官网、高校官方页面或项目官方文档。赛事和工具信息会更新；正式报名和使用前，应读取当届通知及实际采用的版本。高校新闻用于确认案例，不作为完整设计说明或性能证明。\n\n1. [全国大学生集成电路创新创业大赛官网](https://univ.ciciec.com/) 用于确认赛项入口及 2026 年决赛获奖公示。\n2. [第十届集创赛企业命题](https://univ.ciciec.com/nr.jsp?groupId=46&jpt=4) 用于查找命题方和题目更新。\n3. [嵌入式芯片与系统设计竞赛官网](https://www.socchina.net/home?trackType=2) 用于确认 2026 年芯片应用赛道进度及通知入口。\n4. [2026 年电子设计竞赛官方专区](https://www.nuedc-training.com.cn/index/publicity/topic2026) 用于区分本年度赛区赛与专题赛信息。\n5. [江南大学 2025 年赛事报道](https://news.jiangnan.edu.cn/info/1284/103057.htm) 用于确认本科生 RISC-V CPU 设计获奖案例。\n6. [南京大学 2025 年集创赛报道](https://ese.nju.edu.cn/01/c4/c22536a786884/page.htm) 用于确认张量加速器获奖案例。\n7. [福州大学 2026 年集创赛报道](https://wx.fzu.edu.cn/info/1086/4927.htm) 用于确认 CPU 与模拟前端获奖案例。\n8. [深圳职业技术大学 2026 年嵌入式竞赛报道](https://ic.szpu.edu.cn/info/1024/1266.htm) 本次通过官方搜索索引核验，全文访问未成功。\n9. [华中科技大学 2025 年电赛报道](https://seee.hust.edu.cn/info/1066/3329.htm) 用于确认单目视觉测量装置获奖案例。\n10. [RISC-V 已批准规范库](https://docs.riscv.org/) 用于查看指令集定义与版本。\n11. [Ibex 官方文档](https://ibex-core.readthedocs.io/en/latest/) 用于了解开源 RISC-V 内核及集成要求。\n12. [cocotb 官方文档](https://docs.cocotb.org/en/stable/) 用于建立 Python RTL 验证环境。\n13. [OpenTitan 验证方法](https://opentitan.org/book/doc/contributing/dv/methodology/index.html) 用于学习测试计划、参考模型及覆盖方法。\n14. [MLCommons MLPerf Tiny 任务说明](https://mlcommons.org/2026/07/mlperf-tiny-v1-4-results/) 用于查找端侧任务与评价思路。\n15. [UCI HAR 数据集](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones) 用于活动识别原型，注意人体与场景范围。\n16. [CWRU 轴承数据中心](https://engineering.case.edu/bearingdatacenter/welcome) 用于设备状态数据的进一步查找。\n17. [CMSIS-NN 官方文档](https://arm-software.github.io/CMSIS-NN/v7.0.0/index.html) 用于 Cortex-M 神经网络计算库参考。\n18. [hls4ml 属性说明](https://fastmachinelearning.org/hls4ml/ir/attributes.html) 用于精度与运算复用参数参考。\n19. [OpenLane 入门文档](https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html) 用于数字实现流程及检查项目参考。\n\n下一步建议先确认技术基础和实验室资源，再在 S1、S2、S3 中选一个主方向。资源不足时用 S4 或同步 FIFO 打基础，并将第一轮可复现结果作为协会下一次讨论的依据。\n",
@@ -21342,5 +27238,11 @@ window.RESEARCH_DB = {
     "version": "2.0",
     "assessed": "2026-10-01",
     "note": "选题与协作路线由资料库分析提出；原始案例和题名单独列证据。关联入口不等于报名资格，跨专业分工需团队和导师确认。"
+  },
+  "knowledgeMethod": {
+    "version": "3.0",
+    "assessed": "2026-10-02",
+    "deepCount": 32,
+    "note": "仅部分选题增加经核验来源支持的具体研究档案；文献事实、拟议假设、实验和适用边界分别说明。尚未执行实验，不承诺性能或资格。"
   }
 };

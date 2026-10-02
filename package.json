@@ -1,6 +1,6 @@
 {
   "name": "fosu-research-hub",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "description": "佛山大学多专业毕设、竞赛与研究资料检索工作台，支持四档难度分层和可追溯来源。",
   "license": "MIT",
@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server.cjs",
     "build": "node generate.cjs",
-    "check": "node generate.cjs && node --check dist/app.js && node --check dist/search-engine.js && node --check server.cjs",
+    "check": "node generate.cjs && node --check dist/app.js && node --check dist/search-engine.js && node --check dist/research-detail.js && node --check extend-knowledge.cjs && node --check server.cjs",
     "test": "node --test"
   }
 }
